@@ -1,0 +1,22 @@
+Function,Preferred candidate,Package/body,Status,Primary reason,Blocking check
+MCU/Wi-Fi/BLE,ESP32-S3-WROOM-1-N16R8,18x25.5mm module,Retain,User chose to keep the existing ESP32 module,Observe Espressif antenna keepout and fit the larger module in placement
+LTE voice/data,SIMCom A7672G,24x24x2.4mm LCC+LGA,Research lead,VoLTE plus analog audio and US/global bands,Exact carrier and firmware approval plus peak-current test
+LTE certified fallback,SIMCom SIM7672G or SIM7672NA,24x24x2.4mm LCC+LGA,Conditional,US bands and SIM7672G AT&T certificate,Confirm VoLTE and audio interface on exact variant
+LoRa,Semtech SX1262,4x4mm QFN,Preferred,Same radio IC class without breakout,915MHz reference layout RF switch and antenna validation
+Sub-GHz general,TI CC1101,4x4mm VQFN,Preferred,Same function without breakout,TI 915MHz reference network and FCC testing
+GNSS,u-blox UBX-M10050-KB,4x4x0.55mm QFN,Conditional,Large area reduction with UART and PPS,1.8V timing RF and firmware integration
+NFC,ST ST25R3916B-AQET,5x5mm QFN,Preferred,Integrated NFC reader front end,Flex-loop and matching design
+125kHz RFID,NXP HTRC110,SO14 body about 8.7x3.9mm,Conditional,Replaces large RDM6300 board,Protocol coverage coil and analog validation
+Keypad scanner,TI TCA8418,4x4mm WQFN,Preferred,Debounce FIFO interrupt and 4x4 matrix,Multi-key ghosting policy
+Charger/power path,TI BQ25185,2.2x2.0mm WSON,Preferred,1A charger with current limit thermistor and power path,Protected-pack contract and thermal calculation
+Fuel gauge,Analog Devices MAX17048G+T,2x2mm TDFN,Preferred,Existing function without breakout,Battery model and I2C integration
+3.3V rail,TI TPS63802,3x2mm VSON-HR,Preferred,2A buck-boost over full LiPo range,Full simultaneous load transient budget
+1.8V rail,TI TPS62840,SON or WCSP,Preferred,Low-Iq GNSS/digital rail,Select package and current budget
+5V switched rail,TI TPS61023,1.6x1.6mm SOT-5X3,Conditional,Only for confirmed 5V accessory loads,Do not use as LTE supply
+Media speaker amp,Analog Devices MAX98357A,1.345x1.435mm WLP or 3x3mm QFN,Optional,Compact I2S Class-D output,Separate modem call-audio strategy
+Digital microphone,Knowles SPH0645LM4H-1,3.5x2.65x0.98mm,Optional,Compact I2S audio capture,Not a drop-in modem analog microphone
+Display/touch,EastRising ER-TFT024IPS-3 CTP option,42.72x59.26x2.3mm plus touch,Research lead,Fits reference-style landscape window,Freeze exact CTP order code stack and FPC
+Trackball,Pimoroni PIM447,25x22x11mm,Retain,Known firmware and behavior,Measured retention and main-board cutout
+microSD,Molex 504077-1891,1.28mm high,Preferred,Compact side-access real socket,Mechanical eject access
+nano-SIM,JAE SF70 tray or SF72 push-push,1.25mm high,Preferred,Already compact,Connect only to selected modem SIM supply
+USB-C,GCT USB4105,7.35mm body 3.31mm profile,Retain,Compact durable USB2 receptacle,ESD CC and input-power design

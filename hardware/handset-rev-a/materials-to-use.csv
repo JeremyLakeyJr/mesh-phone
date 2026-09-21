@@ -1,0 +1,29 @@
+Block,Part / material,Manufacturer part number,Package / envelope,Use on new PCB,Release condition
+MCU / Wi-Fi / BLE,ESP32-S3-WROOM-1 N16R8,ESP32-S3-WROOM-1-N16R8,18x25.5mm module,RETAIN CURRENT PART,Observe Espressif antenna keepout and module placement rules
+LTE voice and data,SIMCom A7672G,A7672G,24x24x2.4mm LCC+LGA,YES,Freeze exact regional ordering code and prove carrier VoLTE analog audio and peak-current operation
+LoRa / Meshtastic,Semtech SX1262,SX1262,4x4mm QFN,YES,Copy the 915MHz reference RF network and validate antenna matching
+Sub-GHz general radio,TI CC1101,CC1101,4x4mm VQFN,YES,Copy the TI 868/915MHz reference network and use a separate matched RF feed
+GNSS and PPS,u-blox UBX-M10050-KB,UBX-M10050-KB,4x4x0.55mm QFN,YES,Complete 1.8V timing backup and RF design before release
+NFC reader / writer,ST ST25R3916B,ST25R3916B-AQET,5x5mm QFN,YES,Design and tune a case-mounted 13.56MHz loop and matching network
+125kHz RFID reader,NXP HTRC110,HTRC11001T,SO14 body about 8.7x3.9mm,YES,Validate tag protocol and tune the external LF coil
+Keypad scanner,TI TCA8418,TCA8418,4x4mm WQFN,YES,Test required simultaneous key combinations before removing per-key diodes
+Battery charger and power path,TI BQ25185,BQ25185,2.2x2.0mm WSON,YES,Configure for the protected MakerFocus 3000mAh cell and verify thermals/current limits
+Battery fuel gauge,Analog Devices MAX17048,MAX17048G+T,2x2mm TDFN,YES,Configure and validate the battery model
+3.3V system buck-boost,TI TPS63802,TPS63802,3x2mm VSON-HR,YES,Verify simultaneous radio/display transient budget
+1.8V regulator,TI TPS62840,TPS62840,SON or WCSP,YES,Freeze package after 1.8V load budget
+Switched 5V boost,TI TPS61023,TPS61023,1.6x1.6mm SOT-5X3,YES IF REQUIRED,Populate only when a confirmed RFID/audio/accessory load requires 5V; never feed LTE from it
+Media / key-tone speaker amplifier,Analog Devices MAX98357A,MAX98357A,3x3mm QFN preferred,YES,Use QFN for prototype assembly and keep modem call-audio routing separate
+Call microphone,Low-profile analog MEMS,TBD,TBD,YES,Select against the final A7672G analog microphone reference circuit and acoustic sensitivity target
+Digital microphone,Knowles SPH0645LM4H-1,SPH0645LM4H-1,3.5x2.65x0.98mm,YES,Use for ESP32 recording/assistant input rather than direct modem call audio
+Display with capacitive touch,EastRising ER-TFT024IPS-3 CTP option,TBD exact ordering code,42.72x59.26x2.3mm plus touch,YES,Freeze exact CTP stack FPC pinout and connector before schematic capture
+Trackball module,Pimoroni trackball breakout,PIM447,25x22x11mm,YES,Recess through the main-PCB cutout and retain serviceable module connection
+microSD socket,Molex side-access microSD,504077-1891,1.28mm high,YES,Confirm card insertion/ejection clearance at enclosure edge
+nano-SIM socket,JAE push-push nano-SIM,SF72S006,11.2x14.3x1.25mm,YES,Route only to the selected modem SIM supply/interface
+USB-C receptacle,GCT USB4105,USB4105,7.35mm body / 3.31mm profile,YES,Include USB2 D+/D- CC resistors ESD and protected VBUS input
+IR transmitter,Top-facing IR LED plus transistor driver,TBD,TBD,YES,Choose wavelength radiant intensity viewing angle and package from required range
+IR receiver,Top-facing demodulating IR receiver,TBD,TBD,YES,Choose carrier frequency supply voltage and package with the transmitter protocol
+Battery,MakerFocus protected 3000mAh LiPo,MakerFocus 3000mAh protected pouch,65x36x10mm nominal +/-2mm,YES,Verify the exact purchased pack connector polarity protection-board current and measured dimensions
+Expansion connection,Protected external-module cable port,J16 interface / connector TBD,Enclosure rear port,YES,Freeze pinout current limits ESD protection connector and cable before schematic release
+NFC antenna,Case-mounted 13.56MHz flex or PCB loop,Custom,Tuned to installed enclosure,YES,Tune with production plastics battery and nearby conductors installed
+LF RFID antenna,Case-mounted 125kHz coil,Custom,Tuned to installed enclosure,YES,Tune with production plastics battery and nearby conductors installed
+RF antennas,LTE + LoRa + CC1101 + GNSS + Wi-Fi/BLE antennas,Exact parts TBD,Separate validated antenna systems,YES,Select after placement study and validate matching isolation coexistence and regulatory performance

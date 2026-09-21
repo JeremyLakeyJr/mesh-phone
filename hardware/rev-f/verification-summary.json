@@ -1,0 +1,2474 @@
+{
+  "release_status": "ENGINEERING ONLY \u2014 DO NOT FABRICATE OR POWER",
+  "checks_passed": 608,
+  "checks_total": 608,
+  "checks_failed": [],
+  "drc": {
+    "violations_by_type": {
+      "lib_footprint_mismatch": 5
+    },
+    "severities": {
+      "warning": 5
+    },
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "erc": {
+    "violations_by_type": {
+      "isolated_pin_label": 24,
+      "power_pin_not_driven": 2
+    },
+    "severities": {
+      "warning": 24,
+      "error": 2
+    }
+  },
+  "known_release_blockers": [
+    "Battery protection and charger/power-path redesign",
+    "Undefined 3.3V supply and invalid 5V boost layout",
+    "US modem/carrier/VoLTE selection and validated carrier pinout",
+    "Remaining IR, RFID, fuel gauge, SIM and radio control interfaces",
+    "RF/USB impedance, ESD, enclosure clearance and hardware/firmware validation"
+  ],
+  "sha256": {
+    "mesh-phone.kicad_pcb": "2a6ce225913ce72fe58441bef94259fdaef00b3df95e95820e0076893125d572",
+    "mesh-phone.kicad_sch": "f8ef8faf302631150f2940fe35c22e53e9637a69ae78dd5bc6ed23506cb1a6cd",
+    "gps-expansion.kicad_sch": "af18b7454a06359a0366e2c7886262757ef6cfa74564b3ab27701fe75fb573a4",
+    "mesh-phone.kicad_pro": "ff5b4a87451a074400b6ee9c7eb741ffa1a315f2586090bb13f9926df940f415",
+    "netlist.xml": "3f81244fe48523d362693931197c55fcbafdf089e48e8b3ec101a340db94be89"
+  },
+  "checks": [
+    {
+      "check": "U1.3 = /MCU_EN",
+      "passed": true
+    },
+    {
+      "check": "U1.4 = /GPS_HOST_TX",
+      "passed": true
+    },
+    {
+      "check": "U1.5 = /GPS_HOST_RX",
+      "passed": true
+    },
+    {
+      "check": "U1.6 = /GPS_PPS",
+      "passed": true
+    },
+    {
+      "check": "U1.7 = /EXP_CS",
+      "passed": true
+    },
+    {
+      "check": "U1.8 = /EXP_IRQ",
+      "passed": true
+    },
+    {
+      "check": "U1.9 = /LCD_RESET",
+      "passed": true
+    },
+    {
+      "check": "U1.10 = /TP_RESET",
+      "passed": true
+    },
+    {
+      "check": "U1.12 = /TOUCH_INT",
+      "passed": true
+    },
+    {
+      "check": "U1.20 = /SPI_SCK",
+      "passed": true
+    },
+    {
+      "check": "U1.21 = /SPI_MOSI",
+      "passed": true
+    },
+    {
+      "check": "U1.22 = /SPI_MISO",
+      "passed": true
+    },
+    {
+      "check": "U1.23 = /SX1262_CS",
+      "passed": true
+    },
+    {
+      "check": "U1.24 = /CC1101_CS",
+      "passed": true
+    },
+    {
+      "check": "U1.25 = /CC1101_GDO0",
+      "passed": true
+    },
+    {
+      "check": "U1.27 = /MCU_BOOT",
+      "passed": true
+    },
+    {
+      "check": "U1.16 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "U1.26 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "U1.28 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "U1.29 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "U1.30 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "U2.1 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U2.2 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U2.3 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U2.4 = /KEY_R1",
+      "passed": true
+    },
+    {
+      "check": "U2.5 = /KEY_R2",
+      "passed": true
+    },
+    {
+      "check": "U2.6 = /KEY_R3",
+      "passed": true
+    },
+    {
+      "check": "U2.7 = /KEY_R4",
+      "passed": true
+    },
+    {
+      "check": "U2.8 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U2.9 = /KEY_C1",
+      "passed": true
+    },
+    {
+      "check": "U2.10 = /KEY_C2",
+      "passed": true
+    },
+    {
+      "check": "U2.11 = /KEY_C3",
+      "passed": true
+    },
+    {
+      "check": "U2.12 = /KEY_C4",
+      "passed": true
+    },
+    {
+      "check": "U2.14 = /I2C_SCL",
+      "passed": true
+    },
+    {
+      "check": "U2.15 = /I2C_SDA",
+      "passed": true
+    },
+    {
+      "check": "U2.16 = /3V3",
+      "passed": true
+    },
+    {
+      "check": "U9.1 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U9.2 = /GPS and rear expansion/GPS_TX",
+      "passed": true
+    },
+    {
+      "check": "U9.3 = /GPS and rear expansion/GPS_RX",
+      "passed": true
+    },
+    {
+      "check": "U9.4 = /GPS_PPS",
+      "passed": true
+    },
+    {
+      "check": "U9.7 = /3V3",
+      "passed": true
+    },
+    {
+      "check": "U9.8 = /3V3",
+      "passed": true
+    },
+    {
+      "check": "U9.10 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U9.11 = /GPS and rear expansion/GPS_ANT",
+      "passed": true
+    },
+    {
+      "check": "U9.12 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U9.6 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "U9.15 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "U9.18 deliberately NC",
+      "passed": true
+    },
+    {
+      "check": "R6.1 = /GPS_HOST_TX",
+      "passed": true
+    },
+    {
+      "check": "R6.2 = /GPS and rear expansion/GPS_RX",
+      "passed": true
+    },
+    {
+      "check": "R7.1 = /GPS and rear expansion/GPS_TX",
+      "passed": true
+    },
+    {
+      "check": "R7.2 = /GPS_HOST_RX",
+      "passed": true
+    },
+    {
+      "check": "U10.1 = /3V3",
+      "passed": true
+    },
+    {
+      "check": "U10.2 = /GND",
+      "passed": true
+    },
+    {
+      "check": "U10.3 = /3V3",
+      "passed": true
+    },
+    {
+      "check": "U10.5 = /GPS and rear expansion/EXP_ILIM",
+      "passed": true
+    },
+    {
+      "check": "U10.6 = /GPS and rear expansion/EXP_3V3",
+      "passed": true
+    },
+    {
+      "check": "J16.1 = /GND",
+      "passed": true
+    },
+    {
+      "check": "J16.2 = /GPS and rear expansion/EXP_3V3",
+      "passed": true
+    },
+    {
+      "check": "J16.3 = /GPS and rear expansion/EXP_SCL",
+      "passed": true
+    },
+    {
+      "check": "J16.4 = /GPS and rear expansion/EXP_SDA",
+      "passed": true
+    },
+    {
+      "check": "J16.5 = /GPS and rear expansion/EXP_SCK",
+      "passed": true
+    },
+    {
+      "check": "J16.6 = /GPS and rear expansion/EXP_MOSI",
+      "passed": true
+    },
+    {
+      "check": "J16.7 = /GPS and rear expansion/EXP_MISO",
+      "passed": true
+    },
+    {
+      "check": "J16.8 = /GPS and rear expansion/EXP_CS_PORT",
+      "passed": true
+    },
+    {
+      "check": "J16.9 = /GPS and rear expansion/EXP_IRQ_PORT",
+      "passed": true
+    },
+    {
+      "check": "J16.10 = /GND",
+      "passed": true
+    },
+    {
+      "check": "SW1.1 = /BAT_CHARGE",
+      "passed": true
+    },
+    {
+      "check": "SW1.2 = /VBAT",
+      "passed": true
+    },
+    {
+      "check": "J13.1 = /BAT_CHARGE",
+      "passed": true
+    },
+    {
+      "check": "J13.2 = /GND",
+      "passed": true
+    },
+    {
+      "check": "H2 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J2 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW12 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J7 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J10 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J5 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW11 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "USB1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW16 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW10 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW6 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW15 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW17 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "R4 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U7 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J9 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW13 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "H1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U6 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW4 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J4 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW3 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "C4 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW5 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW14 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW2 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J6 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J14 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW8 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW9 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "SW7 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "H4 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "R5 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "H3 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "R3 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J13 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "C1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "C2 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U5 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D15 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D3 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D9 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "R2 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D11 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U8 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U4 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D2 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D7 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U2 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D14 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D5 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D12 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D10 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "R1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D6 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "J3 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D13 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "Q1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U3 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D16 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D8 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "L1 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D17 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "D4 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "C3 original position/orientation/side preserved",
+      "passed": true
+    },
+    {
+      "check": "U9 rear-side placement",
+      "passed": true
+    },
+    {
+      "check": "U10 rear-side placement",
+      "passed": true
+    },
+    {
+      "check": "J15 rear-side placement",
+      "passed": true
+    },
+    {
+      "check": "J16 rear-side placement",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J2.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW12.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW12.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW12.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW12.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.11 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.12 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.13 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.14 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.15 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.16 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.17 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.18 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.19 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.20 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.21 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.22 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J1.23 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.11 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.12 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.13 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.14 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.15 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.16 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.17 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.18 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.MP matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J7.MP matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.C6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.DSW matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J10.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J5.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J5.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J5.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J5.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J5.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW11.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW11.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW11.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW11.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.12 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.13 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.14 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.15 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.16 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.17 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.19 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.22 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.A8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.B8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB USB1.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW16.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW16.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW16.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW16.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW10.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW10.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW10.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW10.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW6.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW6.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW6.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW6.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW15.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW15.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW15.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW15.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW17.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW17.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW17.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW17.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R4.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R4.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U7.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U7.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U7.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J9.SH matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW13.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW13.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW13.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW13.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U6.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U6.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U6.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U6.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW1.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.11 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.12 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.13 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.14 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.15 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.16 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.17 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.18 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.19 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.20 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.21 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.22 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.23 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.24 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.25 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.26 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.27 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.28 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.29 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.30 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.31 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.32 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.33 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.34 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.35 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.36 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.37 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.38 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.39 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.40 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U1.41 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW4.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW4.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW4.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW4.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J4.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J4.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J4.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J4.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW3.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW3.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW3.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW3.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C4.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C4.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW5.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW5.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW5.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW5.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW14.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW14.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW14.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW14.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW2.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW2.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW2.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW2.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J6.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J6.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J6.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J6.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J6.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J14.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J14.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J14.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW8.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW8.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW8.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW8.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW9.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW9.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW9.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW9.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW7.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW7.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW7.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW7.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R5.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R5.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R3.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R3.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW19.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW19.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW19.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW19.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J13.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J13.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J13.MP matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J13.MP matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C2.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C2.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U5.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U5.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U5.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U5.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U5.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C8.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C8.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C5.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C5.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C11.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C11.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R10.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R10.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D15.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D15.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D3.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D3.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C9.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C9.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R9.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R9.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW18.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW18.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW18.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB SW18.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C7.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C7.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D9.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D9.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R16.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R16.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R18.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R18.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R2.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R2.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R21.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R21.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D11.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D11.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U8.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U8.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U8.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U8.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U8.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U8.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C6.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C6.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U4.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U4.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U4.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U4.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U4.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U4.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D2.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D2.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R15.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R15.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R12.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R12.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R14.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R14.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D7.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D7.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.11 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.12 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.13 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.14 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.15 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U2.16 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D14.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D14.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D5.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D5.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D12.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D12.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D10.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D10.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R19.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R19.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D6.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D6.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R20.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R20.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R17.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R17.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J15.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J15.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J15.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C10.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C10.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C12.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C12.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.11 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.12 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.13 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.14 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.15 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J3.16 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R13.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R13.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D13.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D13.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.11 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.12 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.13 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.14 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.15 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.16 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.17 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U9.18 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB Q1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB Q1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB Q1.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB Q1.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB Q1.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB Q1.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R11.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R11.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U3.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D16.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D16.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D8.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D8.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB L1.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB L1.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D17.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D17.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D4.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB D4.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.7 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.8 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.9 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.10 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.MP matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB J16.MP matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C3.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB C3.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R8.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R8.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R6.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R6.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U10.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U10.2 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U10.3 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U10.4 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U10.5 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB U10.6 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R7.1 matches exported schematic",
+      "passed": true
+    },
+    {
+      "check": "PCB R7.2 matches exported schematic",
+      "passed": true
+    }
+  ]
+}

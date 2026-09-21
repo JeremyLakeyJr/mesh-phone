@@ -1,0 +1,10 @@
+{
+  "halves": true,
+  "battery": true,
+  "display": true,
+  "board": true,
+  "keycaps": true,
+  "cover": true,
+  "pod": true,
+  "modem": true
+}
