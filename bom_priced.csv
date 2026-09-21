@@ -1,0 +1,29 @@
+Refs,Description,MPN,Qty,Source,LCSC,UnitUSD,ExtUSD,est
+U1,ESP32-S3-WROOM-1-N16R8 MCU module,ESP32-S3-WROOM-1-N16R8,1,LCSC,C2913205,4.78,4.78,VERIFIED LIVE
+U2,I2C GPIO expander (keypad+trackball dirs),MCP23017T-E/SO SOIC-28,1,LCSC,C32945,1.20,1.20,,est
+U3,Li-ion charger IC 1A,TP4056 ESOP-8,1,LCSC,C382139,0.12,0.12,VERIFIED LIVE
+U4,Battery protection IC,DW01A SOT-23-6,1,LCSC,C14213,0.10,0.10,est
+U5,3.3V LDO 500mA,ME6211C33M5G SOT-23-5,1,LCSC,C82942,0.05,0.05,VERIFIED LIVE
+U6,Fuel gauge (header-mounted),MAX17048G+T10,1,LCSC,C2681679,1.80,1.80,est
+J1,LTE Cat-1 modem core board + SIM slot,A7670SA-FASE core board,1,AliExpress,,14.00,14.00,est
+J2,Sub-GHz transceiver module 300-928MHz,CC1101 N503 module,1,AliExpress,,4.00,4.00,est
+J3,LoRa SX1262 mesh module (Meshtastic/RNode),Ebyte E22-400M30S,1,cdebyte.com,,5.99,5.99,VERIFIED LIVE
+J4,NFC reader/writer/emulator,PN532 breakout red-board,1,AliExpress,,5.00,5.00,est
+J5,125kHz RFID reader,RDM6300,1,AliExpress,,2.50,2.50,est
+J6,Scroll ball input,BlackBerry trackball breakout,1,PMD Way/eBay,,15.40,15.40,VERIFIED LIVE
+J7,Display 2in IPS 320x240 SPI,ST7789V FPC module,1,AliExpress/Amazon,,6.00,6.00,est
+J8,Camera 2MP DVP retro,OV2640 module w/ flex,1,AliExpress,,3.00,3.00,est
+J9,microSD push-push socket,Molex 104031-0811,1,LCSC,C114757,0.82,0.82,VERIFIED LIVE
+J10,SIM card connector,push-type nano-SIM,1,LCSC/AliExpress,,0.60,0.60,est
+SW1_9,Keypad tactile switches low-profile x9,SKRPACE010 / ALPS SKRP,9,LCSC,C318884,0.07,0.63,VERIFIED: LCSC C139797 10+@$0.0623
+D_IR1,IR emitter LED 940nm,TSAL6200,1,LCSC,C9962,0.12,0.12,est
+U7,IR receiver 38kHz,TSOP38238,1,LCSC,C134616,0.35,0.35,est
+USB1,USB-C receptacle 16pin,GCT USB4105 or equiv,1,LCSC,C165948,0.55,0.55,est
+SW_PWR,Slide switch SPDT,SS12D00 style,1,LCSC/AliExpress,,0.30,0.30,est
+BT1,Flat LiPo pouch 4000mAh (605080) w/ protection,605080 LiPo or 2x103450,1,AliExpress/Amazon,,9.00,9.00,VERIFIED price; button-top SOLD OUT — check flat-top variant,"CHANGED: user wants flat Li-ion, not 18650"
+PCB,Custom 4-layer PCB 62x128mm,JLC04161H-7628 stackup,5,JLCPCB,,1.40,7.00,est
+ANT1,LTE antenna u.FL + pigtail,4G/LTE blade antenna,1,AliExpress,,2.00,2.00,est
+ANT2,LoRa/SubGHz antenna u.FL,868/915MHz rubber duck,1,AliExpress,,2.50,2.50,est
+PASS,"Passives kit: 0805 R/C, 1N4148W x9+, bulk caps 1000uF x2",assorted,1,LCSC/JLC-PCBA,,3.00,3.00,est
+LENS,Clear front lens 1mm acrylic/PETG,cut-to-size acrylic sheet,1,Amazon/TAP Plastics,,4.00,4.00,NEW: user request
+,,,,,TOTAL (mixed verified+est),,89.80

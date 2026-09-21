@@ -1,0 +1,1658 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-20T20:42:31",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/9cc3ce1d-b030-4410-8780-0c1d721f6fc8",
+            "violations": [
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SD_DET'",
+                            "pos": {
+                                "x": 0.6858,
+                                "y": 8.7376
+                            },
+                            "uuid": "5140daeb-2a35-406c-a064-72511bfca8c4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 9.3599
+                            },
+                            "uuid": "df13f8ea-aee3-410a-80dc-11701954d731"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 9.3726
+                            },
+                            "uuid": "e8c96631-3351-492b-a341-c4de0bc8e8a5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 9.9187
+                            },
+                            "uuid": "c24d3e51-2fda-450a-b399-7f03c4e1701c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 9.9314
+                            },
+                            "uuid": "b914ca14-891b-4ca3-b7ed-08bbd68bafe0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 9.9441
+                            },
+                            "uuid": "49692227-687c-4479-8988-01fe9debd487"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 9.9568
+                            },
+                            "uuid": "905615c2-aa4c-4fe1-be2c-a428ec602225"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 16.3068
+                            },
+                            "uuid": "e82e6efd-d515-470c-91b9-b04372568ac9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_STA'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.4102
+                            },
+                            "uuid": "956a8c93-9a55-44ea-a1ea-db989cd4054f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_RTS'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.4864
+                            },
+                            "uuid": "ea52c08e-a822-436e-842e-b86f991eec92"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_RESET'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.5372
+                            },
+                            "uuid": "781745e6-5a8d-40b0-9ecc-915a2a7d940e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_VEXT'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.6134
+                            },
+                            "uuid": "9aea8d8e-d11a-490f-ad73-10896d6771ce"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_CTS'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.6642
+                            },
+                            "uuid": "0ec4b012-9d96-4391-9ce8-ec1aa65f7e79"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_DTR'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.715
+                            },
+                            "uuid": "89b6d668-2f6d-48ad-b0f7-d2b545021615"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_RX2'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.7404
+                            },
+                            "uuid": "a213d672-f7c4-4871-9c58-ad2c9c0094ea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_TX2'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.7658
+                            },
+                            "uuid": "010efcb3-827b-4742-bee6-c0fc84d1fb98"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LTE_NET'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 5.8166
+                            },
+                            "uuid": "84a68630-3c6b-4c93-b690-92027411a00e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'RFID_TX'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 7.62
+                            },
+                            "uuid": "8266c87b-4bf7-4501-8caa-a4801eb563a1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'RFID_RX'",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 7.6454
+                            },
+                            "uuid": "a9b11d74-60c7-48ca-a059-b9f496f19af5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 8.6868
+                            },
+                            "uuid": "4c40c601-24c3-4f59-a22f-61d2f3f3b829"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 9.5377
+                            },
+                            "uuid": "a9a76491-d789-4315-8684-6a7c3e6cb144"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 9.5504
+                            },
+                            "uuid": "318c53e8-51eb-41e3-b05f-7714eba174ff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 9.7155
+                            },
+                            "uuid": "24af4f27-05f4-47c4-8060-1ca5beab61d8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 9.7282
+                            },
+                            "uuid": "2b7976e6-9819-49df-ba93-c3423ea9f605"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "A pin with a \"no connection\" flag is connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 19 [Pin_19, Passive, Line]",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 14.6812
+                            },
+                            "uuid": "85133a75-914b-400d-a0a4-aa8edd3452b6"
+                        },
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 6.5024
+                            },
+                            "uuid": "0feba53b-d1a7-4e2a-be43-ddf6c9f904c0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_connected"
+                },
+                {
+                    "description": "A pin with a \"no connection\" flag is connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 27 [Pin_27, Passive, Line]",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 14.8844
+                            },
+                            "uuid": "187b7765-50b2-4d2d-b045-834f21f81244"
+                        },
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 6.6802
+                            },
+                            "uuid": "e07ea779-50b0-487f-b306-6d563e16ccff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_connected"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 17.78
+                            },
+                            "uuid": "c010c456-5239-4103-9ddf-54ab935e1b65"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 17.8054
+                            },
+                            "uuid": "8eef68cd-7b2c-407b-9777-c1370314682b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 18.8214
+                            },
+                            "uuid": "7e7d38fe-7533-4241-b187-9c75e700ff52"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SIM_CLK'",
+                            "pos": {
+                                "x": 3.2258,
+                                "y": 5.5626
+                            },
+                            "uuid": "e65b97a0-4038-401c-b9d6-3ac672920481"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SIM_RST'",
+                            "pos": {
+                                "x": 3.2258,
+                                "y": 5.588
+                            },
+                            "uuid": "2cef1551-3c3a-461a-8f9c-4a0e98e38df0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SIM_IO'",
+                            "pos": {
+                                "x": 3.2258,
+                                "y": 5.6134
+                            },
+                            "uuid": "fa7093bb-0032-4f9f-9401-8311cca6d199"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SIM_DET'",
+                            "pos": {
+                                "x": 3.2258,
+                                "y": 5.6388
+                            },
+                            "uuid": "ee455e99-eabb-4da2-ac03-5abe5f73e2b7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'TRACKBALL_INT'",
+                            "pos": {
+                                "x": 3.2258,
+                                "y": 7.6708
+                            },
+                            "uuid": "aa5f3d8c-e1a2-4494-b022-baada8305327"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'EXP_INT'",
+                            "pos": {
+                                "x": 3.2258,
+                                "y": 14.859
+                            },
+                            "uuid": "5c4da01a-fe75-40a9-ad36-61483490c748"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'FUEL_ALERT'",
+                            "pos": {
+                                "x": 3.2258,
+                                "y": 15.7988
+                            },
+                            "uuid": "52ea78b0-01ef-4cf5-9aed-21de7d2fbc1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 6.6675
+                            },
+                            "uuid": "7b788a51-42ef-47b9-bcc4-876a346b724a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 6.6929
+                            },
+                            "uuid": "a6df1f8a-a273-40ca-a943-452c4fe7b566"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.5293
+                            },
+                            "uuid": "30817d58-d2d9-4b04-a2d7-03ebf2349e59"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.542
+                            },
+                            "uuid": "f7eda671-3ed0-40f2-8505-6059115184f1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.5547
+                            },
+                            "uuid": "f074249d-051f-44e1-afcf-3680a8b3f58b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.5674
+                            },
+                            "uuid": "f8667589-dc2d-4663-8988-825e3bb396e4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.5801
+                            },
+                            "uuid": "33f2756e-6994-484c-a60c-50e43ad502cc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.5928
+                            },
+                            "uuid": "5b2d2f09-365e-48f2-a8c9-9ad37ef28617"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.6055
+                            },
+                            "uuid": "da591222-16dc-4e5f-8548-ba8ae56bf68a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.6182
+                            },
+                            "uuid": "460b8515-f406-419d-981b-4693b1a9abf8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.6309
+                            },
+                            "uuid": "bd8ff3f5-f239-406e-adac-6998b77f4920"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.6436
+                            },
+                            "uuid": "eddcb45b-cadb-474b-8752-e38f0b6f0291"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.6563
+                            },
+                            "uuid": "b630dcff-64c9-435b-aea2-4116f54c21f5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.669
+                            },
+                            "uuid": "0b4ceefa-a6e9-4dd3-a66b-40483999e1d6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.6817
+                            },
+                            "uuid": "54ff98cb-bc76-413f-81b1-6c7d2d848da8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.6944
+                            },
+                            "uuid": "502ec8c6-1f7b-44ff-a47d-b2a014234144"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.7071
+                            },
+                            "uuid": "3ede0dd0-2d6f-4674-86c7-555830c568f5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.7198
+                            },
+                            "uuid": "1af21df9-319d-4240-bb8c-5d6141961663"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.7325
+                            },
+                            "uuid": "50812900-fe16-4726-8fcc-0dfc7df8ce00"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.7452
+                            },
+                            "uuid": "bf53cb0e-07ea-49cd-b8f9-5acf60f1215c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.7579
+                            },
+                            "uuid": "e4e08af9-f91c-487f-90fb-34d12a35977d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.7706
+                            },
+                            "uuid": "3ebae5b2-328a-49bd-9a6e-a983cacdd3d4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.7833
+                            },
+                            "uuid": "cce782f6-66e1-4e97-8d2d-14cb4cd25dbe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.796
+                            },
+                            "uuid": "4e2da1ce-d6b7-4ad9-b511-fe8a22ccdbb1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8087
+                            },
+                            "uuid": "336e5b3c-807f-4eb6-9473-974946545258"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8214
+                            },
+                            "uuid": "efe3082c-76b1-42e2-8f6d-4fbd8b0f470f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8341
+                            },
+                            "uuid": "02268c69-f5cd-4f8b-a343-9e1df747725e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8468
+                            },
+                            "uuid": "aae2bc6a-8c25-41de-b1c5-32bc98c629af"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8595
+                            },
+                            "uuid": "ea944ec4-5d67-4dc6-b2c5-29c1f61e175f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8722
+                            },
+                            "uuid": "8e80feed-4e22-46f7-956c-17deeace6c3d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8849
+                            },
+                            "uuid": "fa1419a0-c58a-4e0d-affe-2cad285e573b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.8976
+                            },
+                            "uuid": "44eedbbb-80db-4ef0-83dc-6c4ac4e17991"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.9103
+                            },
+                            "uuid": "f8652d64-69d3-467c-b3f8-af4a399229ba"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.923
+                            },
+                            "uuid": "e0d32ed3-27ad-4f5b-8096-28256f696ff9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.9357
+                            },
+                            "uuid": "d4aa73fd-2e79-496b-81cc-6616cc37b1b5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.9484
+                            },
+                            "uuid": "252a35cf-788d-4e75-abc3-415ea359310e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.9611
+                            },
+                            "uuid": "910279f4-8245-4f15-b1d4-85dee052672e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.9738
+                            },
+                            "uuid": "8359c52d-0253-48ec-a88f-4a2f50b181b7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.9865
+                            },
+                            "uuid": "f90d4064-fe24-443d-841e-32e1bad6b5f7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 18.9992
+                            },
+                            "uuid": "a2fc2962-e583-48dd-8d40-f722801bc51b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 19.0119
+                            },
+                            "uuid": "afe38839-017d-4074-9dcf-0eb09016d90c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 19.0246
+                            },
+                            "uuid": "e1caa8a5-fff8-43f7-8ff6-7f928d8f9d89"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 19.0373
+                            },
+                            "uuid": "e9a1eaa3-ba79-4052-a868-ccb3b86cd11b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 19.05
+                            },
+                            "uuid": "06b97433-ddd6-4ebd-967a-36ae5596ecc6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 19.0627
+                            },
+                            "uuid": "8906694a-7681-402d-9d3c-87e01393769a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 3.2512,
+                                "y": 19.0754
+                            },
+                            "uuid": "b39e1644-84bd-406e-a42b-d3860a139a2c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SX1262_DIO2'",
+                            "pos": {
+                                "x": 4.4958,
+                                "y": 6.5786
+                            },
+                            "uuid": "1411921b-490c-423a-984d-95a7cec0d35d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SX1262_DIO3'",
+                            "pos": {
+                                "x": 4.4958,
+                                "y": 6.604
+                            },
+                            "uuid": "7657b83e-4216-47fe-b0f9-46a92d505048"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SX1262_RXEN'",
+                            "pos": {
+                                "x": 4.4958,
+                                "y": 6.6802
+                            },
+                            "uuid": "5ae77b2c-d225-4170-bce0-7d470dcf4791"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'LCD_RESET'",
+                            "pos": {
+                                "x": 4.4958,
+                                "y": 7.5946
+                            },
+                            "uuid": "cce3162a-431e-4676-bddb-1ff793e32650"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'TP_RESET'",
+                            "pos": {
+                                "x": 4.4958,
+                                "y": 7.6962
+                            },
+                            "uuid": "bff66c03-eae8-4843-a831-95d788e9ea4e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'TOUCH_INT'",
+                            "pos": {
+                                "x": 4.4958,
+                                "y": 7.7724
+                            },
+                            "uuid": "66006836-3388-45f4-9413-f260ca5d979d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IR_RX'",
+                            "pos": {
+                                "x": 4.4958,
+                                "y": 15.7734
+                            },
+                            "uuid": "6c9b29b1-bdac-4d75-9f06-665c2b7dfdae"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 6.858
+                            },
+                            "uuid": "6fcb3526-5aa0-4ead-9446-e141e26754b8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.6741
+                            },
+                            "uuid": "ffefc3c8-0aaf-42ea-9552-4279869bac2a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.6868
+                            },
+                            "uuid": "0157b812-9016-43ae-b743-f7195b831411"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.8011
+                            },
+                            "uuid": "c26f9302-6c54-4685-8b60-2039a4b6b585"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.8138
+                            },
+                            "uuid": "def87a73-3451-47ee-b8ea-d84dd78a0f44"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.8265
+                            },
+                            "uuid": "a71518c4-c555-49a2-9e8b-93bd9b9528c0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.8392
+                            },
+                            "uuid": "a472156a-bbc7-4c96-94e9-55d1c0994216"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.8519
+                            },
+                            "uuid": "37144302-52bd-420c-bd33-2278e692b6f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 8.8646
+                            },
+                            "uuid": "28bbb66b-f0b6-41b4-acd7-f635606f6f58"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.6751
+                            },
+                            "uuid": "2a0d968c-31be-45f8-af2a-86aa86f630ed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.6878
+                            },
+                            "uuid": "d5b3e742-0fb9-4ee7-bf1c-eded294dc0d3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.8021
+                            },
+                            "uuid": "8f1a6d82-9e7a-4f23-a445-ceb3cd284dd4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.8148
+                            },
+                            "uuid": "1cd83903-9744-4c27-a593-9c3e296cf2ed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.8275
+                            },
+                            "uuid": "05c2279d-73a2-49a2-847e-4a5a54a3b139"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.8402
+                            },
+                            "uuid": "c605b789-0216-4709-87a6-914465cf7546"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.8529
+                            },
+                            "uuid": "ea5c73f5-f087-44a3-bad0-f5bab698142b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 4.5212,
+                                "y": 16.8656
+                            },
+                            "uuid": "c661009b-7faf-4b51-a4d7-97919825936e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Footprint 'U.FL_Hirose_U.FL-R-SMT-1_Vertical' not found in library 'owasso1'",
+                    "items": [
+                        {
+                            "description": "Symbol J14 [Conn_01x02]",
+                            "pos": {
+                                "x": 4.572,
+                                "y": 7.366
+                            },
+                            "uuid": "d2a1a91c-3fb7-4d66-8b36-3f9aa7a0af14"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        }
+    ],
+    "source": "owasso1.kicad_sch"
+}

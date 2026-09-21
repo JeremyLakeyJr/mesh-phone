@@ -1,0 +1,335 @@
+ERC report (2026-09-14T20:04:08, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(68.58 mm, 873.76 mm): Label 'SD_DET'
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(71.12 mm, 935.99 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(71.12 mm, 937.26 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(71.12 mm, 991.87 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(71.12 mm, 993.14 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(71.12 mm, 994.41 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(71.12 mm, 995.68 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(71.12 mm, 1630.68 mm): No Connect
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 541.02 mm): Label 'LTE_STA'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 548.64 mm): Label 'LTE_RTS'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 553.72 mm): Label 'LTE_RESET'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 561.34 mm): Label 'LTE_VEXT'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 566.42 mm): Label 'LTE_CTS'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 571.50 mm): Label 'LTE_DTR'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 574.04 mm): Label 'LTE_RX2'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 576.58 mm): Label 'LTE_TX2'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 581.66 mm): Label 'LTE_NET'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 762.00 mm): Label 'RFID_TX'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 764.54 mm): Label 'RFID_RX'
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 868.68 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 953.77 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 955.04 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 971.55 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 972.82 mm): No Connect
+[no_connect_connected]: A pin with a "no connection" flag is connected
+    ; warning
+    @(198.12 mm, 1468.12 mm): Symbol U1 Pin 19 [Pin_19, Passive, Line]
+    @(452.12 mm, 650.24 mm): No Connect
+[no_connect_connected]: A pin with a "no connection" flag is connected
+    ; warning
+    @(198.12 mm, 1488.44 mm): Symbol U1 Pin 27 [Pin_27, Passive, Line]
+    @(325.12 mm, 668.02 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 1778.00 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 1780.54 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(198.12 mm, 1882.14 mm): No Connect
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(322.58 mm, 556.26 mm): Label 'SIM_CLK'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(322.58 mm, 558.80 mm): Label 'SIM_RST'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(322.58 mm, 561.34 mm): Label 'SIM_IO'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(322.58 mm, 563.88 mm): Label 'SIM_DET'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(322.58 mm, 767.08 mm): Label 'TRACKBALL_INT'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(322.58 mm, 1485.90 mm): Label 'EXP_INT'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(322.58 mm, 1579.88 mm): Label 'FUEL_ALERT'
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 666.75 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 669.29 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1852.93 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1854.20 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1855.47 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1856.74 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1858.01 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1859.28 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1860.55 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1861.82 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1863.09 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1864.36 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1865.63 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1866.90 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1868.17 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1869.44 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1870.71 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1871.98 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1873.25 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1874.52 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1875.79 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1877.06 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1878.33 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1879.60 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1880.87 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1882.14 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1883.41 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1884.68 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1885.95 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1887.22 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1888.49 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1889.76 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1891.03 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1892.30 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1893.57 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1894.84 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1896.11 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1897.38 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1898.65 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1899.92 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1901.19 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1902.46 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1903.73 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1905.00 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1906.27 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(325.12 mm, 1907.54 mm): No Connect
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(449.58 mm, 657.86 mm): Label 'SX1262_DIO2'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(449.58 mm, 660.40 mm): Label 'SX1262_DIO3'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(449.58 mm, 668.02 mm): Label 'SX1262_RXEN'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(449.58 mm, 759.46 mm): Label 'LCD_RESET'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(449.58 mm, 769.62 mm): Label 'TP_RESET'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(449.58 mm, 777.24 mm): Label 'TOUCH_INT'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(449.58 mm, 1577.34 mm): Label 'IR_RX'
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 685.80 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 867.41 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 868.68 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 880.11 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 881.38 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 882.65 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 883.92 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 885.19 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 886.46 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1667.51 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1668.78 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1680.21 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1681.48 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1682.75 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1684.02 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1685.29 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(452.12 mm, 1686.56 mm): No Connect
+[footprint_link_issues]: Footprint 'U.FL_Hirose_U.FL-R-SMT-1_Vertical' not found in library 'owasso1'
+    ; warning
+    @(457.20 mm, 736.60 mm): Symbol J14 [Conn_01x02]
+
+ ** ERC messages: 107  Errors 0  Warnings 107
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

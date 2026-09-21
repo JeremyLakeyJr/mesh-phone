@@ -1,0 +1,542 @@
+{
+  "pin_changes": [
+    {
+      "ref": "U1",
+      "pin": "3",
+      "net": "MCU_EN"
+    },
+    {
+      "ref": "U1",
+      "pin": "4",
+      "net": "GPS_HOST_TX"
+    },
+    {
+      "ref": "U1",
+      "pin": "5",
+      "net": "GPS_HOST_RX"
+    },
+    {
+      "ref": "U1",
+      "pin": "6",
+      "net": "GPS_PPS"
+    },
+    {
+      "ref": "U1",
+      "pin": "7",
+      "net": "EXP_CS"
+    },
+    {
+      "ref": "U1",
+      "pin": "8",
+      "net": "EXP_IRQ"
+    },
+    {
+      "ref": "U1",
+      "pin": "9",
+      "net": "LCD_RESET"
+    },
+    {
+      "ref": "U1",
+      "pin": "10",
+      "net": "TP_RESET"
+    },
+    {
+      "ref": "U1",
+      "pin": "12",
+      "net": "TOUCH_INT"
+    },
+    {
+      "ref": "U1",
+      "pin": "16",
+      "net": null
+    },
+    {
+      "ref": "U1",
+      "pin": "20",
+      "net": "SPI_SCK"
+    },
+    {
+      "ref": "U1",
+      "pin": "21",
+      "net": "SPI_MOSI"
+    },
+    {
+      "ref": "U1",
+      "pin": "22",
+      "net": "SPI_MISO"
+    },
+    {
+      "ref": "U1",
+      "pin": "23",
+      "net": "SX1262_CS"
+    },
+    {
+      "ref": "U1",
+      "pin": "24",
+      "net": "CC1101_CS"
+    },
+    {
+      "ref": "U1",
+      "pin": "25",
+      "net": "CC1101_GDO0"
+    },
+    {
+      "ref": "U1",
+      "pin": "26",
+      "net": null
+    },
+    {
+      "ref": "U1",
+      "pin": "27",
+      "net": "MCU_BOOT"
+    },
+    {
+      "ref": "U1",
+      "pin": "28",
+      "net": null
+    },
+    {
+      "ref": "U1",
+      "pin": "29",
+      "net": null
+    },
+    {
+      "ref": "U1",
+      "pin": "30",
+      "net": null
+    },
+    {
+      "ref": "U2",
+      "pin": "1",
+      "net": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "4",
+      "net": "KEY_R1"
+    },
+    {
+      "ref": "U2",
+      "pin": "5",
+      "net": "KEY_R2"
+    },
+    {
+      "ref": "U2",
+      "pin": "6",
+      "net": "KEY_R3"
+    },
+    {
+      "ref": "U2",
+      "pin": "7",
+      "net": "KEY_R4"
+    },
+    {
+      "ref": "U2",
+      "pin": "9",
+      "net": "KEY_C1"
+    },
+    {
+      "ref": "U2",
+      "pin": "10",
+      "net": "KEY_C2"
+    },
+    {
+      "ref": "U2",
+      "pin": "11",
+      "net": "KEY_C3"
+    },
+    {
+      "ref": "U2",
+      "pin": "12",
+      "net": "KEY_C4"
+    },
+    {
+      "ref": "J13",
+      "pin": "1",
+      "net": "BAT_CHARGE"
+    },
+    {
+      "ref": "U3",
+      "pin": "5",
+      "net": "BAT_CHARGE"
+    },
+    {
+      "ref": "C2",
+      "pin": "1",
+      "net": "BAT_CHARGE"
+    },
+    {
+      "ref": "U4",
+      "pin": "5",
+      "net": "BAT_CHARGE"
+    },
+    {
+      "ref": "U6",
+      "pin": "3",
+      "net": "BAT_CHARGE"
+    },
+    {
+      "ref": "SW1",
+      "pin": "1",
+      "net": "BAT_CHARGE"
+    },
+    {
+      "ref": "U3",
+      "pin": "9",
+      "net": "GND"
+    }
+  ],
+  "new_parts": [
+    {
+      "ref": "U9",
+      "value": "MAX-M10S-00B-01",
+      "footprint": "RF_GPS:ublox_MAX",
+      "nets": {
+        "1": "GND",
+        "2": "GPS_TX",
+        "3": "GPS_RX",
+        "4": "GPS_PPS",
+        "7": "3V3",
+        "8": "3V3",
+        "10": "GND",
+        "11": "GPS_ANT",
+        "12": "GND"
+      },
+      "mpn": "MAX-M10S-00B-01"
+    },
+    {
+      "ref": "J15",
+      "value": "GPS PASSIVE ANTENNA",
+      "footprint": "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "nets": {
+        "1": "GPS_ANT",
+        "2": "GND"
+      },
+      "mpn": "U.FL-R-SMT-1(10)"
+    },
+    {
+      "ref": "C5",
+      "value": "10uF 10V X5R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "C6",
+      "value": "100nF 10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R6",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "GPS_HOST_TX",
+        "2": "GPS_RX"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R7",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "GPS_TX",
+        "2": "GPS_HOST_RX"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "J16",
+      "value": "REAR EXPANSION - POWER OFF TO SWAP",
+      "footprint": "Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "EXP_3V3",
+        "3": "EXP_SCL",
+        "4": "EXP_SDA",
+        "5": "EXP_SCK",
+        "6": "EXP_MOSI",
+        "7": "EXP_MISO",
+        "8": "EXP_CS_PORT",
+        "9": "EXP_IRQ_PORT",
+        "10": "GND"
+      },
+      "mpn": "BM10B-GHS-TBT(LF)(SN)"
+    },
+    {
+      "ref": "U10",
+      "value": "TPS2553DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "nets": {
+        "1": "3V3",
+        "2": "GND",
+        "3": "3V3",
+        "5": "EXP_ILIM",
+        "6": "EXP_3V3"
+      },
+      "mpn": "TPS2553DBVR"
+    },
+    {
+      "ref": "R14",
+      "value": "232k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "EXP_ILIM",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "C8",
+      "value": "1uF 10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "C9",
+      "value": "10uF 10V X5R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "EXP_3V3",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R15",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "I2C_SCL",
+        "2": "EXP_SCL"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R16",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "I2C_SDA",
+        "2": "EXP_SDA"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R17",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "SPI_SCK",
+        "2": "EXP_SCK"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R18",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "SPI_MOSI",
+        "2": "EXP_MOSI"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R19",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "SPI_MISO",
+        "2": "EXP_MISO"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R20",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "EXP_CS",
+        "2": "EXP_CS_PORT"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R21",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "EXP_IRQ",
+        "2": "EXP_IRQ_PORT"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "MCU_EN"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R9",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "MCU_BOOT"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R10",
+      "value": "4.7k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "I2C_SCL"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R11",
+      "value": "4.7k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "I2C_SDA"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R12",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "EXP_CS"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "R13",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "EXP_IRQ"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "C7",
+      "value": "1uF 10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "MCU_EN",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "C10",
+      "value": "100nF 10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "C11",
+      "value": "100nF 10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "C12",
+      "value": "100nF 10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "SW18",
+      "value": "BOOT",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "nets": {
+        "1": "MCU_BOOT",
+        "2": "GND"
+      },
+      "mpn": null
+    },
+    {
+      "ref": "SW19",
+      "value": "RESET",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "nets": {
+        "1": "MCU_EN",
+        "2": "GND"
+      },
+      "mpn": null
+    }
+  ],
+  "removed_obsolete_tracks": 512,
+  "affected_nets": [
+    "/3V3",
+    "/CC1101_CS",
+    "/CC1101_GDO0",
+    "/GND",
+    "/I2C_SCL",
+    "/I2C_SDA",
+    "/KEY_C1",
+    "/KEY_C2",
+    "/KEY_C3",
+    "/KEY_C4",
+    "/KEY_R1",
+    "/KEY_R2",
+    "/KEY_R3",
+    "/KEY_R4",
+    "/SPI_MISO",
+    "/SPI_MOSI",
+    "/SPI_SCK",
+    "/SX1262_CS",
+    "/VBAT",
+    "/VBUS5V"
+  ]
+}

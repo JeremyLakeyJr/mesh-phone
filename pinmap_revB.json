@@ -1,0 +1,62 @@
+{
+  "controller": "ESP32-S3-WROOM-1-N16R8",
+  "rules": [
+    "GPIO35-GPIO37 are reserved by octal PSRAM on N16R8 and are not used.",
+    "USB D-/D+ remain on GPIO19/GPIO20.",
+    "SD uses SPI mode so the display and radios can share one bus.",
+    "Camera uses a confirmed 8-bit DVP assignment; camera FPC pin order remains module-specific.",
+    "LTE audio stays between the A7670 module and microphone/speaker; it does not consume ESP32 GPIOs."
+  ],
+  "buses": {
+    "i2c": {"sda": 8, "scl": 9},
+    "spi_shared": {"sck": 40, "mosi": 41, "miso": 39},
+    "lte_uart": {"tx_from_esp": 1, "rx_to_esp": 2}
+  },
+  "camera_dvp": {
+    "xclk": 15,
+    "pclk": 5,
+    "vsync": 6,
+    "href": 7,
+    "sccb_sda": 8,
+    "sccb_scl": 9,
+    "d0": 16,
+    "d1": 17,
+    "d2": 18,
+    "d3": 12,
+    "d4": 10,
+    "d5": 11,
+    "d6": 13,
+    "d7": 14,
+    "pwdn": 4,
+    "reset": 3
+  },
+  "chip_selects": {
+    "sd": 24,
+    "lcd": 25,
+    "cc1101": 26,
+    "sx1262": 27
+  },
+  "peripherals": {
+    "lcd_dc": 28,
+    "lcd_backlight": 21,
+    "sx1262_reset": 29,
+    "sx1262_busy": 22,
+    "sx1262_dio1": 23,
+    "cc1101_gdo0": 46,
+    "cc1101_gdo2": 47,
+    "lte_pwrkey": 30,
+    "lte_ri": 31,
+    "ir_tx": 32,
+    "ir_rx": "io_expander_2"
+  },
+  "expanders": {
+    "U2": {"part": "PCF8574T", "role": "keypad_matrix"},
+    "U8": {"part": "MCP23017", "role": "trackball_and_ir_rx"}
+  },
+  "unresolved": [
+    "A7670SA module header pinout must be frozen to the exact purchased carrier board.",
+    "OV2640 FPC pin order must be frozen to the exact purchased camera module.",
+    "Display connector pin order must be frozen to the selected adapter board.",
+    "GPIO46/GPIO47 availability must be checked against the exact ESP32-S3-WROOM-1-N16R8 datasheet revision before layout lock."
+  ]
+}

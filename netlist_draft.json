@@ -1,0 +1,1825 @@
+{
+  "parts": [
+    {
+      "ref": "C1",
+      "value": "1000uF-MODEM-BULK",
+      "fp": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "ref": "C2",
+      "value": "100uF-VBAT-BULK",
+      "fp": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "ref": "C3",
+      "value": "10uF-3V3-BULK",
+      "fp": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "ref": "C4",
+      "value": "10uF-USB-IN",
+      "fp": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "ref": "D1",
+      "value": "TSAL6200-IR-LED",
+      "fp": "LED_SMD:LED_0805_2012Metric"
+    },
+    {
+      "ref": "D2",
+      "value": "1N4148W-KEY-1",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D3",
+      "value": "1N4148W-KEY-2",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D4",
+      "value": "1N4148W-KEY-3",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D5",
+      "value": "1N4148W-KEY-4",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D6",
+      "value": "1N4148W-KEY-5",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D7",
+      "value": "1N4148W-KEY-6",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D8",
+      "value": "1N4148W-KEY-7",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D9",
+      "value": "1N4148W-KEY-8",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D10",
+      "value": "1N4148W-KEY-9",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D11",
+      "value": "1N4148W-KEY-10",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D12",
+      "value": "1N4148W-KEY-11",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D13",
+      "value": "1N4148W-KEY-12",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D14",
+      "value": "1N4148W-KEY-13",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D15",
+      "value": "1N4148W-KEY-14",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D16",
+      "value": "1N4148W-KEY-15",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "D17",
+      "value": "1N4148W-KEY-16",
+      "fp": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "ref": "J1",
+      "value": "A7670E-LASE-23P-12+11",
+      "fp": "owasso1:A7670E_LASE_23P_12+11"
+    },
+    {
+      "ref": "J2",
+      "value": "CC1101-module",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J3",
+      "value": "E22-900M22S-915MHz-SX1262",
+      "fp": "owasso1:E22-400M22S"
+    },
+    {
+      "ref": "J4",
+      "value": "PN532-NFC-module",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J5",
+      "value": "RDM6300-RFID-module",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J6",
+      "value": "Pimoroni-PIM447-Trackball",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J7",
+      "value": "Waveshare-3.5in-18pin-FPC",
+      "fp": "Connector_FFC-FPC:Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal"
+    },
+    {
+      "ref": "J9",
+      "value": "MicroSD-SPI",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J10",
+      "value": "Nano-SIM",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J11",
+      "value": "Keypad-matrix-4x4",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J12",
+      "value": "Mic-and-speaker",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J13",
+      "value": "LiPo-BATTERY-MICRO-JST-1.25",
+      "fp": "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
+    },
+    {
+      "ref": "L1",
+      "value": "1uH-BOOST-INDUCTOR",
+      "fp": "Inductor_SMD:L_1210_3225Metric"
+    },
+    {
+      "ref": "Q1",
+      "value": "FS8205A-PROTECTION-FET",
+      "fp": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    {
+      "ref": "R1",
+      "value": "1.2k-TP4056-PROG",
+      "fp": "Resistor_SMD:R_0805_2012Metric"
+    },
+    {
+      "ref": "R2",
+      "value": "180k-BOOST-FB",
+      "fp": "Resistor_SMD:R_0805_2012Metric"
+    },
+    {
+      "ref": "R3",
+      "value": "27k-BOOST-FB",
+      "fp": "Resistor_SMD:R_0805_2012Metric"
+    },
+    {
+      "ref": "R4",
+      "value": "5.1k-USB-C-CC1-Rd",
+      "fp": "Resistor_SMD:R_0805_2012Metric"
+    },
+    {
+      "ref": "R5",
+      "value": "5.1k-USB-C-CC2-Rd",
+      "fp": "Resistor_SMD:R_0805_2012Metric"
+    },
+    {
+      "ref": "SW1",
+      "value": "Power-switch",
+      "fp": "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN"
+    },
+    {
+      "ref": "SW2",
+      "value": "KEY-1",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW3",
+      "value": "KEY-2",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW4",
+      "value": "KEY-3",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW5",
+      "value": "KEY-4",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW6",
+      "value": "KEY-5",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW7",
+      "value": "KEY-6",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW8",
+      "value": "KEY-7",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW9",
+      "value": "KEY-8",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW10",
+      "value": "KEY-9",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW11",
+      "value": "KEY-10",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW12",
+      "value": "KEY-11",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW13",
+      "value": "KEY-12",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW14",
+      "value": "KEY-13",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW15",
+      "value": "KEY-14",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW16",
+      "value": "KEY-15",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "SW17",
+      "value": "KEY-16",
+      "fp": "Button_Switch_SMD:SW_SPST_B3S-1000"
+    },
+    {
+      "ref": "U1",
+      "value": "ESP32-S3-WROOM-1-N16R8",
+      "fp": "RF_Module:ESP32-S3-WROOM-1"
+    },
+    {
+      "ref": "U2",
+      "value": "PCF8574T-keypad-expander",
+      "fp": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+    },
+    {
+      "ref": "U3",
+      "value": "TP4056-charger",
+      "fp": "Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm"
+    },
+    {
+      "ref": "U4",
+      "value": "DW01A-protection",
+      "fp": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    {
+      "ref": "U5",
+      "value": "3V3-LDO",
+      "fp": "Package_TO_SOT_SMD:SOT-23-5"
+    },
+    {
+      "ref": "U6",
+      "value": "MAX17048-fuel-gauge",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+    },
+    {
+      "ref": "U7",
+      "value": "TSOP38238-IR-receiver",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+    },
+    {
+      "ref": "U8",
+      "value": "TPS61023DRLR-5V-BOOST",
+      "fp": "Package_TO_SOT_SMD:SOT-563"
+    },
+    {
+      "ref": "USB1",
+      "value": "USB-C-charge-and-data",
+      "fp": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+    }
+  ],
+  "nets": [
+    {
+      "name": "3V3",
+      "nodes": [
+        [
+          "C3",
+          "1"
+        ],
+        [
+          "J1",
+          "14"
+        ],
+        [
+          "J10",
+          "1"
+        ],
+        [
+          "J2",
+          "1"
+        ],
+        [
+          "J2",
+          "8"
+        ],
+        [
+          "J3",
+          "9"
+        ],
+        [
+          "J4",
+          "1"
+        ],
+        [
+          "J6",
+          "1"
+        ],
+        [
+          "J7",
+          "1"
+        ],
+        [
+          "J9",
+          "4"
+        ],
+        [
+          "U1",
+          "2"
+        ],
+        [
+          "U2",
+          "16"
+        ],
+        [
+          "U5",
+          "5"
+        ],
+        [
+          "U6",
+          "1"
+        ],
+        [
+          "U7",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "BOOST_FB",
+      "nodes": [
+        [
+          "R2",
+          "2"
+        ],
+        [
+          "R3",
+          "1"
+        ],
+        [
+          "U8",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "BOOST_SW",
+      "nodes": [
+        [
+          "L1",
+          "2"
+        ],
+        [
+          "U8",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "CC1101_CS",
+      "nodes": [
+        [
+          "J2",
+          "3"
+        ],
+        [
+          "U1",
+          "26"
+        ]
+      ]
+    },
+    {
+      "name": "CC1101_GDO0",
+      "nodes": [
+        [
+          "J2",
+          "7"
+        ],
+        [
+          "U1",
+          "27"
+        ]
+      ]
+    },
+    {
+      "name": "DW01A_OC",
+      "nodes": [
+        [
+          "Q1",
+          "4"
+        ],
+        [
+          "U4",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "DW01A_OD",
+      "nodes": [
+        [
+          "Q1",
+          "1"
+        ],
+        [
+          "U4",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "EXP_INT",
+      "nodes": [
+        [
+          "U2",
+          "13"
+        ]
+      ]
+    },
+    {
+      "name": "FUEL_ALERT",
+      "nodes": [
+        [
+          "U6",
+          "4"
+        ]
+      ]
+    },
+    {
+      "name": "GND",
+      "nodes": [
+        [
+          "C1",
+          "2"
+        ],
+        [
+          "C2",
+          "2"
+        ],
+        [
+          "C3",
+          "2"
+        ],
+        [
+          "C4",
+          "2"
+        ],
+        [
+          "D1",
+          "2"
+        ],
+        [
+          "J1",
+          "11"
+        ],
+        [
+          "J1",
+          "12"
+        ],
+        [
+          "J10",
+          "2"
+        ],
+        [
+          "J13",
+          "2"
+        ],
+        [
+          "J2",
+          "2"
+        ],
+        [
+          "J3",
+          "1"
+        ],
+        [
+          "J3",
+          "10"
+        ],
+        [
+          "J3",
+          "11"
+        ],
+        [
+          "J3",
+          "12"
+        ],
+        [
+          "J3",
+          "2"
+        ],
+        [
+          "J3",
+          "20"
+        ],
+        [
+          "J3",
+          "22"
+        ],
+        [
+          "J3",
+          "3"
+        ],
+        [
+          "J3",
+          "4"
+        ],
+        [
+          "J3",
+          "5"
+        ],
+        [
+          "J4",
+          "2"
+        ],
+        [
+          "J5",
+          "2"
+        ],
+        [
+          "J6",
+          "2"
+        ],
+        [
+          "J7",
+          "3"
+        ],
+        [
+          "J9",
+          "10"
+        ],
+        [
+          "J9",
+          "6"
+        ],
+        [
+          "Q1",
+          "2"
+        ],
+        [
+          "Q1",
+          "3"
+        ],
+        [
+          "Q1",
+          "5"
+        ],
+        [
+          "Q1",
+          "6"
+        ],
+        [
+          "R1",
+          "2"
+        ],
+        [
+          "R3",
+          "2"
+        ],
+        [
+          "R4",
+          "2"
+        ],
+        [
+          "R5",
+          "2"
+        ],
+        [
+          "U1",
+          "1"
+        ],
+        [
+          "U1",
+          "40"
+        ],
+        [
+          "U1",
+          "41"
+        ],
+        [
+          "U2",
+          "10"
+        ],
+        [
+          "U2",
+          "11"
+        ],
+        [
+          "U2",
+          "12"
+        ],
+        [
+          "U2",
+          "8"
+        ],
+        [
+          "U3",
+          "3"
+        ],
+        [
+          "U4",
+          "2"
+        ],
+        [
+          "U4",
+          "4"
+        ],
+        [
+          "U4",
+          "6"
+        ],
+        [
+          "U5",
+          "2"
+        ],
+        [
+          "U6",
+          "2"
+        ],
+        [
+          "U7",
+          "2"
+        ],
+        [
+          "U8",
+          "4"
+        ]
+      ]
+    },
+    {
+      "name": "I2C_SCL",
+      "nodes": [
+        [
+          "J4",
+          "4"
+        ],
+        [
+          "J6",
+          "4"
+        ],
+        [
+          "J7",
+          "13"
+        ],
+        [
+          "U1",
+          "38"
+        ],
+        [
+          "U2",
+          "14"
+        ]
+      ]
+    },
+    {
+      "name": "I2C_SDA",
+      "nodes": [
+        [
+          "J4",
+          "3"
+        ],
+        [
+          "J6",
+          "3"
+        ],
+        [
+          "J7",
+          "14"
+        ],
+        [
+          "U1",
+          "39"
+        ],
+        [
+          "U2",
+          "15"
+        ]
+      ]
+    },
+    {
+      "name": "IR_RX",
+      "nodes": [
+        [
+          "U7",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "IR_TX",
+      "nodes": [
+        [
+          "D1",
+          "1"
+        ],
+        [
+          "U1",
+          "35"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_C1",
+      "nodes": [
+        [
+          "D10",
+          "2"
+        ],
+        [
+          "D14",
+          "2"
+        ],
+        [
+          "D2",
+          "2"
+        ],
+        [
+          "D6",
+          "2"
+        ],
+        [
+          "J11",
+          "5"
+        ],
+        [
+          "U2",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_C2",
+      "nodes": [
+        [
+          "D11",
+          "2"
+        ],
+        [
+          "D15",
+          "2"
+        ],
+        [
+          "D3",
+          "2"
+        ],
+        [
+          "D7",
+          "2"
+        ],
+        [
+          "J11",
+          "6"
+        ],
+        [
+          "U2",
+          "6"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_C3",
+      "nodes": [
+        [
+          "D12",
+          "2"
+        ],
+        [
+          "D16",
+          "2"
+        ],
+        [
+          "D4",
+          "2"
+        ],
+        [
+          "D8",
+          "2"
+        ],
+        [
+          "J11",
+          "7"
+        ],
+        [
+          "U2",
+          "7"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_C4",
+      "nodes": [
+        [
+          "D13",
+          "2"
+        ],
+        [
+          "D17",
+          "2"
+        ],
+        [
+          "D5",
+          "2"
+        ],
+        [
+          "D9",
+          "2"
+        ],
+        [
+          "J11",
+          "8"
+        ],
+        [
+          "U2",
+          "9"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D1",
+      "nodes": [
+        [
+          "D2",
+          "1"
+        ],
+        [
+          "SW2",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D2",
+      "nodes": [
+        [
+          "D3",
+          "1"
+        ],
+        [
+          "SW3",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D3",
+      "nodes": [
+        [
+          "D4",
+          "1"
+        ],
+        [
+          "SW4",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D4",
+      "nodes": [
+        [
+          "D5",
+          "1"
+        ],
+        [
+          "SW5",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D5",
+      "nodes": [
+        [
+          "D6",
+          "1"
+        ],
+        [
+          "SW6",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D6",
+      "nodes": [
+        [
+          "D7",
+          "1"
+        ],
+        [
+          "SW7",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D7",
+      "nodes": [
+        [
+          "D8",
+          "1"
+        ],
+        [
+          "SW8",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D8",
+      "nodes": [
+        [
+          "D9",
+          "1"
+        ],
+        [
+          "SW9",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D9",
+      "nodes": [
+        [
+          "D10",
+          "1"
+        ],
+        [
+          "SW10",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D10",
+      "nodes": [
+        [
+          "D11",
+          "1"
+        ],
+        [
+          "SW11",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D11",
+      "nodes": [
+        [
+          "D12",
+          "1"
+        ],
+        [
+          "SW12",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D12",
+      "nodes": [
+        [
+          "D13",
+          "1"
+        ],
+        [
+          "SW13",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D13",
+      "nodes": [
+        [
+          "D14",
+          "1"
+        ],
+        [
+          "SW14",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D14",
+      "nodes": [
+        [
+          "D15",
+          "1"
+        ],
+        [
+          "SW15",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D15",
+      "nodes": [
+        [
+          "D16",
+          "1"
+        ],
+        [
+          "SW16",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_D16",
+      "nodes": [
+        [
+          "D17",
+          "1"
+        ],
+        [
+          "SW17",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_R1",
+      "nodes": [
+        [
+          "J11",
+          "1"
+        ],
+        [
+          "SW2",
+          "1"
+        ],
+        [
+          "SW3",
+          "1"
+        ],
+        [
+          "SW4",
+          "1"
+        ],
+        [
+          "SW5",
+          "1"
+        ],
+        [
+          "U2",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_R2",
+      "nodes": [
+        [
+          "J11",
+          "2"
+        ],
+        [
+          "SW6",
+          "1"
+        ],
+        [
+          "SW7",
+          "1"
+        ],
+        [
+          "SW8",
+          "1"
+        ],
+        [
+          "SW9",
+          "1"
+        ],
+        [
+          "U2",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_R3",
+      "nodes": [
+        [
+          "J11",
+          "3"
+        ],
+        [
+          "SW10",
+          "1"
+        ],
+        [
+          "SW11",
+          "1"
+        ],
+        [
+          "SW12",
+          "1"
+        ],
+        [
+          "SW13",
+          "1"
+        ],
+        [
+          "U2",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "KEY_R4",
+      "nodes": [
+        [
+          "J11",
+          "4"
+        ],
+        [
+          "SW14",
+          "1"
+        ],
+        [
+          "SW15",
+          "1"
+        ],
+        [
+          "SW16",
+          "1"
+        ],
+        [
+          "SW17",
+          "1"
+        ],
+        [
+          "U2",
+          "4"
+        ]
+      ]
+    },
+    {
+      "name": "LCD_BL",
+      "nodes": [
+        [
+          "J7",
+          "2"
+        ],
+        [
+          "U1",
+          "33"
+        ]
+      ]
+    },
+    {
+      "name": "LCD_CS",
+      "nodes": [
+        [
+          "J7",
+          "9"
+        ],
+        [
+          "U1",
+          "31"
+        ]
+      ]
+    },
+    {
+      "name": "LCD_DC",
+      "nodes": [
+        [
+          "J7",
+          "7"
+        ],
+        [
+          "U1",
+          "32"
+        ]
+      ]
+    },
+    {
+      "name": "LCD_RESET",
+      "nodes": [
+        [
+          "J7",
+          "8"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_CTS",
+      "nodes": [
+        [
+          "J1",
+          "15"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_DTR",
+      "nodes": [
+        [
+          "J1",
+          "17"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_NET",
+      "nodes": [
+        [
+          "J1",
+          "21"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_PWRKEY",
+      "nodes": [
+        [
+          "J1",
+          "9"
+        ],
+        [
+          "U1",
+          "18"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_RESET",
+      "nodes": [
+        [
+          "J1",
+          "10"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_RI",
+      "nodes": [
+        [
+          "J1",
+          "16"
+        ],
+        [
+          "U1",
+          "11"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_RTS",
+      "nodes": [
+        [
+          "J1",
+          "8"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_RX",
+      "nodes": [
+        [
+          "J1",
+          "7"
+        ],
+        [
+          "U1",
+          "36"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_RX2",
+      "nodes": [
+        [
+          "J1",
+          "18"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_STA",
+      "nodes": [
+        [
+          "J1",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_TX",
+      "nodes": [
+        [
+          "J1",
+          "6"
+        ],
+        [
+          "U1",
+          "37"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_TX2",
+      "nodes": [
+        [
+          "J1",
+          "19"
+        ]
+      ]
+    },
+    {
+      "name": "LTE_VEXT",
+      "nodes": [
+        [
+          "J1",
+          "13"
+        ]
+      ]
+    },
+    {
+      "name": "MIC+",
+      "nodes": [
+        [
+          "J1",
+          "2"
+        ],
+        [
+          "J12",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "MIC-",
+      "nodes": [
+        [
+          "J1",
+          "1"
+        ],
+        [
+          "J12",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "MODEM_5V",
+      "nodes": [
+        [
+          "C1",
+          "1"
+        ],
+        [
+          "J1",
+          "22"
+        ],
+        [
+          "J1",
+          "23"
+        ],
+        [
+          "J5",
+          "1"
+        ],
+        [
+          "R2",
+          "1"
+        ],
+        [
+          "U8",
+          "6"
+        ]
+      ]
+    },
+    {
+      "name": "RFID_RX",
+      "nodes": [
+        [
+          "J5",
+          "4"
+        ]
+      ]
+    },
+    {
+      "name": "RFID_TX",
+      "nodes": [
+        [
+          "J5",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "SD_CS",
+      "nodes": [
+        [
+          "J7",
+          "10"
+        ],
+        [
+          "J9",
+          "2"
+        ],
+        [
+          "U1",
+          "34"
+        ]
+      ]
+    },
+    {
+      "name": "SD_DET",
+      "nodes": [
+        [
+          "J9",
+          "9"
+        ]
+      ]
+    },
+    {
+      "name": "SIM_CLK",
+      "nodes": [
+        [
+          "J10",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "SIM_DET",
+      "nodes": [
+        [
+          "J10",
+          "6"
+        ]
+      ]
+    },
+    {
+      "name": "SIM_IO",
+      "nodes": [
+        [
+          "J10",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "SIM_RST",
+      "nodes": [
+        [
+          "J10",
+          "4"
+        ]
+      ]
+    },
+    {
+      "name": "SPI_MISO",
+      "nodes": [
+        [
+          "J2",
+          "5"
+        ],
+        [
+          "J3",
+          "16"
+        ],
+        [
+          "J7",
+          "6"
+        ],
+        [
+          "J9",
+          "7"
+        ],
+        [
+          "U1",
+          "30"
+        ]
+      ]
+    },
+    {
+      "name": "SPI_MOSI",
+      "nodes": [
+        [
+          "J2",
+          "4"
+        ],
+        [
+          "J3",
+          "17"
+        ],
+        [
+          "J7",
+          "5"
+        ],
+        [
+          "J9",
+          "3"
+        ],
+        [
+          "U1",
+          "29"
+        ]
+      ]
+    },
+    {
+      "name": "SPI_SCK",
+      "nodes": [
+        [
+          "J2",
+          "6"
+        ],
+        [
+          "J3",
+          "18"
+        ],
+        [
+          "J7",
+          "4"
+        ],
+        [
+          "J9",
+          "5"
+        ],
+        [
+          "U1",
+          "28"
+        ]
+      ]
+    },
+    {
+      "name": "SPK+",
+      "nodes": [
+        [
+          "J1",
+          "4"
+        ],
+        [
+          "J12",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "SPK-",
+      "nodes": [
+        [
+          "J1",
+          "3"
+        ],
+        [
+          "J12",
+          "4"
+        ]
+      ]
+    },
+    {
+      "name": "SX1262_BUSY",
+      "nodes": [
+        [
+          "J3",
+          "14"
+        ],
+        [
+          "U1",
+          "15"
+        ]
+      ]
+    },
+    {
+      "name": "SX1262_CS",
+      "nodes": [
+        [
+          "J3",
+          "19"
+        ],
+        [
+          "U1",
+          "16"
+        ]
+      ]
+    },
+    {
+      "name": "SX1262_DIO1",
+      "nodes": [
+        [
+          "J3",
+          "13"
+        ],
+        [
+          "U1",
+          "17"
+        ]
+      ]
+    },
+    {
+      "name": "SX1262_RESET",
+      "nodes": [
+        [
+          "J3",
+          "15"
+        ],
+        [
+          "U1",
+          "19"
+        ]
+      ]
+    },
+    {
+      "name": "TOUCH_INT",
+      "nodes": [
+        [
+          "J7",
+          "15"
+        ]
+      ]
+    },
+    {
+      "name": "TP_RESET",
+      "nodes": [
+        [
+          "J7",
+          "12"
+        ]
+      ]
+    },
+    {
+      "name": "TRACKBALL_INT",
+      "nodes": [
+        [
+          "J6",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "U3_PROG",
+      "nodes": [
+        [
+          "R1",
+          "1"
+        ],
+        [
+          "U3",
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "USB_CC1",
+      "nodes": [
+        [
+          "R4",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "USB_CC2",
+      "nodes": [
+        [
+          "R5",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "USB_D+",
+      "nodes": [
+        [
+          "U1",
+          "14"
+        ]
+      ]
+    },
+    {
+      "name": "USB_D-",
+      "nodes": [
+        [
+          "U1",
+          "13"
+        ]
+      ]
+    },
+    {
+      "name": "VBAT",
+      "nodes": [
+        [
+          "C2",
+          "1"
+        ],
+        [
+          "J1",
+          "20"
+        ],
+        [
+          "J13",
+          "1"
+        ],
+        [
+          "L1",
+          "1"
+        ],
+        [
+          "SW1",
+          "2"
+        ],
+        [
+          "U3",
+          "5"
+        ],
+        [
+          "U4",
+          "5"
+        ],
+        [
+          "U5",
+          "1"
+        ],
+        [
+          "U6",
+          "3"
+        ],
+        [
+          "U8",
+          "2"
+        ],
+        [
+          "U8",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "VBUS5V",
+      "nodes": [
+        [
+          "C4",
+          "1"
+        ],
+        [
+          "SW1",
+          "1"
+        ],
+        [
+          "U3",
+          "4"
+        ]
+      ]
+    }
+  ]
+}

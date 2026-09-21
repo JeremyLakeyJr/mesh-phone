@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib
+    (name "owasso1-review")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/owasso1-review.kicad_sym")
+    (options "")
+    (descr "Explicit legacy pad contracts; electrical review still required"))
+  (lib
+    (name "Owasso")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/Owasso.kicad_sym")
+    (options "")
+    (descr "Reviewed TPS2553 pin contract")))

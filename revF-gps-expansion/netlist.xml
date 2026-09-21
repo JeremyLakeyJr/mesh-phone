@@ -1,0 +1,3781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/lakey/Documents/owasso1-pcb/revF-gps-expansion/owasso1.kicad_sch</source>
+    <date>2026-09-20T20:58:52</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>owasso1.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/">
+      <title_block>
+        <title>Owasso1 GPS, rear expansion and MCU support</title>
+        <company/>
+        <rev>F - ENGINEERING ONLY</rev>
+        <date>2026-09-20</date>
+        <source>gps-expansion.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1000uF-MODEM-BULK</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b393dfec-cc7a-414f-b3ec-46c1f24e3d8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100uF-VBAT-BULK</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7db3100b-0bac-4205-8338-28eebdef877a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>10uF-3V3-BULK</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9fa4aa2-1cac-4e8f-9572-6852367eced9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>10uF-USB-IN</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b8b4ff94-aea9-44bc-b822-c3cbd21892b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>TSAL6200-IR-LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>411534ed-6ee8-4aba-996d-2b25f6a716d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>1N4148W-KEY-1</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e97272dd-fd9a-4f9f-aa8d-59153a250c4a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>1N4148W-KEY-2</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f73b74a1-9fee-4de6-9ba8-39e3d5690dd6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>1N4148W-KEY-3</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5ac4cc9-858f-4c1f-a9a7-22580c2f38ce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>1N4148W-KEY-4</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a0a72db-7e83-409b-8bf1-2a1502f43c95</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D6">
+      <value>1N4148W-KEY-5</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93ab8bd5-30d8-4948-8869-481c60772085</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D7">
+      <value>1N4148W-KEY-6</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0678974c-4f6e-4057-86db-18f032a08eb8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D8">
+      <value>1N4148W-KEY-7</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1204ed6f-c07d-40c5-9ee9-c0fb7d295c3b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D9">
+      <value>1N4148W-KEY-8</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd96ee14-0867-4591-ab92-57306b3a3bbb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D10">
+      <value>1N4148W-KEY-9</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ccec20fa-02ed-4bb9-b2a3-e3905fc87746</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D11">
+      <value>1N4148W-KEY-10</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f89ab76d-5b35-4f21-ae51-f69a3f597113</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D12">
+      <value>1N4148W-KEY-11</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8833665a-354b-41d6-9cd5-c8eda9554fdc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D13">
+      <value>1N4148W-KEY-12</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a04fcb65-35ce-40a6-80a7-060e3db166fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D14">
+      <value>1N4148W-KEY-13</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab1b0993-e884-4e3c-ba04-b9fdcc24a9ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D15">
+      <value>1N4148W-KEY-14</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2485242b-2b6e-41f1-a49e-203273441abd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D16">
+      <value>1N4148W-KEY-15</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a81c2a2d-6d01-4ff9-938e-46a7f1849b1c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D17">
+      <value>1N4148W-KEY-16</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c48cd31a-236c-41b1-b639-696e6e3ca9b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>A7670E-LASE-23P-12+11</value>
+      <footprint>owasso1:A7670E_LASE_23P_12+11</footprint>
+      <fields>
+        <field name="Footprint">owasso1:A7670E_LASE_23P_12+11</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x23" description="Generic connector, single row, 01x23, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7bff5819-8f94-4ca5-9e59-85c1d06ef57e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>CC1101-module</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c64a21c-4daf-4e54-8e0f-5af973015017</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>Ra-01SH-SX1262-915MHz</value>
+      <footprint>owasso1:Ra-01SH</footprint>
+      <fields>
+        <field name="Footprint">owasso1:Ra-01SH</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x16" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bce585eb-3c93-4792-8cbb-cb0e4b6727f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>PN532-NFC-module</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe0d83c0-40b1-4fd3-8cdd-8e5fb2fb3365</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>RDM6300-RFID-module</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df9645e6-6539-4506-afa8-fc4c881398c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>Pimoroni-PIM447-Trackball</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5792a444-ac8f-48db-94ff-273675623b0e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>Waveshare-3.5in-18pin-FPC</value>
+      <footprint>Connector_FFC-FPC:Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x18" description="Generic connector, single row, 01x18, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4336a289-57e0-4c32-b62c-8417e134e7d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J9">
+      <value>MicroSD-SPI</value>
+      <footprint>Connector_Card:microSD_HC_Molex_104031-0811</footprint>
+      <fields>
+        <field name="Footprint">Connector_Card:microSD_HC_Molex_104031-0811</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x10" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ddb3882-497c-455a-a0bd-ac6d6a718e9e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J10">
+      <value>Nano-SIM</value>
+      <footprint>Connector_JAE:JAE_SIM_Card_SF72S006</footprint>
+      <fields>
+        <field name="Footprint">Connector_JAE:JAE_SIM_Card_SF72S006</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="owasso1-review" part="J10_contract" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67165aa9-378e-433c-986a-cc56972a8897</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J11">
+      <value>Keypad-matrix-4x4</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>299ce742-2fa5-4bfc-b367-558fdd0e4c51</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J12">
+      <value>Mic-and-speaker</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ffecec7-351f-42b5-ba21-8b9f0f5e0aa0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J13">
+      <value>LiPo-BATTERY-MICRO-JST-1.25</value>
+      <footprint>Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83f81cf6-f5d4-4c12-9857-7d3a0c85f30e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J14">
+      <value>LoRa-UFL-Antenna</value>
+      <footprint>Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2a1a91c-3fb7-4d66-8b36-3f9aa7a0af14</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>1uH-BOOST-INDUCTOR</value>
+      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>376ed550-b644-49e6-9b73-cbcbb712c86e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>FS8205A-PROTECTION-FET</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c34f834-ef55-45ba-9543-f9df486dc303</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>1.2k-TP4056-PROG</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8f221bf-e8cf-42d5-8af5-f6f8042bd5cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>180k-BOOST-FB</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>655130c2-d749-46a5-bb07-ae391d372f22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>27k-BOOST-FB</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f05a574-b978-4684-b23c-3fb624b26aef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>5.1k-USB-C-CC1-Rd</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba3b7a14-5af8-42f3-ba31-33adb200c13c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>5.1k-USB-C-CC2-Rd</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33f6c5aa-e9aa-405c-a29c-fc5e674a1045</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>Power-switch</value>
+      <footprint>Button_Switch_THT:SW_Slide_SPDT_Angled_CK_OS102011MA1Q</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_Slide_SPDT_Angled_CK_OS102011MA1Q</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b21cca18-59c6-4fde-aff2-3e2f017a892e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>KEY-1</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edeb19ce-1e63-448d-b511-da6f33ed871a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW3">
+      <value>KEY-2</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d703dd5-eb57-4149-9eec-c63f5d646684</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW4">
+      <value>KEY-3</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9129ec0-bdb4-4abb-9a6b-990ddecf713d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW5">
+      <value>KEY-4</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a7e94cd-29cd-4699-967f-91d4f65d031b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW6">
+      <value>KEY-5</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6026fed2-d6a6-4154-957e-9f53525378af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW7">
+      <value>KEY-6</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37c533a3-1f07-4df3-a813-d55fa27d7872</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW8">
+      <value>KEY-7</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1b0631c-9e02-4190-bc90-6163918f7d3d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW9">
+      <value>KEY-8</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b92afc5-20bb-4f03-8498-359ca2e939c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW10">
+      <value>KEY-9</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55090f32-1f5c-408c-b698-feb087cd11a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW11">
+      <value>KEY-10</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9d32cd5-67e7-4c80-82dd-854375528a86</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW12">
+      <value>KEY-11</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1490a13e-f514-4b56-bced-8ca3fb9c4597</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW13">
+      <value>KEY-12</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad7d408b-4cf8-4864-87ea-0090fdc83126</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW14">
+      <value>KEY-13</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a0a1489-acc0-4d9d-a307-f699f52fc21f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW15">
+      <value>KEY-14</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b3e37a9-8200-4372-87a3-96178b8fd55c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW16">
+      <value>KEY-15</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3f56d81-79e3-4e60-b4f5-3f8a876b4aff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW17">
+      <value>KEY-16</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03e13c8f-0f6c-4af3-90cc-7e048f50aa32</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>ESP32-S3-WROOM-1-N16R8</value>
+      <footprint>RF_Module:ESP32-S3-WROOM-1</footprint>
+      <fields>
+        <field name="Footprint">RF_Module:ESP32-S3-WROOM-1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x41" description="&quot;Generic connector, single row, 01x41, script generated&quot;"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d706155-bf6a-440e-9e2d-0cee7577e4dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>PCF8574T-keypad-expander</value>
+      <footprint>Package_SO:SOIC-16_4.55x10.3mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Package_SO:SOIC-16_4.55x10.3mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x16" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09d937a8-a123-4b2c-b344-ad762e67b5af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TP4056-charger</value>
+      <footprint>Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm</footprint>
+      <fields>
+        <field name="Footprint">Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="owasso1-review" part="U3_contract" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90527931-cd3d-43c5-89f1-0a9ee8d358e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>DW01A-protection</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47ac89aa-7ff6-4561-b214-0c24fc17d146</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>3V3-LDO</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2c580cc-87a0-450a-bda1-d402a9cb5c3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>MAX17048-fuel-gauge</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87fe547f-b48d-4ca7-bdc4-6a104a7766d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>TSOP38238-IR-receiver</value>
+      <footprint>OptoDevice:Vishay_MINIMOLD-3Pin</footprint>
+      <fields>
+        <field name="Footprint">OptoDevice:Vishay_MINIMOLD-3Pin</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce0a4e86-7c63-4154-b959-a7b21cc48211</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>TPS61023DRLR-5V-BOOST</value>
+      <footprint>Package_TO_SOT_SMD:SOT-563</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-563</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd2305ea-8692-414a-91c5-785f6805dc55</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="USB1">
+      <value>USB-C-charge-and-data</value>
+      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="owasso1-review" part="USB1_contract" description="Generic connector, single row, 01x22, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="owasso1"/>
+      <property name="Sheetfile" value="owasso1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>550c9430-9ff5-41a7-9878-9bc39ee523a8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="19"/>
+            <pin num="22"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>10uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>6dae06d0-1ca0-431a-8ff4-f28efd49f5c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>e1f6635f-598f-42c8-b2b9-b0e7b629f7a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>674abdfc-1d1d-4d46-9049-72d02bf7d5f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>3ce85fb5-4938-4ad2-b619-dfb77a2913b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>10uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>c85d4771-9cbd-47a8-98a8-b1362f8fc9cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>7f1e2b45-0d79-49da-ad49-c66f0f7c4e9f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>f7a68dfe-95b0-4a2e-845a-6ce7d3f05bf4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100nF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>5ab941be-e3d9-40d7-bfac-f530cb5d45c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J15">
+      <value>GPS PASSIVE ANTENNA</value>
+      <footprint>Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical</footprint>
+      <fields>
+        <field name="MPN">U.FL-R-SMT-1(10)</field>
+        <field name="Footprint">Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="U.FL-R-SMT-1(10)"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
+      <property name="ki_fp_filters" value="*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>295a5f85-49c0-4890-acc9-1edd412fe16a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J16">
+      <value>REAR EXPANSION - POWER OFF TO SWAP</value>
+      <footprint>Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">BM10B-GHS-TBT(LF)(SN)</field>
+        <field name="Footprint">Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x10" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="BM10B-GHS-TBT(LF)(SN)"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>daef9950-357f-42bc-809d-b9d7a62ad514</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>78d1b5ca-0add-45cc-b74d-04875cd286c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>00a18c2c-6ac3-4c60-ac27-7c9635a4b126</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>3023be5f-ea4b-4cf0-8984-b5bc39943f3c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>189faca0-c972-4061-81e7-72333923de3b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>05ac2597-048d-4b2e-93af-e1824f27f5b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>53ea493a-d853-447e-ad72-5b11f2244f9e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>c744d0cf-fbdf-4c28-8c44-49356a19cf0a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>f843ff13-ccbf-42c0-833c-47eda9189908</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>232k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>294195c5-54c2-4ea3-bec5-f80044c2ef97</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>c809dece-fb7a-40bb-9f83-27cd15decf1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>95a8fd8a-2769-4288-942a-dbd5b3f5da1a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>942ed624-a497-4825-ac49-0ba3fd32ef27</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>3a1c7018-21f4-49ad-99e8-510f6c5ea5e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>37b9b4f5-bd57-41d8-99c8-323a1b4ca9e7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>80090dff-ea97-4d1e-adfd-5996fc71e003</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>0a74e928-695a-4797-ae8c-2ebd6c79e2c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW18">
+      <value>BOOT</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>a3b1813f-2d87-4fda-802a-a0ff0fe20117</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW19">
+      <value>RESET</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>3ef2ffea-9559-4269-a8b7-cb39473e8ec8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>MAX-M10S-00B-01</value>
+      <footprint>RF_GPS:ublox_MAX</footprint>
+      <fields>
+        <field name="MPN">MAX-M10S-00B-01</field>
+        <field name="Footprint">RF_GPS:ublox_MAX</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RF_GPS" part="MAX-M10S" description="GNSS Module MAX M10, VCC 1.65V to 3.6V"/>
+      <property name="MPN" value="MAX-M10S-00B-01"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <property name="ki_keywords" value="ublox GPS GNSS module"/>
+      <property name="ki_fp_filters" value="ublox?MAX*"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>d7579979-f04c-42fb-ad64-7b797a9c2d09</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="5"/>
+            <pin num="18"/>
+            <pin num="9"/>
+            <pin num="15"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="11"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>TPS2553DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <fields>
+        <field name="MPN">TPS2553DBVR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Owasso" part="TPS2553DBVR" description=""/>
+      <property name="MPN" value="TPS2553DBVR"/>
+      <property name="Sheetname" value="GPS and rear expansion"/>
+      <property name="Sheetfile" value="gps-expansion.kicad_sch"/>
+      <sheetpath names="/GPS and rear expansion/" tstamps="/508ba32f-e32e-4a46-86e3-9e2b431b544e/"/>
+      <tstamps>fb743099-230e-47e6-86e4-eea7c4500694</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</description>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+        <fp>*LEMO*</fp>
+        <fp>*UMRF*</fp>
+        <fp>*MCX*</fp>
+        <fp>*U.FL*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x08">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x10">
+      <description>Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x10</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x16">
+      <description>Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x16</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x18">
+      <description>Generic connector, single row, 01x18, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x18</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x18, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x23">
+      <description>Generic connector, single row, 01x23, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x23</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x23, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x41">
+      <description>"Generic connector, single row, 01x41, script generated"</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x41</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">"Generic connector, single row, 01x41, script generated"</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+        <pin num="31" name="Pin_31" type="passive"/>
+        <pin num="32" name="Pin_32" type="passive"/>
+        <pin num="33" name="Pin_33" type="passive"/>
+        <pin num="34" name="Pin_34" type="passive"/>
+        <pin num="35" name="Pin_35" type="passive"/>
+        <pin num="36" name="Pin_36" type="passive"/>
+        <pin num="37" name="Pin_37" type="passive"/>
+        <pin num="38" name="Pin_38" type="passive"/>
+        <pin num="39" name="Pin_39" type="passive"/>
+        <pin num="40" name="Pin_40" type="passive"/>
+        <pin num="41" name="Pin_41" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Owasso" part="TPS2553DBVR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS2553DBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="~{FAULT}" type="open_collector"/>
+        <pin num="5" name="ILIM" type="passive"/>
+        <pin num="6" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF_GPS" part="MAX-M10S">
+      <description>GNSS Module MAX M10, VCC 1.65V to 3.6V</description>
+      <docs>https://content.u-blox.com/sites/default/files/MAX-M10S_DataSheet_UBX-20035208.pdf</docs>
+      <footprints>
+        <fp>ublox?MAX*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX-M10S</field>
+        <field name="Footprint">RF_GPS:ublox_MAX</field>
+        <field name="Datasheet">https://content.u-blox.com/sites/default/files/MAX-M10S_DataSheet_UBX-20035208.pdf</field>
+        <field name="Description">GNSS Module MAX M10, VCC 1.65V to 3.6V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="TXD" type="output"/>
+        <pin num="3" name="RXD" type="input"/>
+        <pin num="4" name="TIMEPULSE" type="output"/>
+        <pin num="5" name="EXTINT" type="input"/>
+        <pin num="6" name="V_BCKP" type="power_in"/>
+        <pin num="7" name="VCC_IO" type="power_in"/>
+        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="9" name="~{RESET}" type="input"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="RF_IN" type="input"/>
+        <pin num="12" name="GND" type="passive"/>
+        <pin num="13" name="LNA_EN" type="output"/>
+        <pin num="14" name="VCC_RF" type="power_out"/>
+        <pin num="15" name="VIO_SEL" type="input"/>
+        <pin num="16" name="SDA" type="bidirectional"/>
+        <pin num="17" name="SCL" type="input"/>
+        <pin num="18" name="~{SAFEBOOT}" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="owasso1-review" part="J10_contract">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="owasso1-review" part="U3_contract">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="EP_GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="owasso1-review" part="USB1_contract">
+      <description>Generic connector, single row, 01x22, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x22</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x22, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="RF_GPS">
+      <uri>${KICAD10_SYMBOL_DIR}/RF_GPS.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>${KICAD10_SYMBOL_DIR}/Switch.kicad_sym</uri>
+    </library>
+    <library logical="owasso1-review">
+      <uri>${KIPRJMOD}/owasso1-review.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J1" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+      <node ref="J10" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J9" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U10" pin="3" pinfunction="EN_3" pintype="input"/>
+      <node ref="U2" pin="16" pinfunction="Pin_16_16" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U9" pin="7" pinfunction="VCC_IO_7" pintype="power_in"/>
+      <node ref="U9" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+    </net>
+    <net code="2" name="/BAT_CHARGE" class="Default">
+      <node ref="C2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J13" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="3" name="/BOOST_FB" class="Default">
+      <node ref="R2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/BOOST_SW" class="Default">
+      <node ref="L1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U8" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="5" name="/CC1101_CS" class="Default">
+      <node ref="J2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="Pin_24_24" pintype="passive"/>
+    </net>
+    <net code="6" name="/CC1101_GDO0" class="Default">
+      <node ref="J2" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="Pin_25_25" pintype="passive"/>
+    </net>
+    <net code="7" name="/DW01A_OC" class="Default">
+      <node ref="Q1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="8" name="/DW01A_OD" class="Default">
+      <node ref="Q1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="9" name="/EXP_CS" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+    </net>
+    <net code="10" name="/EXP_INT" class="Default">
+      <node ref="U2" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+    </net>
+    <net code="11" name="/EXP_IRQ" class="Default">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+    </net>
+    <net code="12" name="/FUEL_ALERT" class="Default">
+      <node ref="U6" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+    <net code="13" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J1" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
+      <node ref="J1" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+      <node ref="J10" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J13" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J14" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J15" pin="2" pinfunction="Ext_2" pintype="passive"/>
+      <node ref="J16" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J16" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="16" pinfunction="Pin_16_16" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J7" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J9" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+      <node ref="J9" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="Q1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="Q1" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="SW18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U1" pin="40" pinfunction="Pin_40_40" pintype="passive"/>
+      <node ref="U1" pin="41" pinfunction="Pin_41_41" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="EP_GND_9" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U9" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U9" pin="10" pinfunction="GND_10" pintype="passive"/>
+      <node ref="U9" pin="12" pinfunction="GND_12" pintype="passive"/>
+      <node ref="USB1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="USB1" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+      <node ref="USB1" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+      <node ref="USB1" pin="22" pinfunction="Pin_22_22" pintype="passive"/>
+    </net>
+    <net code="14" name="/GPS and rear expansion/EXP_3V3" class="Default">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J16" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U10" pin="6" pinfunction="OUT_6" pintype="power_out"/>
+    </net>
+    <net code="15" name="/GPS and rear expansion/EXP_CS_PORT" class="Default">
+      <node ref="J16" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="/GPS and rear expansion/EXP_ILIM" class="Default">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="ILIM_5" pintype="passive"/>
+    </net>
+    <net code="17" name="/GPS and rear expansion/EXP_IRQ_PORT" class="Default">
+      <node ref="J16" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="/GPS and rear expansion/EXP_MISO" class="Default">
+      <node ref="J16" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="/GPS and rear expansion/EXP_MOSI" class="Default">
+      <node ref="J16" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="/GPS and rear expansion/EXP_SCK" class="Default">
+      <node ref="J16" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="21" name="/GPS and rear expansion/EXP_SCL" class="Default">
+      <node ref="J16" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="22" name="/GPS and rear expansion/EXP_SDA" class="Default">
+      <node ref="J16" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="/GPS and rear expansion/GPS_ANT" class="Default">
+      <node ref="J15" pin="1" pinfunction="In_1" pintype="passive"/>
+      <node ref="U9" pin="11" pinfunction="RF_IN_11" pintype="input"/>
+    </net>
+    <net code="24" name="/GPS and rear expansion/GPS_RX" class="Default">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="RXD_3" pintype="input"/>
+    </net>
+    <net code="25" name="/GPS and rear expansion/GPS_TX" class="Default">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="TXD_2" pintype="output"/>
+    </net>
+    <net code="26" name="/GPS_HOST_RX" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="27" name="/GPS_HOST_TX" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+    <net code="28" name="/GPS_PPS" class="Default">
+      <node ref="U1" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U9" pin="4" pinfunction="TIMEPULSE_4" pintype="output"/>
+    </net>
+    <net code="29" name="/I2C_SCL" class="Default">
+      <node ref="J4" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J6" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J7" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="Pin_38_38" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+    </net>
+    <net code="30" name="/I2C_SDA" class="Default">
+      <node ref="J4" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J7" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="Pin_39_39" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+    </net>
+    <net code="31" name="/IR_RX" class="Default">
+      <node ref="U7" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="32" name="/IR_TX" class="Default">
+      <node ref="D1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U1" pin="35" pinfunction="Pin_35_35" pintype="passive"/>
+    </net>
+    <net code="33" name="/KEY_C1" class="Default">
+      <node ref="D10" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D14" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J11" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+    </net>
+    <net code="34" name="/KEY_C2" class="Default">
+      <node ref="D11" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D15" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J11" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+    </net>
+    <net code="35" name="/KEY_C3" class="Default">
+      <node ref="D12" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D16" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J11" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
+    </net>
+    <net code="36" name="/KEY_C4" class="Default">
+      <node ref="D13" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D17" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="D9" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J11" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+    </net>
+    <net code="37" name="/KEY_D1" class="Default">
+      <node ref="D2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="38" name="/KEY_D2" class="Default">
+      <node ref="D3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="39" name="/KEY_D3" class="Default">
+      <node ref="D4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="40" name="/KEY_D4" class="Default">
+      <node ref="D5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="41" name="/KEY_D5" class="Default">
+      <node ref="D6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW6" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="42" name="/KEY_D6" class="Default">
+      <node ref="D7" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW7" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="43" name="/KEY_D7" class="Default">
+      <node ref="D8" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW8" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="44" name="/KEY_D8" class="Default">
+      <node ref="D9" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW9" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="45" name="/KEY_D9" class="Default">
+      <node ref="D10" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW10" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="46" name="/KEY_D10" class="Default">
+      <node ref="D11" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW11" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="47" name="/KEY_D11" class="Default">
+      <node ref="D12" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW12" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="48" name="/KEY_D12" class="Default">
+      <node ref="D13" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW13" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="49" name="/KEY_D13" class="Default">
+      <node ref="D14" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW14" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="50" name="/KEY_D14" class="Default">
+      <node ref="D15" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW15" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="51" name="/KEY_D15" class="Default">
+      <node ref="D16" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW16" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="52" name="/KEY_D16" class="Default">
+      <node ref="D17" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW17" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="53" name="/KEY_R1" class="Default">
+      <node ref="J11" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+    <net code="54" name="/KEY_R2" class="Default">
+      <node ref="J11" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="SW6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW7" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW8" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW9" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="55" name="/KEY_R3" class="Default">
+      <node ref="J11" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="SW10" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW11" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW12" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW13" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+    </net>
+    <net code="56" name="/KEY_R4" class="Default">
+      <node ref="J11" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="SW14" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW15" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW16" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW17" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+    </net>
+    <net code="57" name="/LCD_BL" class="Default">
+      <node ref="J7" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U1" pin="33" pinfunction="Pin_33_33" pintype="passive"/>
+    </net>
+    <net code="58" name="/LCD_CS" class="Default">
+      <node ref="J7" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="Pin_31_31" pintype="passive"/>
+    </net>
+    <net code="59" name="/LCD_DC" class="Default">
+      <node ref="J7" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U1" pin="32" pinfunction="Pin_32_32" pintype="passive"/>
+    </net>
+    <net code="60" name="/LCD_RESET" class="Default">
+      <node ref="J7" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+    </net>
+    <net code="61" name="/LORA_ANT" class="Default">
+      <node ref="J14" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="62" name="/LTE_CTS" class="Default">
+      <node ref="J1" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+    </net>
+    <net code="63" name="/LTE_DTR" class="Default">
+      <node ref="J1" pin="17" pinfunction="Pin_17_17" pintype="passive"/>
+    </net>
+    <net code="64" name="/LTE_NET" class="Default">
+      <node ref="J1" pin="21" pinfunction="Pin_21_21" pintype="passive"/>
+    </net>
+    <net code="65" name="/LTE_PWRKEY" class="Default">
+      <node ref="J1" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="Pin_18_18" pintype="passive"/>
+    </net>
+    <net code="66" name="/LTE_RESET" class="Default">
+      <node ref="J1" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+    </net>
+    <net code="67" name="/LTE_RI" class="Default">
+      <node ref="J1" pin="16" pinfunction="Pin_16_16" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
+    </net>
+    <net code="68" name="/LTE_RTS" class="Default">
+      <node ref="J1" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+    </net>
+    <net code="69" name="/LTE_RX" class="Default">
+      <node ref="J1" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="Pin_36_36" pintype="passive"/>
+    </net>
+    <net code="70" name="/LTE_RX2" class="Default">
+      <node ref="J1" pin="18" pinfunction="Pin_18_18" pintype="passive"/>
+    </net>
+    <net code="71" name="/LTE_STA" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="72" name="/LTE_TX" class="Default">
+      <node ref="J1" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U1" pin="37" pinfunction="Pin_37_37" pintype="passive"/>
+    </net>
+    <net code="73" name="/LTE_TX2" class="Default">
+      <node ref="J1" pin="19" pinfunction="Pin_19_19" pintype="passive"/>
+    </net>
+    <net code="74" name="/LTE_VEXT" class="Default">
+      <node ref="J1" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+    </net>
+    <net code="75" name="/MCU_BOOT" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="SW18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="Pin_27_27" pintype="passive"/>
+    </net>
+    <net code="76" name="/MCU_EN" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="SW19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="77" name="/MIC+" class="Default">
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J12" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="78" name="/MIC-" class="Default">
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J12" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="79" name="/MODEM_5V" class="Default">
+      <node ref="C1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J1" pin="22" pinfunction="Pin_22_22" pintype="passive"/>
+      <node ref="J1" pin="23" pinfunction="Pin_23_23" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+    </net>
+    <net code="80" name="/RFID_RX" class="Default">
+      <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+    <net code="81" name="/RFID_TX" class="Default">
+      <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="82" name="/SD_CS" class="Default">
+      <node ref="J7" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+      <node ref="J9" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U1" pin="34" pinfunction="Pin_34_34" pintype="passive"/>
+    </net>
+    <net code="83" name="/SD_DET" class="Default">
+      <node ref="J9" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+    </net>
+    <net code="84" name="/SIM_CLK" class="Default">
+      <node ref="J10" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="85" name="/SIM_DET" class="Default">
+      <node ref="J10" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+    </net>
+    <net code="86" name="/SIM_IO" class="Default">
+      <node ref="J10" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="87" name="/SIM_RST" class="Default">
+      <node ref="J10" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+    <net code="88" name="/SPI_MISO" class="Default">
+      <node ref="J2" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="J3" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+      <node ref="J7" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="J9" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="Pin_22_22" pintype="passive"/>
+    </net>
+    <net code="89" name="/SPI_MOSI" class="Default">
+      <node ref="J2" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J3" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+      <node ref="J7" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="J9" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="Pin_21_21" pintype="passive"/>
+    </net>
+    <net code="90" name="/SPI_SCK" class="Default">
+      <node ref="J2" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="J3" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+      <node ref="J7" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J9" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="Pin_20_20" pintype="passive"/>
+    </net>
+    <net code="91" name="/SPK+" class="Default">
+      <node ref="J1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J12" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="92" name="/SPK-" class="Default">
+      <node ref="J1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J12" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+    <net code="93" name="/SX1262_BUSY" class="Default">
+      <node ref="J3" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+    </net>
+    <net code="94" name="/SX1262_CS" class="Default">
+      <node ref="J3" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="Pin_23_23" pintype="passive"/>
+    </net>
+    <net code="95" name="/SX1262_DIO1" class="Default">
+      <node ref="J3" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="Pin_17_17" pintype="passive"/>
+    </net>
+    <net code="96" name="/SX1262_DIO2" class="Default">
+      <node ref="J3" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+    </net>
+    <net code="97" name="/SX1262_DIO3" class="Default">
+      <node ref="J3" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+    </net>
+    <net code="98" name="/SX1262_RESET" class="Default">
+      <node ref="J3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="Pin_19_19" pintype="passive"/>
+    </net>
+    <net code="99" name="/SX1262_RXEN" class="Default">
+      <node ref="J3" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
+    </net>
+    <net code="100" name="/SX1262_TXEN" class="Default">
+      <node ref="J3" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="101" name="/TOUCH_INT" class="Default">
+      <node ref="J7" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+    </net>
+    <net code="102" name="/TP_RESET" class="Default">
+      <node ref="J7" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+    </net>
+    <net code="103" name="/TRACKBALL_INT" class="Default">
+      <node ref="J6" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="104" name="/U3_PROG" class="Default">
+      <node ref="R1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="105" name="/USB_CC1" class="Default">
+      <node ref="R4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="USB1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="106" name="/USB_CC2" class="Default">
+      <node ref="R5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="USB1" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+    </net>
+    <net code="107" name="/USB_D+" class="Default">
+      <node ref="U1" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+      <node ref="USB1" pin="16" pinfunction="Pin_16_16" pintype="passive"/>
+      <node ref="USB1" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+    </net>
+    <net code="108" name="/USB_D-" class="Default">
+      <node ref="U1" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+      <node ref="USB1" pin="17" pinfunction="Pin_17_17" pintype="passive"/>
+      <node ref="USB1" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+    </net>
+    <net code="109" name="/VBAT" class="Default">
+      <node ref="J1" pin="20" pinfunction="Pin_20_20" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="110" name="/VBUS5V" class="Default">
+      <node ref="C4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="USB1" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+      <node ref="USB1" pin="19" pinfunction="Pin_19_19" pintype="passive"/>
+      <node ref="USB1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="USB1" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+    </net>
+    <net code="111" name="unconnected-(J5-Pin_5-Pad5)" class="Default">
+      <node ref="J5" pin="5" pinfunction="Pin_5_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="112" name="unconnected-(J7-Pin_11-Pad11)" class="Default">
+      <node ref="J7" pin="11" pinfunction="Pin_11_11" pintype="passive+no_connect"/>
+    </net>
+    <net code="113" name="unconnected-(J7-Pin_16-Pad16)" class="Default">
+      <node ref="J7" pin="16" pinfunction="Pin_16_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(J7-Pin_17-Pad17)" class="Default">
+      <node ref="J7" pin="17" pinfunction="Pin_17_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(J7-Pin_18-Pad18)" class="Default">
+      <node ref="J7" pin="18" pinfunction="Pin_18_18" pintype="passive+no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(J9-Pin_1-Pad1)" class="Default">
+      <node ref="J9" pin="1" pinfunction="Pin_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(J9-Pin_8-Pad8)" class="Default">
+      <node ref="J9" pin="8" pinfunction="Pin_8_8" pintype="passive+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U1-Pin_16-Pad16)" class="Default">
+      <node ref="U1" pin="16" pinfunction="Pin_16_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U1-Pin_26-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="Pin_26_26" pintype="passive+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U1-Pin_28-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="Pin_28_28" pintype="passive+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U1-Pin_29-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="Pin_29_29" pintype="passive+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U1-Pin_30-Pad30)" class="Default">
+      <node ref="U1" pin="30" pinfunction="Pin_30_30" pintype="passive+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U3-Pin_1-Pad1)" class="Default">
+      <node ref="U3" pin="1" pinfunction="Pin_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U3-Pin_6-Pad6)" class="Default">
+      <node ref="U3" pin="6" pinfunction="Pin_6_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U3-Pin_7-Pad7)" class="Default">
+      <node ref="U3" pin="7" pinfunction="Pin_7_7" pintype="passive+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(U3-Pin_8-Pad8)" class="Default">
+      <node ref="U3" pin="8" pinfunction="Pin_8_8" pintype="passive+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(U5-Pin_3-Pad3)" class="Default">
+      <node ref="U5" pin="3" pinfunction="Pin_3_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="128" name="unconnected-(U5-Pin_4-Pad4)" class="Default">
+      <node ref="U5" pin="4" pinfunction="Pin_4_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(U9-EXTINT-Pad5)" class="Default">
+      <node ref="U9" pin="5" pinfunction="EXTINT_5" pintype="input+no_connect"/>
+    </net>
+    <net code="130" name="unconnected-(U9-LNA_EN-Pad13)" class="Default">
+      <node ref="U9" pin="13" pinfunction="LNA_EN_13" pintype="output+no_connect"/>
+    </net>
+    <net code="131" name="unconnected-(U9-SCL-Pad17)" class="Default">
+      <node ref="U9" pin="17" pinfunction="SCL_17" pintype="input+no_connect"/>
+    </net>
+    <net code="132" name="unconnected-(U9-SDA-Pad16)" class="Default">
+      <node ref="U9" pin="16" pinfunction="SDA_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="133" name="unconnected-(U9-VCC_RF-Pad14)" class="Default">
+      <node ref="U9" pin="14" pinfunction="VCC_RF_14" pintype="power_out+no_connect"/>
+    </net>
+    <net code="134" name="unconnected-(U9-VIO_SEL-Pad15)" class="Default">
+      <node ref="U9" pin="15" pinfunction="VIO_SEL_15" pintype="input+no_connect"/>
+    </net>
+    <net code="135" name="unconnected-(U9-V_BCKP-Pad6)" class="Default">
+      <node ref="U9" pin="6" pinfunction="V_BCKP_6" pintype="power_in+no_connect"/>
+    </net>
+    <net code="136" name="unconnected-(U9-~{RESET}-Pad9)" class="Default">
+      <node ref="U9" pin="9" pinfunction="~{RESET}_9" pintype="input+no_connect"/>
+    </net>
+    <net code="137" name="unconnected-(U9-~{SAFEBOOT}-Pad18)" class="Default">
+      <node ref="U9" pin="18" pinfunction="~{SAFEBOOT}_18" pintype="input+no_connect"/>
+    </net>
+    <net code="138" name="unconnected-(U10-~{FAULT}-Pad4)" class="Default">
+      <node ref="U10" pin="4" pinfunction="~{FAULT}_4" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,228 @@
+** Drc report for owasso1.kicad_pcb **
+** Created on 2026-09-14T20:04:04 **
+** Report includes: Errors, Warnings **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 70 Footprint errors **
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(160.0750 mm, 124.2500 mm): Footprint C1
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(171.0250 mm, 87.5000 mm): Footprint C2
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(170.1000 mm, 125.2500 mm): Footprint C3
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(167.2750 mm, 74.7500 mm): Footprint C4
+[footprint_symbol_mismatch]: LED_0805_2012Metric doesn't match footprint given by symbol (LED_SMD:LED_0805_2012Metric)
+    Local override; warning
+    @(115.8125 mm, 34.7500 mm): Footprint D1
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.9500 mm, 146.7000 mm): Footprint D2
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9000 mm, 146.9000 mm): Footprint D3
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 146.7000 mm): Footprint D4
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 146.7000 mm): Footprint D5
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.9500 mm, 158.7000 mm): Footprint D6
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9500 mm, 158.7000 mm): Footprint D7
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 158.7000 mm): Footprint D8
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 158.7000 mm): Footprint D9
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.7500 mm, 171.4000 mm): Footprint D10
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9500 mm, 170.7000 mm): Footprint D11
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 170.7000 mm): Footprint D12
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 170.7000 mm): Footprint D13
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.9500 mm, 182.7000 mm): Footprint D14
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9500 mm, 182.7000 mm): Footprint D15
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 182.7000 mm): Footprint D16
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 182.7000 mm): Footprint D17
+[footprint_symbol_mismatch]: A7670E_LASE_23P_12+11 doesn't match footprint given by symbol (owasso1:A7670E_LASE_23P_12+11)
+    Local override; warning
+    @(131.0000 mm, 106.5000 mm): Footprint J1
+[footprint_symbol_mismatch]: PinHeader_1x08_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical)
+    Local override; warning
+    @(150.0000 mm, 35.4600 mm): Footprint J2
+[footprint_symbol_mismatch]: Ra-01SH doesn't match footprint given by symbol (owasso1:Ra-01SH)
+    Local override; warning
+    @(166.5400 mm, 46.7000 mm): Footprint J3
+[footprint_symbol_mismatch]: PinHeader_1x04_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical)
+    Local override; warning
+    @(104.5000 mm, 105.5000 mm): Footprint J4
+[footprint_symbol_mismatch]: PinHeader_1x05_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical)
+    Local override; warning
+    @(109.5000 mm, 104.9200 mm): Footprint J5
+[footprint_symbol_mismatch]: PinHeader_1x05_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical)
+    Local override; warning
+    @(132.5000 mm, 134.0000 mm): Footprint J6
+[footprint_symbol_mismatch]: Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal doesn't match footprint given by symbol (Connector_FFC-FPC:Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal)
+    Local override; warning
+    @(100.5500 mm, 73.3500 mm): Footprint J7
+[footprint_symbol_mismatch]: microSD_HC_Molex_104031-0811 doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical)
+    Local override; warning
+    @(104.0000 mm, 91.5000 mm): Footprint J9
+[footprint_symbol_mismatch]: JAE_SIM_Card_SF72S006 doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical)
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[footprint_symbol_mismatch]: JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal doesn't match footprint given by symbol (Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal)
+    Local override; warning
+    @(157.3500 mm, 59.7250 mm): Footprint J13
+[footprint_symbol_mismatch]: U.FL_Hirose_U.FL-R-SMT-1_Vertical doesn't match footprint given by symbol (owasso1:U.FL_Hirose_U.FL-R-SMT-1_Vertical)
+    Local override; warning
+    @(159.5400 mm, 60.5000 mm): Footprint J14
+[footprint_symbol_mismatch]: L_1210_3225Metric doesn't match footprint given by symbol (Inductor_SMD:L_1210_3225Metric)
+    Local override; warning
+    @(170.1000 mm, 109.2500 mm): Footprint L1
+[footprint_symbol_mismatch]: SOT-23-6 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-6)
+    Local override; warning
+    @(150.8625 mm, 76.7500 mm): Footprint Q1
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(156.5875 mm, 105.2500 mm): Footprint R1
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(160.1000 mm, 117.2500 mm): Footprint R2
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(170.1000 mm, 117.2500 mm): Footprint R3
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(162.5000 mm, 91.0000 mm): Footprint R4
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(162.5000 mm, 95.0000 mm): Footprint R5
+[footprint_symbol_mismatch]: SW_Slide_SPDT_Angled_CK_OS102011MA1Q doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN)
+    Local override; warning
+    @(176.5000 mm, 66.0000 mm): Footprint SW1
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 141.2000 mm): Footprint SW2
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 141.2000 mm): Footprint SW3
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 141.2000 mm): Footprint SW4
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 141.2000 mm): Footprint SW5
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 153.2000 mm): Footprint SW6
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 153.2000 mm): Footprint SW7
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 153.2000 mm): Footprint SW8
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 153.2000 mm): Footprint SW9
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 165.2000 mm): Footprint SW10
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 165.2000 mm): Footprint SW11
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 165.2000 mm): Footprint SW12
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 165.2000 mm): Footprint SW13
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 177.2000 mm): Footprint SW14
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 177.2000 mm): Footprint SW15
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 177.2000 mm): Footprint SW16
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 177.2000 mm): Footprint SW17
+[footprint_symbol_mismatch]: ESP32-S3-WROOM-1 doesn't match footprint given by symbol (RF_Module:ESP32-S3-WROOM-1)
+    Local override; warning
+    @(120.5000 mm, 68.1400 mm): Footprint U1
+[footprint_symbol_mismatch]: SOIC-16_4.55x10.3mm_P1.27mm doesn't match footprint given by symbol (Package_SO:SOIC-16_3.9x9.9mm_P1.27mm)
+    Local override; warning
+    @(169.7500 mm, 158.5000 mm): Footprint U2
+[footprint_symbol_mismatch]: HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm doesn't match footprint given by symbol (Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm)
+    Local override; warning
+    @(162.9250 mm, 68.5750 mm): Footprint U3
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(162.9250 mm, 68.5750 mm): Pad 9 [/GND] of U3 on B.Cu
+[footprint_symbol_mismatch]: SOT-23-6 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-6)
+    Local override; warning
+    @(142.6375 mm, 72.9500 mm): Footprint U4
+[footprint_symbol_mismatch]: SOT-23-5 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-5)
+    Local override; warning
+    @(156.6375 mm, 86.0000 mm): Footprint U5
+[footprint_symbol_mismatch]: PinHeader_1x04_P1.27mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical)
+    Local override; warning
+    @(149.5000 mm, 60.6900 mm): Footprint U6
+[footprint_symbol_mismatch]: Vishay_MINIMOLD-3Pin doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)
+    Local override; warning
+    @(110.5400 mm, 36.4250 mm): Footprint U7
+[footprint_symbol_mismatch]: SOT-563 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-563)
+    Local override; warning
+    @(137.5375 mm, 66.7500 mm): Footprint U8
+[footprint_symbol_mismatch]: USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal doesn't match footprint given by symbol (Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal)
+    Local override; warning
+    @(176.2500 mm, 77.7500 mm): Footprint USB1
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(177.5000 mm, 35.0000 mm): Footprint H2
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(96.5000 mm, 35.0000 mm): Footprint H1
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(177.5000 mm, 183.0000 mm): Footprint H4
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(96.5000 mm, 183.0000 mm): Footprint H3
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

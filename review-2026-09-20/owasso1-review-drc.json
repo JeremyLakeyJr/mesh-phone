@@ -1,0 +1,1087 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-20T20:42:29",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 160.075,
+                        "y": 124.25
+                    },
+                    "uuid": "0f319fd0-af58-4654-85e7-e3d3df61406b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 171.025,
+                        "y": 87.5
+                    },
+                    "uuid": "145972bf-b697-4aee-9ad3-d57c772a11c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 170.1,
+                        "y": 125.25
+                    },
+                    "uuid": "f2c651fb-d8b5-49b7-813d-9d35250d8907"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 167.275,
+                        "y": 74.75
+                    },
+                    "uuid": "ab505c5b-fd17-4994-90c7-20ac52509cfb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "LED_0805_2012Metric doesn't match footprint given by symbol (LED_SMD:LED_0805_2012Metric)",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 115.8125,
+                        "y": 34.75
+                    },
+                    "uuid": "4b0405d8-2c80-4347-85b5-050a02d1aa60"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D2",
+                    "pos": {
+                        "x": 114.95,
+                        "y": 146.7
+                    },
+                    "uuid": "8671236a-f1a1-4787-affc-5a20c2b8f141"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 128.9,
+                        "y": 146.9
+                    },
+                    "uuid": "49f0bc69-285a-41d0-a8b2-2c79c23d3d1b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D4",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 146.7
+                    },
+                    "uuid": "de3e6a06-2df3-4990-8a46-b83d9c4bbc1f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D5",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 146.7
+                    },
+                    "uuid": "ab885715-d963-49e4-8690-ee55f94c42a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D6",
+                    "pos": {
+                        "x": 114.95,
+                        "y": 158.7
+                    },
+                    "uuid": "b2a96bc7-0079-4790-b175-51d3569e1135"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D7",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 158.7
+                    },
+                    "uuid": "9d51264d-818a-4aea-8c2c-1d5cc59b7d43"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D8",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 158.7
+                    },
+                    "uuid": "da8c8131-5e70-4167-ae67-0687a62d6b84"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D9",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 158.7
+                    },
+                    "uuid": "73086983-162c-4302-a0e1-3a3c94bb7ed3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D10",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 171.4
+                    },
+                    "uuid": "aca05065-9a8b-4d18-a328-b0f040d9cfbf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D11",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 170.7
+                    },
+                    "uuid": "7c4cf19c-2dd1-4b2b-899a-2eb98c246ac8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D12",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 170.7
+                    },
+                    "uuid": "abf0ec1a-1a5b-4776-b32e-12677d1bc593"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D13",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 170.7
+                    },
+                    "uuid": "cae16089-9b7c-4514-8d9a-4cbc4ea08d9c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D14",
+                    "pos": {
+                        "x": 114.95,
+                        "y": 182.7
+                    },
+                    "uuid": "a2e72175-2fd1-4277-b006-82ae1a8f5674"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D15",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 182.7
+                    },
+                    "uuid": "3f7b305b-51b6-46dc-873d-5b70649b9c0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D16",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 182.7
+                    },
+                    "uuid": "d8b8deaf-2f61-4fb1-a740-95aea6452c76"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)",
+            "items": [
+                {
+                    "description": "Footprint D17",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 182.7
+                    },
+                    "uuid": "dbe5842b-1c07-4dee-87e7-244ddeb5a111"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "A7670E_LASE_23P_12+11 doesn't match footprint given by symbol (owasso1:A7670E_LASE_23P_12+11)",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 106.5
+                    },
+                    "uuid": "277aeb83-80c6-431b-a1fc-2a183a494bf9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "PinHeader_1x08_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 35.46
+                    },
+                    "uuid": "2010fef9-763f-4fe6-a1df-95deb372f903"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Ra-01SH doesn't match footprint given by symbol (owasso1:Ra-01SH)",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 166.54,
+                        "y": 46.7
+                    },
+                    "uuid": "ca391202-2ac8-4df4-bbaf-248698a9bafa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "PinHeader_1x04_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint J4",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 105.5
+                    },
+                    "uuid": "9de79aae-8876-4a38-91b4-22c1b4757513"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "PinHeader_1x05_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint J5",
+                    "pos": {
+                        "x": 109.5,
+                        "y": 104.92
+                    },
+                    "uuid": "410c21ff-ea68-4006-89b9-73745c63cc6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "PinHeader_1x05_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint J6",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 134.0
+                    },
+                    "uuid": "c96cab75-d857-46de-af7f-8283f80e7c17"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal doesn't match footprint given by symbol (Connector_FFC-FPC:Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal)",
+            "items": [
+                {
+                    "description": "Footprint J7",
+                    "pos": {
+                        "x": 100.55,
+                        "y": 73.35
+                    },
+                    "uuid": "33c64553-5810-4c71-ad48-71c19c33d881"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "microSD_HC_Molex_104031-0811 doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint J9",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 91.5
+                    },
+                    "uuid": "84837682-fc80-4627-a47f-de46abd70619"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "JAE_SIM_Card_SF72S006 doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint J10",
+                    "pos": {
+                        "x": 170.5,
+                        "y": 99.0
+                    },
+                    "uuid": "38b900fb-eb72-4321-a0fd-ae2f08a9469b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal doesn't match footprint given by symbol (Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal)",
+            "items": [
+                {
+                    "description": "Footprint J13",
+                    "pos": {
+                        "x": 157.35,
+                        "y": 59.725
+                    },
+                    "uuid": "081daaa0-f5e3-400e-a4d0-ed4ba004911c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "U.FL_Hirose_U.FL-R-SMT-1_Vertical doesn't match footprint given by symbol (owasso1:U.FL_Hirose_U.FL-R-SMT-1_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint J14",
+                    "pos": {
+                        "x": 159.54,
+                        "y": 60.5
+                    },
+                    "uuid": "d2a1a91c-3fb7-4d66-8b36-3f9aa7a0af14"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "L_1210_3225Metric doesn't match footprint given by symbol (Inductor_SMD:L_1210_3225Metric)",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 170.1,
+                        "y": 109.25
+                    },
+                    "uuid": "dbc73160-17d2-4d5d-bd38-6a2aae099d6f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SOT-23-6 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-6)",
+            "items": [
+                {
+                    "description": "Footprint Q1",
+                    "pos": {
+                        "x": 150.8625,
+                        "y": 76.75
+                    },
+                    "uuid": "cf98ab24-3f1e-47a8-b79c-5059a90efc51"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 156.5875,
+                        "y": 105.25
+                    },
+                    "uuid": "b127f905-8444-47a6-b918-f82cd696de9a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 160.1,
+                        "y": 117.25
+                    },
+                    "uuid": "78f5c2d0-10d5-498c-b9b9-8e2c32f10c6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 170.1,
+                        "y": 117.25
+                    },
+                    "uuid": "0119e26c-9d12-4cfa-9573-3495d51646fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 162.5,
+                        "y": 91.0
+                    },
+                    "uuid": "787ca77b-5a52-481e-9ffd-1ae0117fb2d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 162.5,
+                        "y": 95.0
+                    },
+                    "uuid": "e2cf2d8b-154f-4bec-bbdf-6d58e73a56a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Slide_SPDT_Angled_CK_OS102011MA1Q doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN)",
+            "items": [
+                {
+                    "description": "Footprint SW1",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 66.0
+                    },
+                    "uuid": "8b2fe257-9f3e-4e72-aedd-38a1ddeb6ad3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW2",
+                    "pos": {
+                        "x": 114.95,
+                        "y": 141.2
+                    },
+                    "uuid": "bf64adb7-8aea-48cd-a616-0a4fcc795b6f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW3",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 141.2
+                    },
+                    "uuid": "aa26f8a7-f867-48f8-bb6a-b466a4663258"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW4",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 141.2
+                    },
+                    "uuid": "9917f7e1-17ae-49c3-9d71-c9167780624a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW5",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 141.2
+                    },
+                    "uuid": "b08485f1-7a48-4660-a233-5afb25245e0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW6",
+                    "pos": {
+                        "x": 114.95,
+                        "y": 153.2
+                    },
+                    "uuid": "5a331268-53df-4d13-8828-680a24ae70e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW7",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 153.2
+                    },
+                    "uuid": "da53d480-a208-41d8-9735-3ed84cf3bb87"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW8",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 153.2
+                    },
+                    "uuid": "d8f37cb3-5919-49fc-b65b-ecf7f5431e88"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW9",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 153.2
+                    },
+                    "uuid": "d97c1045-1c6f-494a-9ccc-8f939922c934"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW10",
+                    "pos": {
+                        "x": 114.95,
+                        "y": 165.2
+                    },
+                    "uuid": "4f8d159c-86c8-49c7-b543-32b5131b2f90"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW11",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 165.2
+                    },
+                    "uuid": "42c840e9-9dd1-46d9-a1c8-ec2682a61593"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW12",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 165.2
+                    },
+                    "uuid": "23f040cd-2f0d-4e62-8e58-fb22c6c72472"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW13",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 165.2
+                    },
+                    "uuid": "848c2674-fd53-468d-9940-2d6188f8fccd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW14",
+                    "pos": {
+                        "x": 114.95,
+                        "y": 177.2
+                    },
+                    "uuid": "b0cfcfe2-7920-415a-acb7-1cf47b71d583"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW15",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 177.2
+                    },
+                    "uuid": "5f2b6f87-566d-40f9-bb54-3f5f11a0f41a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW16",
+                    "pos": {
+                        "x": 142.95,
+                        "y": 177.2
+                    },
+                    "uuid": "4dbbc07a-825e-4ec9-b827-17918afcc056"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)",
+            "items": [
+                {
+                    "description": "Footprint SW17",
+                    "pos": {
+                        "x": 156.95,
+                        "y": 177.2
+                    },
+                    "uuid": "60a47645-c2e7-4599-a8d1-c7d32c028059"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "ESP32-S3-WROOM-1 doesn't match footprint given by symbol (RF_Module:ESP32-S3-WROOM-1)",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 68.14
+                    },
+                    "uuid": "8d7039ad-f362-407b-97dd-86439742ece9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SOIC-16_4.55x10.3mm_P1.27mm doesn't match footprint given by symbol (Package_SO:SOIC-16_3.9x9.9mm_P1.27mm)",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 169.75,
+                        "y": 158.5
+                    },
+                    "uuid": "a0b6042d-981a-416e-ac6f-b6976abacd63"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm doesn't match footprint given by symbol (Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm)",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 162.925,
+                        "y": 68.575
+                    },
+                    "uuid": "d8b4fdf2-6eb3-4535-884d-bdbbcbb646bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad 9 [/GND] of U3 on B.Cu",
+                    "pos": {
+                        "x": 162.925,
+                        "y": 68.575
+                    },
+                    "uuid": "3ba1220f-e00a-4882-89e1-34d9422de5aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "SOT-23-6 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-6)",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 142.6375,
+                        "y": 72.95
+                    },
+                    "uuid": "81c88964-8bf3-44bd-93f4-e7555518e0e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SOT-23-5 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-5)",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 156.6375,
+                        "y": 86.0
+                    },
+                    "uuid": "1acb5575-7396-4622-8976-abf2ec4200bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "PinHeader_1x04_P1.27mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 149.5,
+                        "y": 60.69
+                    },
+                    "uuid": "89e61c49-2ae7-4990-8ac7-038824ea3a68"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Vishay_MINIMOLD-3Pin doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)",
+            "items": [
+                {
+                    "description": "Footprint U7",
+                    "pos": {
+                        "x": 110.54,
+                        "y": 36.425
+                    },
+                    "uuid": "81b4e411-5f01-4bf7-85ed-0399a0c15261"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "SOT-563 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-563)",
+            "items": [
+                {
+                    "description": "Footprint U8",
+                    "pos": {
+                        "x": 137.5375,
+                        "y": 66.75
+                    },
+                    "uuid": "7dabbc73-6ac2-46ce-b28f-f2cf109c31a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal doesn't match footprint given by symbol (Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal)",
+            "items": [
+                {
+                    "description": "Footprint USB1",
+                    "pos": {
+                        "x": 176.25,
+                        "y": 77.75
+                    },
+                    "uuid": "4d615906-74f9-4ffb-8fb5-28867a9ece5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H2",
+                    "pos": {
+                        "x": 177.5,
+                        "y": 35.0
+                    },
+                    "uuid": "0ebe3836-5034-4936-8d51-39d90c0192dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H1",
+                    "pos": {
+                        "x": 96.5,
+                        "y": 35.0
+                    },
+                    "uuid": "896f5234-6a0a-435a-b381-8b49800e150a"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H4",
+                    "pos": {
+                        "x": 177.5,
+                        "y": 183.0
+                    },
+                    "uuid": "db313b7e-bc7b-4d12-9301-702b5b2fb9fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H3",
+                    "pos": {
+                        "x": 96.5,
+                        "y": 183.0
+                    },
+                    "uuid": "e9e096e1-6769-41f4-bba8-2c1c724727de"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        }
+    ],
+    "source": "owasso1.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+}

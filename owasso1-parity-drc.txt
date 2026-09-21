@@ -1,0 +1,826 @@
+** Drc report for owasso1.kicad_pcb **
+** Created on 2026-09-14T19:28:28 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 270 Footprint errors **
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(160.0750 mm, 124.2500 mm): Footprint C1
+[net_conflict]: Pad net (MODEM_5V) doesn't match net given by schematic (/MODEM_5V)
+    Local override; warning
+    @(158.6000 mm, 124.2500 mm): Pad 1 [MODEM_5V] of C1 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(161.5500 mm, 124.2500 mm): Pad 2 [GND] of C1 on B.Cu
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(171.0250 mm, 87.5000 mm): Footprint C2
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(169.5500 mm, 87.5000 mm): Pad 1 [VBAT] of C2 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(172.5000 mm, 87.5000 mm): Pad 2 [GND] of C2 on B.Cu
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(170.1000 mm, 125.2500 mm): Footprint C3
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(168.6250 mm, 125.2500 mm): Pad 1 [3V3] of C3 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(171.5750 mm, 125.2500 mm): Pad 2 [GND] of C3 on B.Cu
+[footprint_symbol_mismatch]: C_1206_3216Metric doesn't match footprint given by symbol (Capacitor_SMD:C_1206_3216Metric)
+    Local override; warning
+    @(167.2750 mm, 74.7500 mm): Footprint C4
+[net_conflict]: Pad net (VBUS5V) doesn't match net given by schematic (/VBUS5V)
+    Local override; warning
+    @(165.8000 mm, 74.7500 mm): Pad 1 [VBUS5V] of C4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(168.7500 mm, 74.7500 mm): Pad 2 [GND] of C4 on F.Cu
+[footprint_symbol_mismatch]: LED_0805_2012Metric doesn't match footprint given by symbol (LED_SMD:LED_0805_2012Metric)
+    Local override; warning
+    @(115.8125 mm, 34.7500 mm): Footprint D1
+[net_conflict]: Pad net (IR_TX) doesn't match net given by schematic (/IR_TX)
+    Local override; warning
+    @(114.8750 mm, 34.7500 mm): Pad 1 [IR_TX] of D1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(116.7500 mm, 34.7500 mm): Pad 2 [GND] of D1 on F.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.9500 mm, 146.7000 mm): Footprint D2
+[net_conflict]: Pad net (KEY_D1) doesn't match net given by schematic (/KEY_D1)
+    Local override; warning
+    @(113.3000 mm, 146.7000 mm): Pad 1 [KEY_D1] of D2 on B.Cu
+[net_conflict]: Pad net (KEY_C1) doesn't match net given by schematic (/KEY_C1)
+    Local override; warning
+    @(116.6000 mm, 146.7000 mm): Pad 2 [KEY_C1] of D2 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9000 mm, 146.9000 mm): Footprint D3
+[net_conflict]: Pad net (KEY_D2) doesn't match net given by schematic (/KEY_D2)
+    Local override; warning
+    @(127.2500 mm, 146.9000 mm): Pad 1 [KEY_D2] of D3 on B.Cu
+[net_conflict]: Pad net (KEY_C2) doesn't match net given by schematic (/KEY_C2)
+    Local override; warning
+    @(130.5500 mm, 146.9000 mm): Pad 2 [KEY_C2] of D3 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 146.7000 mm): Footprint D4
+[net_conflict]: Pad net (KEY_D3) doesn't match net given by schematic (/KEY_D3)
+    Local override; warning
+    @(141.3000 mm, 146.7000 mm): Pad 1 [KEY_D3] of D4 on B.Cu
+[net_conflict]: Pad net (KEY_C3) doesn't match net given by schematic (/KEY_C3)
+    Local override; warning
+    @(144.6000 mm, 146.7000 mm): Pad 2 [KEY_C3] of D4 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 146.7000 mm): Footprint D5
+[net_conflict]: Pad net (KEY_D4) doesn't match net given by schematic (/KEY_D4)
+    Local override; warning
+    @(155.3000 mm, 146.7000 mm): Pad 1 [KEY_D4] of D5 on B.Cu
+[net_conflict]: Pad net (KEY_C4) doesn't match net given by schematic (/KEY_C4)
+    Local override; warning
+    @(158.6000 mm, 146.7000 mm): Pad 2 [KEY_C4] of D5 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.9500 mm, 158.7000 mm): Footprint D6
+[net_conflict]: Pad net (KEY_D5) doesn't match net given by schematic (/KEY_D5)
+    Local override; warning
+    @(113.3000 mm, 158.7000 mm): Pad 1 [KEY_D5] of D6 on B.Cu
+[net_conflict]: Pad net (KEY_C1) doesn't match net given by schematic (/KEY_C1)
+    Local override; warning
+    @(116.6000 mm, 158.7000 mm): Pad 2 [KEY_C1] of D6 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9500 mm, 158.7000 mm): Footprint D7
+[net_conflict]: Pad net (KEY_D6) doesn't match net given by schematic (/KEY_D6)
+    Local override; warning
+    @(127.3000 mm, 158.7000 mm): Pad 1 [KEY_D6] of D7 on B.Cu
+[net_conflict]: Pad net (KEY_C2) doesn't match net given by schematic (/KEY_C2)
+    Local override; warning
+    @(130.6000 mm, 158.7000 mm): Pad 2 [KEY_C2] of D7 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 158.7000 mm): Footprint D8
+[net_conflict]: Pad net (KEY_D7) doesn't match net given by schematic (/KEY_D7)
+    Local override; warning
+    @(141.3000 mm, 158.7000 mm): Pad 1 [KEY_D7] of D8 on B.Cu
+[net_conflict]: Pad net (KEY_C3) doesn't match net given by schematic (/KEY_C3)
+    Local override; warning
+    @(144.6000 mm, 158.7000 mm): Pad 2 [KEY_C3] of D8 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 158.7000 mm): Footprint D9
+[net_conflict]: Pad net (KEY_D8) doesn't match net given by schematic (/KEY_D8)
+    Local override; warning
+    @(155.3000 mm, 158.7000 mm): Pad 1 [KEY_D8] of D9 on B.Cu
+[net_conflict]: Pad net (KEY_C4) doesn't match net given by schematic (/KEY_C4)
+    Local override; warning
+    @(158.6000 mm, 158.7000 mm): Pad 2 [KEY_C4] of D9 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.7500 mm, 171.4000 mm): Footprint D10
+[net_conflict]: Pad net (KEY_D9) doesn't match net given by schematic (/KEY_D9)
+    Local override; warning
+    @(113.1000 mm, 171.4000 mm): Pad 1 [KEY_D9] of D10 on B.Cu
+[net_conflict]: Pad net (KEY_C1) doesn't match net given by schematic (/KEY_C1)
+    Local override; warning
+    @(116.4000 mm, 171.4000 mm): Pad 2 [KEY_C1] of D10 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9500 mm, 170.7000 mm): Footprint D11
+[net_conflict]: Pad net (KEY_D10) doesn't match net given by schematic (/KEY_D10)
+    Local override; warning
+    @(127.3000 mm, 170.7000 mm): Pad 1 [KEY_D10] of D11 on B.Cu
+[net_conflict]: Pad net (KEY_C2) doesn't match net given by schematic (/KEY_C2)
+    Local override; warning
+    @(130.6000 mm, 170.7000 mm): Pad 2 [KEY_C2] of D11 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 170.7000 mm): Footprint D12
+[net_conflict]: Pad net (KEY_D11) doesn't match net given by schematic (/KEY_D11)
+    Local override; warning
+    @(141.3000 mm, 170.7000 mm): Pad 1 [KEY_D11] of D12 on B.Cu
+[net_conflict]: Pad net (KEY_C3) doesn't match net given by schematic (/KEY_C3)
+    Local override; warning
+    @(144.6000 mm, 170.7000 mm): Pad 2 [KEY_C3] of D12 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 170.7000 mm): Footprint D13
+[net_conflict]: Pad net (KEY_D12) doesn't match net given by schematic (/KEY_D12)
+    Local override; warning
+    @(155.3000 mm, 170.7000 mm): Pad 1 [KEY_D12] of D13 on B.Cu
+[net_conflict]: Pad net (KEY_C4) doesn't match net given by schematic (/KEY_C4)
+    Local override; warning
+    @(158.6000 mm, 170.7000 mm): Pad 2 [KEY_C4] of D13 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(114.9500 mm, 182.7000 mm): Footprint D14
+[net_conflict]: Pad net (KEY_D13) doesn't match net given by schematic (/KEY_D13)
+    Local override; warning
+    @(113.3000 mm, 182.7000 mm): Pad 1 [KEY_D13] of D14 on B.Cu
+[net_conflict]: Pad net (KEY_C1) doesn't match net given by schematic (/KEY_C1)
+    Local override; warning
+    @(116.6000 mm, 182.7000 mm): Pad 2 [KEY_C1] of D14 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(128.9500 mm, 182.7000 mm): Footprint D15
+[net_conflict]: Pad net (KEY_D14) doesn't match net given by schematic (/KEY_D14)
+    Local override; warning
+    @(127.3000 mm, 182.7000 mm): Pad 1 [KEY_D14] of D15 on B.Cu
+[net_conflict]: Pad net (KEY_C2) doesn't match net given by schematic (/KEY_C2)
+    Local override; warning
+    @(130.6000 mm, 182.7000 mm): Pad 2 [KEY_C2] of D15 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(142.9500 mm, 182.7000 mm): Footprint D16
+[net_conflict]: Pad net (KEY_D15) doesn't match net given by schematic (/KEY_D15)
+    Local override; warning
+    @(141.3000 mm, 182.7000 mm): Pad 1 [KEY_D15] of D16 on B.Cu
+[net_conflict]: Pad net (KEY_C3) doesn't match net given by schematic (/KEY_C3)
+    Local override; warning
+    @(144.6000 mm, 182.7000 mm): Pad 2 [KEY_C3] of D16 on B.Cu
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(156.9500 mm, 182.7000 mm): Footprint D17
+[net_conflict]: Pad net (KEY_D16) doesn't match net given by schematic (/KEY_D16)
+    Local override; warning
+    @(155.3000 mm, 182.7000 mm): Pad 1 [KEY_D16] of D17 on B.Cu
+[net_conflict]: Pad net (KEY_C4) doesn't match net given by schematic (/KEY_C4)
+    Local override; warning
+    @(158.6000 mm, 182.7000 mm): Pad 2 [KEY_C4] of D17 on B.Cu
+[footprint_symbol_mismatch]: A7670E_LASE_23P_12+11 doesn't match footprint given by symbol (owasso1:A7670E_LASE_23P_12+11)
+    Local override; warning
+    @(131.0000 mm, 106.5000 mm): Footprint J1
+[net_conflict]: Pad net (MIC-) doesn't match net given by schematic (/MIC-)
+    Local override; warning
+    @(117.0300 mm, 125.5500 mm): PTH pad 1 [MIC-] of J1
+[net_conflict]: Pad net (MIC+) doesn't match net given by schematic (/MIC+)
+    Local override; warning
+    @(119.5700 mm, 125.5500 mm): PTH pad 2 [MIC+] of J1
+[net_conflict]: Pad net (SPK-) doesn't match net given by schematic (/SPK-)
+    Local override; warning
+    @(122.1100 mm, 125.5500 mm): PTH pad 3 [SPK-] of J1
+[net_conflict]: Pad net (SPK+) doesn't match net given by schematic (/SPK+)
+    Local override; warning
+    @(124.6500 mm, 125.5500 mm): PTH pad 4 [SPK+] of J1
+[net_conflict]: Pad net (LTE_STA) doesn't match net given by schematic (/LTE_STA)
+    Local override; warning
+    @(127.1900 mm, 125.5500 mm): PTH pad 5 [LTE_STA] of J1
+[net_conflict]: Pad net (LTE_TX) doesn't match net given by schematic (/LTE_TX)
+    Local override; warning
+    @(129.7300 mm, 125.5500 mm): PTH pad 6 [LTE_TX] of J1
+[net_conflict]: Pad net (LTE_RX) doesn't match net given by schematic (/LTE_RX)
+    Local override; warning
+    @(132.2700 mm, 125.5500 mm): PTH pad 7 [LTE_RX] of J1
+[net_conflict]: Pad net (LTE_RTS) doesn't match net given by schematic (/LTE_RTS)
+    Local override; warning
+    @(134.8100 mm, 125.5500 mm): PTH pad 8 [LTE_RTS] of J1
+[net_conflict]: Pad net (LTE_PWRKEY) doesn't match net given by schematic (/LTE_PWRKEY)
+    Local override; warning
+    @(137.3500 mm, 125.5500 mm): PTH pad 9 [LTE_PWRKEY] of J1
+[net_conflict]: Pad net (LTE_RESET) doesn't match net given by schematic (/LTE_RESET)
+    Local override; warning
+    @(139.8900 mm, 125.5500 mm): PTH pad 10 [LTE_RESET] of J1
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(142.4300 mm, 125.5500 mm): PTH pad 11 [GND] of J1
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(144.9700 mm, 125.5500 mm): PTH pad 12 [GND] of J1
+[net_conflict]: Pad net (LTE_VEXT) doesn't match net given by schematic (/LTE_VEXT)
+    Local override; warning
+    @(118.3000 mm, 87.4500 mm): PTH pad 13 [LTE_VEXT] of J1
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(120.8400 mm, 87.4500 mm): PTH pad 14 [3V3] of J1
+[net_conflict]: Pad net (LTE_CTS) doesn't match net given by schematic (/LTE_CTS)
+    Local override; warning
+    @(123.3800 mm, 87.4500 mm): PTH pad 15 [LTE_CTS] of J1
+[net_conflict]: Pad net (LTE_RI) doesn't match net given by schematic (/LTE_RI)
+    Local override; warning
+    @(125.9200 mm, 87.4500 mm): PTH pad 16 [LTE_RI] of J1
+[net_conflict]: Pad net (LTE_DTR) doesn't match net given by schematic (/LTE_DTR)
+    Local override; warning
+    @(128.4600 mm, 87.4500 mm): PTH pad 17 [LTE_DTR] of J1
+[net_conflict]: Pad net (LTE_RX2) doesn't match net given by schematic (/LTE_RX2)
+    Local override; warning
+    @(131.0000 mm, 87.4500 mm): PTH pad 18 [LTE_RX2] of J1
+[net_conflict]: Pad net (LTE_TX2) doesn't match net given by schematic (/LTE_TX2)
+    Local override; warning
+    @(133.5400 mm, 87.4500 mm): PTH pad 19 [LTE_TX2] of J1
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(136.0800 mm, 87.4500 mm): PTH pad 20 [VBAT] of J1
+[net_conflict]: Pad net (LTE_NET) doesn't match net given by schematic (/LTE_NET)
+    Local override; warning
+    @(138.6200 mm, 87.4500 mm): PTH pad 21 [LTE_NET] of J1
+[net_conflict]: Pad net (MODEM_5V) doesn't match net given by schematic (/MODEM_5V)
+    Local override; warning
+    @(141.1600 mm, 87.4500 mm): PTH pad 22 [MODEM_5V] of J1
+[net_conflict]: Pad net (MODEM_5V) doesn't match net given by schematic (/MODEM_5V)
+    Local override; warning
+    @(143.7000 mm, 87.4500 mm): PTH pad 23 [MODEM_5V] of J1
+[footprint_symbol_mismatch]: PinHeader_1x08_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical)
+    Local override; warning
+    @(150.0000 mm, 35.4600 mm): Footprint J2
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(150.0000 mm, 35.4600 mm): PTH pad 1 [3V3] of J2
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(150.0000 mm, 38.0000 mm): PTH pad 2 [GND] of J2
+[net_conflict]: Pad net (CC1101_CS) doesn't match net given by schematic (/CC1101_CS)
+    Local override; warning
+    @(150.0000 mm, 40.5400 mm): PTH pad 3 [CC1101_CS] of J2
+[net_conflict]: Pad net (SPI_MOSI) doesn't match net given by schematic (/SPI_MOSI)
+    Local override; warning
+    @(150.0000 mm, 43.0800 mm): PTH pad 4 [SPI_MOSI] of J2
+[net_conflict]: Pad net (SPI_MISO) doesn't match net given by schematic (/SPI_MISO)
+    Local override; warning
+    @(150.0000 mm, 45.6200 mm): PTH pad 5 [SPI_MISO] of J2
+[net_conflict]: Pad net (SPI_SCK) doesn't match net given by schematic (/SPI_SCK)
+    Local override; warning
+    @(150.0000 mm, 48.1600 mm): PTH pad 6 [SPI_SCK] of J2
+[net_conflict]: Pad net (CC1101_GDO0) doesn't match net given by schematic (/CC1101_GDO0)
+    Local override; warning
+    @(150.0000 mm, 50.7000 mm): PTH pad 7 [CC1101_GDO0] of J2
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(150.0000 mm, 53.2400 mm): PTH pad 8 [3V3] of J2
+[footprint_symbol_mismatch]: Ra-01SH doesn't match footprint given by symbol (owasso1:Ra-01SH)
+    Local override; warning
+    @(166.5400 mm, 46.7000 mm): Footprint J3
+[net_conflict]: Pad net (LORA_ANT) doesn't match net given by schematic (/LORA_ANT)
+    Local override; warning
+    @(173.5400 mm, 38.6688 mm): Pad 1 [LORA_ANT] of J3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(171.5400 mm, 38.6688 mm): Pad 2 [GND] of J3 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(169.5400 mm, 38.6688 mm): Pad 3 [3V3] of J3 on F.Cu
+[net_conflict]: Pad net (SX1262_RESET) doesn't match net given by schematic (/SX1262_RESET)
+    Local override; warning
+    @(167.5400 mm, 38.6688 mm): Pad 4 [SX1262_RESET] of J3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (/SX1262_TXEN)
+    Local override; warning
+    @(165.5400 mm, 38.6688 mm): Pad 5 [<no net>] of J3 on F.Cu
+[net_conflict]: Pad net (SX1262_DIO1) doesn't match net given by schematic (/SX1262_DIO1)
+    Local override; warning
+    @(163.5400 mm, 38.6688 mm): Pad 6 [SX1262_DIO1] of J3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (/SX1262_DIO2)
+    Local override; warning
+    @(161.5400 mm, 38.6688 mm): Pad 7 [<no net>] of J3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (/SX1262_DIO3)
+    Local override; warning
+    @(159.5400 mm, 38.6688 mm): Pad 8 [<no net>] of J3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(159.5400 mm, 54.7313 mm): Pad 9 [GND] of J3 on F.Cu
+[net_conflict]: Pad net (SX1262_BUSY) doesn't match net given by schematic (/SX1262_BUSY)
+    Local override; warning
+    @(161.5400 mm, 54.7313 mm): Pad 10 [SX1262_BUSY] of J3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (/SX1262_RXEN)
+    Local override; warning
+    @(163.5400 mm, 54.7313 mm): Pad 11 [<no net>] of J3 on F.Cu
+[net_conflict]: Pad net (SPI_SCK) doesn't match net given by schematic (/SPI_SCK)
+    Local override; warning
+    @(165.5400 mm, 54.7313 mm): Pad 12 [SPI_SCK] of J3 on F.Cu
+[net_conflict]: Pad net (SPI_MISO) doesn't match net given by schematic (/SPI_MISO)
+    Local override; warning
+    @(167.5400 mm, 54.7313 mm): Pad 13 [SPI_MISO] of J3 on F.Cu
+[net_conflict]: Pad net (SPI_MOSI) doesn't match net given by schematic (/SPI_MOSI)
+    Local override; warning
+    @(169.5400 mm, 54.7313 mm): Pad 14 [SPI_MOSI] of J3 on F.Cu
+[net_conflict]: Pad net (SX1262_CS) doesn't match net given by schematic (/SX1262_CS)
+    Local override; warning
+    @(171.5400 mm, 54.7313 mm): Pad 15 [SX1262_CS] of J3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(173.5400 mm, 54.7313 mm): Pad 16 [GND] of J3 on F.Cu
+[footprint_symbol_mismatch]: PinHeader_1x04_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical)
+    Local override; warning
+    @(104.5000 mm, 105.5000 mm): Footprint J4
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(104.5000 mm, 105.5000 mm): PTH pad 1 [3V3] of J4
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(104.5000 mm, 108.0400 mm): PTH pad 2 [GND] of J4
+[net_conflict]: Pad net (I2C_SDA) doesn't match net given by schematic (/I2C_SDA)
+    Local override; warning
+    @(104.5000 mm, 110.5800 mm): PTH pad 3 [I2C_SDA] of J4
+[net_conflict]: Pad net (I2C_SCL) doesn't match net given by schematic (/I2C_SCL)
+    Local override; warning
+    @(104.5000 mm, 113.1200 mm): PTH pad 4 [I2C_SCL] of J4
+[footprint_symbol_mismatch]: PinHeader_1x05_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical)
+    Local override; warning
+    @(109.5000 mm, 104.9200 mm): Footprint J5
+[net_conflict]: Pad net (MODEM_5V) doesn't match net given by schematic (/MODEM_5V)
+    Local override; warning
+    @(109.5000 mm, 104.9200 mm): PTH pad 1 [MODEM_5V] of J5
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(109.5000 mm, 107.4600 mm): PTH pad 2 [GND] of J5
+[net_conflict]: Pad net (RFID_TX) doesn't match net given by schematic (/RFID_TX)
+    Local override; warning
+    @(109.5000 mm, 110.0000 mm): PTH pad 3 [RFID_TX] of J5
+[net_conflict]: Pad net (RFID_RX) doesn't match net given by schematic (/RFID_RX)
+    Local override; warning
+    @(109.5000 mm, 112.5400 mm): PTH pad 4 [RFID_RX] of J5
+[footprint_symbol_mismatch]: PinHeader_1x05_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical)
+    Local override; warning
+    @(132.5000 mm, 134.0000 mm): Footprint J6
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(132.5000 mm, 134.0000 mm): PTH pad 1 [3V3] of J6
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(135.0400 mm, 134.0000 mm): PTH pad 2 [GND] of J6
+[net_conflict]: Pad net (I2C_SDA) doesn't match net given by schematic (/I2C_SDA)
+    Local override; warning
+    @(137.5800 mm, 134.0000 mm): PTH pad 3 [I2C_SDA] of J6
+[net_conflict]: Pad net (I2C_SCL) doesn't match net given by schematic (/I2C_SCL)
+    Local override; warning
+    @(140.1200 mm, 134.0000 mm): PTH pad 4 [I2C_SCL] of J6
+[net_conflict]: Pad net (TRACKBALL_INT) doesn't match net given by schematic (/TRACKBALL_INT)
+    Local override; warning
+    @(142.6600 mm, 134.0000 mm): PTH pad 5 [TRACKBALL_INT] of J6
+[footprint_symbol_mismatch]: Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal doesn't match footprint given by symbol (Connector_FFC-FPC:Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal)
+    Local override; warning
+    @(100.5500 mm, 73.3500 mm): Footprint J7
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(98.7000 mm, 77.6000 mm): Pad 1 [3V3] of J7 on F.Cu
+[net_conflict]: Pad net (LCD_BL) doesn't match net given by schematic (/LCD_BL)
+    Local override; warning
+    @(98.7000 mm, 77.1000 mm): Pad 2 [LCD_BL] of J7 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(98.7000 mm, 76.6000 mm): Pad 3 [GND] of J7 on F.Cu
+[net_conflict]: Pad net (SPI_SCK) doesn't match net given by schematic (/SPI_SCK)
+    Local override; warning
+    @(98.7000 mm, 76.1000 mm): Pad 4 [SPI_SCK] of J7 on F.Cu
+[net_conflict]: Pad net (SPI_MOSI) doesn't match net given by schematic (/SPI_MOSI)
+    Local override; warning
+    @(98.7000 mm, 75.6000 mm): Pad 5 [SPI_MOSI] of J7 on F.Cu
+[net_conflict]: Pad net (SPI_MISO) doesn't match net given by schematic (/SPI_MISO)
+    Local override; warning
+    @(98.7000 mm, 75.1000 mm): Pad 6 [SPI_MISO] of J7 on F.Cu
+[net_conflict]: Pad net (LCD_DC) doesn't match net given by schematic (/LCD_DC)
+    Local override; warning
+    @(98.7000 mm, 74.6000 mm): Pad 7 [LCD_DC] of J7 on F.Cu
+[net_conflict]: Pad net (LCD_RESET) doesn't match net given by schematic (/LCD_RESET)
+    Local override; warning
+    @(98.7000 mm, 74.1000 mm): Pad 8 [LCD_RESET] of J7 on F.Cu
+[net_conflict]: Pad net (LCD_CS) doesn't match net given by schematic (/LCD_CS)
+    Local override; warning
+    @(98.7000 mm, 73.6000 mm): Pad 9 [LCD_CS] of J7 on F.Cu
+[net_conflict]: Pad net (SD_CS) doesn't match net given by schematic (/SD_CS)
+    Local override; warning
+    @(98.7000 mm, 73.1000 mm): Pad 10 [SD_CS] of J7 on F.Cu
+[net_conflict]: Pad net (TP_RESET) doesn't match net given by schematic (/TP_RESET)
+    Local override; warning
+    @(98.7000 mm, 72.1000 mm): Pad 12 [TP_RESET] of J7 on F.Cu
+[net_conflict]: Pad net (I2C_SCL) doesn't match net given by schematic (/I2C_SCL)
+    Local override; warning
+    @(98.7000 mm, 71.6000 mm): Pad 13 [I2C_SCL] of J7 on F.Cu
+[net_conflict]: Pad net (I2C_SDA) doesn't match net given by schematic (/I2C_SDA)
+    Local override; warning
+    @(98.7000 mm, 71.1000 mm): Pad 14 [I2C_SDA] of J7 on F.Cu
+[net_conflict]: Pad net (TOUCH_INT) doesn't match net given by schematic (/TOUCH_INT)
+    Local override; warning
+    @(98.7000 mm, 70.6000 mm): Pad 15 [TOUCH_INT] of J7 on F.Cu
+[footprint_symbol_mismatch]: microSD_HC_Molex_104031-0811 doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical)
+    Local override; warning
+    @(104.0000 mm, 91.5000 mm): Footprint J9
+[net_conflict]: Pad net (SD_CS) doesn't match net given by schematic (/SD_CS)
+    Local override; warning
+    @(98.5500 mm, 93.5050 mm): Pad 2 [SD_CS] of J9 on F.Cu
+[net_conflict]: Pad net (SPI_MOSI) doesn't match net given by schematic (/SPI_MOSI)
+    Local override; warning
+    @(98.5500 mm, 92.4050 mm): Pad 3 [SPI_MOSI] of J9 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(98.5500 mm, 91.3050 mm): Pad 4 [3V3] of J9 on F.Cu
+[net_conflict]: Pad net (SPI_SCK) doesn't match net given by schematic (/SPI_SCK)
+    Local override; warning
+    @(98.5500 mm, 90.2050 mm): Pad 5 [SPI_SCK] of J9 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(98.5500 mm, 89.1050 mm): Pad 6 [GND] of J9 on F.Cu
+[net_conflict]: Pad net (SPI_MISO) doesn't match net given by schematic (/SPI_MISO)
+    Local override; warning
+    @(98.5500 mm, 88.0050 mm): Pad 7 [SPI_MISO] of J9 on F.Cu
+[net_conflict]: Pad net (SD_DET) doesn't match net given by schematic (/SD_DET)
+    Local override; warning
+    @(104.7000 mm, 97.2400 mm): Pad 9 [SD_DET] of J9 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(108.4000 mm, 97.2400 mm): Pad 10 [GND] of J9 on F.Cu
+[footprint_symbol_mismatch]: JAE_SIM_Card_SF72S006 doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical)
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(168.0400 mm, 101.5400 mm): Pad C1 [3V3] of J10 on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(168.0400 mm, 99.0000 mm): Pad C2 [SIM_RST] of J10 on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(168.0400 mm, 96.4600 mm): Pad C3 [SIM_CLK] of J10 on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(171.2100 mm, 101.5400 mm): Pad C5 [GND] of J10 on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(171.2100 mm, 96.4600 mm): Pad C7 [SIM_IO] of J10 on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(174.5400 mm, 94.7300 mm): Pad CSW [SIM_DET] of J10 on F.Cu
+[net_conflict]: No pad found for pin 1 (/3V3) in schematic
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[net_conflict]: No pad found for pin 2 (/GND) in schematic
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[net_conflict]: No pad found for pin 3 (/SIM_CLK) in schematic
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[net_conflict]: No pad found for pin 6 (/SIM_DET) in schematic
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[net_conflict]: No pad found for pin 5 (/SIM_IO) in schematic
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[net_conflict]: No pad found for pin 4 (/SIM_RST) in schematic
+    Local override; warning
+    @(170.5000 mm, 99.0000 mm): Footprint J10
+[missing_footprint]: Missing footprint J11 (Keypad-matrix-4x4)
+    Local override; warning
+[missing_footprint]: Missing footprint J12 (Mic-and-speaker)
+    Local override; warning
+[footprint_symbol_mismatch]: JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal doesn't match footprint given by symbol (Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal)
+    Local override; warning
+    @(157.3500 mm, 59.7250 mm): Footprint J13
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(159.2000 mm, 60.3500 mm): Pad 1 [VBAT] of J13 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(159.2000 mm, 59.1000 mm): Pad 2 [GND] of J13 on B.Cu
+[footprint_symbol_mismatch]: U.FL_Hirose_U.FL-R-SMT-1_Vertical doesn't match footprint given by symbol (owasso1:U.FL_Hirose_U.FL-R-SMT-1_Vertical)
+    Local override; warning
+    @(159.5400 mm, 60.5000 mm): Footprint J14
+[net_conflict]: Pad net (LORA_ANT) doesn't match net given by schematic (/LORA_ANT)
+    Local override; warning
+    @(158.0150 mm, 60.5000 mm): Pad 1 [LORA_ANT] of J14 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(159.5400 mm, 59.0250 mm): Pad 2 [GND] of J14 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(159.5400 mm, 61.9750 mm): Pad 2 [GND] of J14 on F.Cu
+[footprint_symbol_mismatch]: L_1210_3225Metric doesn't match footprint given by symbol (Inductor_SMD:L_1210_3225Metric)
+    Local override; warning
+    @(170.1000 mm, 109.2500 mm): Footprint L1
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(168.7000 mm, 109.2500 mm): Pad 1 [VBAT] of L1 on B.Cu
+[net_conflict]: Pad net (BOOST_SW) doesn't match net given by schematic (/BOOST_SW)
+    Local override; warning
+    @(171.5000 mm, 109.2500 mm): Pad 2 [BOOST_SW] of L1 on B.Cu
+[footprint_symbol_mismatch]: SOT-23-6 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-6)
+    Local override; warning
+    @(150.8625 mm, 76.7500 mm): Footprint Q1
+[net_conflict]: Pad net (DW01A_OD) doesn't match net given by schematic (/DW01A_OD)
+    Local override; warning
+    @(149.7250 mm, 77.7000 mm): Pad 1 [DW01A_OD] of Q1 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(149.7250 mm, 76.7500 mm): Pad 2 [GND] of Q1 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(149.7250 mm, 75.8000 mm): Pad 3 [GND] of Q1 on B.Cu
+[net_conflict]: Pad net (DW01A_OC) doesn't match net given by schematic (/DW01A_OC)
+    Local override; warning
+    @(152.0000 mm, 75.8000 mm): Pad 4 [DW01A_OC] of Q1 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(152.0000 mm, 76.7500 mm): Pad 5 [GND] of Q1 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(152.0000 mm, 77.7000 mm): Pad 6 [GND] of Q1 on B.Cu
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(156.5875 mm, 105.2500 mm): Footprint R1
+[net_conflict]: Pad net (U3_PROG) doesn't match net given by schematic (/U3_PROG)
+    Local override; warning
+    @(155.6750 mm, 105.2500 mm): Pad 1 [U3_PROG] of R1 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(157.5000 mm, 105.2500 mm): Pad 2 [GND] of R1 on B.Cu
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(160.1000 mm, 117.2500 mm): Footprint R2
+[net_conflict]: Pad net (MODEM_5V) doesn't match net given by schematic (/MODEM_5V)
+    Local override; warning
+    @(159.1875 mm, 117.2500 mm): Pad 1 [MODEM_5V] of R2 on B.Cu
+[net_conflict]: Pad net (BOOST_FB) doesn't match net given by schematic (/BOOST_FB)
+    Local override; warning
+    @(161.0125 mm, 117.2500 mm): Pad 2 [BOOST_FB] of R2 on B.Cu
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(170.1000 mm, 117.2500 mm): Footprint R3
+[net_conflict]: Pad net (BOOST_FB) doesn't match net given by schematic (/BOOST_FB)
+    Local override; warning
+    @(169.1875 mm, 117.2500 mm): Pad 1 [BOOST_FB] of R3 on B.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(171.0125 mm, 117.2500 mm): Pad 2 [GND] of R3 on B.Cu
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(162.5000 mm, 91.0000 mm): Footprint R4
+[net_conflict]: Pad net (USB_CC1) doesn't match net given by schematic (/USB_CC1)
+    Local override; warning
+    @(161.5875 mm, 91.0000 mm): Pad 1 [USB_CC1] of R4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(163.4125 mm, 91.0000 mm): Pad 2 [GND] of R4 on F.Cu
+[footprint_symbol_mismatch]: R_0805_2012Metric doesn't match footprint given by symbol (Resistor_SMD:R_0805_2012Metric)
+    Local override; warning
+    @(162.5000 mm, 95.0000 mm): Footprint R5
+[net_conflict]: Pad net (USB_CC2) doesn't match net given by schematic (/USB_CC2)
+    Local override; warning
+    @(161.5875 mm, 95.0000 mm): Pad 1 [USB_CC2] of R5 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(163.4125 mm, 95.0000 mm): Pad 2 [GND] of R5 on F.Cu
+[footprint_symbol_mismatch]: SW_Slide_SPDT_Angled_CK_OS102011MA1Q doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN)
+    Local override; warning
+    @(176.5000 mm, 66.0000 mm): Footprint SW1
+[net_conflict]: Pad net (VBUS5V) doesn't match net given by schematic (/VBUS5V)
+    Local override; warning
+    @(176.5000 mm, 66.0000 mm): PTH pad 1 [VBUS5V] of SW1
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(176.5000 mm, 64.0000 mm): PTH pad 2 [VBAT] of SW1
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(176.5000 mm, 62.0000 mm): PTH pad 3 [PWR_SW] of SW1
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 141.2000 mm): Footprint SW2
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(112.9000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW2 on F.Cu
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(117.0000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW2 on F.Cu
+[net_conflict]: Pad net (KEY_D1) doesn't match net given by schematic (/KEY_D1)
+    Local override; warning
+    @(112.9000 mm, 142.0000 mm): Pad 2 [KEY_D1] of SW2 on F.Cu
+[net_conflict]: Pad net (KEY_D1) doesn't match net given by schematic (/KEY_D1)
+    Local override; warning
+    @(117.0000 mm, 142.0000 mm): Pad 2 [KEY_D1] of SW2 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 141.2000 mm): Footprint SW3
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(126.9000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW3 on F.Cu
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(131.0000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW3 on F.Cu
+[net_conflict]: Pad net (KEY_D2) doesn't match net given by schematic (/KEY_D2)
+    Local override; warning
+    @(126.9000 mm, 142.0000 mm): Pad 2 [KEY_D2] of SW3 on F.Cu
+[net_conflict]: Pad net (KEY_D2) doesn't match net given by schematic (/KEY_D2)
+    Local override; warning
+    @(131.0000 mm, 142.0000 mm): Pad 2 [KEY_D2] of SW3 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 141.2000 mm): Footprint SW4
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(140.9000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW4 on F.Cu
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(145.0000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW4 on F.Cu
+[net_conflict]: Pad net (KEY_D3) doesn't match net given by schematic (/KEY_D3)
+    Local override; warning
+    @(140.9000 mm, 142.0000 mm): Pad 2 [KEY_D3] of SW4 on F.Cu
+[net_conflict]: Pad net (KEY_D3) doesn't match net given by schematic (/KEY_D3)
+    Local override; warning
+    @(145.0000 mm, 142.0000 mm): Pad 2 [KEY_D3] of SW4 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 141.2000 mm): Footprint SW5
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(154.9000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW5 on F.Cu
+[net_conflict]: Pad net (KEY_R1) doesn't match net given by schematic (/KEY_R1)
+    Local override; warning
+    @(159.0000 mm, 140.4000 mm): Pad 1 [KEY_R1] of SW5 on F.Cu
+[net_conflict]: Pad net (KEY_D4) doesn't match net given by schematic (/KEY_D4)
+    Local override; warning
+    @(154.9000 mm, 142.0000 mm): Pad 2 [KEY_D4] of SW5 on F.Cu
+[net_conflict]: Pad net (KEY_D4) doesn't match net given by schematic (/KEY_D4)
+    Local override; warning
+    @(159.0000 mm, 142.0000 mm): Pad 2 [KEY_D4] of SW5 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 153.2000 mm): Footprint SW6
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(112.9000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW6 on F.Cu
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(117.0000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW6 on F.Cu
+[net_conflict]: Pad net (KEY_D5) doesn't match net given by schematic (/KEY_D5)
+    Local override; warning
+    @(112.9000 mm, 154.0000 mm): Pad 2 [KEY_D5] of SW6 on F.Cu
+[net_conflict]: Pad net (KEY_D5) doesn't match net given by schematic (/KEY_D5)
+    Local override; warning
+    @(117.0000 mm, 154.0000 mm): Pad 2 [KEY_D5] of SW6 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 153.2000 mm): Footprint SW7
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(126.9000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW7 on F.Cu
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(131.0000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW7 on F.Cu
+[net_conflict]: Pad net (KEY_D6) doesn't match net given by schematic (/KEY_D6)
+    Local override; warning
+    @(126.9000 mm, 154.0000 mm): Pad 2 [KEY_D6] of SW7 on F.Cu
+[net_conflict]: Pad net (KEY_D6) doesn't match net given by schematic (/KEY_D6)
+    Local override; warning
+    @(131.0000 mm, 154.0000 mm): Pad 2 [KEY_D6] of SW7 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 153.2000 mm): Footprint SW8
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(140.9000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW8 on F.Cu
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(145.0000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW8 on F.Cu
+[net_conflict]: Pad net (KEY_D7) doesn't match net given by schematic (/KEY_D7)
+    Local override; warning
+    @(140.9000 mm, 154.0000 mm): Pad 2 [KEY_D7] of SW8 on F.Cu
+[net_conflict]: Pad net (KEY_D7) doesn't match net given by schematic (/KEY_D7)
+    Local override; warning
+    @(145.0000 mm, 154.0000 mm): Pad 2 [KEY_D7] of SW8 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 153.2000 mm): Footprint SW9
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(154.9000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW9 on F.Cu
+[net_conflict]: Pad net (KEY_R2) doesn't match net given by schematic (/KEY_R2)
+    Local override; warning
+    @(159.0000 mm, 152.4000 mm): Pad 1 [KEY_R2] of SW9 on F.Cu
+[net_conflict]: Pad net (KEY_D8) doesn't match net given by schematic (/KEY_D8)
+    Local override; warning
+    @(154.9000 mm, 154.0000 mm): Pad 2 [KEY_D8] of SW9 on F.Cu
+[net_conflict]: Pad net (KEY_D8) doesn't match net given by schematic (/KEY_D8)
+    Local override; warning
+    @(159.0000 mm, 154.0000 mm): Pad 2 [KEY_D8] of SW9 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 165.2000 mm): Footprint SW10
+[net_conflict]: Pad net (KEY_R3) doesn't match net given by schematic (/KEY_R3)
+    Local override; warning
+    @(112.9000 mm, 164.4000 mm): Pad 1 [KEY_R3] of SW10 on F.Cu
+[net_conflict]: Pad net (KEY_R3) doesn't match net given by schematic (/KEY_R3)
+    Local override; warning
+    @(117.0000 mm, 164.4000 mm): Pad 1 [KEY_R3] of SW10 on F.Cu
+[net_conflict]: Pad net (KEY_D9) doesn't match net given by schematic (/KEY_D9)
+    Local override; warning
+    @(112.9000 mm, 166.0000 mm): Pad 2 [KEY_D9] of SW10 on F.Cu
+[net_conflict]: Pad net (KEY_D9) doesn't match net given by schematic (/KEY_D9)
+    Local override; warning
+    @(117.0000 mm, 166.0000 mm): Pad 2 [KEY_D9] of SW10 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 165.2000 mm): Footprint SW11
+[net_conflict]: Pad net (KEY_R3) doesn't match net given by schematic (/KEY_R3)
+    Local override; warning
+    @(126.9000 mm, 164.4000 mm): Pad 1 [KEY_R3] of SW11 on F.Cu
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 165.2000 mm): Footprint SW12
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 165.2000 mm): Footprint SW13
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(114.9500 mm, 177.2000 mm): Footprint SW14
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(128.9500 mm, 177.2000 mm): Footprint SW15
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(142.9500 mm, 177.2000 mm): Footprint SW16
+[footprint_symbol_mismatch]: SW_Push_1P1T_NO_CK_KMR2 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPST_B3S-1000)
+    Local override; warning
+    @(156.9500 mm, 177.2000 mm): Footprint SW17
+[footprint_symbol_mismatch]: ESP32-S3-WROOM-1 doesn't match footprint given by symbol (RF_Module:ESP32-S3-WROOM-1)
+    Local override; warning
+    @(120.5000 mm, 68.1400 mm): Footprint U1
+[footprint_symbol_mismatch]: SOIC-16_4.55x10.3mm_P1.27mm doesn't match footprint given by symbol (Package_SO:SOIC-16_3.9x9.9mm_P1.27mm)
+    Local override; warning
+    @(169.7500 mm, 158.5000 mm): Footprint U2
+[footprint_symbol_mismatch]: HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm doesn't match footprint given by symbol (Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm)
+    Local override; warning
+    @(162.9250 mm, 68.5750 mm): Footprint U3
+[footprint_symbol_mismatch]: SOT-23-6 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-6)
+    Local override; warning
+    @(142.6375 mm, 72.9500 mm): Footprint U4
+[footprint_symbol_mismatch]: SOT-23-5 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-23-5)
+    Local override; warning
+    @(156.6375 mm, 86.0000 mm): Footprint U5
+[footprint_symbol_mismatch]: PinHeader_1x04_P1.27mm_Vertical doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical)
+    Local override; warning
+    @(149.5000 mm, 60.6900 mm): Footprint U6
+[footprint_symbol_mismatch]: Vishay_MINIMOLD-3Pin doesn't match footprint given by symbol (Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)
+    Local override; warning
+    @(110.5400 mm, 36.4250 mm): Footprint U7
+[footprint_symbol_mismatch]: SOT-563 doesn't match footprint given by symbol (Package_TO_SOT_SMD:SOT-563)
+    Local override; warning
+    @(137.5375 mm, 66.7500 mm): Footprint U8
+[footprint_symbol_mismatch]: USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal doesn't match footprint given by symbol (Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal)
+    Local override; warning
+    @(176.2500 mm, 77.7500 mm): Footprint USB1
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(177.5000 mm, 35.0000 mm): Footprint H2
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(96.5000 mm, 35.0000 mm): Footprint H1
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(177.5000 mm, 183.0000 mm): Footprint H4
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(96.5000 mm, 183.0000 mm): Footprint H3
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
