@@ -1,10 +1,10 @@
-# OWASSO-1
+# MESH-PHONE
 
 > DIY ESP32-S3 multitool / Flipper-class RF device  |  revF KiCad PCB  |  public repo
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  OWASSO-1  ::  ESP32-S3  |  CC1101 + SX1262  |  A7670SA LTE  ║
+║  MESH-PHONE  ::  ESP32-S3  |  CC1101 + SX1262  |  A7670SA LTE  ║
 ║  PN532 NFC  |  RDM6300 LF RFID  |  BB trackball + keypad    ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
@@ -36,4 +36,4 @@
 RevF routed, ground islands stitched, display ground finished. Not yet verified for manufacturing.
 
 ---
-Built by Jeremy Lakey (Owasso HS '27)  |  github.com/JeremyLakeyJr/owasso1-pcb
+Built by Jeremy Lakey (Owasso HS '27)  |  github.com/JeremyLakeyJr/mesh-phone
