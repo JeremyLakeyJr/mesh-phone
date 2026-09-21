@@ -20,7 +20,7 @@ D_IR1,IR emitter LED 940nm,TSAL6200,1,LCSC,C9962,0.12,0.12,est
 U7,IR receiver 38kHz,TSOP38238,1,LCSC,C134616,0.35,0.35,est
 USB1,USB-C receptacle 16pin,GCT USB4105 or equiv,1,LCSC,C165948,0.55,0.55,est
 SW_PWR,Slide switch SPDT,SS12D00 style,1,LCSC/AliExpress,,0.30,0.30,est
-BT1,Flat LiPo pouch 4000mAh (605080) w/ protection,605080 LiPo or 2x103450,1,AliExpress/Amazon,,9.00,9.00,VERIFIED price; button-top SOLD OUT — check flat-top variant,"CHANGED: user wants flat Li-ion, not 18650"
+BT1,Flat LiPo pouch 4000mAh (605080) w/ protection,605080 LiPo or 2x103450,1,AliExpress/Amazon,,9.00,9.00,CHANGED: user wants flat Li-ion not 18650
 PCB,Custom 4-layer PCB 62x128mm,JLC04161H-7628 stackup,5,JLCPCB,,1.40,7.00,est
 ANT1,LTE antenna u.FL + pigtail,4G/LTE blade antenna,1,AliExpress,,2.00,2.00,est
 ANT2,LoRa/SubGHz antenna u.FL,868/915MHz rubber duck,1,AliExpress,,2.50,2.50,est
