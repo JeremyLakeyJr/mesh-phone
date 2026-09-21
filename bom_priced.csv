@@ -26,4 +26,4 @@ ANT1,LTE antenna u.FL + pigtail,4G/LTE blade antenna,1,AliExpress,,2.00,2.00,est
 ANT2,LoRa/SubGHz antenna u.FL,868/915MHz rubber duck,1,AliExpress,,2.50,2.50,est
 PASS,"Passives kit: 0805 R/C, 1N4148W x9+, bulk caps 1000uF x2",assorted,1,LCSC/JLC-PCBA,,3.00,3.00,est
 LENS,Clear front lens 1mm acrylic/PETG,cut-to-size acrylic sheet,1,Amazon/TAP Plastics,,4.00,4.00,NEW: user request
-,,,,,TOTAL (mixed verified+est),,89.80
+TOTAL,,,,,,TOTAL (mixed verified+est),,89.80
