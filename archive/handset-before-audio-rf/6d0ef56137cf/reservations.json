@@ -1,0 +1,66 @@
+[
+  [
+    "GNSS UBX-M10050 + RF / 1V8",
+    114,
+    47,
+    17,
+    9,
+    "B"
+  ],
+  [
+    "NFC ST25R3916B + matching",
+    121,
+    80,
+    15,
+    11,
+    "B"
+  ],
+  [
+    "LF timing / matching / level shifts",
+    73,
+    129,
+    10,
+    6,
+    "B"
+  ],
+  [
+    "IR TX and RX harness",
+    101,
+    33,
+    9,
+    6,
+    "B"
+  ],
+  [
+    "LCD FPC ordering code TBD",
+    100,
+    67,
+    20,
+    6,
+    "F"
+  ],
+  [
+    "microSD 504077-1891 TBD",
+    124,
+    101,
+    16,
+    14,
+    "F"
+  ],
+  [
+    "J16 load switch and ESD",
+    78,
+    97,
+    10,
+    10,
+    "B"
+  ],
+  [
+    "Modem regulated supply",
+    100,
+    61,
+    10,
+    8,
+    "B"
+  ]
+]

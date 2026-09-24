@@ -1,0 +1,313 @@
+{
+  "scope": "Local power entry only; external rail/I2C distribution and USB data excluded",
+  "groups": [
+    {
+      "net": "+3V3",
+      "pads": [
+        "C60.1",
+        "R66.1",
+        "R69.1",
+        "U24.8"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "BAT_PACK_POS",
+      "pads": [
+        "F2.1",
+        "J1.1"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "BAT_TS",
+      "pads": [
+        "J2.1",
+        "U3.6"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "CHG_CE_N",
+      "pads": [
+        "Q5.3",
+        "R6.2",
+        "U3.4"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "CHG_ENABLE",
+      "pads": [
+        "Q5.1",
+        "R7.1",
+        "U24.1"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "C5.2",
+        "C56.2",
+        "C57.2",
+        "C58.2",
+        "C59.2",
+        "C6.2",
+        "C60.2",
+        "C7.2",
+        "D1.2",
+        "J1.2",
+        "J2.2",
+        "Q5.2",
+        "Q7.2",
+        "R65.2",
+        "R67.2",
+        "R68.2",
+        "R7.2",
+        "R70.2",
+        "U17.3",
+        "U17.8",
+        "U21.5",
+        "U21.7",
+        "U22.10",
+        "U22.11",
+        "U22.3",
+        "U23.1",
+        "U23.4",
+        "U23.5",
+        "U24.4",
+        "U3.11",
+        "U3.5",
+        "USB1.A1",
+        "USB1.A12",
+        "USB1.B1",
+        "USB1.B12",
+        "USB1.SH",
+        "USB1.SH",
+        "USB1.SH",
+        "USB1.SH"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SCL",
+      "pads": [
+        "U24.6",
+        "U3.8"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SDA",
+      "pads": [
+        "U24.7",
+        "U3.7"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_AON_3V3",
+      "pads": [
+        "C57.1",
+        "C58.1",
+        "Q6.2",
+        "R8.1",
+        "U22.12",
+        "U23.3"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_CC1",
+      "pads": [
+        "U17.4",
+        "U22.1",
+        "USB1.A5"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_CC2",
+      "pads": [
+        "U17.5",
+        "U22.2",
+        "USB1.B5"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_CC_AUTO",
+      "pads": [
+        "D2.1",
+        "Q6.3",
+        "Q7.1",
+        "R70.1"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_CC_HIGH_N",
+      "pads": [
+        "Q6.1",
+        "R8.2",
+        "U22.7"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_CC_QUALIFIED_N",
+      "pads": [
+        "Q7.3",
+        "R69.2",
+        "U24.3"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_FUSED",
+      "pads": [
+        "C56.1",
+        "C59.1",
+        "D1.1",
+        "F1.2",
+        "R9.1",
+        "U21.6",
+        "U23.2"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_ILIM",
+      "pads": [
+        "R65.1",
+        "U21.2"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_LEGACY_EN",
+      "pads": [
+        "D2.2",
+        "R68.1",
+        "U24.2"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_PROTECTED",
+      "pads": [
+        "C5.1",
+        "U21.1",
+        "U3.10"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_PWR_EN",
+      "pads": [
+        "D2.3",
+        "R67.1",
+        "U21.4"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_PWR_FAULT_N",
+      "pads": [
+        "R66.2",
+        "U21.3",
+        "U24.5"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_VBUS",
+      "pads": [
+        "F1.1",
+        "USB1.A4",
+        "USB1.A9",
+        "USB1.B4",
+        "USB1.B9"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "USB_VBUS_DET",
+      "pads": [
+        "R9.2",
+        "U22.4"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "VBAT",
+      "pads": [
+        "C7.1",
+        "F2.2",
+        "U3.2"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "VSYS",
+      "pads": [
+        "C6.1",
+        "R6.1",
+        "U3.1"
+      ],
+      "disconnected": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "local_pads": 113,
+  "fabrication_released": false
+}

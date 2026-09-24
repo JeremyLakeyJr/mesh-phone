@@ -1,0 +1,106 @@
+{
+  "scope": "Local U7 converter copper; does not validate external distribution or operation",
+  "groups": [
+    {
+      "net": "SYS_EN",
+      "pads": [
+        "R30.1",
+        "U7.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "C20.2",
+        "C21.2",
+        "C22.2",
+        "R30.2",
+        "R32.2",
+        "U7.2",
+        "U7.3",
+        "U7.8"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG3_FB",
+      "pads": [
+        "R31.2",
+        "R32.1",
+        "U7.4"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG3_PG",
+      "pads": [
+        "R33.2",
+        "U7.5"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+3V3",
+      "pads": [
+        "C21.1",
+        "C22.1",
+        "R31.1",
+        "R33.1",
+        "U7.6"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG3_L2",
+      "pads": [
+        "L1.2",
+        "U7.7"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG3_L1",
+      "pads": [
+        "L1.1",
+        "U7.9"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "VSYS",
+      "pads": [
+        "C20.1",
+        "U7.10"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_connected_nets": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "local_pads": 26,
+  "fabrication_released": false
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "battery-power",
+    "status": "open",
+    "refs": [
+      "U3",
+      "U21",
+      "U22",
+      "U23",
+      "U24",
+      "J1",
+      "J2",
+      "F1",
+      "F2"
+    ],
+    "required": "Implement charger policy, fault handling, powered-off charging and source recovery; verify exact protected pack, NTC attachment, connector polarity/current and full handset/modem burst and thermal budget. Finish external power/I2C routing.",
+    "completed": "BQ25186 programmable charger, fused USB/battery entry, TPS25200 current limiter, TUSB320LAI source detector and TCA9536 controls installed; 113 local pads pass copper continuity. Charger policy contract checked, not implemented firmware."
+  },
+  {
+    "id": "regulator-layout",
+    "status": "open",
+    "refs": [
+      "U7",
+      "U10",
+      "U11",
+      "U20",
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ],
+    "completed": "U7 local switching, feedback and ground copper routed; 26 pads in eight groups pass physical continuity. See 3v3-layout-review.md.",
+    "required": "Finish external U7 power distribution and U10/U11/U20 local routing. Qualify power/ground copper, stability, inductor current, capacitor bias, feedback tolerance, startup, modem UVLO and burst loading."
+  },
+  {
+    "id": "modem-adapter",
+    "status": "open",
+    "refs": [
+      "J4",
+      "J8",
+      "J9"
+    ],
+    "required": "Build and validate exact modem/SIM/logic-translation/audio adapter and carrier VoLTE/SMS/data support. No universal-carrier guarantee."
+  },
+  {
+    "id": "rf-frontends",
+    "status": "open",
+    "refs": [
+      "U4",
+      "U5",
+      "J20",
+      "J21"
+    ],
+    "required": "Complete SX1262 clock/PA/switching circuits and DC-DC routing/qualification. Refine and route CC1101 RF/oscillator layout against a chosen stackup; qualify frequency/startup/drive, supply noise, RF power/sensitivity, emissions, optional spur filter and antenna coexistence.",
+    "completed": "CC1101 clock, 868/915MHz matching/filter, dedicated supply bypass/filter and GDO2 test pad captured with named MPNs. 90 topology/value checks and five negative tests pass; zero native CC1101 sheet ERC findings. SX1262 15uH core inductor, corrected 470nF VREG capacitor and separate input bypass captured; 30 contract checks and four negative tests pass. Unrouted."
+  },
+  {
+    "id": "nfc-lf",
+    "status": "open",
+    "refs": [
+      "U9",
+      "U13",
+      "U18",
+      "U19",
+      "Y1",
+      "J10"
+    ],
+    "required": "Complete NFC matching/receive network and LF clock/analog reference/coil/host timing return. Validate crystal loading and tuned antennas."
+  },
+  {
+    "id": "interfaces-firmware",
+    "status": "open",
+    "refs": [
+      "U1",
+      "U2",
+      "U6",
+      "MK1",
+      "J23",
+      "J24",
+      "J25",
+      "J26"
+    ],
+    "required": "Validate SPI sharing, scanner GPIO controls, display/CTP purchase configuration, panel supply limits, IR boot behavior, storage, keypad and audio firmware."
+  },
+  {
+    "id": "passive-bom",
+    "status": "open",
+    "refs": [
+      "R*",
+      "C*"
+    ],
+    "required": "Freeze orderable resistor/capacitor MPNs with tolerance, voltage, power, dielectric and DC-bias requirements; independently audit custom pin definitions and footprints."
+  },
+  {
+    "id": "gnss-expansion",
+    "status": "open",
+    "refs": [
+      "U12",
+      "J22",
+      "U14",
+      "U15",
+      "U16",
+      "J16"
+    ],
+    "required": "Finish GNSS RF feed/decoupling and protected expansion routing; validate current limit, startup, antenna coexistence, and power-off module exchange."
+  },
+  {
+    "id": "usb-connector",
+    "status": "open",
+    "refs": [
+      "USB1",
+      "U17"
+    ],
+    "required": "Resolve four internal USB connector hole-clearance findings against GCT drawing and fabricator process. Finish controlled-impedance USB routing; qualify protection/ESD and source-current behavior.",
+    "completed": "Fused VBUS, TVS, eFuse and Type-C source detection local copper installed; USB data excluded from power continuity check."
+  },
+  {
+    "id": "layout-assembly-fit",
+    "status": "open",
+    "refs": [
+      "PCB",
+      "case",
+      "U1",
+      "SW19"
+    ],
+    "required": "Finish all airwires, reference planes, impedance stackup and ground stitching. Review ESP32 via-in-pad filling/capping and antenna keepout; reconcile moved power-switch case opening and all component/cable heights."
+  },
+  {
+    "id": "prototype-release",
+    "status": "open",
+    "refs": [
+      "complete handset"
+    ],
+    "required": "Clear native ERC/DRC/parity without blanket waivers and obtain independent circuit/footprint review. Bring up on a current-limited supply and test every feature before any fabrication release for production.",
+    "completed": "218 components; 1957 integrity assertions; zero parity findings. Native ERC retains 30 findings and DRC four USB hole-clearance findings; 491 unconnected items. See sx1262-power-review.md."
+  }
+]

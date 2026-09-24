@@ -1,0 +1,3468 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "99b2cc31-a5b6-5441-aa03-3882142f95f0")
+  (paper "A1")
+  (lib_symbols
+    (symbol "Handset:TPS25200DRV"
+      (pin_names
+        (offset 0.5))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TPS25200DRV"
+        (at 0 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TPS25200DRV_0_1"
+        (rectangle
+          (start -10.16 17.78)
+          (end 10.16 -17.78)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TPS25200DRV_1_1"
+        (pin power_out line
+          (at -15.24 12.7 0)
+          (length 5.08)
+          (name "OUT"
+            (effects
+              (font
+                (size 1 1))))
+          (number "1"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at -15.24 10.16 0)
+          (length 5.08)
+          (name "ILIM"
+            (effects
+              (font
+                (size 1 1))))
+          (number "2"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin open_collector line
+          (at -15.24 7.619999999999999 0)
+          (length 5.08)
+          (name "FAULT_N"
+            (effects
+              (font
+                (size 1 1))))
+          (number "3"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin input line
+          (at -15.24 5.079999999999999 0)
+          (length 5.08)
+          (name "EN"
+            (effects
+              (font
+                (size 1 1))))
+          (number "4"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 15.24 12.7 180)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1 1))))
+          (number "5"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 15.24 10.16 180)
+          (length 5.08)
+          (name "IN"
+            (effects
+              (font
+                (size 1 1))))
+          (number "6"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 15.24 7.619999999999999 180)
+          (length 5.08)
+          (name "EP"
+            (effects
+              (font
+                (size 1 1))))
+          (number "7"
+            (effects
+              (font
+                (size 1 1)))))))
+    (symbol "Handset:TUSB320LAI"
+      (pin_names
+        (offset 0.5))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TUSB320LAI"
+        (at 0 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TUSB320LAI_0_1"
+        (rectangle
+          (start -10.16 17.78)
+          (end 10.16 -17.78)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TUSB320LAI_1_1"
+        (pin bidirectional line
+          (at -15.24 12.7 0)
+          (length 5.08)
+          (name "CC1"
+            (effects
+              (font
+                (size 1 1))))
+          (number "1"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin bidirectional line
+          (at -15.24 10.16 0)
+          (length 5.08)
+          (name "CC2"
+            (effects
+              (font
+                (size 1 1))))
+          (number "2"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin input line
+          (at -15.24 7.619999999999999 0)
+          (length 5.08)
+          (name "PORT"
+            (effects
+              (font
+                (size 1 1))))
+          (number "3"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin input line
+          (at -15.24 5.079999999999999 0)
+          (length 5.08)
+          (name "VBUS_DET"
+            (effects
+              (font
+                (size 1 1))))
+          (number "4"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin input line
+          (at -15.24 2.539999999999999 0)
+          (length 5.08)
+          (name "ADDR"
+            (effects
+              (font
+                (size 1 1))))
+          (number "5"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin open_collector line
+          (at -15.24 0.0 0)
+          (length 5.08)
+          (name "OUT3"
+            (effects
+              (font
+                (size 1 1))))
+          (number "6"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin open_collector line
+          (at 15.24 12.7 180)
+          (length 5.08)
+          (name "OUT1"
+            (effects
+              (font
+                (size 1 1))))
+          (number "7"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin open_collector line
+          (at 15.24 10.16 180)
+          (length 5.08)
+          (name "OUT2"
+            (effects
+              (font
+                (size 1 1))))
+          (number "8"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin open_collector line
+          (at 15.24 7.619999999999999 180)
+          (length 5.08)
+          (name "ID"
+            (effects
+              (font
+                (size 1 1))))
+          (number "9"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 15.24 5.079999999999999 180)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1 1))))
+          (number "10"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin input line
+          (at 15.24 2.539999999999999 180)
+          (length 5.08)
+          (name "EN_N"
+            (effects
+              (font
+                (size 1 1))))
+          (number "11"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 15.24 0.0 180)
+          (length 5.08)
+          (name "VDD"
+            (effects
+              (font
+                (size 1 1))))
+          (number "12"
+            (effects
+              (font
+                (size 1 1)))))))
+    (symbol "Handset:TLV70433DBV"
+      (pin_names
+        (offset 0.5))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TLV70433DBV"
+        (at 0 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TLV70433DBV_0_1"
+        (rectangle
+          (start -10.16 17.78)
+          (end 10.16 -17.78)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TLV70433DBV_1_1"
+        (pin power_in line
+          (at -15.24 12.7 0)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1 1))))
+          (number "1"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at -15.24 10.16 0)
+          (length 5.08)
+          (name "IN"
+            (effects
+              (font
+                (size 1 1))))
+          (number "2"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_out line
+          (at -15.24 7.619999999999999 0)
+          (length 5.08)
+          (name "OUT"
+            (effects
+              (font
+                (size 1 1))))
+          (number "3"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 12.7 180)
+          (length 5.08)
+          (name "NC"
+            (effects
+              (font
+                (size 1 1))))
+          (number "4"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 10.16 180)
+          (length 5.08)
+          (name "NC"
+            (effects
+              (font
+                (size 1 1))))
+          (number "5"
+            (effects
+              (font
+                (size 1 1)))))))
+    (symbol "Handset:TCA9536DGK"
+      (pin_names
+        (offset 0.5))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TCA9536DGK"
+        (at 0 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TCA9536DGK_0_1"
+        (rectangle
+          (start -10.16 17.78)
+          (end 10.16 -17.78)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TCA9536DGK_1_1"
+        (pin bidirectional line
+          (at -15.24 12.7 0)
+          (length 5.08)
+          (name "P0"
+            (effects
+              (font
+                (size 1 1))))
+          (number "1"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin bidirectional line
+          (at -15.24 10.16 0)
+          (length 5.08)
+          (name "P1"
+            (effects
+              (font
+                (size 1 1))))
+          (number "2"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin bidirectional line
+          (at -15.24 7.619999999999999 0)
+          (length 5.08)
+          (name "P2"
+            (effects
+              (font
+                (size 1 1))))
+          (number "3"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at -15.24 5.079999999999999 0)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1 1))))
+          (number "4"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin bidirectional line
+          (at 15.24 12.7 180)
+          (length 5.08)
+          (name "P3"
+            (effects
+              (font
+                (size 1 1))))
+          (number "5"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin input line
+          (at 15.24 10.16 180)
+          (length 5.08)
+          (name "SCL"
+            (effects
+              (font
+                (size 1 1))))
+          (number "6"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin bidirectional line
+          (at 15.24 7.619999999999999 180)
+          (length 5.08)
+          (name "SDA"
+            (effects
+              (font
+                (size 1 1))))
+          (number "7"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 15.24 5.079999999999999 180)
+          (length 5.08)
+          (name "VCC"
+            (effects
+              (font
+                (size 1 1))))
+          (number "8"
+            (effects
+              (font
+                (size 1 1)))))))
+    (symbol "Transistor_FET:Q_NMOS_GSD"
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "Q"
+        (at 5.08 1.905 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "Q_NMOS_GSD"
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 5.08 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "N-MOSFET transistor, gate/source/drain"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Q_NMOS_GSD_0_1"
+        (polyline
+          (pts
+            (xy 0.254 1.905)
+            (xy 0.254 -1.905))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.254 0)
+            (xy -2.54 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 2.286)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 0.508)
+            (xy 0.762 -0.508))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 -1.27)
+            (xy 0.762 -2.286))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 -1.778)
+            (xy 3.302 -1.778)
+            (xy 3.302 1.778)
+            (xy 0.762 1.778))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.016 0)
+            (xy 2.032 0.381)
+            (xy 2.032 -0.381)
+            (xy 1.016 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (circle
+          (center 1.651 0)
+          (radius 2.794)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.54 2.54)
+            (xy 2.54 1.778))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.54 1.778)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (circle
+          (center 2.54 -1.778)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 2.54 -2.54)
+            (xy 2.54 0)
+            (xy 0.762 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.921 0.381)
+            (xy 3.683 0.381))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.302 0.381)
+            (xy 2.921 -0.254)
+            (xy 3.683 -0.254)
+            (xy 3.302 0.381))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "Q_NMOS_GSD_1_1"
+        (pin input line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "G"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 2.54 -5.08 90)
+          (length 2.54)
+          (name "S"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 2.54 5.08 270)
+          (length 2.54)
+          (name "D"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Transistor_FET:Q_PMOS_GSD"
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "Q"
+        (at 5.08 1.905 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "Q_PMOS_GSD"
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 5.08 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "P-MOSFET transistor, gate/source/drain"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Q_PMOS_GSD_0_1"
+        (polyline
+          (pts
+            (xy 0.254 1.905)
+            (xy 0.254 -1.905))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.254 0)
+            (xy -2.54 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 2.286)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 1.778)
+            (xy 3.302 1.778)
+            (xy 3.302 -1.778)
+            (xy 0.762 -1.778))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 0.508)
+            (xy 0.762 -0.508))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 -1.27)
+            (xy 0.762 -2.286))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 1.651 0)
+          (radius 2.794)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.286 0)
+            (xy 1.27 0.381)
+            (xy 1.27 -0.381)
+            (xy 2.286 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 2.54 2.54)
+            (xy 2.54 1.778))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.54 1.778)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (circle
+          (center 2.54 -1.778)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 2.54 -2.54)
+            (xy 2.54 0)
+            (xy 0.762 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.921 -0.381)
+            (xy 3.683 -0.381))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.302 -0.381)
+            (xy 2.921 0.254)
+            (xy 3.683 0.254)
+            (xy 3.302 -0.381))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "Q_PMOS_GSD_1_1"
+        (pin input line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "G"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 2.54 -5.08 90)
+          (length 2.54)
+          (name "S"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 2.54 5.08 270)
+          (length 2.54)
+          (name "D"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:D_TVS"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "D_TVS"
+        (at 0 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Bidirectional transient-voltage-suppression diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "diode TVS thyrector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "D_TVS_0_1"
+        (polyline
+          (pts
+            (xy -2.54 1.27)
+            (xy -2.54 -1.27)
+            (xy 2.54 1.27)
+            (xy 2.54 -1.27)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.508 1.27)
+            (xy 0 1.27)
+            (xy 0 -1.27)
+            (xy -0.508 -1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "D_TVS_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 2.54)
+          (name "A1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 3.81 0 180)
+          (length 2.54)
+          (name "A2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Diode:BAT54C"
+      (pin_names
+        (offset 1.016))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0.635 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "BAT54C"
+        (at -6.35 3.175 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+        (at 1.905 3.175 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Datasheet" "http://www.diodes.com/_files/datasheets/ds11005.pdf"
+        (at -2.032 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "dual schottky barrier diode, common cathode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "schottky diode common cathode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOT?23*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "BAT54C_0_1"
+        (polyline
+          (pts
+            (xy -3.175 -1.27)
+            (xy -3.175 1.27)
+            (xy -1.27 0)
+            (xy -3.175 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.905 1.27)
+            (xy -1.905 1.016))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.905 0)
+            (xy 1.905 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.27 1.27)
+            (xy -1.905 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.27 1.27)
+            (xy -1.27 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy -3.81 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -0.635 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -0.635 -1.27)
+            (xy -0.635 -1.016))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 0 0)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 0.635 -1.27)
+            (xy 0.635 -1.016))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 1.27)
+            (xy 1.27 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 1.27)
+            (xy 1.905 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 0.635 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.905 1.27)
+            (xy 1.905 1.016))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.175 -1.27)
+            (xy 3.175 1.27)
+            (xy 1.27 0)
+            (xy 3.175 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.81 0)
+            (xy 1.27 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "BAT54C_1_1"
+        (pin passive line
+          (at -7.62 0 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -5.08 90)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:Fuse"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "F"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Fuse"
+        (at -1.905 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Fuse"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "fuse"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "*Fuse*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Fuse_0_1"
+        (rectangle
+          (start -0.762 -2.54)
+          (end 0.762 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0 -2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "Fuse_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (wire
+    (pts
+      (xy 48.26 50.8)
+      (xy 43.18 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c07abc9f-badd-55f7-86e3-4ec7aacc97d4"))
+  (global_label "USB_PROTECTED"
+    (shape input)
+    (at 43.18 50.8 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "f7d8af2f-301b-5799-b4fe-53813e77ba7a"))
+  (wire
+    (pts
+      (xy 48.26 53.34)
+      (xy 43.18 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e096c4ad-3c83-526e-94da-cb41001b3c79"))
+  (global_label "USB_ILIM"
+    (shape input)
+    (at 43.18 53.34 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "983e49ff-734e-571d-9142-d8271df7af98"))
+  (wire
+    (pts
+      (xy 48.26 55.88)
+      (xy 43.18 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "747bf04f-12fb-56bd-a32a-3f43d40242dd"))
+  (global_label "USB_PWR_FAULT_N"
+    (shape input)
+    (at 43.18 55.88 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "8ef48247-23e0-5cda-bc0d-657a10cb1209"))
+  (wire
+    (pts
+      (xy 48.26 58.42)
+      (xy 43.18 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0d575efd-39bc-5e34-9c6b-83a72329fabc"))
+  (global_label "USB_PWR_EN"
+    (shape input)
+    (at 43.18 58.42 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "4705d6f7-a4f8-5943-8a1a-d97a51110f89"))
+  (wire
+    (pts
+      (xy 78.74 50.8)
+      (xy 83.82 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dece19c6-3406-55b6-9694-03dbd05fdb75"))
+  (global_label "GND"
+    (shape input)
+    (at 83.82 50.8 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "5f24e6e2-aa46-5cc1-8904-2fcbeec9dfd4"))
+  (wire
+    (pts
+      (xy 78.74 53.34)
+      (xy 83.82 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "88d2e202-1ee6-5374-8119-c2f6ea157caf"))
+  (global_label "USB_FUSED"
+    (shape input)
+    (at 83.82 53.34 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "30a496e7-2a5c-52fe-8591-0a4cc56c7414"))
+  (wire
+    (pts
+      (xy 78.74 55.88)
+      (xy 83.82 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2b76dc56-947d-50cf-ac64-944dc6477e29"))
+  (global_label "GND"
+    (shape input)
+    (at 83.82 55.88 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e2f344b9-c278-5081-ae47-befda468525c"))
+  (symbol
+    (lib_id "Handset:TPS25200DRV")
+    (at 63.5 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d67806a9-bc7d-534b-9392-0e153e814e42")
+    (property "Reference" "U21"
+      (at 63.5 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPS25200DRVR"
+      (at 63.5 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+      (at 63.5 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "U21")
+          (unit 1))))
+    (pin "1"
+      (uuid "b063a4e0-65e1-579c-83c8-7d8bc4776138"))
+    (pin "2"
+      (uuid "835511b0-5aee-5758-88ed-e506bcabed20"))
+    (pin "3"
+      (uuid "e4f26485-c252-5072-b4db-dc12738f1011"))
+    (pin "4"
+      (uuid "54bc694e-2936-57d7-95f0-2464e040082c"))
+    (pin "5"
+      (uuid "4412d143-cd6c-5a09-9aa3-54e3e488ceb6"))
+    (pin "6"
+      (uuid "6bf1bbe9-ea8f-56d9-af3e-f02a6fdbbe92"))
+    (pin "7"
+      (uuid "dcaffa8d-c5ac-56fc-99cd-353718c630d2")))
+  (wire
+    (pts
+      (xy 180.34 50.8)
+      (xy 175.26 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4065c915-9813-5f47-b169-b8fee0359f45"))
+  (global_label "USB_CC1"
+    (shape input)
+    (at 175.26 50.8 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "146b71c7-89b1-5c70-987c-6389b0eb15dc"))
+  (wire
+    (pts
+      (xy 180.34 53.34)
+      (xy 175.26 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bf4f0d31-c473-5e03-a1cd-87999434dd00"))
+  (global_label "USB_CC2"
+    (shape input)
+    (at 175.26 53.34 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "104967da-e4b7-51e3-8e60-cdc5ce475102"))
+  (wire
+    (pts
+      (xy 180.34 55.88)
+      (xy 175.26 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a6788785-1c4d-56f2-9bb3-d3e4847321ea"))
+  (global_label "GND"
+    (shape input)
+    (at 175.26 55.88 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "793ca084-27d6-5e6f-9f97-d2889e33902b"))
+  (wire
+    (pts
+      (xy 180.34 58.42)
+      (xy 175.26 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "096a7ba0-16dd-5603-afc6-736a7df7fcee"))
+  (global_label "USB_VBUS_DET"
+    (shape input)
+    (at 175.26 58.42 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e92e8a16-45c3-587b-bcd7-8cc01f56147b"))
+  (no_connect
+    (at 180.34 60.96)
+    (uuid "d8468d33-a5a2-51de-939b-2b0f890712ab"))
+  (no_connect
+    (at 180.34 63.5)
+    (uuid "6947f54a-eea5-5cda-a7e0-6fbdb2c94900"))
+  (wire
+    (pts
+      (xy 210.82000000000002 50.8)
+      (xy 215.9 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d923ad96-197d-5e72-9c46-8b84b165e577"))
+  (global_label "USB_CC_HIGH_N"
+    (shape input)
+    (at 215.9 50.8 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d7630691-32b7-515d-a28d-3d570547cd2e"))
+  (no_connect
+    (at 210.82000000000002 53.34)
+    (uuid "2f4676e1-2716-5952-acba-1b6d4bbdee43"))
+  (no_connect
+    (at 210.82000000000002 55.88)
+    (uuid "a79f6e3a-7f69-5611-8745-84430663aeae"))
+  (wire
+    (pts
+      (xy 210.82000000000002 58.42)
+      (xy 215.9 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "354c8afc-432c-5437-9009-f1bb4a35354d"))
+  (global_label "GND"
+    (shape input)
+    (at 215.9 58.42 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "1827d71a-c573-58f1-bc01-1dc6c4a8b7df"))
+  (wire
+    (pts
+      (xy 210.82000000000002 60.96)
+      (xy 215.9 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cb221782-9abd-55fe-8e88-303d106682c9"))
+  (global_label "GND"
+    (shape input)
+    (at 215.9 60.96 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "9ca4fe7c-895d-5dea-8b57-b3c529fc8727"))
+  (wire
+    (pts
+      (xy 210.82000000000002 63.5)
+      (xy 215.9 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1aeac3b4-c01c-50cc-b0dd-973387154253"))
+  (global_label "USB_AON_3V3"
+    (shape input)
+    (at 215.9 63.5 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "bd5ed6bd-1cf1-52b3-a27c-86c6a65b4244"))
+  (symbol
+    (lib_id "Handset:TUSB320LAI")
+    (at 195.58 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "62392279-4ad2-5996-8d32-ba80377d8d2a")
+    (property "Reference" "U22"
+      (at 195.58 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TUSB320LAIRWBR"
+      (at 195.58 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm"
+      (at 195.58 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "U22")
+          (unit 1))))
+    (pin "1"
+      (uuid "4b8530ab-4cf0-5561-acaa-36996ff7c3d0"))
+    (pin "2"
+      (uuid "b0559159-e218-5c1e-b97d-ac33496f9fc9"))
+    (pin "3"
+      (uuid "cbb301ed-a7f9-5778-9175-a1c2c669ea67"))
+    (pin "4"
+      (uuid "4c6150bb-2837-5629-b974-ce279c18f50a"))
+    (pin "5"
+      (uuid "0dc6e354-c006-54d7-80ab-51a9d11b5915"))
+    (pin "6"
+      (uuid "152dafcc-a0da-5e5a-9837-0b15b4bb5a9a"))
+    (pin "7"
+      (uuid "c2c8e3b4-68b9-572e-a843-1ab48e0dd9a7"))
+    (pin "8"
+      (uuid "e269df49-84d7-5de3-8b37-5b1950572fb6"))
+    (pin "9"
+      (uuid "49587ffa-a0ad-5e93-8202-096598746178"))
+    (pin "10"
+      (uuid "c28ebe1f-8b62-5c47-bbf9-b4471e0e8e08"))
+    (pin "11"
+      (uuid "8ffee5bc-4803-50b5-9c62-a9bbaf578547"))
+    (pin "12"
+      (uuid "3d34dc54-0ffd-5a71-b801-7961c2e9be1f")))
+  (wire
+    (pts
+      (xy 312.42 50.8)
+      (xy 307.34 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5205398b-7c3e-5013-8508-5ec8f8cffcdf"))
+  (global_label "GND"
+    (shape input)
+    (at 307.34 50.8 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "592863ef-a6a6-5fed-b405-9bc8cd29411d"))
+  (wire
+    (pts
+      (xy 312.42 53.34)
+      (xy 307.34 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c55d6446-bffd-52bd-8763-3c43fe99f7ff"))
+  (global_label "USB_FUSED"
+    (shape input)
+    (at 307.34 53.34 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d9343d1d-62f3-56c5-9712-ce709038a50c"))
+  (wire
+    (pts
+      (xy 312.42 55.88)
+      (xy 307.34 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "935ffa2d-ad4e-5d50-a4db-e2d5f0047a21"))
+  (global_label "USB_AON_3V3"
+    (shape input)
+    (at 307.34 55.88 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e3222df9-fa39-5a80-9c0e-93737c171119"))
+  (wire
+    (pts
+      (xy 342.90000000000003 50.8)
+      (xy 347.98 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c112068d-d4fc-555c-9db8-a8d4a65c625c"))
+  (global_label "GND"
+    (shape input)
+    (at 347.98 50.8 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "356ca883-82c9-5abb-b478-6667638c63b3"))
+  (wire
+    (pts
+      (xy 342.90000000000003 53.34)
+      (xy 347.98 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0adaeab3-cf23-565e-a367-d5deda10dce0"))
+  (global_label "GND"
+    (shape input)
+    (at 347.98 53.34 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d02c0da2-b372-54fe-8377-b97160bd84da"))
+  (symbol
+    (lib_id "Handset:TLV70433DBV")
+    (at 327.66 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "92cd8e0f-cf25-5858-8cd0-dcd878e31e17")
+    (property "Reference" "U23"
+      (at 327.66 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TLV70433DBVR"
+      (at 327.66 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 327.66 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "U23")
+          (unit 1))))
+    (pin "1"
+      (uuid "9ed995c2-e8a2-545a-829e-9c3aa5b435bd"))
+    (pin "2"
+      (uuid "3f522049-8626-5d66-b7c2-3dfde8e7bfcf"))
+    (pin "3"
+      (uuid "843b1d7c-0275-5768-894d-4e56165d6ea1"))
+    (pin "4"
+      (uuid "8a384094-51a0-5efc-ad7d-678660f889f4"))
+    (pin "5"
+      (uuid "2f35e901-e492-5e41-a6da-a86bc6717375")))
+  (wire
+    (pts
+      (xy 444.5 50.8)
+      (xy 439.42 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "617d4cf2-ecb4-5bf9-916e-4d13afdf5758"))
+  (global_label "CHG_ENABLE"
+    (shape input)
+    (at 439.42 50.8 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a5c14157-374d-5571-8787-6294cd4d1ff4"))
+  (wire
+    (pts
+      (xy 444.5 53.34)
+      (xy 439.42 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5258f8fc-7b23-52bb-a3b8-a5fddcc15d03"))
+  (global_label "USB_LEGACY_EN"
+    (shape input)
+    (at 439.42 53.34 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d4705458-c35c-52d9-abd6-7bb6e40152b7"))
+  (wire
+    (pts
+      (xy 444.5 55.88)
+      (xy 439.42 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "50234da9-fa52-56b5-91cd-611a2579bacf"))
+  (global_label "USB_CC_QUALIFIED_N"
+    (shape input)
+    (at 439.42 55.88 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "547317cc-233e-53f1-9651-8944f6f86d82"))
+  (wire
+    (pts
+      (xy 444.5 58.42)
+      (xy 439.42 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "22c23cab-8f79-5ce8-a71b-61409643ef7d"))
+  (global_label "GND"
+    (shape input)
+    (at 439.42 58.42 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "1514be98-caf7-5efc-9cdf-8001f70eb22c"))
+  (wire
+    (pts
+      (xy 474.98 50.8)
+      (xy 480.06 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fc3e3eec-1ed6-502a-bc9e-771e9a2f9e05"))
+  (global_label "USB_PWR_FAULT_N"
+    (shape input)
+    (at 480.06 50.8 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "b4faccb1-7056-5d90-89b7-42c9834cd01a"))
+  (wire
+    (pts
+      (xy 474.98 53.34)
+      (xy 480.06 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7652ea72-79e9-5232-b611-d02576d1f3cc"))
+  (global_label "I2C_SCL"
+    (shape input)
+    (at 480.06 53.34 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "1cd1128b-50ad-5a70-b7a3-0288c8732a57"))
+  (wire
+    (pts
+      (xy 474.98 55.88)
+      (xy 480.06 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8ae6fe8e-eb87-5b25-a98c-02e41caed70c"))
+  (global_label "I2C_SDA"
+    (shape input)
+    (at 480.06 55.88 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "091d16a9-32e8-5ebd-90c9-6bf2d50e5dc1"))
+  (wire
+    (pts
+      (xy 474.98 58.42)
+      (xy 480.06 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3c8244c5-a065-5279-a91b-ebc9f7003dd8"))
+  (global_label "+3V3"
+    (shape input)
+    (at 480.06 58.42 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "6c7b5805-7084-52fb-a49c-b02b0651ec00"))
+  (symbol
+    (lib_id "Handset:TCA9536DGK")
+    (at 459.74 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a8b89f88-0f28-56f5-81f4-391fe24e3734")
+    (property "Reference" "U24"
+      (at 459.74 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TCA9536DGKR"
+      (at 459.74 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+      (at 459.74 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "U24")
+          (unit 1))))
+    (pin "1"
+      (uuid "e1a10529-4111-5024-8749-8e1833cd0f9c"))
+    (pin "2"
+      (uuid "73f37732-142f-5004-b9b8-c8f4b84e02fe"))
+    (pin "3"
+      (uuid "9c5385b6-c124-5159-b8b6-ed65c60c61ba"))
+    (pin "4"
+      (uuid "84781802-60a9-5f4a-a468-6406433e91d1"))
+    (pin "5"
+      (uuid "2e389d6b-b39f-57fc-8490-c1fd9903e9fb"))
+    (pin "6"
+      (uuid "5f5f423e-b94d-504a-8a02-1196e6e6953e"))
+    (pin "7"
+      (uuid "a7cb10ec-ae03-5c4e-a4a8-41e66b37d03e"))
+    (pin "8"
+      (uuid "3397955b-d16b-547d-a85d-adc156b0c19c")))
+  (wire
+    (pts
+      (xy 58.42 139.7)
+      (xy 53.34 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e051b585-0b58-5321-a4c6-a4873fc8c23a"))
+  (global_label "CHG_ENABLE"
+    (shape input)
+    (at 53.34 139.7 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "9baf961f-b393-50d4-86e9-0c93ed0e22ec"))
+  (wire
+    (pts
+      (xy 66.04 144.78)
+      (xy 66.04 149.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "051333bd-7937-58aa-9fec-6bb1157ab7a4"))
+  (global_label "GND"
+    (shape input)
+    (at 66.04 149.86 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "5845eb7d-9513-5b06-9e0e-77b4f8a97b61"))
+  (wire
+    (pts
+      (xy 66.04 134.61999999999998)
+      (xy 66.04 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fa475fc5-a6ed-5d5c-b642-78c95921f263"))
+  (global_label "CHG_CE_N"
+    (shape input)
+    (at 66.04 129.54 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e2f74050-1fc2-514f-93aa-eb595547cc11"))
+  (symbol
+    (lib_id "Transistor_FET:Q_NMOS_GSD")
+    (at 63.5 139.7 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b0fdb33d-e9bd-5388-ab63-926343bd6efa")
+    (property "Reference" "Q5"
+      (at 63.5 111.75999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "AO3400A"
+      (at 63.5 114.29999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 63.5 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "Q5")
+          (unit 1))))
+    (pin "1"
+      (uuid "41f2bfda-aba7-542d-88f5-6a1bbfd3dbc9"))
+    (pin "2"
+      (uuid "4d4f4083-fbb5-543e-af7f-ff10f66b3d0f"))
+    (pin "3"
+      (uuid "8069d702-f000-5756-8560-8566a268756a")))
+  (wire
+    (pts
+      (xy 190.5 139.7)
+      (xy 185.42 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "43bcaf6a-0139-56a0-9188-1eaf12b41e6a"))
+  (global_label "USB_CC_AUTO"
+    (shape input)
+    (at 185.42 139.7 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e13fbf20-3ce2-51ae-9c40-ab3d5e4fee8d"))
+  (wire
+    (pts
+      (xy 198.12 144.78)
+      (xy 198.12 149.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e73b3c6e-9c67-5fa6-b410-e52d0c910d59"))
+  (global_label "GND"
+    (shape input)
+    (at 198.12 149.86 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "85409622-c3d3-5276-81ed-5ec860997a2c"))
+  (wire
+    (pts
+      (xy 198.12 134.61999999999998)
+      (xy 198.12 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8d90e49b-aa34-5e35-891d-82a25f9da358"))
+  (global_label "USB_CC_QUALIFIED_N"
+    (shape input)
+    (at 198.12 129.54 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "cf678d16-79ad-55e5-8bd2-246e2396e312"))
+  (symbol
+    (lib_id "Transistor_FET:Q_NMOS_GSD")
+    (at 195.58 139.7 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8018b5fa-55ec-5b5c-8b9c-d9cef3f1143e")
+    (property "Reference" "Q7"
+      (at 195.58 111.75999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "AO3400A"
+      (at 195.58 114.29999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 195.58 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "Q7")
+          (unit 1))))
+    (pin "1"
+      (uuid "5d7b5bb6-2a71-5eab-a2d1-c973e4e72434"))
+    (pin "2"
+      (uuid "53f5c38e-d025-526d-86cb-f8eef2857e44"))
+    (pin "3"
+      (uuid "c6df6603-5f76-5b4e-a74a-dc67194d8c69")))
+  (wire
+    (pts
+      (xy 322.58000000000004 139.7)
+      (xy 317.5 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3a395e47-4f84-5737-af63-152bcdd7d38d"))
+  (global_label "USB_CC_HIGH_N"
+    (shape input)
+    (at 317.5 139.7 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "b3056da0-3270-5ea8-8e01-892777ddd394"))
+  (wire
+    (pts
+      (xy 330.20000000000005 144.78)
+      (xy 330.2 149.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b5fcfed4-d310-51c2-8cc2-9f1d3319e6a6"))
+  (global_label "USB_AON_3V3"
+    (shape input)
+    (at 330.2 149.86 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "24f65e71-9326-5564-b574-8f1caf14cebb"))
+  (wire
+    (pts
+      (xy 330.20000000000005 134.61999999999998)
+      (xy 330.2 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "27c0b9ff-6281-5922-a39c-c9cf838d8e6e"))
+  (global_label "USB_CC_AUTO"
+    (shape input)
+    (at 330.2 129.54 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "9d4a3dbf-2431-52e3-b127-59b96b9406fe"))
+  (symbol
+    (lib_id "Transistor_FET:Q_PMOS_GSD")
+    (at 327.66 139.7 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "605ffee9-5664-5c20-9dee-4f06d92621bc")
+    (property "Reference" "Q6"
+      (at 327.66 111.75999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "AO3401A"
+      (at 327.66 114.29999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 327.66 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "Q6")
+          (unit 1))))
+    (pin "1"
+      (uuid "210543c6-38a6-5403-848d-a916da0432f6"))
+    (pin "2"
+      (uuid "16975069-f0c6-532f-b3a4-42d5df620b4c"))
+    (pin "3"
+      (uuid "01c27ad8-ff9e-5cc8-876f-fd06394dbdbf")))
+  (wire
+    (pts
+      (xy 455.93 139.7)
+      (xy 450.85 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "75e37be6-b0be-5da4-b7bf-03baf2ed0216"))
+  (global_label "USB_FUSED"
+    (shape input)
+    (at 450.85 139.7 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "7a6fd2b6-c2ff-58df-a1cb-e732c2305d85"))
+  (wire
+    (pts
+      (xy 463.55 139.7)
+      (xy 468.63 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e1d43bf4-b827-507f-9090-d6da4b2e6a53"))
+  (global_label "GND"
+    (shape input)
+    (at 468.63 139.7 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d987db33-d741-599e-a645-f67465b28848"))
+  (symbol
+    (lib_id "Device:D_TVS")
+    (at 459.74 139.7 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cd4ac9f6-4383-573f-b212-0e132282e42f")
+    (property "Reference" "D1"
+      (at 459.74 111.75999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "SMF5.0A / Diotec"
+      (at 459.74 114.29999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Diode_SMD:D_SOD-123F"
+      (at 459.74 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "D1")
+          (unit 1))))
+    (pin "1"
+      (uuid "7c70dcfa-06ec-53e5-a072-dcd903104b18"))
+    (pin "2"
+      (uuid "38be52be-658a-51c1-9696-96742dba7c55")))
+  (wire
+    (pts
+      (xy 55.88 215.9)
+      (xy 50.8 215.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e70caa34-6b7b-518c-8f62-84800b9d1c45"))
+  (global_label "USB_CC_AUTO"
+    (shape input)
+    (at 50.8 215.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "2028c22c-0b0a-55d4-96eb-34b8c01a1abb"))
+  (wire
+    (pts
+      (xy 71.12 215.9)
+      (xy 76.2 215.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "768c9bf4-1dea-5465-8c1a-0b01557080ac"))
+  (global_label "USB_LEGACY_EN"
+    (shape input)
+    (at 76.2 215.9 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "45f9313c-400c-59c6-b0cf-4c3d08e4da3e"))
+  (wire
+    (pts
+      (xy 63.5 220.98000000000002)
+      (xy 63.5 226.06))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "16a4273b-b276-5bec-b6f5-47dae25bbb1c"))
+  (global_label "USB_PWR_EN"
+    (shape input)
+    (at 63.5 226.06 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "cb9057d9-60de-59c7-8337-817532796a15"))
+  (symbol
+    (lib_id "Diode:BAT54C")
+    (at 63.5 215.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "17829300-5848-539a-b3c9-3c88c6df1cef")
+    (property "Reference" "D2"
+      (at 63.5 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "BAT54C,215"
+      (at 63.5 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 63.5 215.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "D2")
+          (unit 1))))
+    (pin "1"
+      (uuid "6d16367e-b219-5ea1-a04d-f0a4339047ed"))
+    (pin "2"
+      (uuid "318862e7-23e6-5358-ba57-4b4faa778ced"))
+    (pin "3"
+      (uuid "c0ad0132-a666-5b19-8398-a1507c9b9b77")))
+  (wire
+    (pts
+      (xy 195.58 212.09)
+      (xy 195.58 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8ade7bb7-f2d9-5323-b687-b9aed13134e5"))
+  (global_label "USB_VBUS"
+    (shape input)
+    (at 195.58 207.01 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d0fe5443-aeb7-5d07-bd55-729f6e7b6378"))
+  (wire
+    (pts
+      (xy 195.58 219.71)
+      (xy 195.58 224.79))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "68d595c7-dade-59a6-9a94-17e7a4b765fe"))
+  (global_label "USB_FUSED"
+    (shape input)
+    (at 195.58 224.79 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "c8300786-675b-5094-a75a-00b8813e9187"))
+  (symbol
+    (lib_id "Device:Fuse")
+    (at 195.58 215.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "81ac1d61-98c0-5a0c-9961-b54132666bae")
+    (property "Reference" "F1"
+      (at 195.58 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "046701.5NRHF / 1.5A"
+      (at 195.58 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Fuse:Fuse_0603_1608Metric"
+      (at 195.58 215.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "F1")
+          (unit 1))))
+    (pin "1"
+      (uuid "644ed62a-f502-5d85-a62a-35a98d80c899"))
+    (pin "2"
+      (uuid "73e638da-5ba8-54b4-8091-f36f6a7a71d7")))
+  (wire
+    (pts
+      (xy 327.66 212.09)
+      (xy 327.66 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bfc0b71f-679b-5edb-b107-19a29ca2b0c9"))
+  (global_label "BAT_PACK_POS"
+    (shape input)
+    (at 327.66 207.01 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "12d5baeb-4603-5fef-a027-c447ecf47412"))
+  (wire
+    (pts
+      (xy 327.66 219.71)
+      (xy 327.66 224.79))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6cb56c86-ab5d-53ba-9411-c6e6a6839969"))
+  (global_label "VBAT"
+    (shape input)
+    (at 327.66 224.79 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "3ee6223e-8f57-5566-9082-0bfa5a0b6b77"))
+  (symbol
+    (lib_id "Device:Fuse")
+    (at 327.66 215.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "87a876fb-638c-58d9-9125-79cf3009e3a5")
+    (property "Reference" "F2"
+      (at 327.66 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "046701.5NRHF / 1.5A"
+      (at 327.66 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Fuse:Fuse_0603_1608Metric"
+      (at 327.66 215.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "F2")
+          (unit 1))))
+    (pin "1"
+      (uuid "bbe630ef-25f4-56dd-aecf-0f6e319f4817"))
+    (pin "2"
+      (uuid "40294d15-9902-5828-b79b-8a69d8f26632")))
+  (wire
+    (pts
+      (xy 459.74 212.09)
+      (xy 459.74 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "45b52767-5449-5c64-956b-0e1018d03cfd"))
+  (global_label "USB_ILIM"
+    (shape input)
+    (at 459.74 207.01 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "405dacf3-010c-552e-a392-34cbedb365fb"))
+  (wire
+    (pts
+      (xy 459.74 219.71)
+      (xy 459.74 224.79))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d4d641b6-e449-5d46-afc4-f6d3a6a1f84e"))
+  (global_label "GND"
+    (shape input)
+    (at 459.74 224.79 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a0352e18-88b6-5644-ab99-98b78188cbba"))
+  (symbol
+    (lib_id "Device:R")
+    (at 459.74 215.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f89256c0-41f7-5f1f-8977-d7368a99269c")
+    (property "Reference" "R65"
+      (at 459.74 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100k 1%"
+      (at 459.74 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 459.74 215.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "R65")
+          (unit 1))))
+    (pin "1"
+      (uuid "46964fcb-b4aa-5f6b-ac82-fb0bfe951b77"))
+    (pin "2"
+      (uuid "d47e7ce1-fcc6-541b-a9fd-933a05ba0106")))
+  (wire
+    (pts
+      (xy 63.5 288.29)
+      (xy 63.5 283.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "33a8e4c2-63b1-5b49-abad-daa89136b545"))
+  (global_label "+3V3"
+    (shape input)
+    (at 63.5 283.21 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "2ee85e77-8e8c-57b1-9056-eaf8324e8bfe"))
+  (wire
+    (pts
+      (xy 63.5 295.91)
+      (xy 63.5 300.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2e8550b3-16ef-5dc6-9582-78e812da9ed0"))
+  (global_label "USB_PWR_FAULT_N"
+    (shape input)
+    (at 63.5 300.99 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "1a291b44-387c-5d88-98f5-c3dd8f95bb26"))
+  (symbol
+    (lib_id "Device:R")
+    (at 63.5 292.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "233204ba-9051-5e4b-a0c9-7fa010173891")
+    (property "Reference" "R66"
+      (at 63.5 264.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 63.5 266.70000000000005 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 63.5 292.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "R66")
+          (unit 1))))
+    (pin "1"
+      (uuid "0750cff0-3745-573b-b749-9d878c9abb02"))
+    (pin "2"
+      (uuid "78e352ad-11a6-52de-86ba-a0ba9b3ec033")))
+  (wire
+    (pts
+      (xy 195.58 288.29)
+      (xy 195.58 283.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b7227aad-2694-5a17-91b7-6409c46d48b6"))
+  (global_label "USB_PWR_EN"
+    (shape input)
+    (at 195.58 283.21 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "97b4c5b8-9ad3-5488-a1f3-a8dae0cb19ee"))
+  (wire
+    (pts
+      (xy 195.58 295.91)
+      (xy 195.58 300.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a4c3c225-99db-5ac0-8f58-6aa3753b2ed3"))
+  (global_label "GND"
+    (shape input)
+    (at 195.58 300.99 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "cc3898db-612a-5c17-a382-ccd5229ff9d7"))
+  (symbol
+    (lib_id "Device:R")
+    (at 195.58 292.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "046848b9-bf2a-5880-95ac-4544774a787b")
+    (property "Reference" "R67"
+      (at 195.58 264.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100k"
+      (at 195.58 266.70000000000005 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 195.58 292.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "R67")
+          (unit 1))))
+    (pin "1"
+      (uuid "55339847-336d-5787-b42c-4e12db817c28"))
+    (pin "2"
+      (uuid "97c94708-3ebe-5457-aa33-052b2742b73a")))
+  (wire
+    (pts
+      (xy 327.66 288.29)
+      (xy 327.66 283.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1cd3fee0-b499-5eef-8d50-0dcfb211d8ea"))
+  (global_label "USB_LEGACY_EN"
+    (shape input)
+    (at 327.66 283.21 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "5704e300-f38b-58b8-80ca-e0336d82848e"))
+  (wire
+    (pts
+      (xy 327.66 295.91)
+      (xy 327.66 300.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "58b58308-dbec-5f10-87fc-454a1f17e199"))
+  (global_label "GND"
+    (shape input)
+    (at 327.66 300.99 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "c0c3acb1-23b9-50b6-8f46-cc0db5ce1590"))
+  (symbol
+    (lib_id "Device:R")
+    (at 327.66 292.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f6910830-5821-5419-983e-a6e7704afa0e")
+    (property "Reference" "R68"
+      (at 327.66 264.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "4.7k"
+      (at 327.66 266.70000000000005 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 327.66 292.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "R68")
+          (unit 1))))
+    (pin "1"
+      (uuid "81aeecca-643d-56c9-99a5-411890a7c6ef"))
+    (pin "2"
+      (uuid "6a17005e-11f4-53dc-a87c-4bc20bec6a98")))
+  (wire
+    (pts
+      (xy 459.74 288.29)
+      (xy 459.74 283.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2e80d9fc-1cec-579b-8cd9-cff673417d8f"))
+  (global_label "+3V3"
+    (shape input)
+    (at 459.74 283.21 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "0cf261c4-4249-5598-9716-7f8420b0939e"))
+  (wire
+    (pts
+      (xy 459.74 295.91)
+      (xy 459.74 300.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "47f29faf-f348-5dd3-a3d9-b35de63e6eee"))
+  (global_label "USB_CC_QUALIFIED_N"
+    (shape input)
+    (at 459.74 300.99 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "b16824b5-ae75-55d4-89bb-59cbc9912b78"))
+  (symbol
+    (lib_id "Device:R")
+    (at 459.74 292.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a905dcc4-16c6-52bf-a0ad-5cef3390b2d9")
+    (property "Reference" "R69"
+      (at 459.74 264.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 459.74 266.70000000000005 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 459.74 292.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "R69")
+          (unit 1))))
+    (pin "1"
+      (uuid "a004fe09-3869-57bb-b985-4dd8f9a82c40"))
+    (pin "2"
+      (uuid "70ff19d8-a85c-5ad0-ace4-39d0bd18918a")))
+  (wire
+    (pts
+      (xy 63.5 364.49)
+      (xy 63.5 359.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "76041109-b6df-597b-9a10-83ef941f3fd0"))
+  (global_label "USB_CC_AUTO"
+    (shape input)
+    (at 63.5 359.41 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "9499d3d7-a8cd-5d14-952f-97b62a115236"))
+  (wire
+    (pts
+      (xy 63.5 372.11)
+      (xy 63.5 377.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0308b2ed-9ee1-51d9-abde-740680bfbe78"))
+  (global_label "GND"
+    (shape input)
+    (at 63.5 377.19 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "184e6a34-327c-5c9f-aa44-b7d7c094d060"))
+  (symbol
+    (lib_id "Device:R")
+    (at 63.5 368.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "762ce6df-10c7-5526-b459-c4926531503f")
+    (property "Reference" "R70"
+      (at 63.5 340.36 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "4.7k"
+      (at 63.5 342.90000000000003 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 63.5 368.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "R70")
+          (unit 1))))
+    (pin "1"
+      (uuid "1d7aa34b-7ff8-509c-8bb7-f4b90e42c9a5"))
+    (pin "2"
+      (uuid "21f13df4-e543-59f0-83d3-095f3bcaecda")))
+  (wire
+    (pts
+      (xy 195.58 364.49)
+      (xy 195.58 359.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "32240bc6-3b42-5360-a6d2-1b840c0071d7"))
+  (global_label "USB_FUSED"
+    (shape input)
+    (at 195.58 359.41 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "9a6d9ecc-017c-5385-8e51-a0351d5fc222"))
+  (wire
+    (pts
+      (xy 195.58 372.11)
+      (xy 195.58 377.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5eb37ee8-fefc-521f-9193-e3f1589a7ffe"))
+  (global_label "GND"
+    (shape input)
+    (at 195.58 377.19 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "22a9eb2d-f7e9-500e-85c9-45e2a13dba4d"))
+  (symbol
+    (lib_id "Device:C")
+    (at 195.58 368.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c7098dc2-c054-5b6f-a95f-438583652fe8")
+    (property "Reference" "C56"
+      (at 195.58 340.36 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100nF 50V X7R"
+      (at 195.58 342.90000000000003 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 195.58 368.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "C56")
+          (unit 1))))
+    (pin "1"
+      (uuid "8d614dee-30a0-5129-80cd-8ed507653abc"))
+    (pin "2"
+      (uuid "2135c2d8-99c7-54ca-9f8f-924dcff995f5")))
+  (wire
+    (pts
+      (xy 327.66 364.49)
+      (xy 327.66 359.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "45baa5ca-83db-572d-a21f-be57a407e770"))
+  (global_label "USB_AON_3V3"
+    (shape input)
+    (at 327.66 359.41 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "6a6824ca-e6fb-5a71-95d2-61617d933c3c"))
+  (wire
+    (pts
+      (xy 327.66 372.11)
+      (xy 327.66 377.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a049147a-3f8f-5d6f-ab96-b015c6d04577"))
+  (global_label "GND"
+    (shape input)
+    (at 327.66 377.19 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "350c9b10-158c-597a-bd00-f9ed00e86bb6"))
+  (symbol
+    (lib_id "Device:C")
+    (at 327.66 368.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4e1d365b-f4b6-5f26-ac5f-c3900898b744")
+    (property "Reference" "C57"
+      (at 327.66 340.36 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "2.2uF 10V X7R"
+      (at 327.66 342.90000000000003 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 327.66 368.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "C57")
+          (unit 1))))
+    (pin "1"
+      (uuid "01d65aba-6229-5d17-801f-b3413c6db3a3"))
+    (pin "2"
+      (uuid "074e5faa-63ea-5c78-90a6-299fe4d5dd5d")))
+  (wire
+    (pts
+      (xy 459.74 364.49)
+      (xy 459.74 359.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d048f28f-5cb6-5642-9b19-937c94709437"))
+  (global_label "USB_AON_3V3"
+    (shape input)
+    (at 459.74 359.41 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e20cbde7-f07a-5a20-b7d6-ece888f2cb88"))
+  (wire
+    (pts
+      (xy 459.74 372.11)
+      (xy 459.74 377.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "24f8544d-0930-5f2b-a2f8-21ae065e27c5"))
+  (global_label "GND"
+    (shape input)
+    (at 459.74 377.19 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "3fc7a529-9391-5bb1-9f81-3d63eeeddef4"))
+  (symbol
+    (lib_id "Device:C")
+    (at 459.74 368.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "85af050d-10d1-5c11-95fa-b6bc6f408fd3")
+    (property "Reference" "C58"
+      (at 459.74 340.36 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100nF 10V X7R"
+      (at 459.74 342.90000000000003 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 459.74 368.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "C58")
+          (unit 1))))
+    (pin "1"
+      (uuid "742cd1ef-b9e7-5392-9500-05f044eaec0e"))
+    (pin "2"
+      (uuid "88a02a4e-f4b7-5e26-8f90-0fdace62d911")))
+  (wire
+    (pts
+      (xy 63.5 440.69)
+      (xy 63.5 435.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bb32a4e9-9a73-5528-ba60-592f9ce74ff4"))
+  (global_label "USB_FUSED"
+    (shape input)
+    (at 63.5 435.61 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "47fd37d8-4ae9-57d8-8def-9364c3661417"))
+  (wire
+    (pts
+      (xy 63.5 448.31)
+      (xy 63.5 453.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ac3a50b8-9918-513f-aad4-d919948864cb"))
+  (global_label "GND"
+    (shape input)
+    (at 63.5 453.39 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a9b2bc6e-f6c4-5876-a867-ce1c3dd0d153"))
+  (symbol
+    (lib_id "Device:C")
+    (at 63.5 444.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e125ed72-dd21-5055-b6de-597f1e60f4d6")
+    (property "Reference" "C59"
+      (at 63.5 416.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100nF 50V X7R"
+      (at 63.5 419.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 63.5 444.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "C59")
+          (unit 1))))
+    (pin "1"
+      (uuid "e760e58e-eb76-5d55-87f8-77fbceabc62b"))
+    (pin "2"
+      (uuid "4d69c799-4921-5d6c-9c0a-9724ea8614f1")))
+  (wire
+    (pts
+      (xy 195.58 440.69)
+      (xy 195.58 435.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "336e1b22-24b4-5440-ac2b-141dc8c40f6b"))
+  (global_label "+3V3"
+    (shape input)
+    (at 195.58 435.61 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "5a328f58-6e9b-5527-9e86-56a9a6c53339"))
+  (wire
+    (pts
+      (xy 195.58 448.31)
+      (xy 195.58 453.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f0b2a79-9ac3-5c59-9c33-73c0bd8af7e2"))
+  (global_label "GND"
+    (shape input)
+    (at 195.58 453.39 90.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "03d17258-1d98-5280-a5cd-745f44c5386b"))
+  (symbol
+    (lib_id "Device:C")
+    (at 195.58 444.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1e45f563-c195-591d-b204-3b05410d22bf")
+    (property "Reference" "C60"
+      (at 195.58 416.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100nF 10V X7R"
+      (at 195.58 419.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 195.58 444.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/99b2cc31-a5b6-5441-aa03-3882142f95f0"
+          (reference "C60")
+          (unit 1))))
+    (pin "1"
+      (uuid "7960bfa1-e3d5-54f7-bcd6-2aec5854e548"))
+    (pin "2"
+      (uuid "b36d56d2-2fab-5ff8-a9dc-6932f5d2d9ea"))))

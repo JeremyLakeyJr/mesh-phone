@@ -2,3 +2,6 @@ __pycache__/
 *.py[cod]
 *.kicad_prl
 ~*.lck
+
+# Local KiCad history repositories; retain existing tracked root history.
+**/.history/

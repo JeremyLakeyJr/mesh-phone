@@ -5,6 +5,12 @@ an electrical release. Dimensions and capabilities come from manufacturer
 product pages and datasheets linked below. Distributor listings and generic
 marketplace modules were not used as design authority.
 
+Implementation update: [Handset Rev A](../../hardware/handset-rev-a/README.md)
+uses a 66 × 142 mm outline to preserve mounting-hole edge material. The user
+requires multi-carrier cellular service, so A7672G is not frozen as the modem.
+The UBX-M10050-KB integration manual is listed by u-blox as NDA-required;
+its component-level circuit cannot yet be completed from the public summary.
+
 ## Result
 
 A 66 × 138 mm main board is realistic if the design stops using large breakout

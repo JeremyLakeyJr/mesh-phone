@@ -1,6 +1,6 @@
 Function,Preferred candidate,Package/body,Status,Primary reason,Blocking check
 MCU/Wi-Fi/BLE,ESP32-S3-WROOM-1-N16R8,18x25.5mm module,Retain,User chose to keep the existing ESP32 module,Observe Espressif antenna keepout and fit the larger module in placement
-LTE voice/data,SIMCom A7672G,24x24x2.4mm LCC+LGA,Research lead,VoLTE plus analog audio and US/global bands,Exact carrier and firmware approval plus peak-current test
+LTE voice/data,SIMCom A7672G or broader approved alternative,Replaceable adapter envelope pending,Not frozen,User requires unlocked multi-carrier service,Exact carrier VoLTE firmware and peak-current verification
 LTE certified fallback,SIMCom SIM7672G or SIM7672NA,24x24x2.4mm LCC+LGA,Conditional,US bands and SIM7672G AT&T certificate,Confirm VoLTE and audio interface on exact variant
 LoRa,Semtech SX1262,4x4mm QFN,Preferred,Same radio IC class without breakout,915MHz reference layout RF switch and antenna validation
 Sub-GHz general,TI CC1101,4x4mm VQFN,Preferred,Same function without breakout,TI 915MHz reference network and FCC testing
@@ -8,7 +8,7 @@ GNSS,u-blox UBX-M10050-KB,4x4x0.55mm QFN,Conditional,Large area reduction with U
 NFC,ST ST25R3916B-AQET,5x5mm QFN,Preferred,Integrated NFC reader front end,Flex-loop and matching design
 125kHz RFID,NXP HTRC110,SO14 body about 8.7x3.9mm,Conditional,Replaces large RDM6300 board,Protocol coverage coil and analog validation
 Keypad scanner,TI TCA8418,4x4mm WQFN,Preferred,Debounce FIFO interrupt and 4x4 matrix,Multi-key ghosting policy
-Charger/power path,TI BQ25185,2.2x2.0mm WSON,Preferred,1A charger with current limit thermistor and power path,Protected-pack contract and thermal calculation
+Charger/power path,TI BQ25186DLHR,2.2x2.0mm WSON,Selected; firmware required,Programmable charge/current/TS/timer and power path,See power-entry-review.md and charger-policy.json; pack current and thermal qualification remain
 Fuel gauge,Analog Devices MAX17048G+T,2x2mm TDFN,Preferred,Existing function without breakout,Battery model and I2C integration
 3.3V rail,TI TPS63802,3x2mm VSON-HR,Preferred,2A buck-boost over full LiPo range,Full simultaneous load transient budget
 1.8V rail,TI TPS62840,SON or WCSP,Preferred,Low-Iq GNSS/digital rail,Select package and current budget

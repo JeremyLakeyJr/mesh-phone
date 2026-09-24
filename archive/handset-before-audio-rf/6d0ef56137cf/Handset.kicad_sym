@@ -1,0 +1,1210 @@
+(kicad_symbol_lib
+  (version 20250114)
+  (generator "kicad_symbol_editor")
+  (symbol "TCA8418"
+    (pin_names
+      (offset 0.5))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TCA8418"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "TCA8418_0_1"
+      (rectangle
+        (start -10.16 17.78)
+        (end 10.16 -17.78)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "TCA8418_1_1"
+      (pin bidirectional line
+        (at -15.24 15.240000000000002 0)
+        (length 5.08)
+        (name "ROW7"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 12.700000000000001 0)
+        (length 5.08)
+        (name "ROW6"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 10.16 0)
+        (length 5.08)
+        (name "ROW5"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 7.620000000000001 0)
+        (length 5.08)
+        (name "ROW4"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 5.080000000000002 0)
+        (length 5.08)
+        (name "ROW3"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 2.540000000000001 0)
+        (length 5.08)
+        (name "ROW2"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 0.0 0)
+        (length 5.08)
+        (name "ROW1"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -2.539999999999999 0)
+        (length 5.08)
+        (name "ROW0"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -5.079999999999998 0)
+        (length 5.08)
+        (name "COL0"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -7.619999999999997 0)
+        (length 5.08)
+        (name "COL1"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -10.16 0)
+        (length 5.08)
+        (name "COL2"
+          (effects
+            (font
+              (size 1 1))))
+        (number "11"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -12.7 0)
+        (length 5.08)
+        (name "COL3"
+          (effects
+            (font
+              (size 1 1))))
+        (number "12"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -15.240000000000002 0)
+        (length 5.08)
+        (name "COL4"
+          (effects
+            (font
+              (size 1 1))))
+        (number "13"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 15.240000000000002 180)
+        (length 5.08)
+        (name "COL5"
+          (effects
+            (font
+              (size 1 1))))
+        (number "14"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 12.700000000000001 180)
+        (length 5.08)
+        (name "COL6"
+          (effects
+            (font
+              (size 1 1))))
+        (number "15"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 10.16 180)
+        (length 5.08)
+        (name "COL7"
+          (effects
+            (font
+              (size 1 1))))
+        (number "16"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 7.620000000000001 180)
+        (length 5.08)
+        (name "COL8"
+          (effects
+            (font
+              (size 1 1))))
+        (number "17"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 5.080000000000002 180)
+        (length 5.08)
+        (name "COL9"
+          (effects
+            (font
+              (size 1 1))))
+        (number "18"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 2.540000000000001 180)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "19"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 0.0 180)
+        (length 5.08)
+        (name "RESET_N"
+          (effects
+            (font
+              (size 1 1))))
+        (number "20"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -2.539999999999999 180)
+        (length 5.08)
+        (name "VCC"
+          (effects
+            (font
+              (size 1 1))))
+        (number "21"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 -5.079999999999998 180)
+        (length 5.08)
+        (name "SDA"
+          (effects
+            (font
+              (size 1 1))))
+        (number "22"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 -7.619999999999997 180)
+        (length 5.08)
+        (name "SCL"
+          (effects
+            (font
+              (size 1 1))))
+        (number "23"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 -10.16 180)
+        (length 5.08)
+        (name "INT_N"
+          (effects
+            (font
+              (size 1 1))))
+        (number "24"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -12.7 180)
+        (length 5.08)
+        (name "EP"
+          (effects
+            (font
+              (size 1 1))))
+        (number "25"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "BQ25185"
+    (pin_names
+      (offset 0.5))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "BQ25185"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "BQ25185_0_1"
+      (rectangle
+        (start -10.16 8.89)
+        (end 10.16 -8.89)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "BQ25185_1_1"
+      (pin passive line
+        (at -15.24 6.3500000000000005 0)
+        (length 5.08)
+        (name "SYS"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 3.8100000000000005 0)
+        (length 5.08)
+        (name "BAT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 1.2700000000000005 0)
+        (length 5.08)
+        (name "STAT2"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 -1.2699999999999996 0)
+        (length 5.08)
+        (name "CE_N"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 -3.8099999999999987 0)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 -6.35 0)
+        (length 5.08)
+        (name "TS_MR"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 6.3500000000000005 180)
+        (length 5.08)
+        (name "ILIM_VSET"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 3.8100000000000005 180)
+        (length 5.08)
+        (name "ISET"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 1.2700000000000005 180)
+        (length 5.08)
+        (name "STAT1"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -1.2699999999999996 180)
+        (length 5.08)
+        (name "IN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -3.8099999999999987 180)
+        (length 5.08)
+        (name "EP"
+          (effects
+            (font
+              (size 1 1))))
+        (number "11"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "CC1101"
+    (pin_names
+      (offset 0.5))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "CC1101"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "CC1101_0_1"
+      (rectangle
+        (start -10.16 15.24)
+        (end 10.16 -15.24)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "CC1101_1_1"
+      (pin bidirectional line
+        (at -15.24 12.7 0)
+        (length 5.08)
+        (name "SCLK"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 10.16 0)
+        (length 5.08)
+        (name "SO"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 7.62 0)
+        (length 5.08)
+        (name "GDO2"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "DVDD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 2.540000000000001 0)
+        (length 5.08)
+        (name "DCOUPL"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 0.0 0)
+        (length 5.08)
+        (name "GDO0"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -2.540000000000001 0)
+        (length 5.08)
+        (name "CS_N"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -5.08 0)
+        (length 5.08)
+        (name "XOSC_Q1"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 -7.619999999999999 0)
+        (length 5.08)
+        (name "AVDD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -10.159999999999998 0)
+        (length 5.08)
+        (name "XOSC_Q2"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 -12.700000000000001 0)
+        (length 5.08)
+        (name "AVDD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "11"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 12.7 180)
+        (length 5.08)
+        (name "RF_P"
+          (effects
+            (font
+              (size 1 1))))
+        (number "12"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 10.16 180)
+        (length 5.08)
+        (name "RF_N"
+          (effects
+            (font
+              (size 1 1))))
+        (number "13"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 7.62 180)
+        (length 5.08)
+        (name "AVDD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "14"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "AVDD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "15"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 2.540000000000001 180)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "16"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 0.0 180)
+        (length 5.08)
+        (name "RBIAS"
+          (effects
+            (font
+              (size 1 1))))
+        (number "17"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -2.540000000000001 180)
+        (length 5.08)
+        (name "DGUARD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "18"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -5.08 180)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "19"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 -7.619999999999999 180)
+        (length 5.08)
+        (name "SI"
+          (effects
+            (font
+              (size 1 1))))
+        (number "20"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -10.159999999999998 180)
+        (length 5.08)
+        (name "EP"
+          (effects
+            (font
+              (size 1 1))))
+        (number "21"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "TPS63802"
+    (pin_names
+      (offset 0.5))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPS63802"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Handset:TPS63802_DLA0010A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "TPS63802_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "TPS63802_1_1"
+      (pin passive line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "EN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 2.54 0)
+        (length 5.08)
+        (name "MODE"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 0.0 0)
+        (length 5.08)
+        (name "AGND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 -2.54 0)
+        (length 5.08)
+        (name "FB"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 -5.079999999999999 0)
+        (length 5.08)
+        (name "PG"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_out line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "VOUT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 2.54 180)
+        (length 5.08)
+        (name "L2"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 0.0 180)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -2.54 180)
+        (length 5.08)
+        (name "L1"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -5.079999999999999 180)
+        (length 5.08)
+        (name "VIN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "MAX17048"
+    (pin_names
+      (offset 0.5))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "MAX17048"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "MAX17048_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "MAX17048_1_1"
+      (pin power_in line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "CTG"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 2.54 0)
+        (length 5.08)
+        (name "CELL"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 0.0 0)
+        (length 5.08)
+        (name "VDD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 -2.54 0)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at -15.24 -5.079999999999999 0)
+        (length 5.08)
+        (name "ALRT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "QSTRT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 2.54 180)
+        (length 5.08)
+        (name "SCL"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin bidirectional line
+        (at 15.24 0.0 180)
+        (length 5.08)
+        (name "SDA"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -2.54 180)
+        (length 5.08)
+        (name "EP"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "TPS61023"
+    (pin_names
+      (offset 0.5))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPS61023"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "TPS61023_0_1"
+      (rectangle
+        (start -10.16 5.08)
+        (end 10.16 -5.08)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "TPS61023_1_1"
+      (pin passive line
+        (at -15.24 2.54 0)
+        (length 5.08)
+        (name "FB"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 0.0 0)
+        (length 5.08)
+        (name "EN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 -2.54 0)
+        (length 5.08)
+        (name "VIN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 2.54 180)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 0.0 180)
+        (length 5.08)
+        (name "SW"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_out line
+        (at 15.24 -2.54 180)
+        (length 5.08)
+        (name "VOUT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "TPS62840"
+    (pin_names
+      (offset 0.5))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPS62840"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_SON:VSON-8_1.5x2mm_P0.5mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "TPS62840_0_1"
+      (rectangle
+        (start -10.16 6.35)
+        (end 10.16 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "TPS62840_1_1"
+      (pin power_in line
+        (at -15.24 3.8099999999999996 0)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 1.2699999999999996 0)
+        (length 5.08)
+        (name "VIN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 -1.2700000000000005 0)
+        (length 5.08)
+        (name "MODE"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 -3.8100000000000005 0)
+        (length 5.08)
+        (name "EN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 3.8099999999999996 180)
+        (length 5.08)
+        (name "VSET"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 1.2699999999999996 180)
+        (length 5.08)
+        (name "STOP"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -1.2700000000000005 180)
+        (length 5.08)
+        (name "SW"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -3.8100000000000005 180)
+        (length 5.08)
+        (name "VOS"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1))))))))

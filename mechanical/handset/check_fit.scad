@@ -5,7 +5,7 @@ module battery_test() {translate([0,-39,2.801]) linear_extrude(12) square([38,67
 module display_test() {translate([0,42.5,20.101]) linear_extrude(3.498) square([60.5,43.5],center=true);}
 module board_test() {
  translate([0,0,17.201]) difference() {
-  slab(66,138,1.598,1.5);
+  slab(66,142,1.598,1.5);
   translate([0,8,-1]) rr(27,24,4,1);
   for(x=[-30.5,30.5],y=[-68,68]) translate([x,y,-1]) cylinder(d=2.3,h=4,$fn=48);
  }

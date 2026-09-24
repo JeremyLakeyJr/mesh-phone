@@ -1,0 +1,25 @@
+{
+  "scope": "SX1262 core DC-DC schematic contract, not copper continuity or complete radio qualification",
+  "passed": true,
+  "checks": 30,
+  "failures": [],
+  "negative_tests": [
+    {
+      "mutation": "L12.2 -> +3V3",
+      "rejected": true
+    },
+    {
+      "mutation": "C9.2 -> SX_DCC_SW",
+      "rejected": true
+    },
+    {
+      "mutation": "U4.1 -> SX_VREG",
+      "rejected": true
+    },
+    {
+      "mutation": "C9 old incorrect 100nF",
+      "rejected": true
+    }
+  ],
+  "fabrication_released": false
+}

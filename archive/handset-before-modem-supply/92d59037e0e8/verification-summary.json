@@ -1,0 +1,29 @@
+{
+  "status": "INCOMPLETE \u2014 NOT FOR FABRICATION OR POWER",
+  "integrity_checks": 1260,
+  "integrity_passed": 1260,
+  "integrity_failures": [],
+  "components": 142,
+  "copper_layers": 4,
+  "erc_by_type": {
+    "isolated_pin_label": 39,
+    "lib_symbol_mismatch": 4,
+    "power_pin_not_driven": 5,
+    "pin_not_driven": 7,
+    "pin_to_pin": 1
+  },
+  "drc_by_type": {
+    "solder_mask_bridge": 4,
+    "drill_out_of_range": 12,
+    "courtyards_overlap": 10,
+    "clearance": 6,
+    "shorting_items": 2,
+    "hole_clearance": 4,
+    "silk_overlap": 19,
+    "silk_over_copper": 30,
+    "text_height": 40,
+    "silk_edge_clearance": 3
+  },
+  "unconnected_items": 386,
+  "unresolved_placement_zones": 2
+}

@@ -1,0 +1,545 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5")
+  (paper "A2")
+  (lib_symbols)
+  (sheet
+    (at 25.4 45.72)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "093eac71-591b-5d3e-a41f-192f628ba678")
+    (property "Sheetname" "ESP32 host, boot and reset"
+      (at 25.4 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "core.kicad_sch"
+      (at 25.4 73.66 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "2")))))
+  (sheet
+    (at 213.36 45.72)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "2f0dfa41-0505-5a4f-b03e-454533e3775d")
+    (property "Sheetname" "Key matrix and trackball"
+      (at 213.36 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "keys.kicad_sch"
+      (at 213.36 73.66 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "3")))))
+  (sheet
+    (at 401.32 45.72)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ea488845-e8b9-5159-bc76-882ade905186")
+    (property "Sheetname" "USB-C data and ESD"
+      (at 401.32 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "usb.kicad_sch"
+      (at 401.32 73.66 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "4")))))
+  (sheet
+    (at 25.4 91.44)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6d5b0e6f-dbcc-5d9e-a84a-e2a5da1083d6")
+    (property "Sheetname" "Fused USB input and eFuse"
+      (at 25.4 88.89999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "usb-input.kicad_sch"
+      (at 25.4 119.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "5")))))
+  (sheet
+    (at 213.36 91.44)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "0269f4e7-eb98-5e61-8fe5-72f50be4b5a5")
+    (property "Sheetname" "USB-C source detection and permission"
+      (at 213.36 88.89999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "usb-detect.kicad_sch"
+      (at 213.36 119.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "6")))))
+  (sheet
+    (at 401.32 91.44)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "72639a79-8f99-58d0-92b9-4ea7054e0231")
+    (property "Sheetname" "Battery, thermistor and programmable charger"
+      (at 401.32 88.89999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "power.kicad_sch"
+      (at 401.32 119.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "7")))))
+  (sheet
+    (at 25.4 137.16)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "2e95f114-9fa6-50e6-9a23-c633826f80f0")
+    (property "Sheetname" "Power control and fuel gauge"
+      (at 25.4 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "power-control.kicad_sch"
+      (at 25.4 165.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "8")))))
+  (sheet
+    (at 213.36 137.16)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "4a066195-ffb8-5e8a-b7e4-3c2551040ebf")
+    (property "Sheetname" "Main 3.3 V buck-boost supply"
+      (at 213.36 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "reg3.kicad_sch"
+      (at 213.36 165.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "9")))))
+  (sheet
+    (at 401.32 137.16)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6a3096a6-f9d2-5569-a5b5-144221c0f03b")
+    (property "Sheetname" "Auxiliary 5 V and 1.8 V supplies"
+      (at 401.32 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "aux-power.kicad_sch"
+      (at 401.32 165.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "10")))))
+  (sheet
+    (at 25.4 182.88)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ff330af5-2354-5c9f-bec3-90c184c99ec1")
+    (property "Sheetname" "Regulated modem supply and enable"
+      (at 25.4 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "modem-power.kicad_sch"
+      (at 25.4 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "11")))))
+  (sheet
+    (at 213.36 182.88)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "2a081a7b-217e-58c7-a4a5-3710e9e9c4d2")
+    (property "Sheetname" "SX1262 LoRa radio"
+      (at 213.36 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "radios.kicad_sch"
+      (at 213.36 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "12")))))
+  (sheet
+    (at 401.32 182.88)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "0befbce1-2703-5cfd-a2b1-baf4cf97bcb0")
+    (property "Sheetname" "CC1101 sub-GHz radio"
+      (at 401.32 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "cc-radio.kicad_sch"
+      (at 401.32 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "13")))))
+  (sheet
+    (at 25.4 228.6)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6081e16b-da0d-5398-bd2a-0ffc462b4bc1")
+    (property "Sheetname" "125 kHz reader analog circuit"
+      (at 25.4 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "lf-radio.kicad_sch"
+      (at 25.4 256.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "14")))))
+  (sheet
+    (at 213.36 228.6)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ec68d751-17d0-5b56-8d19-583badb40724")
+    (property "Sheetname" "LF reader logic translation"
+      (at 213.36 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "lf-support.kicad_sch"
+      (at 213.36 256.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "15")))))
+  (sheet
+    (at 401.32 228.6)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "dbc42df9-9def-5531-bd55-6e94a3d56f8a")
+    (property "Sheetname" "GNSS receiver and passive antenna"
+      (at 401.32 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "gnss-antennas.kicad_sch"
+      (at 401.32 256.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "16")))))
+  (sheet
+    (at 25.4 274.32)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "bacd249c-37d4-5cfe-814d-34051a0701a4")
+    (property "Sheetname" "NFC reader, oscillator and local supplies"
+      (at 25.4 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "nfc.kicad_sch"
+      (at 25.4 302.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "17")))))
+  (sheet
+    (at 213.36 274.32)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ff58a307-ebf9-5c1b-a778-ac3f01e64985")
+    (property "Sheetname" "Media speaker amplifier and digital microphone"
+      (at 213.36 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "audio.kicad_sch"
+      (at 213.36 302.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "18")))))
+  (sheet
+    (at 401.32 274.32)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "7710dbd1-b0eb-5828-a30b-e022f3ce283b")
+    (property "Sheetname" "Cellular adapter and call-audio harnesses"
+      (at 401.32 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "interfaces.kicad_sch"
+      (at 401.32 302.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "19")))))
+  (sheet
+    (at 25.4 320.03999999999996)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "2d01d991-357b-5b1e-a4c9-964cf27bf31b")
+    (property "Sheetname" "Protected external module port"
+      (at 25.4 317.49999999999994 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "protection.kicad_sch"
+      (at 25.4 347.97999999999996 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "20")))))
+  (sheet
+    (at 213.36 320.03999999999996)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "cf139a40-baa9-5adc-bd25-e9536fcfa5b1")
+    (property "Sheetname" "MicroSD and case-mounted infrared"
+      (at 213.36 317.49999999999994 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "storage-ir.kicad_sch"
+      (at 213.36 347.97999999999996 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "21")))))
+  (sheet
+    (at 401.32 320.03999999999996)
+    (size 160.02 25.4)
+    (stroke
+      (width 0.254)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "9f54018f-ab50-5dac-b75b-65eb6a4e9510")
+    (property "Sheetname" "External display, touch and backlight"
+      (at 401.32 317.49999999999994 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "display.kicad_sch"
+      (at 401.32 347.97999999999996 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "22")))))
+  (text "HANDSET REV A / SYSTEM SCHEMATIC INDEX"
+    (at 25.4 15.24 0)
+    (effects
+      (font
+        (size 3 3))
+      (justify left))
+    (uuid "849a6ed1-4f1a-5b29-b096-227c68d77b52"))
+  (text "Engineering draft. Retained ESP32-S3 / MakerFocus 3000 mAh / external display / all peripheral interfaces."
+    (at 25.4 25.4 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f620a10e-48f9-5c59-94f6-3bc70fec07c8")))

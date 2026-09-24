@@ -1,0 +1,24 @@
+{
+  "status": "INCOMPLETE \u2014 NOT FOR FABRICATION OR POWER",
+  "integrity_checks": 890,
+  "integrity_passed": 890,
+  "integrity_failures": [],
+  "components": 96,
+  "copper_layers": 4,
+  "erc_by_type": {
+    "isolated_pin_label": 46,
+    "power_pin_not_driven": 4,
+    "pin_not_driven": 7,
+    "pin_to_pin": 1
+  },
+  "drc_by_type": {
+    "drill_out_of_range": 12,
+    "npth_inside_courtyard": 1,
+    "hole_clearance": 4,
+    "silk_overlap": 12,
+    "silk_over_copper": 11,
+    "silk_edge_clearance": 3
+  },
+  "unconnected_items": 243,
+  "unresolved_placement_zones": 8
+}

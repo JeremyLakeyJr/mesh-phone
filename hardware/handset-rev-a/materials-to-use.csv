@@ -1,29 +1,64 @@
 Block,Part / material,Manufacturer part number,Package / envelope,Use on new PCB,Release condition
 MCU / Wi-Fi / BLE,ESP32-S3-WROOM-1 N16R8,ESP32-S3-WROOM-1-N16R8,18x25.5mm module,RETAIN CURRENT PART,Observe Espressif antenna keepout and module placement rules
-LTE voice and data,SIMCom A7672G,A7672G,24x24x2.4mm LCC+LGA,YES,Freeze exact regional ordering code and prove carrier VoLTE analog audio and peak-current operation
+LTE voice and data,Unlocked replaceable modem adapter; A7672G or broader approved alternative,TBD,Adapter envelope pending,REQUIRED BUT MODEM NOT FROZEN,User requires multi-carrier service; verify exact modem firmware carrier VoLTE audio and peak-current operation
 LoRa / Meshtastic,Semtech SX1262,SX1262,4x4mm QFN,YES,Copy the 915MHz reference RF network and validate antenna matching
-Sub-GHz general radio,TI CC1101,CC1101,4x4mm VQFN,YES,Copy the TI 868/915MHz reference network and use a separate matched RF feed
-GNSS and PPS,u-blox UBX-M10050-KB,UBX-M10050-KB,4x4x0.55mm QFN,YES,Complete 1.8V timing backup and RF design before release
+Sub-GHz general radio,TI CC1101,CC1101,4x4mm VQFN,CC1101 FRONTEND SCHEMATIC POPULATED,"868/915MHz clock and matching captured; finish RF layout and qualify oscillator, conducted RF, emissions and case antenna; see cc1101-review.md"
+GNSS and PPS,u-blox MAX-M10S,MAX-M10S-00B-01,9.7x10.1mm LCC,POPULATED U12,Complete passive antenna feed and coexistence validation; no hardware backup supply
 NFC reader / writer,ST ST25R3916B,ST25R3916B-AQET,5x5mm QFN,YES,Design and tune a case-mounted 13.56MHz loop and matching network
 125kHz RFID reader,NXP HTRC110,HTRC11001T,SO14 body about 8.7x3.9mm,YES,Validate tag protocol and tune the external LF coil
 Keypad scanner,TI TCA8418,TCA8418,4x4mm WQFN,YES,Test required simultaneous key combinations before removing per-key diodes
-Battery charger and power path,TI BQ25185,BQ25185,2.2x2.0mm WSON,YES,Configure for the protected MakerFocus 3000mAh cell and verify thermals/current limits
+Battery charger and power path,TI BQ25186,BQ25186DLHR,2.2x2.0mm DLH WSON-10,SELECTED U3,Program and verify charger-policy.json; battery NTC and thermal/load qualification required
 Battery fuel gauge,Analog Devices MAX17048,MAX17048G+T,2x2mm TDFN,YES,Configure and validate the battery model
 3.3V system buck-boost,TI TPS63802,TPS63802,3x2mm VSON-HR,YES,Verify simultaneous radio/display transient budget
 1.8V regulator,TI TPS62840,TPS62840,SON or WCSP,YES,Freeze package after 1.8V load budget
 Switched 5V boost,TI TPS61023,TPS61023,1.6x1.6mm SOT-5X3,YES IF REQUIRED,Populate only when a confirmed RFID/audio/accessory load requires 5V; never feed LTE from it
 Media / key-tone speaker amplifier,Analog Devices MAX98357A,MAX98357A,3x3mm QFN preferred,YES,Use QFN for prototype assembly and keep modem call-audio routing separate
-Call microphone,Low-profile analog MEMS,TBD,TBD,YES,Select against the final A7672G analog microphone reference circuit and acoustic sensitivity target
+Call microphone,Low-profile analog microphone on modem audio adapter,TBD,TBD,REQUIRED ON ADAPTER,Select against verified modem codec and microphone bias circuit
 Digital microphone,Knowles SPH0645LM4H-1,SPH0645LM4H-1,3.5x2.65x0.98mm,YES,Use for ESP32 recording/assistant input rather than direct modem call audio
-Display with capacitive touch,EastRising ER-TFT024IPS-3 CTP option,TBD exact ordering code,42.72x59.26x2.3mm plus touch,YES,Freeze exact CTP stack FPC pinout and connector before schematic capture
+Display with capacitive touch,EastRising ER-TFT024IPS-3 CTP option,ER-TFT024IPS-3 with CTP,42.72x59.46x2.3mm plus touch,INTERFACE POPULATED J26,Confirm purchased CTP configuration and voltage tolerances; SPI II and top-contact FPC captured
 Trackball module,Pimoroni trackball breakout,PIM447,25x22x11mm,YES,Recess through the main-PCB cutout and retain serviceable module connection
-microSD socket,Molex side-access microSD,504077-1891,1.28mm high,YES,Confirm card insertion/ejection clearance at enclosure edge
+microSD socket,Hirose push-pull microSD,DM3D-SF,1.55mm high,POPULATED J23,Manufacturer contact map and KiCad footprint; confirm card insertion access in enclosure
 nano-SIM socket,JAE push-push nano-SIM,SF72S006,11.2x14.3x1.25mm,YES,Route only to the selected modem SIM supply/interface
 USB-C receptacle,GCT USB4105,USB4105,7.35mm body / 3.31mm profile,YES,Include USB2 D+/D- CC resistors ESD and protected VBUS input
-IR transmitter,Top-facing IR LED plus transistor driver,TBD,TBD,YES,Choose wavelength radiant intensity viewing angle and package from required range
-IR receiver,Top-facing demodulating IR receiver,TBD,TBD,YES,Choose carrier frequency supply voltage and package with the transmitter protocol
+IR transmitter,Vishay case-mounted IR LED and AOS driver,TSAL6400 + AO3400A,5mm LED off-board and SOT-23 driver,DRIVER AND J24 POPULATED,Confirm optical range and enclosure alignment; 47 ohm series resistor
+IR receiver,Vishay case-mounted 38kHz receiver,TSOP38438,5x6.95x4.8mm off-board,J25 INTERFACE POPULATED,GPIO3 receives directly; validate protocol and boot behavior
 Battery,MakerFocus protected 3000mAh LiPo,MakerFocus 3000mAh protected pouch,65x36x10mm nominal +/-2mm,YES,Verify the exact purchased pack connector polarity protection-board current and measured dimensions
-Expansion connection,Protected external-module cable port,J16 interface / connector TBD,Enclosure rear port,YES,Freeze pinout current limits ESD protection connector and cable before schematic release
+Expansion connection,JST GH 10-pin cable port,BM10B-GHS-TBT,Enclosure rear port,POPULATED J16,Power-off swaps; verify cable and connector assembly
 NFC antenna,Case-mounted 13.56MHz flex or PCB loop,Custom,Tuned to installed enclosure,YES,Tune with production plastics battery and nearby conductors installed
 LF RFID antenna,Case-mounted 125kHz coil,Custom,Tuned to installed enclosure,YES,Tune with production plastics battery and nearby conductors installed
 RF antennas,LTE + LoRa + CC1101 + GNSS + Wi-Fi/BLE antennas,Exact parts TBD,Separate validated antenna systems,YES,Select after placement study and validate matching isolation coexistence and regulatory performance
+Expansion power switch,TI adjustable current limiter,TPS2553DBVR,SOT-23-6,POPULATED U14,100k ILIM resistor; validate accessory current and fault behavior
+External signal protection,TI four-channel ESD array,TPD4E05U06DQAR,USON-10 2.5x1mm,POPULATED U15 U16 U17,Complete low-inductance ground returns and test ESD performance
+LF logic up-translation,TI TTL-input buffer,SN74AHCT125PWR,TSSOP-14,POPULATED U18,5V supply; dedicated host timing still unresolved
+LF logic down-translation,TI Schmitt buffer,SN74LVC1G17DBVR,SOT-23-5,POPULATED U19,3.3V supply and 5V-tolerant input; host return remains unassigned
+NFC clock,Abracon 27.12MHz crystal,ABM8-27.120MHZ-B2-T,3.2x2.5mm four-pad,POPULATED Y1,Validate 27pF load capacitors against actual parasitics
+Display connector,Hirose top-contact 50-way ZIF,FH12A-50S-0.5SH(55),0.5mm pitch,POPULATED J26,Custom footprint from shared manufacturer lands; inspect contact orientation and cable retention
+Modem regulator,TI buck-boost,TPS63070RNMR,VQFN-HR RNM0015A,POPULATED U20,3.792V nominal; conservative UVLO; burst and custom footprint validation required
+System inductor,Coilcraft shielded 0.47uH,XFL4020-471MEC,4x4x2.1mm,POPULATED L1,Check inductance under peak current and temperature
+5V inductor,Coilcraft shielded 1uH,XFL4020-102MEC,4x4x2.1mm,POPULATED L2,LF plus display backlight rail load budget
+1.8V inductor,Coilcraft shielded 2.2uH,XFL4020-222MEC,4x4x2.1mm,POPULATED L3,Validate current and control-loop behavior
+Modem inductor,Coilcraft shielded 1.5uH,XFL4020-152MEC,4x4x2.1mm,POPULATED L4,TI-listed inductor family; validate burst temperature and saturation
+USB input eFuse,TI TPS25200,TPS25200DRVR,2x2mm DRV WSON-6,SELECTED U21,100k 1% current limit; verify TVS/fuse coordination and fault response
+USB-C source detector,TI TUSB320LAI,TUSB320LAIRWBR,1.6x1.6mm RWB X2QFN-12,SELECTED U22,Sink-only GPIO mode; internal Rd; no PD or BC1.2
+USB detector supply,TI TLV70433,TLV70433DBVR,SOT-23-5,SELECTED U23,Always-on detector supply from fused VBUS; verify power budget
+Charger control GPIO,TI TCA9536,TCA9536DGKR,VSSOP-8,SELECTED U24,0x41 I2C; preload outputs low before enabling output direction
+USB and battery fuses,Littelfuse 467 series,046701.5NRHF,0603,SELECTED F1 F2,1.5A fast fuse is not a precision operating-current limiter
+USB VBUS TVS,Diotec SMF5.0A,SMF5.0A,SOD-123FL,SELECTED D1,Verify polarity and pulse/fuse coordination; not continuous high-voltage protection
+USB permission diode OR,Nexperia BAT54C,"BAT54C,215",SOT-23,SELECTED D2,Common cathode pin 3; qualify logic thresholds
+Type-C permission switch,AOS AO3401A,AO3401A,SOT-23,SELECTED Q6,Logic-level P-channel; confirm pinout and startup behavior
+Charger gate and status isolation,AOS AO3400A,AO3400A,SOT-23,SELECTED Q5 Q7,Gate pulldowns and isolated source status; fault injection required
+CC1101 frontend,26MHz CL10pF,ABM8-26.000MHZ-10-D-1-G-T,3.2x2.5mm,POPULATED Y2,"Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,1kohm @100MHz,BLM15HG102SN1D,0402,POPULATED L11,"Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,100pF 5% C0G 50V,GRM1555C1H101JA01D,0402,POPULATED C66,"Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,12pF 5% C0G 50V,GRM1555C1H120JA01D,0402,POPULATED C67,"Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,15pF 5% C0G 50V,GRM1555C1H150JA01D,0402,"POPULATED C61, C62","Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,1pF 0.25pF C0G 50V,GRM1555C1H1R0CA01D,0402,POPULATED C63,"Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,1.5pF 0.25pF C0G 50V,GRM1555C1H1R5CA01D,0402,"POPULATED C64, C68","Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,3.3pF 0.25pF C0G 50V,GRM1555C1H3R3CA01D,0402,POPULATED C65,"Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,1uF 10% X5R 10V,GRM155R61A105KE15D,0402,POPULATED C74,"Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,100nF 10% X7R 16V,GRM155R71C104KA88D,0402,"POPULATED C11, C12, C69, C70, C71, C72, C73","Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,12nH 5%,LQW15AN12NJ00D,0402,"POPULATED L5, L6, L9, L10","Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+CC1101 frontend,18nH 5%,LQW15AN18NJ00D,0402,"POPULATED L7, L8","Circuit specification only; RF layout, effective capacitance, oscillator loading and bench qualification remain; see cc1101-review.md"
+LoRa core regulator,TDK shielded 15uH 20% inductor L12,MLZ2012M150WT000,2.0x1.25x1.25mm,POPULATED L12,Route core loop; qualify ripple and current; see sx1262-power-review.md
+LoRa core bypass,Murata 470nF 10% X5R 10V C9,GRM155R61A474KE15D,0402,CORRECTED C9,Verify effective capacitance and regulator startup; replaces incorrect 100nF
+LoRa input bypass,Murata 100nF 10% X7R 16V C8 C75 C76,GRM155R71C104KA88D,0402,POPULATED C8 C75 C76,Route close to U4 supply pins 10 1 11 with local ground returns

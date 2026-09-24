@@ -1,0 +1,45 @@
+{
+  "status": "Design contract only; not installed firmware or permission to power the board",
+  "charger": "BQ25186DLHR",
+  "charger_address_7bit": 106,
+  "expander": "TCA9536DGKR",
+  "expander_address_7bit": 65,
+  "common_registers": {
+    "0x03": "0x44",
+    "0x05": "0x25",
+    "0x06": "0x56",
+    "0x07": "0x99",
+    "0x0a": "0x40",
+    "0x0b": "0xe0"
+  },
+  "modes": {
+    "unknown_or_detached": {"ilim": "0x49", "ichg": "0x85", "charge_enable": false, "legacy_enable": false},
+    "legacy_configured_500mA": {"ilim": "0x4c", "ichg": "0x39", "charge_enable": true, "legacy_enable": true},
+    "type_c_1p5A_or_3A": {"ilim": "0x4e", "ichg": "0x4d", "charge_enable": true, "legacy_enable": false},
+    "fault": {"ilim": "0x49", "ichg": "0x85", "charge_enable": false, "legacy_enable": false}
+  },
+  "expander_startup": [["0x01", "0x00"], ["0x03", "0x0c"], ["0x50", "0x40"]],
+  "startup_order": [
+    "Keep CHG_ENABLE and USB_LEGACY_EN low; preload output latch before configuring outputs.",
+    "Write and read back common registers and disabled/100mA mode before authorizing input.",
+    "Require P2 low for Type-C current advertisement or explicit USB-stack configured 500mA authorization; VBUS voltage alone is insufficient.",
+    "With CE disabled, program and read back the selected input/charge limits, then authorize legacy input if applicable.",
+    "Enable CE only after VIN power-good, valid temperature, no TS-open, no safety-timer/OVP/eFuse fault, and successful configuration readback."
+  ],
+  "runtime_requirements": [
+    "Poll status and configuration well inside the 160-second watchdog interval; any I2C error requests CE/legacy disable and a latched fault.",
+    "Keep legacy override low in Type-C mode so withdrawal of the CC advertisement removes input permission in hardware.",
+    "USB reset, detach, deconfiguration or suspend immediately revokes legacy authorization; do not infer authorization from cable presence.",
+    "Latch the read-to-clear safety-timer fault in host state; do not repeatedly reset or toggle CE to bypass a timeout.",
+    "Temperature suspension is enforced by charger hardware; never disable TS or substitute a fixed resistor for the battery thermistor.",
+    "After a fault or watchdog reset, require an explicit recovery policy before charging; firmware restart must not erase fault history silently.",
+    "An I2C failure cannot guarantee immediate GPIO disable; qualify watchdog SYS collapse and expander reset on hardware."
+  ],
+  "limitations": [
+    "Requires ESP32 firmware implementation, fault injection and bench validation.",
+    "Dead-battery recovery requires a Type-C source advertising 1.5A or 3A; no BC1.2 detector or USB PD negotiation is provided.",
+    "SW19 off disables the host/expander; powered-off charging is not implemented.",
+    "Battery-side modem current bypasses the charger's discharge-current limit; MakerFocus approximately 1.5A operating limit remains unresolved.",
+    "4.18V target and nominal 5..45C thermistor thresholds require tolerance and pack qualification."
+  ]
+}

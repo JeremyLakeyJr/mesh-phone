@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "Handset") (type "KiCad") (uri "${KIPRJMOD}/Handset.kicad_sym") (options "") (descr "Datasheet-derived WIP symbols")))

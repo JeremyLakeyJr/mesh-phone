@@ -1,0 +1,419 @@
+{
+  "source_hashes": {
+    "handset.kicad_pcb": "789b8deb10139f22fb6f952dbe0f8b6bb15c55643230865c7c6634d936726fa2",
+    "handset.kicad_pro": "ed5d97cd1c6c8d2a038b94a9064da3c541fe97b4dda1dd835b88b0139d84d265",
+    "core.kicad_sch": "24e8eac02e47f3e313f2f2dff6775b4561be00722afeedcb0f79e4c766f380ab",
+    "keys.kicad_sch": "76cedf1cece2b4239dad471c0d7b58d3cf4257a25bd2dd5c0d03f2c96944f9a1",
+    "power.kicad_sch": "5757db48c978a1e2e634a5d28a262c24d395076aaf69a52918dd4b1681f8fc16",
+    "radios.kicad_sch": "f2949f2c83b2eec3258440a09276212036aa15411e7f35de3ae61911268c69f4",
+    "audio.kicad_sch": "bb6747c46422b142792cd5a5a653d9699a0b4cec104b19a6c5493bb140af50b8",
+    "interfaces.kicad_sch": "019e6e19eb04570cfce01e38b7b9790a723d6daabefd39354a4ac64e75e1f429",
+    "handset.kicad_sch": "fa15443443b3f9006e0fbfe042d4279d5cca71ce8005181a22e2b976eab7a17f",
+    "Handset.kicad_sym": "b4548cc846d5c94bc284ce96104168e37143dd741b264b658fc7de313581e20a",
+    "gnss-antennas.kicad_sch": "c01b7f23f7e52eda4806aef9f2db387b8916fe5ecf5d3c5e7c86c2a6e7875968",
+    "nfc.kicad_sch": "d732ed88a6594fa30490583045820b31bd998bed900f5f04ce563a02a040f4a3",
+    "protection.kicad_sch": "2fb1c78e94293ef9c323a598016920196475951e32bda3fd4927232b2d1ed9bd",
+    "storage-ir.kicad_sch": "6078f6879ece74d164344bb90c483ca0754f5f3c7f562a9c142396c5638cfa6c",
+    "lf-support.kicad_sch": "f674df834348c12a64197694b874560b0c6b5fb167313cd2a6869d5cd54e79dc",
+    "display.kicad_sch": "d12bac0660ad0aadb3d426962b016a006ea76c6073e4d7337de99f8bd264a54b",
+    "modem-power.kicad_sch": "ad403dc0a648d7b34c48cb7b28c3cf0b259e5b580742a5692385ca75163f6a0f",
+    "power-entry.kicad_sch": "f581962a7bb0077d86e01b3acd4a49c891d1194d96abc790ba589f9d436b5415"
+  },
+  "pages": [
+    {
+      "name": "core",
+      "title": "ESP32 host, boot and reset",
+      "page": 2,
+      "refs": [
+        "U1",
+        "R1",
+        "R2",
+        "C1",
+        "C2",
+        "C3",
+        "SW17",
+        "SW18"
+      ]
+    },
+    {
+      "name": "keys",
+      "title": "Key matrix and trackball",
+      "page": 3,
+      "refs": [
+        "U2",
+        "C4",
+        "R3",
+        "R4",
+        "R5",
+        "J7",
+        "SW1",
+        "SW2",
+        "SW3",
+        "SW4",
+        "SW5",
+        "SW6",
+        "SW7",
+        "SW8",
+        "SW9",
+        "SW10",
+        "SW11",
+        "SW12",
+        "SW13",
+        "SW14",
+        "SW15",
+        "SW16"
+      ]
+    },
+    {
+      "name": "usb",
+      "title": "USB-C data and ESD",
+      "page": 4,
+      "refs": [
+        "USB1",
+        "U17"
+      ]
+    },
+    {
+      "name": "usb-input",
+      "title": "Fused USB input and eFuse",
+      "page": 5,
+      "refs": [
+        "F1",
+        "D1",
+        "U21",
+        "R65",
+        "R66",
+        "R67",
+        "C59"
+      ]
+    },
+    {
+      "name": "usb-detect",
+      "title": "USB-C source detection and permission",
+      "page": 6,
+      "refs": [
+        "U22",
+        "U23",
+        "Q6",
+        "Q7",
+        "D2",
+        "R8",
+        "R9",
+        "R69",
+        "R70",
+        "C56",
+        "C57",
+        "C58"
+      ]
+    },
+    {
+      "name": "power",
+      "title": "Battery, thermistor and programmable charger",
+      "page": 7,
+      "refs": [
+        "U3",
+        "J1",
+        "J2",
+        "F2",
+        "Q5",
+        "R6",
+        "R7",
+        "C5",
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "name": "power-control",
+      "title": "Power control and fuel gauge",
+      "page": 8,
+      "refs": [
+        "U24",
+        "U8",
+        "C60",
+        "C23",
+        "R68"
+      ]
+    },
+    {
+      "name": "reg3",
+      "title": "Main 3.3 V buck-boost supply",
+      "page": 9,
+      "refs": [
+        "U7",
+        "SW19",
+        "L1",
+        "C20",
+        "C21",
+        "C22",
+        "R30",
+        "R31",
+        "R32",
+        "R33"
+      ]
+    },
+    {
+      "name": "aux-power",
+      "title": "Auxiliary 5 V and 1.8 V supplies",
+      "page": 10,
+      "refs": [
+        "U10",
+        "U11",
+        "L2",
+        "L3",
+        "R34",
+        "R35",
+        "C25",
+        "C26",
+        "C27",
+        "C28"
+      ]
+    },
+    {
+      "name": "modem-power",
+      "title": "Regulated modem supply and enable",
+      "page": 11,
+      "refs": [
+        "U20",
+        "L4",
+        "Q3",
+        "Q4",
+        "C50",
+        "C51",
+        "C52",
+        "C53",
+        "C54",
+        "C55",
+        "R60",
+        "R61",
+        "R62",
+        "R63",
+        "R64"
+      ]
+    },
+    {
+      "name": "radios",
+      "title": "SX1262 LoRa radio",
+      "page": 12,
+      "refs": [
+        "U4",
+        "J20",
+        "C8",
+        "C9",
+        "C10",
+        "R10"
+      ]
+    },
+    {
+      "name": "cc-radio",
+      "title": "CC1101 sub-GHz radio",
+      "page": 13,
+      "refs": [
+        "U5",
+        "J21",
+        "R11",
+        "R12",
+        "C11",
+        "C12"
+      ]
+    },
+    {
+      "name": "lf-radio",
+      "title": "125 kHz reader analog circuit",
+      "page": 14,
+      "refs": [
+        "U9",
+        "J10",
+        "C24"
+      ]
+    },
+    {
+      "name": "lf-support",
+      "title": "LF reader logic translation",
+      "page": 15,
+      "refs": [
+        "U18",
+        "U19",
+        "C45",
+        "C46",
+        "R50",
+        "R51"
+      ]
+    },
+    {
+      "name": "gnss-antennas",
+      "title": "GNSS receiver and passive antenna",
+      "page": 16,
+      "refs": [
+        "U12",
+        "J22",
+        "C29",
+        "C30"
+      ]
+    },
+    {
+      "name": "nfc",
+      "title": "NFC reader, oscillator and local supplies",
+      "page": 17,
+      "refs": [
+        "U13",
+        "Y1",
+        "R40",
+        "C31",
+        "C32",
+        "C33",
+        "C34",
+        "C35",
+        "C36",
+        "C37",
+        "C38",
+        "C39"
+      ]
+    },
+    {
+      "name": "audio",
+      "title": "Media speaker amplifier and digital microphone",
+      "page": 18,
+      "refs": [
+        "U6",
+        "MK1",
+        "J3",
+        "C13",
+        "C14",
+        "C15",
+        "R13"
+      ]
+    },
+    {
+      "name": "interfaces",
+      "title": "Cellular adapter and call-audio harnesses",
+      "page": 19,
+      "refs": [
+        "J4",
+        "J5",
+        "J6",
+        "J8",
+        "J9"
+      ]
+    },
+    {
+      "name": "protection",
+      "title": "Protected external module port",
+      "page": 20,
+      "refs": [
+        "J16",
+        "U14",
+        "U15",
+        "U16",
+        "R20",
+        "R21",
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R41",
+        "R42",
+        "C40",
+        "C41"
+      ]
+    },
+    {
+      "name": "storage-ir",
+      "title": "MicroSD and case-mounted infrared",
+      "page": 21,
+      "refs": [
+        "J23",
+        "Q1",
+        "J24",
+        "J25",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R47",
+        "R48",
+        "R49",
+        "C42",
+        "C43",
+        "C44"
+      ]
+    },
+    {
+      "name": "display",
+      "title": "External display, touch and backlight",
+      "page": 22,
+      "refs": [
+        "J26",
+        "Q2",
+        "R52",
+        "R53",
+        "R54",
+        "R55",
+        "R56",
+        "R57",
+        "R58",
+        "R59",
+        "C47",
+        "C48",
+        "C49"
+      ]
+    }
+  ],
+  "components": 192,
+  "fabrication_released": false,
+  "scope": "All-sheet rebuild; native netlist/ERC/DRC/parity and visual review performed",
+  "pad_net_changes": [
+    [
+      "U4",
+      "1",
+      "SX_VREG",
+      "+3V3"
+    ],
+    [
+      "U9",
+      "5",
+      "LF_MODE",
+      "GND"
+    ]
+  ],
+  "preserved_copper_items": 792,
+  "preserved_footprints": 196,
+  "netlist_verified": true,
+  "snapshot": "archive/handset-before-schematic-rebuild/789b8deb1013",
+  "status": "Installed engineering draft; circuit completion still required",
+  "installed_files_sha256": {
+    "Handset.kicad_sym": "d16200ef3cb53370195866ef3bb9bd8e4f541f6633e03fd2a18b9a7b130aa83a",
+    "audio.kicad_sch": "49ec17ab2260958914d3773aba6ddf3a8fa3b1a4084223c0fd14f99cb960eedd",
+    "aux-power.kicad_sch": "55b54ba7cb67bbb34787c52e147a9fa5516a85444e1c9f174be095b603eb7622",
+    "cc-radio.kicad_sch": "e65df95656d79f10ed00c13050fd790a8899006acf43e2a7b7454168eaf3e930",
+    "connectivity.json": "c91e07c84bc55622fca0d44a7db463e1c02cb3e0449c834a85e4797e4b426488",
+    "core.kicad_sch": "80a19354662236702b48069fd3e424b18bb928cba882b9579e1b441720238541",
+    "display.kicad_sch": "2db0006e9e0528a1f4353412eb8d71685ffc6788e82bf6c7fd392069b66552c8",
+    "drc.json": "7a461e7e708934563d9d3c326a6a7d5f67992973debd68257f896e70e914965d",
+    "erc.json": "b994a9ecb49fe43f62fbf524276d913bf27e607838666721b101cd0a7c2851d3",
+    "gnss-antennas.kicad_sch": "57b3b353223262fcbd7c9351ec88c9199335d619db96b44ed9cf8b0f073cb157",
+    "handset-schematic.pdf": "5803c598bba8a43b3e9b2d25a2cf99ab426f713d92056057f7d07326c2424baf",
+    "handset.kicad_pcb": "f7cc27e7849699e57d4df01fcb97c296db3635f1cfb76935978e2546e2183a64",
+    "handset.kicad_pro": "ed5d97cd1c6c8d2a038b94a9064da3c541fe97b4dda1dd835b88b0139d84d265",
+    "handset.kicad_sch": "24d7ec4e4182e2f475c7f28876533fd5ec0189e28dbaec7bd38b9edd97f110e1",
+    "interfaces.kicad_sch": "8b56c9f18b6aaeed5cf2b61a21b606bc2f2ce425e2544c74722c746709f1b02b",
+    "keys.kicad_sch": "89d8a4ca5ed149a2c1a992325128ea87805a3ba8b97e18f32d8f9e164f31cc95",
+    "lf-radio.kicad_sch": "477df155b9192ac68786a87db64b062382f61cd35b227128bf5a94b706742493",
+    "lf-support.kicad_sch": "700f1e712e861e8f84db0536941e740f3250829289839cf8b3f6d6ca552ee800",
+    "modem-power.kicad_sch": "70c8a55954e9f5661ab6143adbf958bea05b0a2cb0719e6b8c5a3fc2900d9c09",
+    "netlist.xml": "3b08b320d10d4d83ddfd909912395cbabfa6abf47f777f2c5e0b0a40ac760d48",
+    "nfc.kicad_sch": "ac47dca75fe9d57565ddc59a979ac839dde6e3cd871673275132a07c804e55a1",
+    "placement.csv": "ceb7eb0acd0a62316f89101bfd3a216605977888e89fc87400088266ca66e52f",
+    "power-control.kicad_sch": "4ff9e1c5cfac9920152f3c7a2c36519d739b128e4a4ec01ddf538c3e0645e05d",
+    "power.kicad_sch": "78fa6d7e4f2d015a50a1db01b35e80d01bdd7b41f84519abbfa126811856ac56",
+    "protection.kicad_sch": "fd57ce0a799e36d84da1dfe6e2d5d8bcb36c98ad7115578ff5409751075e3037",
+    "radios.kicad_sch": "ea617ca43a8fc6b76842ecd2becb491f5aa0cae028af8b1fe74b58f7f2d0f131",
+    "reg3.kicad_sch": "0797fe682f125d9150eca4270189947e91106de528bbd055907abb37b5b0f4b0",
+    "storage-ir.kicad_sch": "af7a40721cc968c9f6e124b0077d14f0192fc97d81003aea214bdee488ec2baa",
+    "usb-detect.kicad_sch": "baaccc43220a73942c0e03e60b6b659c07af6ae079af381147f06df9ec469b67",
+    "usb-input.kicad_sch": "4f385df8e6f2720efa086915edf51924473bd59ca2f119a25f3d866cdb9574b0",
+    "usb.kicad_sch": "9bc8346f1c6370bc96bcdb7cc47673026e7287f573bd454b1e78c2646ec00d0c",
+    "verification-summary.json": "19b85b2fa2709a43d1d39d48a06f21aa34d65f7b9cb71f95d4d4c0659cfc9d7c"
+  }
+}

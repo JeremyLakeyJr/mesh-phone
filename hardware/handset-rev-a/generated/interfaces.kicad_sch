@@ -1,0 +1,1106 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "7710dbd1-b0eb-5828-a30b-e022f3ce283b")
+  (paper "A3")
+  (title_block
+    (title "Cellular adapter and call-audio harnesses")
+    (date "2026-09-24")
+    (rev "A - engineering draft")
+    (comment 1 "Circuit review in progress - not released for fabrication"))
+  (lib_symbols
+    (symbol "Connector_Generic:Conn_01x04"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x04"
+        (at 0 -7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x04_1_1"
+        (rectangle
+          (start -1.27 3.81)
+          (end 1.27 -6.35)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -4.953)
+          (end 0 -5.207)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -5.08 0)
+          (length 3.81)
+          (name "Pin_4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector_Generic:Conn_01x06"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x06"
+        (at 0 -10.16 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x06_1_1"
+        (rectangle
+          (start -1.27 6.35)
+          (end 1.27 -8.89)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 5.207)
+          (end 0 4.953)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -4.953)
+          (end 0 -5.207)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -7.493)
+          (end 0 -7.747)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 5.08 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -5.08 0)
+          (length 3.81)
+          (name "Pin_5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -7.62 0)
+          (length 3.81)
+          (name "Pin_6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:GND"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "Cellular adapter and call-audio harnesses"
+    (at 15 15 0)
+    (effects
+      (font
+        (size 2 2))
+      (justify left top))
+    (uuid "53028b6b-66f1-58b9-9bdc-23b7d50f0129"))
+  (text "Replaceable modem adapter owns SIM, cellular RF and modem-level translation. No universal-carrier guarantee. Speaker top /\nmic bottom."
+    (at 15 22 0)
+    (effects
+      (font
+        (size 1.15 1.15))
+      (justify left top))
+    (uuid "875d2b7b-5be0-5c69-9741-c3ac21b2bbcc"))
+  (text "Engineering draft / named nets are common / NC = intentional unused pin"
+    (at 15 282 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left top))
+    (uuid "87e7a549-0713-58b2-9035-c338722fb6eb"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x04")
+    (at 53.34 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a2d4f3e7-c6ac-58fb-9c36-5b153d47cb0a")
+    (property "Reference" "J4"
+      (at 53.34 73.66 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "CALL_AUDIO_FROM_MODEM_ADAPTER"
+      (at 53.34 76.2 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+      (at 53.34 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "J4")
+          (unit 1))))
+    (pin "1"
+      (uuid "ae52829e-1b9b-5c01-82af-d28231bc706a"))
+    (pin "2"
+      (uuid "231161c6-c241-5a18-b296-c06883c5b5e8"))
+    (pin "3"
+      (uuid "21f1d2d4-80b2-512e-8de2-34b43f9f7c6c"))
+    (pin "4"
+      (uuid "029e5df3-7de7-5a53-9242-da86aa68a85d")))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 129.54000000000002 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0d4dd520-ca88-5c6d-834d-b8860d709dfb")
+    (property "Reference" "J5"
+      (at 129.54000000000002 76.2 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "CALL_EARPIECE"
+      (at 129.54000000000002 78.74 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical"
+      (at 129.54000000000002 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "J5")
+          (unit 1))))
+    (pin "1"
+      (uuid "de3e3ab1-9a79-5926-b6ee-c9ba1b989aed"))
+    (pin "2"
+      (uuid "f2f27c08-af4d-5803-b2a9-35a1e58c0637")))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 205.74 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d7afb355-e26d-55d8-8428-9b0ff287cee7")
+    (property "Reference" "J6"
+      (at 205.74 76.2 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "CALL_MIC"
+      (at 205.74 78.74 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical"
+      (at 205.74 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "J6")
+          (unit 1))))
+    (pin "1"
+      (uuid "4d4be4c7-7154-54d3-93c2-db4ccd8609ae"))
+    (pin "2"
+      (uuid "6b3ff2eb-5d43-59c0-a6c1-20eb71a39890")))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x06")
+    (at 281.94000000000005 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e3ea81bf-801e-5150-a2df-d729918d5a7a")
+    (property "Reference" "J8"
+      (at 281.94000000000005 71.12 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "MODEM_ADAPTER_3V3_LOGIC"
+      (at 281.94000000000005 73.66 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
+      (at 281.94000000000005 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "J8")
+          (unit 1))))
+    (pin "1"
+      (uuid "144181d4-6676-5190-b6fb-0ee236f88dc9"))
+    (pin "2"
+      (uuid "5ae4e9cc-c809-54fd-8871-3b707295b169"))
+    (pin "3"
+      (uuid "b3fd69fa-056c-5493-a0c4-47ee88773ac0"))
+    (pin "4"
+      (uuid "cc8c3b8d-79d3-5bd4-aa7e-c1d441bbe652"))
+    (pin "5"
+      (uuid "e0bbed44-0034-52ee-8e94-1437aecc669f"))
+    (pin "6"
+      (uuid "f97c210a-82dc-563a-8d63-48109098faa6")))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x04")
+    (at 358.14 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "92aed236-b6b3-5870-a0e4-1ab41130c50f")
+    (property "Reference" "J9"
+      (at 358.14 73.66 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "MODEM_POWER_ADAPTER_REQUIRED"
+      (at 358.14 76.2 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+      (at 358.14 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "J9")
+          (unit 1))))
+    (pin "1"
+      (uuid "b7afcffd-6d2d-587c-b2c7-5efc0d1a998e"))
+    (pin "2"
+      (uuid "d19de8e1-72d1-5a0c-a1c3-68f434eb3e7d"))
+    (pin "3"
+      (uuid "8e18917e-4777-5658-99a7-21615b9c6444"))
+    (pin "4"
+      (uuid "af05eea6-ba1a-53d7-8ac4-b54e9b090afb")))
+  (wire
+    (pts
+      (xy 48.2600 83.8200)
+      (xy 40.6400 83.8200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "01c13b51-7d95-53c0-99c8-4fef6de79847"))
+  (global_label "CALL_SPK_P"
+    (shape bidirectional)
+    (at 40.64 83.82 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "3db5d074-4096-5a6a-8238-a96d0fb21074"))
+  (wire
+    (pts
+      (xy 48.2600 86.3600)
+      (xy 40.6400 86.3600))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "918469fd-ba2d-5a6e-b614-e6121449c166"))
+  (global_label "CALL_SPK_N"
+    (shape bidirectional)
+    (at 40.64 86.36 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "7d05dfdc-53c2-525a-950b-88e4f1aab222"))
+  (wire
+    (pts
+      (xy 48.2600 88.9000)
+      (xy 40.6400 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "265a67ae-b21b-5443-9e02-289119825049"))
+  (global_label "CALL_MIC_P"
+    (shape bidirectional)
+    (at 40.64 88.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "29ca0da7-6506-5499-a91f-5ac01d3a344c"))
+  (wire
+    (pts
+      (xy 48.2600 91.4400)
+      (xy 40.6400 91.4400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0fbdc96e-6308-578c-a74b-5cb29a86e82b"))
+  (global_label "CALL_MIC_N"
+    (shape bidirectional)
+    (at 40.64 91.44 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "b316f9fc-93a5-5e3a-a028-3be8ee9ef33c"))
+  (wire
+    (pts
+      (xy 124.4600 86.3600)
+      (xy 116.8400 86.3600))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dcdead69-c947-5a14-941a-b2749e6425b9"))
+  (global_label "CALL_SPK_P"
+    (shape bidirectional)
+    (at 116.84 86.36 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "f854832e-a417-54fd-bac8-e42f523b511e"))
+  (wire
+    (pts
+      (xy 124.4600 88.9000)
+      (xy 116.8400 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "37a719e2-589c-51a0-93c0-9e504bd2d3ea"))
+  (global_label "CALL_SPK_N"
+    (shape bidirectional)
+    (at 116.84 88.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "9bd9101a-ad8a-5432-847b-f973ff0e9807"))
+  (wire
+    (pts
+      (xy 200.6600 86.3600)
+      (xy 193.0400 86.3600))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ab78e8c0-5942-5ba5-ba9b-bb6b175a9f6d"))
+  (global_label "CALL_MIC_P"
+    (shape bidirectional)
+    (at 193.04 86.36 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "89d7911f-6c80-5be6-b7e1-6bf003297eed"))
+  (wire
+    (pts
+      (xy 200.6600 88.9000)
+      (xy 193.0400 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7c7e232d-4119-55fc-ace8-a5971f8c05d0"))
+  (global_label "CALL_MIC_N"
+    (shape bidirectional)
+    (at 193.04 88.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "448f7988-46fc-50f4-bd5a-9adc0a55f2e1"))
+  (wire
+    (pts
+      (xy 276.8600 81.2800)
+      (xy 269.2400 81.2800))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8168afab-cff7-5922-ac8f-7fa614769a3b"))
+  (symbol
+    (lib_id "power:GND")
+    (at 269.24 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c9b917d0-19bb-5602-8dab-99a55f576af5")
+    (property "Reference" "#PWR19020"
+      (at 269.24 81.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 269.24 86.36 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "f78b869f-b833-59a3-8308-79e8ef6393b2"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "#PWR19020")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 276.8600 83.8200)
+      (xy 269.2400 83.8200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0ef90d53-df7e-5284-812b-a2c5d5ee23ad"))
+  (global_label "LTE_HOST_TX"
+    (shape bidirectional)
+    (at 269.24 83.82 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "ca4f805c-a1c3-57f2-afb4-866cb51a23ff"))
+  (wire
+    (pts
+      (xy 276.8600 86.3600)
+      (xy 269.2400 86.3600))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3794a19d-c3bf-518a-ab55-a9f5ce7ec851"))
+  (global_label "LTE_HOST_RX"
+    (shape bidirectional)
+    (at 269.24 86.36 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "0ce46241-8c76-525c-b892-dd1a5ce96e79"))
+  (wire
+    (pts
+      (xy 276.8600 88.9000)
+      (xy 269.2400 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0524f989-813d-5dd8-8eaf-2ffdfa9bc2fd"))
+  (global_label "LTE_ON"
+    (shape bidirectional)
+    (at 269.24 88.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "bb2e8561-9ed0-508f-943b-e7794c95062a"))
+  (wire
+    (pts
+      (xy 276.8600 91.4400)
+      (xy 269.2400 91.4400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bf4fd375-cca1-54cc-bfc6-e73a029277c3"))
+  (symbol
+    (lib_id "power:GND")
+    (at 269.24 91.44 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "07f63f87-7a0a-527c-b334-ed57faf8db39")
+    (property "Reference" "#PWR19029"
+      (at 269.24 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 269.24 96.52 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "93ff220a-7647-5738-9f58-b07539004e60"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "#PWR19029")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 276.8600 93.9800)
+      (xy 269.2400 93.9800))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "92377ea4-c45a-5ef5-8e66-8d35cb45bee9"))
+  (global_label "MODEM_STATUS"
+    (shape bidirectional)
+    (at 269.24 93.98 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "f9266195-4ceb-5c28-b3ae-f05cf6742824"))
+  (wire
+    (pts
+      (xy 353.0600 83.8200)
+      (xy 345.4400 83.8200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2e600a78-1209-57b0-8647-737114a74beb"))
+  (global_label "MODEM_SUPPLY"
+    (shape bidirectional)
+    (at 345.44 83.82 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "137ede15-55b6-5f57-8ac2-a7f27b6f7595"))
+  (wire
+    (pts
+      (xy 353.0600 86.3600)
+      (xy 345.4400 86.3600))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5030d622-9232-56c6-81c0-507a59ae28f6"))
+  (symbol
+    (lib_id "power:GND")
+    (at 345.44 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "aa9e6d5d-260d-5ac1-b8a8-c891c7943876")
+    (property "Reference" "#PWR19036"
+      (at 345.44 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 345.44 91.44 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "cff47402-838a-584e-9827-f966e5c86247"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "#PWR19036")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 353.0600 88.9000)
+      (xy 345.4400 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "845461c2-919e-58d7-aa92-13ab36c66e35"))
+  (global_label "MODEM_SUPPLY"
+    (shape bidirectional)
+    (at 345.44 88.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "5a1d1e28-4744-5689-8d61-a529d71d9bbe"))
+  (wire
+    (pts
+      (xy 353.0600 91.4400)
+      (xy 345.4400 91.4400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3cbbff1a-e8e8-53d0-a37f-f00d07096df1"))
+  (symbol
+    (lib_id "power:GND")
+    (at 345.44 91.44 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0fd770c3-a868-53f3-8002-6bbad0e1c0ef")
+    (property "Reference" "#PWR19041"
+      (at 345.44 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 345.44 96.52 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "c499ecc2-ec93-52d2-adf8-8630ddfe347b"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/7710dbd1-b0eb-5828-a30b-e022f3ce283b"
+          (reference "#PWR19041")
+          (unit 1))))))

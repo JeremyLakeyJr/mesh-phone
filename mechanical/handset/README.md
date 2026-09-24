@@ -14,7 +14,8 @@ were removed or claimed implemented by this mechanical redesign.
 - Handset: **74 × 154 × 26 mm**, versus the prior 93 × 160 × 38.8 mm body.
   About 49% less body bounding-box volume. No external screw ears. The
   illustrative trackball rises 2.3 mm above the face; quoted body sizes exclude it.
-- Proposed new main board: **66 × 138 × 1.6 mm**, underside Z=17.2 mm.
+- Proposed new main board: **66 × 142 × 1.6 mm**, underside Z=17.2 mm.
+  Extended 4 mm during PCB design to keep mounting drills inside the board.
   Mounting holes are [±30.5, ±68]; board corners use a 1.5 mm clip.
 - Battery: MakerFocus **3000 mAh**, nominal 65 × 36 × 10 mm, supplier tolerance
   ±2 mm. Cradle reserves **38 × 67 × 12 mm**, at [0, -39], with lead exit,

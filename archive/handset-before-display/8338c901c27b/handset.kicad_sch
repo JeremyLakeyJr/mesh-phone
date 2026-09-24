@@ -1,0 +1,291 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5")
+  (paper "A3")
+  (lib_symbols)
+  (sheet
+    (at 30 55)
+    (size 90 40)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ad187b2a-2407-564b-8b9b-a3e777327d77")
+    (property "Sheetname" "core"
+      (at 30 54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "core.kicad_sch"
+      (at 30 96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "2")))))
+  (sheet
+    (at 150 55)
+    (size 90 40)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ba26f05f-68ea-54fd-a849-6d223f953447")
+    (property "Sheetname" "keys"
+      (at 150 54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "keys.kicad_sch"
+      (at 150 96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "3")))))
+  (sheet
+    (at 270 55)
+    (size 90 40)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "15af66ae-b0a0-5ca8-bad0-ca739d2cd8ad")
+    (property "Sheetname" "power"
+      (at 270 54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "power.kicad_sch"
+      (at 270 96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "4")))))
+  (sheet
+    (at 30 120)
+    (size 90 40)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "5d4c53e0-8d36-562e-88be-67880ffeeb4d")
+    (property "Sheetname" "radios"
+      (at 30 119 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "radios.kicad_sch"
+      (at 30 161 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "5")))))
+  (sheet
+    (at 150 120)
+    (size 90 40)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "045319fb-8b65-53d4-83ea-5ff1c9ed6344")
+    (property "Sheetname" "audio"
+      (at 150 119 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "audio.kicad_sch"
+      (at 150 161 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "6")))))
+  (sheet
+    (at 270 120)
+    (size 90 40)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "122376e2-0626-53a6-b6bf-82f05c88bc97")
+    (property "Sheetname" "interfaces"
+      (at 270 119 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "interfaces.kicad_sch"
+      (at 270 161 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "7")))))
+  (text "HANDSET REV A / NOT FOR FABRICATION / core placement and partial circuits"
+    (at 25 25 0)
+    (effects
+      (font
+        (size 2 2))
+      (justify left))
+    (uuid "386027b1-e94f-5f97-a78b-06760e13698e"))
+  (sheet_instances
+    (path "/"
+      (page "1")))
+  (sheet
+    (at 30 190)
+    (size 90 40)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ba16e140-6eca-5c6f-99a6-a35ff79f2980")
+    (property "Sheetname" "gnss-antennas"
+      (at 30 189 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "gnss-antennas.kicad_sch"
+      (at 30 231 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "8")))))
+  (sheet
+    (at 135 190)
+    (size 90 35)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "18a7af99-ba15-5825-a88a-84270c26d02f")
+    (property "Sheetname" "nfc"
+      (at 135 189 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "nfc.kicad_sch"
+      (at 135 226 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "9")))))
+  (sheet
+    (at 230 190)
+    (size 90 35)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "31663d6b-f111-58bf-9538-b159ed104aec")
+    (property "Sheetname" "protection"
+      (at 230 189 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "protection.kicad_sch"
+      (at 230 226 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "10")))))
+  (sheet
+    (at 135 235)
+    (size 90 35)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "629b6345-a078-554b-b342-09040f752b15")
+    (property "Sheetname" "storage-ir"
+      (at 135 234 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "storage-ir.kicad_sch"
+      (at 135 271 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "11")))))
+  (sheet
+    (at 230 235)
+    (size 90 35)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "26aa41b6-5652-5581-bc28-bd4d936df3e1")
+    (property "Sheetname" "lf-support"
+      (at 230 234 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "lf-support.kicad_sch"
+      (at 230 271 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "12"))))))

@@ -5,7 +5,7 @@ $fn=48;
 w=74; h=154; depth=26;
 wall=2.4; floor_t=2.2; face_t=2.4; seam=depth-face_t;
 corner=7; fit=0.3;
-board=[66,138,1.6]; board_z=17.2;
+board=[66,142,1.6]; board_z=17.2;
 battery=[38,67,12]; battery_center=[0,-39]; battery_z=2.8;
 // Rotated ER-TFT024IPS-3 candidate. Envelope includes provisional CTP/Z margin.
 screen_center=[0,42.5]; screen_window=[48.5,36.3]; screen_envelope=[60.5,43.5,3.5];
