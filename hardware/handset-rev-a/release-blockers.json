@@ -11,10 +11,15 @@
       "J1",
       "J2",
       "F1",
-      "F2"
+      "F2",
+      "U25",
+      "U26",
+      "U27",
+      "Q8",
+      "R79"
     ],
-    "required": "Implement charger policy, fault handling, powered-off charging and source recovery; verify exact protected pack, NTC attachment, connector polarity/current and full handset/modem burst and thermal budget. Finish external power/I2C routing.",
-    "completed": "BQ25186 programmable charger, fused USB/battery entry, TPS25200 current limiter, TUSB320LAI source detector and TCA9536 controls installed; 113 local pads pass copper continuity. Charger policy contract checked, not implemented firmware."
+    "required": "Implement STM32 always-on supervision, durable fault handling, qualification of the routed reset-time CE inhibit, expiring legacy-USB host permission and depleted-pack recovery; qualify actual pack/NTC/polarity/current, powered-off isolation and full handset/modem thermal/burst budget. See power-supervisor-review.md. User selected a higher-current approximately 3000 mAh replacement on 2026-09-27. Freeze a pack meeting the provisional 5 A target and pocketable fit; re-select F2 and qualify J1, harness and copper. MakerFocus is the legacy baseline, not the new-build selection.",
+    "completed": "BQ25186 protected power entry and Q8/R79 reset-time charge inhibit routed; 118 local power-entry pads pass continuity. Separate STM32G031/TPS7A02/TCA9800 supervisor supply, private/host I2C and SWD routed; 67 endpoints pass continuity and two open-circuit negative tests are detected. Published battery evidence and host-tested 4.17V portable charger policy recorded. Inhibited STM32 commissioning ELF/BIN cross-built and structurally checked with bounded I2C, PA0 shutdown, watchdog and diagnostic slave. No target flash/bench qualification; durable storage and grant/rearm protocol remain unavailable. See supervisor-routing-review.md and ../../firmware/power/stm32g031/README.md. CAD-derived modem startup/current screening and six regression tests added; higher-current battery requirements recorded in battery-upgrade-requirements.json."
   },
   {
     "id": "regulator-layout",
@@ -29,8 +34,8 @@
       "L3",
       "L4"
     ],
-    "completed": "U7 local switching, feedback and ground copper routed; 26 pads in eight groups pass physical continuity. See 3v3-layout-review.md.",
-    "required": "Finish external U7 power distribution and U10/U11/U20 local routing. Qualify power/ground copper, stability, inductor current, capacitor bias, feedback tolerance, startup, modem UVLO and burst loading."
+    "completed": "U7 local switching, feedback and ground copper routed; 26 pads pass physical continuity. Charger VSYS-to-U7 input, SW19 control and ESP32 supply/bypass/ground distribution routed; 38 physical pads pass, all 1424 prior copper items preserved and no new native DRC findings. See main-distribution-review.md. U11 local 1.8 V circuit routed; 15 pads pass continuity, no new DRC findings, all 1638 previous copper items retained. See reg18-layout-review.md. U7-to-U11 feed routed; C28 output/sense paths shortened; 17 pads pass continuity and an open-feed negative test is detected. No external +1V8 loads exist in the current schematic. See reg18-distribution-review.md. U10 local 5 V boost/feedback/ground and switch enable routed; 19 pads pass continuity, no new DRC findings. See reg5-layout-review.md. U10 VSYS feed and U9/U18 LF power/ground routed; 36 pads pass continuity with no new DRC findings. Display branch remains. See reg5-distribution-review.md. U20 local conversion, feedback, ground and switch-controlled enable routed; 48 pads pass continuity with no new DRC findings. See modem-layout-review.md. Startup/output/current audit is executable and included in the manufacturing gate; see modem-power-review.md.",
+    "required": "Finish U7 supply distribution to remaining peripheral loads and U20 external battery/modem distribution and resolution of its 3.71\u20134.13 V threshold/resistor turn-on range (4.21 V upper screening with EN current) and U10 display-branch distribution with voltage/current qualification, a justified use or removal of the currently unloaded 1.8 V rail, and final U11 output/sense path review. Qualify power/ground copper against chosen stackup and load budget, stability, inductor current, capacitor bias, feedback tolerance, startup, modem UVLO and burst loading."
   },
   {
     "id": "modem-adapter",
@@ -78,9 +83,13 @@
       "J23",
       "J24",
       "J25",
-      "J26"
+      "J26",
+      "U32",
+      "R82",
+      "C90"
     ],
-    "required": "Validate SPI sharing, scanner GPIO controls, display/CTP purchase configuration, panel supply limits, IR boot behavior, storage, keypad and audio firmware."
+    "required": "Validate SPI sharing, scanner GPIO controls, display/CTP purchase configuration, panel supply limits, IR boot behavior, storage, keypad and audio firmware. Qualify CAT4004A absolute current, exposed-pad thermal performance, LED faults and U2 default-off/on sequencing; pulse-counted dimming requires separate timing qualification.",
+    "completed": "CAT4004A backlight current driver installed and routed; nine groups / 26 endpoints and seven regression tests pass. Existing display continuity retained; no new native ERC/DRC findings. See backlight-routing-review.md."
   },
   {
     "id": "passive-bom",
@@ -132,6 +141,6 @@
       "complete handset"
     ],
     "required": "Clear native ERC/DRC/parity without blanket waivers and obtain independent circuit/footprint review. Bring up on a current-limited supply and test every feature before any fabrication release for production.",
-    "completed": "218 components; 1957 integrity assertions; zero parity findings. Native ERC retains 30 findings and DRC four USB hole-clearance findings; 491 unconnected items. See sx1262-power-review.md."
+    "completed": "248 components; 2300 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC four USB1 hole-clearance findings; 327 unconnected items. Backlight and display continuity pass. See backlight-routing-review.md. No fabrication release."
   }
 ]

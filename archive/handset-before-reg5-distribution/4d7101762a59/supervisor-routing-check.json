@@ -1,0 +1,225 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "net": "VSYS",
+      "pads": [
+        "U3.1",
+        "C6.1",
+        "U26.1",
+        "U26.3",
+        "C77.1"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PWR_AON_3V0",
+      "pads": [
+        "U26.5",
+        "C78.1",
+        "U25.3",
+        "C79.1",
+        "C80.1",
+        "U27.8",
+        "C82.1",
+        "R76.1",
+        "R77.1",
+        "R78.1",
+        "TP2.1",
+        "U24.8",
+        "C60.1",
+        "R66.1",
+        "R69.1"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U3.5",
+        "C6.2",
+        "C21.2",
+        "U26.2",
+        "U25.4",
+        "U27.4",
+        "C77.2",
+        "C78.2",
+        "C79.2",
+        "C80.2",
+        "C81.2",
+        "C82.2",
+        "C83.2",
+        "TP3.1"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+3V3",
+      "pads": [
+        "U7.6",
+        "C21.1",
+        "U27.1",
+        "U27.5",
+        "C81.1",
+        "R3.1",
+        "R4.1"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "CHG_I2C_SCL",
+      "pads": [
+        "U25.28",
+        "R76.2",
+        "U24.6",
+        "U3.8"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "CHG_I2C_SDA",
+      "pads": [
+        "U25.27",
+        "R77.2",
+        "U24.7",
+        "U3.7"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PWR_HOST_SCL",
+      "pads": [
+        "U25.18",
+        "U27.7"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PWR_HOST_SDA",
+      "pads": [
+        "U25.19",
+        "U27.6"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SCL",
+      "pads": [
+        "U1.17",
+        "U27.2",
+        "R3.2"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SDA",
+      "pads": [
+        "U1.18",
+        "U27.3",
+        "R4.2"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PWR_NRST",
+      "pads": [
+        "U25.5",
+        "R78.2",
+        "C83.1",
+        "TP6.1"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PWR_SWDIO",
+      "pads": [
+        "U25.20",
+        "TP4.1"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PWR_SWCLK",
+      "pads": [
+        "U25.21",
+        "TP5.1"
+      ],
+      "disconnected": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "local_ground_returns": [
+    {
+      "pad": "U25.4",
+      "via_distance_mm": 0.763
+    },
+    {
+      "pad": "U26.2",
+      "via_distance_mm": 0.987
+    },
+    {
+      "pad": "U27.4",
+      "via_distance_mm": 0.575
+    },
+    {
+      "pad": "C77.2",
+      "via_distance_mm": 0.814
+    },
+    {
+      "pad": "C78.2",
+      "via_distance_mm": 0.775
+    },
+    {
+      "pad": "C79.2",
+      "via_distance_mm": 0.62
+    },
+    {
+      "pad": "C80.2",
+      "via_distance_mm": 0.8
+    },
+    {
+      "pad": "C81.2",
+      "via_distance_mm": 0.62
+    },
+    {
+      "pad": "C82.2",
+      "via_distance_mm": 0.62
+    },
+    {
+      "pad": "C83.2",
+      "via_distance_mm": 0.62
+    },
+    {
+      "pad": "TP3.1",
+      "via_distance_mm": 0.8
+    }
+  ],
+  "checked_pads": 67,
+  "fabrication_released": false,
+  "scope": "Supervisor power, ground, two I2C domains, charger expander and SWD; remaining host peripherals/distribution excluded"
+}

@@ -1,0 +1,19 @@
+{
+  "test": "Remove BAT_PACK_POS copper with net labels retained",
+  "detected": true,
+  "removed_copper_items": 6,
+  "failed_groups": [
+    {
+      "net": "BAT_PACK_POS",
+      "pads": [
+        "F2.1",
+        "J1.1"
+      ],
+      "disconnected": [
+        "F2.1"
+      ],
+      "unexpected_connected_nets": [],
+      "passed": false
+    }
+  ]
+}

@@ -20,3 +20,7 @@ Trackball,Pimoroni PIM447,25x22x11mm,Retain,Known firmware and behavior,Measured
 microSD,Molex 504077-1891,1.28mm high,Preferred,Compact side-access real socket,Mechanical eject access
 nano-SIM,JAE SF70 tray or SF72 push-push,1.25mm high,Preferred,Already compact,Connect only to selected modem SIM supply
 USB-C,GCT USB4105,7.35mm body 3.31mm profile,Retain,Compact durable USB2 receptacle,ESD CC and input-power design
+Battery,BatterySpace CU-JAS427 prototype candidate,36x65x13mm +/-1.5mm; dimensions conflict,Not frozen; prototype only,3000mAh protected pouch; published 5A maximum; attached 10k NTC,Exceeds 12mm allowance; cell/pack length conflict; no pack UN38.3; PCM timing; harness and temperature qualification
+Battery connector,Molex 2053380002 Pico-Lock,2mm pitch; 2.6mm mated height,Installed as J1; qualification open,Published 6.5A maximum/contact and positive lock,Manufacturer drawing; mating harness and derating; enclosure fit; copper current qualification
+Battery harness,Molex 2196572020,50mm; 20AWG; 2 circuits,Candidate only,Precrimped Pico-Lock pigtail,Mating/polarity verification; joint to pack leads; strain relief and thermal qualification
+Backlight current driver U32,onsemi CAT4004AHU2-GT3,UDFN-8 2x2mm exposed pad,Installed; qualification open,Four sinks; 4.99k RSET gives approximately 15mA/channel typical,"See backlight-routing-review.md; absolute current, thermal, panel and firmware timing qualification remain"

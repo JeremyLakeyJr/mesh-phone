@@ -1,0 +1,4 @@
+Reference,Manufacturer,MPN,Value,Footprint,Qualification
+U32,onsemi,CAT4004AHU2-GT3,CAT4004AHU2-GT3,Handset:CAT4004A_UDFN-8_2x2mm_P0.5mm_EP1x1.73mm,Installed and routed; electrical and thermal qualification pending
+R82,Yageo,RC0402FR-074K99L,4.99k 1%,Resistor_SMD:R_0402_1005Metric,Installed and routed; electrical and thermal qualification pending
+C90,Murata,GRM188R71E105KA12D,1uF 10% X7R 25V,Capacitor_SMD:C_0603_1608Metric,Installed and routed; electrical and thermal qualification pending

@@ -14,6 +14,8 @@ def inspect(path):
     board.BuildConnectivity()
     meta = json.loads((path.parent/'power-entry-update.json').read_text())
     refs = set(meta['added_refs'] + meta['changed_refs'] + ['J2','USB1','U17'])
+    if (path.parent/'charge-inhibit-update.json').exists():
+        refs.update(json.loads((path.parent/'charge-inhibit-update.json').read_text())['added_refs'])
     groups = defaultdict(list)
     for fp in board.GetFootprints():
         if fp.GetReference() not in refs:

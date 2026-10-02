@@ -47,7 +47,9 @@ must be tested.
 ## Charging and USB policy
 
 [charger-policy.json](charger-policy.json) is the register contract, checked by
-`python3 scripts/check_handset_charger_policy.py`. It is **not running firmware**.
+`python3 scripts/check_handset_charger_policy.py`. A portable, host-tested control core now exists; it is **not installed ESP32 firmware**.
+See [battery/charging follow-up](battery-charging-review.md) for the voltage-margin
+correction, pack research, current-budget conflict and remaining work.
 
 | Source | Charger input limit | Requested charge | Permission |
 |---|---:|---:|---|
@@ -55,7 +57,7 @@ must be tested.
 | Enumerated/configured legacy host granting 500 mA | 400 mA | 300 mA | Explicit USB-stack authorization; revoke on suspend/reset/detach |
 | Type-C advertising 1.5 A or 3 A | 665 mA | 500 mA | Hardware CC qualification; keep legacy override off |
 
-Common settings: 4.18 V nominal cell target, 12-hour fast-charge timer with
+Common settings (updated 2026-09-25): 4.17 V nominal cell target, 12-hour fast-charge timer with
 2× slowing under limiting conditions, 160-second hardware-reset watchdog,
 80 °C die thermal regulation, DPPM enabled, nominal 5–45 °C charging window
 with cool-region current derating. Cell voltage and thermistor tolerances still
@@ -110,3 +112,11 @@ gate remains closed regardless of local routing progress.
 - [Diotec SMF5.0A](https://diotec.com/files/diotec/productfiles/datasheet/smf50a.pdf), polarity and pulse ratings.
 - [Littelfuse 467 series](https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d), fuse clearing and ratings.
 - [MakerFocus 3000 mAh pack](https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4), dimensions, connectors and published charge/discharge limits.
+
+## Independent charge permission update (2026-09-25)
+
+Q8/R79 now add a routed STM32 PA0 permission in series with Q5. Q5 source is
+CHG_CE_RETURN, no longer directly grounded. The local continuity scope grows
+from 113 to 118 pads; full GPIO-to-gate continuity is checked separately. See
+[charge-inhibit-review.md](charge-inhibit-review.md) for reset behavior, controller
+changes and the remaining target-firmware and hardware qualification work.

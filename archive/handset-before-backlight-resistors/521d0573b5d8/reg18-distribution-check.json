@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "checked_physical_pads": 17,
+  "groups": [
+    {
+      "net": "+3V3",
+      "pads": [
+        "U7.6",
+        "C21.1",
+        "U11.2",
+        "U11.4",
+        "C27.1"
+      ],
+      "physical_pad_count": 5,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG18_SW",
+      "pads": [
+        "U11.7",
+        "L3.1"
+      ],
+      "physical_pad_count": 2,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+1V8",
+      "pads": [
+        "U11.8",
+        "L3.2",
+        "C28.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U11.1",
+        "U11.3",
+        "U11.5",
+        "U11.6",
+        "C27.2",
+        "C28.2"
+      ],
+      "physical_pad_count": 7,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "rail_pads": [
+    "C28.1",
+    "L3.2",
+    "U11.8"
+  ],
+  "external_loads_assigned": false,
+  "fabrication_released": false,
+  "scope": "U11 supplied from U7; no external 1.8 V loads assigned; current/thermal qualification remains"
+}

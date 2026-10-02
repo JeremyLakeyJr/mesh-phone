@@ -1,0 +1,6 @@
+ref,value,mpn,footprint,role
+L12,15uH 20%,MLZ2012M150WT000,Inductor_SMD:L_TDK_MLZ2012_h1.25mm,Semtech recommended core DC-DC inductor; shielded; DCR max 1.235ohm; Isat 120mA at 50% L reduction
+C75,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local supply bypass for U4.1
+C76,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local supply bypass for U4.11
+C8,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local bypass for U4.10
+C9,470nF 10% X5R 10V,GRM155R61A474KE15D,Capacitor_SMD:C_0402_1005Metric,VREG bypass; Semtech C17; never tie VREG to +3V3

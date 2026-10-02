@@ -1,9 +1,9 @@
 {
   "status": "INCOMPLETE \u2014 NOT FOR FABRICATION OR POWER",
-  "integrity_checks": 1957,
-  "integrity_passed": 1957,
+  "integrity_checks": 2300,
+  "integrity_passed": 2300,
   "integrity_failures": [],
-  "components": 218,
+  "components": 248,
   "copper_layers": 4,
   "erc_by_type": {
     "isolated_pin_label": 24,
@@ -12,7 +12,7 @@
   "drc_by_type": {
     "hole_clearance": 4
   },
-  "unconnected_items": 491,
+  "unconnected_items": 327,
   "schematic_parity_findings": 0,
   "placement_errors": [],
   "fabrication_released": false,

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "checked_physical_pads": 15,
+  "groups": [
+    {
+      "net": "+3V3",
+      "pads": [
+        "U11.2",
+        "U11.4",
+        "C27.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG18_SW",
+      "pads": [
+        "U11.7",
+        "L3.1"
+      ],
+      "physical_pad_count": 2,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+1V8",
+      "pads": [
+        "U11.8",
+        "L3.2",
+        "C28.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U11.1",
+        "U11.3",
+        "U11.5",
+        "U11.6",
+        "C27.2",
+        "C28.2"
+      ],
+      "physical_pad_count": 7,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "Local U11 regulator only; input/output distribution and current/thermal qualification excluded"
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "removed_net": "REG18_SW",
+  "removed_copper_items": 3,
+  "checker_rejected_open_circuit": true
+}

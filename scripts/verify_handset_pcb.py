@@ -87,6 +87,13 @@ if (OUT/'power-entry-update.json').exists():
         check(net+': no duplicate external Rd',not any(
             fp.GetReference().startswith('R') and any(p.GetNetname()==net for p in fp.Pads())
             for fp in fps.values()))
+if (OUT/'power-supervisor-update.json').exists():
+    contracts.update({('U3','7'):'CHG_I2C_SDA', ('U3','8'):'CHG_I2C_SCL'})
+if (OUT/'charge-inhibit-update.json').exists():
+    contracts.update({('Q5','2'):'CHG_CE_RETURN', ('Q8','1'):'CHG_ARM', ('Q8','2'):'GND', ('Q8','3'):'CHG_CE_RETURN', ('U25','6'):'CHG_ARM'})
+if (OUT/'display-interface-update.json').exists():
+    from handset_display_contract import PINS
+    contracts.update({(ref,str(pin)):net for ref,pins in PINS.items() for pin,net in pins.items() if net is not None})
 for key,net in contracts.items():
     check(f'review contract {key[0]}.{key[1]} = {net}',sch.get(key)==net)
 for pin in ('6','9','15','18'):

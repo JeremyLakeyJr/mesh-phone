@@ -1,17 +1,18 @@
 # MESH-PHONE handset concept
 
-A new industrial design based on the user's MAKERphone 2.0 reference: a narrow
-clipped-corner frame, smaller upper screen, centered trackball, rectangular
-4×4 keypad, dark recessed face and shallow side grip channels.
+A rounded handset redesign replaces the flat-sided brick silhouette with a
+rolling rear shell, 11 mm corner radii, a softened front rim and smooth thumb
+channels. A dark face sits against a muted green-grey rear shell in the CAD
+preview. The detachable modem pod also has rounded corners and a tapered back.
 
-**This requires a new PCB, a smaller touchscreen, and revised harnesses. It does
-not fit the existing Rev F PCB.** The Rev F projects and the previous enclosure
-remain preserved in `../enclosure/` and `../../hardware/`. No circuits or firmware
-were removed or claimed implemented by this mechanical redesign.
+**This is a mechanical concept for the current handset Rev A board envelope,
+not the preserved Rev F PCB.** The envelope fit checks do not establish a
+populated-board, cable or antenna fit. No electronic feature is removed.
 
 ## Size and architecture
 
-- Handset: **74 × 154 × 26 mm**, versus the prior 93 × 160 × 38.8 mm body.
+- Handset: **74 × 154 × 26 mm** maximum, unchanged by the rounded redesign.
+  The new shape reduces corner bulk, not the required battery/PCB stack. Compared with the prior 93 × 160 × 38.8 mm body.
   About 49% less body bounding-box volume. No external screw ears. The
   illustrative trackball rises 2.3 mm above the face; quoted body sizes exclude it.
 - Proposed new main board: **66 × 142 × 1.6 mm**, underside Z=17.2 mm.
@@ -80,14 +81,18 @@ solids; they do not establish populated-board fit or electrical functionality.
 
 ## Assembly and remaining engineering
 
-Main walls/face are 2.4 mm, rear floor 2.2 mm; clipped corners and a broad
-1.5 mm bevel soften the edges. Internal tongue aligns the halves. Four M2
+Main upper walls/face are 2.4 mm and the rear floor is 2.2 mm. The rear
+rolls from a 68 mm wide central back to the full 74 mm width over its first
+7 mm of depth; the internal cavity follows that transition. Front edges roll
+out over 1.8 mm. Side thumb channels are limited to 0.45 mm depth, leaving
+1.95 mm of nominal wall at their deepest point. Internal tongue aligns the halves. Four M2
 screws pass through the front columns and new board mounting holes into rear
 1.7 mm pilots; start with 14 mm under-head screws, then check 5–7 mm engagement
 and actual head dimensions. Dock screws engage M2 nuts inserted from inside:
 approximately 6 mm for the cover, 22 mm for the pod, subject to a fit print.
 
-Print the five parts exterior-side down as exported. Verify 0.3 mm lip/cover
+Print the five parts exterior-side down as exported; the sculpted rear and
+pod shoulders may need supports depending on printer/material and layer height. Verify 0.3 mm lip/cover
 clearance and 0.3 mm per-side key clearance on a small fit print first. Keycap
 flanges and strap bridges may require local bridging/support. A 7 mm soft strap
 holds the battery without squeezing it. The pod currently requires thin foam

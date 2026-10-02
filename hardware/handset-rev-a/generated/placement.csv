@@ -29,7 +29,7 @@ SW14,14,Button_Switch_SMD:SW_SPST_TL3342,92.5,156,F,0,keys
 SW15,15,Button_Switch_SMD:SW_SPST_TL3342,107.5,156,F,0,keys
 SW16,16,Button_Switch_SMD:SW_SPST_TL3342,122.5,156,F,0,keys
 U3,BQ25186DLHR,Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm,121,61,B,90,power
-J1,BATTERY_POLARITY_VERIFY,Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical,125,103,B,0,power
+J1,2053380002,Connector_Molex:Molex_Pico-Lock_205338-0002_1x02-1MP_P2.00mm_Horizontal,127.4,106.0,B,180,power
 J2,PACK_NTC_10K_B3435,Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical,126,68,B,0,power
 R6,100k,Resistor_SMD:R_0402_1005Metric,116.5,60.5,B,0,power
 R7,4.7k,Resistor_SMD:R_0402_1005Metric,111.5,66,B,0,power
@@ -87,14 +87,14 @@ C24,100nF,Capacitor_SMD:C_0402_1005Metric,78,137,B,0,lf-radio
 J10,LF_COIL_TUNING_REQUIRED,Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical,73,148,B,0,lf-radio
 U10,TPS61023DRLR,Package_TO_SOT_SMD:SOT-563,73,119,B,0,aux-power
 L2,XFL4020-102MEC / 1uH,Handset:Coilcraft_XFL4020,78,119,B,0,aux-power
-R34,732k 1%,Resistor_SMD:R_0402_1005Metric,71,123,B,0,aux-power
-R35,100k 1%,Resistor_SMD:R_0402_1005Metric,74,123,B,0,aux-power
+R34,732k 1%,Resistor_SMD:R_0402_1005Metric,69.6,121.4,B,0,aux-power
+R35,100k 1%,Resistor_SMD:R_0402_1005Metric,71.8,121.4,B,0,aux-power
 C25,10uF,Capacitor_SMD:C_0805_2012Metric,72,115,B,0,aux-power
-C26,22uF,Capacitor_SMD:C_0805_2012Metric,77,123,B,0,aux-power
+C26,22uF,Capacitor_SMD:C_0805_2012Metric,74.5,123,B,180,aux-power
 U11,TPS62840DLCR,Package_SON:VSON-8_1.5x2mm_P0.5mm,123,96,B,0,aux-power
 L3,XFL4020-222MEC / 2.2uH,Handset:Coilcraft_XFL4020,127,96.75,B,0,aux-power
-C27,4.7uF,Capacitor_SMD:C_0603_1608Metric,120,96,B,0,aux-power
-C28,10uF,Capacitor_SMD:C_0805_2012Metric,117,99,B,0,aux-power
+C27,4.7uF,Capacitor_SMD:C_0603_1608Metric,120.8,97.4,B,270,aux-power
+C28,10uF,Capacitor_SMD:C_0805_2012Metric,119,100,B,180,aux-power
 U12,MAX-M10S-00B-01,RF_GPS:ublox_MAX,114,48,B,0,gnss-antennas
 C29,100nF,Capacitor_SMD:C_0402_1005Metric,122,48,B,0,gnss-antennas
 C30,1uF,Capacitor_SMD:C_0402_1005Metric,122,51,B,0,gnss-antennas
@@ -142,11 +142,6 @@ C46,100nF,Capacitor_SMD:C_0402_1005Metric,86,136,B,0,lf-support
 R50,100k,Resistor_SMD:R_0402_1005Metric,88,133,B,0,lf-support
 R51,100k,Resistor_SMD:R_0402_1005Metric,88,136,B,0,lf-support
 J26,FH12A-50S-0.5SH(55),Handset:FH12A-50S-0.5SH_TopContact,100,65,F,0,display
-R52,150 1% 0.1W,Resistor_SMD:R_0603_1608Metric,91,74,F,0,display
-R53,150 1% 0.1W,Resistor_SMD:R_0603_1608Metric,94,74,F,0,display
-R54,150 1% 0.1W,Resistor_SMD:R_0603_1608Metric,97,74,F,0,display
-R55,150 1% 0.1W,Resistor_SMD:R_0603_1608Metric,100,74,F,0,display
-Q2,AO3400A,Package_TO_SOT_SMD:SOT-23,107,74,F,0,display
 R56,100,Resistor_SMD:R_0402_1005Metric,111,74,F,0,display
 R57,100k,Resistor_SMD:R_0402_1005Metric,111,77,F,0,display
 R58,10k,Resistor_SMD:R_0402_1005Metric,83,61,F,0,display
@@ -155,15 +150,15 @@ C48,4.7uF,Capacitor_SMD:C_0603_1608Metric,118,68,F,0,display
 C49,10uF,Capacitor_SMD:C_0805_2012Metric,118,72,F,0,display
 R59,10k,Resistor_SMD:R_0402_1005Metric,100,60,F,0,display
 U20,TPS63070RNMR,Handset:TPS63070_RNM0015A,98,45,F,0,modem-power
-L4,XFL4020-152MEC / 1.5uH,Handset:Coilcraft_XFL4020,103,45,F,0,modem-power
+L4,XFL4020-152MEC / 1.5uH,Handset:Coilcraft_XFL4020,103,45,F,270,modem-power
 C50,10uF 10V X7R,Capacitor_SMD:C_0805_2012Metric,95,42,F,0,modem-power
 C51,10uF 10V X7R,Capacitor_SMD:C_0805_2012Metric,99,41,F,0,modem-power
-C52,22uF 10V X5R,Capacitor_SMD:C_0805_2012Metric,102,50,F,0,modem-power
-C53,22uF 10V X5R,Capacitor_SMD:C_0805_2012Metric,106,50,F,0,modem-power
-C54,22uF 10V X5R,Capacitor_SMD:C_0805_2012Metric,110,50,F,0,modem-power
+C52,22uF 10V X5R,Capacitor_SMD:C_0805_2012Metric,99,49.5,F,270,modem-power
+C53,22uF 10V X5R,Capacitor_SMD:C_0805_2012Metric,102,49.5,F,270,modem-power
+C54,22uF 10V X5R,Capacitor_SMD:C_0805_2012Metric,105,49.5,F,270,modem-power
 C55,100nF,Capacitor_SMD:C_0402_1005Metric,94,45,F,0,modem-power
-R60,374k 1%,Resistor_SMD:R_0402_1005Metric,94,48,F,0,modem-power
-R61,100k 1%,Resistor_SMD:R_0402_1005Metric,97,49,F,0,modem-power
+R60,374k 1%,Resistor_SMD:R_0402_1005Metric,95.4,48.6,F,180,modem-power
+R61,100k 1%,Resistor_SMD:R_0402_1005Metric,93.7,49.7,F,0,modem-power
 R62,390k 1%,Resistor_SMD:R_0402_1005Metric,90,42,F,0,modem-power
 R63,100k 1%,Resistor_SMD:R_0402_1005Metric,90,45,F,0,modem-power
 Q3,AO3400A,Package_TO_SOT_SMD:SOT-23,85,45,F,0,modem-power
@@ -217,3 +212,38 @@ TP1,CC_GDO2_TEST,TestPoint:TestPoint_Pad_D1.0mm,118.2,30,B,0,cc-radio
 L12,15uH 20%,Inductor_SMD:L_TDK_MLZ2012_h1.25mm,111,31.5,B,0,radios
 C75,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,108.6,37.3,B,0,radios
 C76,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,114.8,30.5,B,0,radios
+U25,STM32G031G8U6,Package_DFN_QFN:QFN-28_4x4mm_P0.5mm,100,113,B,0,power-supervisor
+U26,TPS7A0230PDBVR,Package_TO_SOT_SMD:SOT-23-5,91,111,B,0,power-supervisor
+U27,TCA9800DGKR,Package_SO:VSSOP-8_3x3mm_P0.65mm,111,115,B,0,power-supervisor
+C77,4.7uF 10% X5R 25V,Capacitor_SMD:C_0603_1608Metric,95,109.8,B,0,power-supervisor
+C78,4.7uF 10% X5R 25V,Capacitor_SMD:C_0603_1608Metric,87.4,109.8,B,180,power-supervisor
+C79,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,103.8,110.5,B,0,power-supervisor
+C80,4.7uF 10% X5R 25V,Capacitor_SMD:C_0603_1608Metric,105,109,B,0,power-supervisor
+C81,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,115.2,113.2,B,0,power-supervisor
+C82,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,106.4,114,B,180,power-supervisor
+C83,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,98,118,B,0,power-supervisor
+R76,10k 1%,Resistor_SMD:R_0402_1005Metric,96,113,B,0,power-supervisor
+R77,10k 1%,Resistor_SMD:R_0402_1005Metric,96,115,B,0,power-supervisor
+R78,10k 1%,Resistor_SMD:R_0402_1005Metric,98,120,B,0,power-supervisor
+TP2,PWR_AON_3V0,TestPoint:TestPoint_Pad_D1.0mm,90,125,B,0,power-supervisor
+TP3,GND,TestPoint:TestPoint_Pad_D1.0mm,94,125,B,0,power-supervisor
+TP4,PWR_SWDIO,TestPoint:TestPoint_Pad_D1.0mm,98,125,B,0,power-supervisor
+TP5,PWR_SWCLK,TestPoint:TestPoint_Pad_D1.0mm,102,125,B,0,power-supervisor
+TP6,PWR_NRST,TestPoint:TestPoint_Pad_D1.0mm,106,125,B,0,power-supervisor
+Q8,AO3400A,Package_TO_SOT_SMD:SOT-23,112,70,B,0,power
+R79,4.7k 1%,Resistor_SMD:R_0402_1005Metric,108,67,B,0,power
+U28,TPS7A2030PDBVR,Package_TO_SOT_SMD:SOT-23-5,80,55,F,0,display-interface
+U29,SN74LVC244APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,91,55,F,0,display-interface
+U30,SN74LVC2G125DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,79,73,F,0,display-interface
+U31,TCA9406DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,79.8,66,F,0,display-interface
+C84,4.7uF 10% X5R 25V,Capacitor_SMD:C_0603_1608Metric,77.8,59,F,0,display-interface
+C85,4.7uF 10% X5R 25V,Capacitor_SMD:C_0603_1608Metric,81,59,F,0,display-interface
+C86,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,91,50,F,0,display-interface
+C87,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,79,77,F,0,display-interface
+C88,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,77.5,63,F,0,display-interface
+C89,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,81,63,F,0,display-interface
+R80,100k 1%,Resistor_SMD:R_0402_1005Metric,79,80,F,0,display-interface
+R81,100k 1%,Resistor_SMD:R_0402_1005Metric,82,77,F,0,display-interface
+U32,CAT4004AHU2-GT3,Handset:CAT4004A_UDFN-8_2x2mm_P0.5mm_EP1x1.73mm,94,77,F,0,display
+R82,4.99k 1%,Resistor_SMD:R_0402_1005Metric,97,74,F,0,display
+C90,1uF 10% X7R 25V,Capacitor_SMD:C_0603_1608Metric,98,77,F,0,display

@@ -1,0 +1,20 @@
+{
+  "source_sha256": "7c2524658fd73ff9e9c54909f7c76f5997f986f9df7f393f8cdc13cc9d0d6804",
+  "moved_refs": [
+    "U7",
+    "L1",
+    "C20",
+    "C21",
+    "C22",
+    "R31",
+    "R32",
+    "R33",
+    "R30"
+  ],
+  "added_copper_items": 61,
+  "scope": "Local U7 3.3 V converter only; external VSYS/SYS_EN/3V3/GND distribution incomplete",
+  "source": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+  "fabrication_released": false,
+  "snapshot": "archive/handset-before-3v3-routing/7c2524658fd7",
+  "preserved_copper_items": 40
+}

@@ -1,0 +1,19 @@
+ref,value,mpn,footprint,role
+U25,STM32G031G8U6,STM32G031G8U6,Package_DFN_QFN:QFN-28_4x4mm_P0.5mm,Always-on charger supervisor; firmware not yet ported
+U26,TPS7A0230PDBVR,TPS7A0230PDBVR,Package_TO_SOT_SMD:SOT-23-5,Always-on 3.0 V supply upstream of SW19
+U27,TCA9800DGKR,TCA9800DGKR,Package_SO:VSSOP-8_3x3mm_P0.65mm,Powered-off host bus isolation; no B-side pull-ups
+C77,4.7uF 10% X5R 25V,GRM188R61E475KE11D,Capacitor_SMD:C_0603_1608Metric,Local bypass / reset filter
+C78,4.7uF 10% X5R 25V,GRM188R61E475KE11D,Capacitor_SMD:C_0603_1608Metric,Local bypass / reset filter
+C79,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local bypass / reset filter
+C80,4.7uF 10% X5R 25V,GRM188R61E475KE11D,Capacitor_SMD:C_0603_1608Metric,Local bypass / reset filter
+C81,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local bypass / reset filter
+C82,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local bypass / reset filter
+C83,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local bypass / reset filter
+R76,10k 1%,RC0402FR-0710KL,Resistor_SMD:R_0402_1005Metric,Private bus or reset pull-up
+R77,10k 1%,RC0402FR-0710KL,Resistor_SMD:R_0402_1005Metric,Private bus or reset pull-up
+R78,10k 1%,RC0402FR-0710KL,Resistor_SMD:R_0402_1005Metric,Private bus or reset pull-up
+TP2,PWR_AON_3V0,PCB copper,TestPoint:TestPoint_Pad_D1.0mm,SWD service pad; VTREF is sense only
+TP3,GND,PCB copper,TestPoint:TestPoint_Pad_D1.0mm,SWD service pad; VTREF is sense only
+TP4,PWR_SWDIO,PCB copper,TestPoint:TestPoint_Pad_D1.0mm,SWD service pad; VTREF is sense only
+TP5,PWR_SWCLK,PCB copper,TestPoint:TestPoint_Pad_D1.0mm,SWD service pad; VTREF is sense only
+TP6,PWR_NRST,PCB copper,TestPoint:TestPoint_Pad_D1.0mm,SWD service pad; VTREF is sense only

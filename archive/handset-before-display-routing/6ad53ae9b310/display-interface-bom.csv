@@ -1,0 +1,13 @@
+Reference,Manufacturer,MPN,Value,Footprint,Qualification
+U28,Texas Instruments,TPS7A2030PDBVR,TPS7A2030PDBVR,Package_TO_SOT_SMD:SOT-23-5,Captured and placed; routing and assembly qualification pending
+U29,Texas Instruments,SN74LVC244APWR,SN74LVC244APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,Captured and placed; routing and assembly qualification pending
+U30,Texas Instruments,SN74LVC2G125DCUR,SN74LVC2G125DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,Captured and placed; routing and assembly qualification pending
+U31,Texas Instruments,TCA9406DCUR,TCA9406DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,Captured and placed; routing and assembly qualification pending
+C84,Murata,GRM188R61E475KE11D,4.7uF 10% X5R 25V,Capacitor_SMD:C_0603_1608Metric,Captured and placed; routing and assembly qualification pending
+C85,Murata,GRM188R61E475KE11D,4.7uF 10% X5R 25V,Capacitor_SMD:C_0603_1608Metric,Captured and placed; routing and assembly qualification pending
+C86,Murata,GRM155R71C104KA88D,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,Captured and placed; routing and assembly qualification pending
+C87,Murata,GRM155R71C104KA88D,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,Captured and placed; routing and assembly qualification pending
+C88,Murata,GRM155R71C104KA88D,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,Captured and placed; routing and assembly qualification pending
+C89,Murata,GRM155R71C104KA88D,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,Captured and placed; routing and assembly qualification pending
+R80,Yageo,RC0402FR-07100KL,100k 1%,Resistor_SMD:R_0402_1005Metric,Captured and placed; routing and assembly qualification pending
+R81,Yageo,RC0402FR-07100KL,100k 1%,Resistor_SMD:R_0402_1005Metric,Captured and placed; routing and assembly qualification pending

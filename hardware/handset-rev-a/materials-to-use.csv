@@ -62,3 +62,4 @@ CC1101 frontend,18nH 5%,LQW15AN18NJ00D,0402,"POPULATED L7, L8","Circuit specific
 LoRa core regulator,TDK shielded 15uH 20% inductor L12,MLZ2012M150WT000,2.0x1.25x1.25mm,POPULATED L12,Route core loop; qualify ripple and current; see sx1262-power-review.md
 LoRa core bypass,Murata 470nF 10% X5R 10V C9,GRM155R61A474KE15D,0402,CORRECTED C9,Verify effective capacitance and regulator startup; replaces incorrect 100nF
 LoRa input bypass,Murata 100nF 10% X7R 16V C8 C75 C76,GRM155R71C104KA88D,0402,POPULATED C8 C75 C76,Route close to U4 supply pins 10 1 11 with local ground returns
+Backlight current control,onsemi CAT4004A,CAT4004AHU2-GT3,UDFN-8 2x2mm exposed pad,INSTALLED U32; 4.99k RSET,"Qualify current, panel compatibility, heat and control timing; see backlight-routing-review.md"

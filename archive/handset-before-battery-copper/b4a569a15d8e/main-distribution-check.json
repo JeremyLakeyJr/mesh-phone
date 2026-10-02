@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "checked_physical_pads": 38,
+  "groups": [
+    {
+      "net": "VSYS",
+      "pads": [
+        "U3.1",
+        "C6.1",
+        "C20.1",
+        "U7.10",
+        "SW19.1"
+      ],
+      "physical_pad_count": 5,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SYS_EN",
+      "pads": [
+        "SW19.2",
+        "R30.1",
+        "U7.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+3V3",
+      "pads": [
+        "U7.6",
+        "C21.1",
+        "C22.1",
+        "C2.1",
+        "C3.1",
+        "U1.2"
+      ],
+      "physical_pad_count": 6,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U3.5",
+        "C6.2",
+        "U7.8",
+        "C20.2",
+        "C21.2",
+        "SW19.3",
+        "U1.1",
+        "U1.40",
+        "U1.41",
+        "C1.2",
+        "C2.2",
+        "C3.2"
+      ],
+      "physical_pad_count": 24,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "Main U7 input, switch control and ESP32 power/ground/bypass only; other loads, logic wiring and current/thermal qualification excluded"
+}

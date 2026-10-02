@@ -1,0 +1,7 @@
+{
+  "contract_pins": 38,
+  "negative_tests": 5,
+  "passed": true,
+  "scope": "Logical net ownership and power domains; not routed continuity or hardware qualification",
+  "fabrication_released": false
+}

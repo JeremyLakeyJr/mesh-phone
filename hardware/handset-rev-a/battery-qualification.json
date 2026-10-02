@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-25",
+  "identification": "User: MakerFocus 3000mAh, 3.7V, 11.1Wh; candidate listing: 103665",
+  "source": "https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4",
+  "published": {
+    "nominal_dimensions_mm": [
+      65,
+      36,
+      10
+    ],
+    "dimension_tolerance_mm": 2,
+    "operating_current_a": 1.5,
+    "overcurrent_trip_range_a": [
+      1.8,
+      2.1
+    ],
+    "standard_charge_current_a": 0.6,
+    "connector_options": [
+      "Micro JST 1.25",
+      "JST 2.0"
+    ],
+    "contradictions": [
+      "1C and 3C claims conflict with explicit 1.5A operating-current limit",
+      "Charging text mentions 4.25V followed by 4.2V; do not use 4.25V as a charging target"
+    ]
+  },
+  "physical_verification": {
+    "dimensions_mm": null,
+    "connector_manufacturer_part_number": null,
+    "positive_cavity_viewed_from_mating_face": null,
+    "protection_board_identity": null,
+    "charge_temperature_limits_c": null,
+    "ntc_part_number_and_attachment_verified": false,
+    "pack_qualified": false
+  },
+  "screening_assumptions_not_measured": {
+    "battery_voltage_v": 3.0,
+    "modem_output_voltage_v": 3.792,
+    "modem_output_peak_a": 2.0,
+    "modem_converter_efficiency": 0.85,
+    "other_battery_load_a": 0.25
+  },
+  "production_release": false,
+  "design_status": "Legacy purchased-pack evidence retained; user selected higher-current replacement on 2026-09-27. See battery-upgrade-requirements.json; no replacement pack qualified."
+}

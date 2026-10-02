@@ -1,0 +1,127 @@
+{
+  "scope": "CAD-derived screening, not a guaranteed hardware operating envelope",
+  "source": "https://www.ti.com/lit/ds/symlink/tps63070.pdf",
+  "resistor_values": {
+    "R60": "374k 1%",
+    "R61": "100k 1%",
+    "R62": "390k 1%",
+    "R63": "100k 1%"
+  },
+  "output_nominal_v": 3.7920000000000003,
+  "output_reference_resistor_corner_v": [
+    3.69542495049505,
+    3.8909688888888887
+  ],
+  "rising_threshold_resistor_corner_v": [
+    3.713534653465346,
+    4.132393939393939
+  ],
+  "falling_threshold_resistor_corner_v": [
+    3.231257425742574,
+    3.634515151515151
+  ],
+  "rising_with_symmetric_0_2ua_en_current_allowance_v": [
+    3.636314653465346,
+    4.211173939393939
+  ],
+  "charge_target_v": 4.17,
+  "assumptions": {
+    "battery_voltage_v": 3.0,
+    "modem_output_voltage_v": 3.792,
+    "modem_output_peak_a": 2.0,
+    "modem_converter_efficiency": 0.85,
+    "other_battery_load_a": 0.25
+  },
+  "published_operating_limit_a": 1.5,
+  "scenarios": [
+    {
+      "battery_v": 3.0,
+      "assumed_battery_current_a": 3.224117647058824,
+      "high_output_corner_current_a": 3.301740305010893,
+      "within_published_operating_limit": false,
+      "allowable_modem_output_a_under_assumptions": 0.8192046996577831,
+      "starts_at_all_threshold_resistor_corners": false
+    },
+    {
+      "battery_v": 3.3,
+      "assumed_battery_current_a": 2.9537433155080217,
+      "high_output_corner_current_a": 3.0243093681917212,
+      "within_published_operating_limit": false,
+      "allowable_modem_output_a_under_assumptions": 0.9011251696235614,
+      "starts_at_all_threshold_resistor_corners": false
+    },
+    {
+      "battery_v": 3.7,
+      "assumed_battery_current_a": 2.661446740858506,
+      "high_output_corner_current_a": 2.7243840310899134,
+      "within_published_operating_limit": false,
+      "allowable_modem_output_a_under_assumptions": 1.0103524629112657,
+      "starts_at_all_threshold_resistor_corners": false
+    },
+    {
+      "battery_v": 4.17,
+      "assumed_battery_current_a": 2.389652983495557,
+      "high_output_corner_current_a": 2.445496622309995,
+      "within_published_operating_limit": false,
+      "allowable_modem_output_a_under_assumptions": 1.1386945325243185,
+      "starts_at_all_threshold_resistor_corners": true
+    }
+  ],
+  "blocking_findings": [
+    "Assumed modem burst exceeds published pack operating current; divider changes cannot fix the energy budget.",
+    "Existing EN divider does not guarantee startup across the screened battery voltages.",
+    "EN-current screening raises the upper turn-on estimate above the nominal charge target, before Q3 off-state leakage or wiring drop.",
+    "Exact modem variant, burst waveform and efficiency are unqualified.",
+    "Q3 off-state leakage, temperature, input sag, copper and connector losses are not included.",
+    "Higher-current battery-path implementation and hardware validation remain unresolved.",
+    "Purchased battery remains physically unqualified.",
+    "Higher-current pack MPN, fit and protection are not frozen.",
+    "Existing battery fuse 046701.5NRHF / 1.5A and J1/harness/copper require requalification for the higher-current architecture."
+  ],
+  "fabrication_released": false,
+  "legacy_pack_identification": "User: MakerFocus 3000mAh, 3.7V, 11.1Wh; candidate listing: 103665",
+  "candidate_screening": [
+    {
+      "mpn": "CU-JAS427",
+      "maximum_dimensions_width_length_thickness_mm": [
+        37.5,
+        66.5,
+        14.5
+      ],
+      "envelope_excess_width_length_thickness_mm": [
+        0,
+        0,
+        2.5
+      ],
+      "fits_stated_envelope": false,
+      "published_current_covers_screening_margin": true,
+      "qualified": false,
+      "blocking_findings": [
+        "Pack length 65 +/-1.5 mm conflicts with linked cell length 68 +/-1 mm; require controlled pack drawing",
+        "Maximum published thickness 14.5 mm exceeds current 12 mm allowance before swelling and lead clearance",
+        "Pack operating temperature and full-current duration require confirmation; linked cell 3 A rating is restricted to 0\u201345 C",
+        "Harness polarity and NTC reference/attachment are unverified",
+        "PCM trip timing and fuse coordination remain open",
+        "Prototype-only pack is not UN38.3 tested"
+      ]
+    }
+  ],
+  "battery_upgrade": {
+    "user_decision": "Use a higher-current battery of similar capacity",
+    "selected_pack_mpn": null,
+    "target_continuous_a": 5.0,
+    "screening_peak_a": 3.301740305010893,
+    "screening_with_margin_a": 4.1271753812636165,
+    "target_covers_screening_with_margin": true,
+    "target_is_qualified_pack_rating": false,
+    "existing_battery_fuse": "046701.5NRHF / 1.5A",
+    "existing_connector": "Connector_Molex:Molex_Pico-Lock_205338-0002_1x02-1MP_P2.00mm_Horizontal"
+  },
+  "input_sha256": {
+    "generated/connectivity.json": "ed2b08c916d43c602146c7754cb064a9ff3349e87b9e2eaa4c6bd00bd6057dc5",
+    "generated/netlist.xml": "0cd64c76b0e7f4ba5fd3ad212d1c197711127e1dfe453231fcc5e3f184b6e184",
+    "battery-qualification.json": "6da41ab8446575574853bfda2ff0e4855448482ada4bb79ebd91d133f5c2f5f0",
+    "charger-policy.json": "6af0fdc61a946b67e9c8ed9f99db0ccbfab4c120ae3f87bbed32501f0e419baa",
+    "battery-upgrade-requirements.json": "d31f49edf0624f78d942495ca4f6d9435e388a97696a09f0be63f10a37731ac8"
+  }
+}

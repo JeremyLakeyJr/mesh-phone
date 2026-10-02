@@ -1,0 +1,652 @@
+{
+  "scope": "Battery-only rail envelope and incomplete load inventory; no operating mode authorized",
+  "configured_handset_ocp_code": 1,
+  "configured_handset_ocp_typical_a": 1.05,
+  "ocp_is_not_guaranteed_continuous_rating": true,
+  "esp32_reference_case": {
+    "battery_v": 3,
+    "main_3v3_a": 0.355,
+    "aux_5v_a": 0,
+    "handset_branch_a": 0.45941176470588235,
+    "modem_branch_a": 0.0,
+    "total_battery_a": 0.45941176470588235
+  },
+  "legacy_other_load_allowance_a": 0.25,
+  "unresolved_load_profiles": [
+    "ESP32 with flash/PSRAM",
+    "Keypad and GPIO",
+    "LoRa radio and TCXO",
+    "CC1101 radio",
+    "Media amplifier and speaker",
+    "Fuel gauge",
+    "LF reader and logic",
+    "GNSS",
+    "NFC and antenna driver",
+    "Expansion module and switch",
+    "Trackball",
+    "microSD",
+    "IR transmitter and receiver",
+    "Display logic and touch",
+    "Display backlight",
+    "Modem and call audio",
+    "Supervisor and always-on logic",
+    "Converter, charger and miscellaneous logic quiescent loads"
+  ],
+  "scenarios": [
+    {
+      "battery_v": 3,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.45941176470588235,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 3.5111520697167755,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 0.949607843137255,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 4.001348148148148,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.4398039215686276,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 4.491544226579521,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.9705882352941175,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 4.02232854030501,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.4607843137254901,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 4.512524618736383,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.9509803921568627,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 5.002720697167756,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.2941176470588236,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 4.345857952069717,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.7843137254901962,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 4.8360540305010895,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.2745098039215685,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 5.326250108932461,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.941176470588235,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 4.992916775599128,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 2.4313725490196076,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 5.483112854030501,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.9215686274509802,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 5.973308932461873,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0,
+      "handset_branch_a": 2.588235294117647,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 5.63997559912854,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 3.0784313725490198,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 6.130171677559913,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 3.5686274509803924,
+      "modem_branch_a": 3.051740305010893,
+      "total_battery_a": 6.6203677559912855,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.4176470588235294,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 3.1919564270152505,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 0.8632798573975046,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 3.6375892255892257,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.3089126559714797,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 4.0832220241632005,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.8823529411764706,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 3.656662309368192,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.3279857397504455,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 4.102295107942167,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.7736185383244207,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 4.547927906516142,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.1764705882352942,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 3.9507799564270156,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.6221033868092694,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 4.39641275500099,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.0677361853832443,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 4.842045553574966,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.7647058823529411,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 4.539015250544662,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 2.2103386809269163,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 4.984648049118638,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.655971479500891,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 5.430280847692613,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0,
+      "handset_branch_a": 2.3529411764705883,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 5.12725054466231,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 2.7985739750445635,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 5.572883343236285,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3.3,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 3.2442067736185387,
+      "modem_branch_a": 2.7743093681917212,
+      "total_battery_a": 6.0185161418102595,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.3724960254372019,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 2.8468800565271155,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 0.7699523052464229,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 3.2443363363363362,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.167408585055644,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 3.6417926161455574,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.7869634340222574,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 3.2613474651121708,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.1844197138314785,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 3.658803744921392,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.5818759936406994,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 4.056260024730613,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.0492845786963434,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 3.523668609786257,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.4467408585055643,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 3.921124889595478,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.8441971383147853,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 4.318581169404698,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.5739268680445149,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 4.048310899134428,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.9713831478537358,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 4.445767178943649,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.368839427662957,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 4.84322345875287,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0,
+      "handset_branch_a": 2.098569157392687,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 4.5729531884826,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 2.4960254372019075,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 4.970409468291821,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 3.7,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.8934817170111287,
+      "modem_branch_a": 2.4743840310899134,
+      "total_battery_a": 5.3678657481010426,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": true
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.3305120609394837,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 2.526008683249479,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 0.683171110170687,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 2.878667732480682,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 0.355,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.0358301594018904,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.2313267817118856,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.6982649174777824,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 2.8937615397877776,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.0509239667089858,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.246420589018981,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 0.75,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.403583015940189,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.599079638250184,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0,
+      "handset_branch_a": 0.9310198899703767,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.1265165122803715,
+      "exceeds_configured_handset_ocp_typical": false,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.28367893920158,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.4791755615115747,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 1,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 1.6363379884327833,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.8318346107427783,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.3965298349555648,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.59202645726556,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 1.7491888841867682,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 3.9446855064967634,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 1.5,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.1018479334179716,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 4.297344555727967,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0,
+      "handset_branch_a": 1.8620397799407533,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 4.057536402250748,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.25,
+      "handset_branch_a": 2.2146988291719567,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 4.410195451481952,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    },
+    {
+      "battery_v": 4.17,
+      "main_3v3_a": 2,
+      "aux_5v_a": 0.5,
+      "handset_branch_a": 2.56735787840316,
+      "modem_branch_a": 2.195496622309995,
+      "total_battery_a": 4.762854500713155,
+      "exceeds_configured_handset_ocp_typical": true,
+      "exceeds_provisional_pack_target": false
+    }
+  ],
+  "blocking_findings": [
+    "Unqualified load profiles: ESP32 with flash/PSRAM, Keypad and GPIO, LoRa radio and TCXO, CC1101 radio, Media amplifier and speaker, Fuel gauge, LF reader and logic, GNSS, NFC and antenna driver, Expansion module and switch, Trackball, microSD, IR transmitter and receiver, Display logic and touch, Display backlight, Modem and call audio, Supervisor and always-on logic, Converter, charger and miscellaneous logic quiescent loads",
+    "Handset load sweep crosses the configured BQ25186 discharge OCP typical threshold; raising it requires path and thermal qualification.",
+    "Simultaneous rail-load sweep exceeds the provisional pack target; converter ratings are not a permitted simultaneous-use budget.",
+    "Battery-only sensitivity model excludes FET/wiring drop, converter Iq, startup/inrush and USB load sharing; hardware operating modes remain unqualified."
+  ],
+  "fabrication_released": false,
+  "input_sha256": {
+    "system-power-inputs.json": "44cf441518c9d785f696756e808d458d5480b53be68408b5c68707069792719a",
+    "generated/netlist.xml": "0cd64c76b0e7f4ba5fd3ad212d1c197711127e1dfe453231fcc5e3f184b6e184",
+    "generated/connectivity.json": "ed2b08c916d43c602146c7754cb064a9ff3349e87b9e2eaa4c6bd00bd6057dc5",
+    "charger-policy.json": "6af0fdc61a946b67e9c8ed9f99db0ccbfab4c120ae3f87bbed32501f0e419baa",
+    "battery-upgrade-requirements.json": "d31f49edf0624f78d942495ca4f6d9435e388a97696a09f0be63f10a37731ac8",
+    "battery-qualification.json": "6da41ab8446575574853bfda2ff0e4855448482ada4bb79ebd91d133f5c2f5f0"
+  }
+}

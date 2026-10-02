@@ -1,0 +1,20 @@
+{
+  "inductors": {
+    "L1": [
+      "XFL4020-471MEC / 0.47uH",
+      127,
+      126
+    ],
+    "L2": [
+      "XFL4020-102MEC / 1uH",
+      78,
+      119
+    ],
+    "L3": [
+      "XFL4020-222MEC / 2.2uH",
+      127,
+      96
+    ]
+  },
+  "note": "Physical population complete; electrical release remains blocked."
+}

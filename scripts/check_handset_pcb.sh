@@ -6,6 +6,18 @@ kicad-cli sch export netlist "$project/handset.kicad_sch" --format kicadxml -o "
 kicad-cli sch erc "$project/handset.kicad_sch" --format json -o "$project/erc.json"
 kicad-cli pcb drc "$project/handset.kicad_pcb" --schematic-parity --format json -o "$project/drc.json"
 python3 scripts/verify_handset_pcb.py
+python3 scripts/check_handset_modem_power.py
+python3 scripts/check_handset_system_power.py
+python3 scripts/check_handset_display_expansion.py
+if [[ -f "$project/backlight-update.json" ]]; then
+  python3 scripts/check_handset_backlight_routing.py "$project"
+fi
+if [[ -f "$project/display-routing.json" ]]; then
+  python3 scripts/check_handset_display_routing.py "$project"
+fi
+if [[ -f "$project/battery-copper-update.json" ]]; then
+  python3 scripts/check_handset_battery_copper.py "$project/handset.kicad_pcb"
+fi
 if [[ -f "$project/reg3-routing.json" ]]; then
   python3 scripts/check_handset_3v3.py "$project/handset.kicad_pcb"
 fi
@@ -18,6 +30,33 @@ if [[ -f "$project/cc1101-update.json" ]]; then
 fi
 if [[ -f "$project/sx1262-power-update.json" ]]; then
   python3 scripts/check_handset_sx1262_power.py "$project"
+fi
+if [[ -f "$project/power-supervisor-update.json" ]]; then
+  python3 scripts/check_handset_power_supervisor.py "$project"
+fi
+if [[ -f "$project/charge-inhibit-update.json" ]]; then
+  python3 scripts/check_handset_charge_inhibit.py "$project"
+fi
+if [[ -f "$project/supervisor-routing.json" ]]; then
+  python3 scripts/check_handset_supervisor_routing.py "$project"
+fi
+if [[ -f "$project/main-distribution.json" ]]; then
+  python3 scripts/check_handset_main_distribution.py "$project"
+fi
+if [[ -f "$project/reg18-routing.json" ]]; then
+  python3 scripts/check_handset_reg18.py "$project"
+fi
+if [[ -f "$project/reg18-distribution.json" ]]; then
+  python3 scripts/check_handset_reg18_distribution.py "$project"
+fi
+if [[ -f "$project/reg5-routing.json" ]]; then
+  python3 scripts/check_handset_reg5.py "$project"
+fi
+if [[ -f "$project/reg5-distribution.json" ]]; then
+  python3 scripts/check_handset_reg5_distribution.py "$project"
+fi
+if [[ -f "$project/modem-routing.json" ]]; then
+  python3 scripts/check_handset_modem.py "$project"
 fi
 kicad-cli sch export pdf "$project/handset.kicad_sch" -o "$project/handset-schematic.pdf"
 kicad-cli sch export svg "$project/handset.kicad_sch" -o "$project/previews/"

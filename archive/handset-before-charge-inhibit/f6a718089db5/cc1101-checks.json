@@ -1,0 +1,29 @@
+{
+  "scope": "CC1101 schematic topology and component specification; not copper continuity or RF qualification",
+  "passed": true,
+  "checks": 90,
+  "failures": [],
+  "negative_tests": [
+    {
+      "mutation": "C63.2 -> GND",
+      "rejected": true
+    },
+    {
+      "mutation": "L8.2 -> CC_BAL_P",
+      "rejected": true
+    },
+    {
+      "mutation": "Y2.2 -> CC_X1",
+      "rejected": true
+    },
+    {
+      "mutation": "C11.1 -> CC_VDD",
+      "rejected": true
+    },
+    {
+      "mutation": "C61 wrong crystal load",
+      "rejected": true
+    }
+  ],
+  "fabrication_released": false
+}

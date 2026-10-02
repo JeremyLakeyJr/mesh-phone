@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-27",
+  "user_decision": "Use a higher-current battery of similar capacity",
+  "architecture": "One higher-current 1S pack powers handset and modem",
+  "selected_pack_mpn": null,
+  "selection_status": "Prototype candidate identified; dimensions conflict and production qualification remain open",
+  "capacity_target_mah": 3000,
+  "minimum_continuous_discharge_target_a": 5.0,
+  "current_target_status": "Provisional requirement, not a purchased-pack rating; increase if full-system budget requires",
+  "screening_margin_factor": 1.25,
+  "preferred_shape": "Pouch to preserve pocketability",
+  "existing_battery_envelope_mm": [
+    38,
+    67,
+    12
+  ],
+  "charge_voltage_policy_v": 4.17,
+  "charge_policy_change_authorized_by_this_record": false,
+  "required_evidence": [
+    "Manufacturer discharge rating over intended temperature range, including PCM and leads",
+    "Protection trip thresholds and timing coordinated with the selected fuse and wiring",
+    "Actual maximum pack dimensions including PCM, swelling clearance and lead exits",
+    "Charge/discharge temperature limits and attached NTC qualification",
+    "Connector, wire gauge, mating polarity and contact-current qualification",
+    "Full-system peak/continuous current, inrush, rail sag and thermal measurements"
+  ],
+  "reviewed_candidates": [
+    {
+      "mpn": "Keeppower P1830RC",
+      "capacity_mah": 3000,
+      "continuous_discharge_a": 15,
+      "protected": true,
+      "shape": "Cylinder",
+      "diameter_mm": 18.8,
+      "length_mm": 68.9,
+      "stated_dimensional_tolerance_mm": 0.2,
+      "standard_charge_a": 1.5,
+      "maximum_charge_voltage_v": 4.2,
+      "source": "https://www.keeppower.com/product/max-15a-discharge-keeppower-18650-3000mah-protected-li-ion-rechargeable-battery-p1830rc/",
+      "disposition": "Electrical-current candidate only; incompatible with existing 12 mm battery depth before holder or clearance. Not selected."
+    },
+    {
+      "mpn": "Olimex BATTERY-LIPO3000mAh",
+      "capacity_mah": 3000,
+      "published_maximum_discharge_a": 3,
+      "dimensions_mm": [
+        135,
+        45,
+        5
+      ],
+      "source": "https://www.olimex.com/Products/Power-Supply/Lipo-battery/BATTERY-LIPO3000mAh/",
+      "disposition": "Rejected: below provisional current requirement and does not fit the current battery envelope."
+    },
+    {
+      "mpn": "CU-JAS427",
+      "manufacturer": "BatterySpace / AA Portable Power",
+      "capacity_mah": 3000,
+      "configuration": "1S2P",
+      "published_maximum_discharge_a": 5.0,
+      "dimensions_width_length_thickness_mm": [
+        36,
+        65,
+        13
+      ],
+      "dimensional_tolerance_mm": 1.5,
+      "standard_charge_a": 0.6,
+      "maximum_charge_a": 3,
+      "maximum_charge_voltage_v": 4.2,
+      "discharge_cutoff_v": 2.75,
+      "leads": "6 inch 22 AWG red/black/white; pinout unverified",
+      "ntc": {
+        "resistance_ohm": 10000,
+        "beta_k": 3435,
+        "resistance_tolerance_percent": 1,
+        "beta_tolerance_percent": 1
+      },
+      "pcm": {
+        "mpn": "PCB-S1A6",
+        "continuous_discharge_a": 5,
+        "overcurrent_trip_a": [
+          7,
+          9
+        ],
+        "overcharge_trip_v": [
+          4.25,
+          4.35
+        ],
+        "overdischarge_trip_v": [
+          2.3,
+          2.5
+        ]
+      },
+      "prototype_only": true,
+      "pack_un38_3_tested": false,
+      "source": "https://www.batteryspace.com/polymer-li-ion-battery-pack-3-7v-3000mah-11-1wh-5a-rate.aspx",
+      "qualification_blockers": [
+        "Pack length 65 +/-1.5 mm conflicts with linked cell length 68 +/-1 mm; require controlled pack drawing",
+        "Maximum published thickness 14.5 mm exceeds current 12 mm allowance before swelling and lead clearance",
+        "Pack operating temperature and full-current duration require confirmation; linked cell 3 A rating is restricted to 0\u201345 C",
+        "Harness polarity and NTC reference/attachment are unverified",
+        "PCM trip timing and fuse coordination remain open",
+        "Prototype-only pack is not UN38.3 tested"
+      ],
+      "disposition": "Preferred prototype investigation candidate; not selected for production or verified to fit"
+    }
+  ],
+  "hardware_changes_required": [
+    "Re-select and coordinate F2; existing 046701.5NRHF 1.5 A is not qualified for the new load",
+    "Qualify installed J1 Molex 2053380002 with mating harness, current derating and mechanical fit",
+    "Reassess battery copper, vias and returns before routing U20 external feed",
+    "Resolve R62/R63 startup thresholds with qualified pack discharge curve and modem operating envelope"
+  ],
+  "fabrication_released": false,
+  "preferred_prototype_candidate_mpn": "CU-JAS427",
+  "connector_candidate": {
+    "mpn": "Molex 2053380002",
+    "maximum_contact_current_a": 6.5,
+    "mated_height_mm": 2.6,
+    "source": "https://www.molex.com/en-us/products/part-detail/2053380002",
+    "footprint": "Connector_Molex:Molex_Pico-Lock_205338-0002_1x02-1MP_P2.00mm_Horizontal",
+    "status": "Installed in schematic and PCB as J1; native parity and local continuity verified. Manufacturer drawing, mating harness, thermal/current and case qualification remain open.",
+    "harness_candidate": {
+      "mpn": "Molex 2196572020",
+      "length_mm": 50,
+      "wire_awg": 20,
+      "source": "https://www.molex.com/en-us/products/part-detail/2196572020",
+      "status": "Candidate only; confirm mating drawing, pin numbering, finished pack lead joint and strain relief"
+    }
+  },
+  "fuse_screening": {
+    "candidate_mpn": "0467005.NRHF",
+    "rated_current_a": 5,
+    "continuous_derating_factor": 0.75,
+    "temperature_factor_at_70c": 0.8,
+    "continuous_screening_limit_at_70c_a": 3,
+    "disposition": "Not installed: 3 A hot continuous screening is below 3.302 A initial load; full thermal and fault coordination needed",
+    "source": "https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d",
+    "fault_coordination_status": "Unproven: 7\u20139 A PCM trip is 1.4\u20131.8 times a 5 A fuse rating, below the datasheet 2x opening-time guarantee; trip delay and fault withstand unavailable"
+  },
+  "battery_entry_copper_status": "J1.1-to-F2.1 main section widened to 1.2 mm; constrained sections remain 0.6 mm. Calculated resistance reduced about 24%; full feed/return thermal and current qualification still open.",
+  "full_system_budget_status": "Open: system-power-report.json shows separate handset OCP and shared-pack constraints. Old 0.25 A other-load allowance is incomplete; 5 A target is provisional and does not cover every rail-load sensitivity case."
+}

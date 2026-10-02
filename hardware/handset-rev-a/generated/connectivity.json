@@ -507,8 +507,8 @@
       "4": "CHG_CE_N",
       "5": "GND",
       "6": "BAT_TS",
-      "7": "I2C_SDA",
-      "8": "I2C_SCL",
+      "7": "CHG_I2C_SDA",
+      "8": "CHG_I2C_SCL",
       "9": null,
       "10": "USB_PROTECTED",
       "11": "GND"
@@ -522,18 +522,18 @@
   },
   {
     "ref": "J1",
-    "value": "BATTERY_POLARITY_VERIFY",
+    "value": "2053380002",
     "libid": "Connector_Generic:Conn_01x02",
     "nets": {
       "1": "BAT_PACK_POS",
       "2": "GND"
     },
-    "x": 125,
-    "y": 103,
+    "x": 127.4,
+    "y": 106.0,
     "side": "B",
-    "angle": 0,
+    "angle": 180,
     "sheet": "power",
-    "footprint": "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
+    "footprint": "Connector_Molex:Molex_Pico-Lock_205338-0002_1x02-1MP_P2.00mm_Horizontal"
   },
   {
     "ref": "J2",
@@ -1532,8 +1532,8 @@
       "1": "+5V_RF",
       "2": "REG5_FB"
     },
-    "x": 71,
-    "y": 123,
+    "x": 69.6,
+    "y": 121.4,
     "side": "B",
     "angle": 0,
     "sheet": "aux-power",
@@ -1547,8 +1547,8 @@
       "1": "REG5_FB",
       "2": "GND"
     },
-    "x": 74,
-    "y": 123,
+    "x": 71.8,
+    "y": 121.4,
     "side": "B",
     "angle": 0,
     "sheet": "aux-power",
@@ -1577,10 +1577,10 @@
       "1": "+5V_RF",
       "2": "GND"
     },
-    "x": 77,
+    "x": 74.5,
     "y": 123,
     "side": "B",
-    "angle": 0,
+    "angle": 180,
     "sheet": "aux-power",
     "footprint": "Capacitor_SMD:C_0805_2012Metric"
   },
@@ -1628,10 +1628,10 @@
       "1": "+3V3",
       "2": "GND"
     },
-    "x": 120,
-    "y": 96,
+    "x": 120.8,
+    "y": 97.4,
     "side": "B",
-    "angle": 0,
+    "angle": 270,
     "sheet": "aux-power",
     "footprint": "Capacitor_SMD:C_0603_1608Metric"
   },
@@ -1643,10 +1643,10 @@
       "1": "+1V8",
       "2": "GND"
     },
-    "x": 117,
-    "y": 99,
+    "x": 119,
+    "y": 100,
     "side": "B",
-    "angle": 0,
+    "angle": 180,
     "sheet": "aux-power",
     "footprint": "Capacitor_SMD:C_0805_2012Metric"
   },
@@ -2455,10 +2455,10 @@
       "4": "LCD_K3",
       "5": "LCD_K4",
       "6": "GND",
-      "7": "+3V3",
-      "8": "+3V3",
-      "9": "+3V3",
-      "10": "LCD_RESET",
+      "7": "LCD_3V0",
+      "8": "LCD_3V0",
+      "9": "LCD_3V0",
+      "10": "PANEL_LCD_RESET",
       "11": "GND",
       "12": "GND",
       "13": "GND",
@@ -2481,103 +2481,27 @@
       "30": "GND",
       "31": "GND",
       "32": "GND",
-      "33": "SPI_MISO",
-      "34": "SPI_MOSI",
-      "35": "+3V3",
-      "36": "LCD_DC",
-      "37": "SPI_SCK",
-      "38": "LCD_CS",
+      "33": "PANEL_SPI_MISO",
+      "34": "PANEL_SPI_MOSI",
+      "35": "LCD_3V0",
+      "36": "PANEL_LCD_DC",
+      "37": "PANEL_SPI_SCK",
+      "38": "PANEL_LCD_CS",
       "39": null,
-      "40": "+3V3",
-      "41": "+3V3",
-      "42": "+3V3",
+      "40": "LCD_3V0",
+      "41": "LCD_3V0",
+      "42": "LCD_3V0",
       "43": "GND",
-      "44": "I2C_SCL",
-      "45": "I2C_SDA",
-      "46": "TOUCH_IRQ",
-      "47": "TOUCH_RESET",
+      "44": "PANEL_I2C_SCL",
+      "45": "PANEL_I2C_SDA",
+      "46": "PANEL_TOUCH_IRQ",
+      "47": "PANEL_TOUCH_RESET",
       "48": "GND",
       "49": "GND",
       "50": "GND"
     },
     "x": 100,
     "y": 65,
-    "side": "F",
-    "angle": 0,
-    "sheet": "display"
-  },
-  {
-    "ref": "R52",
-    "value": "150 1% 0.1W",
-    "libid": "Device:R",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "nets": {
-      "1": "LCD_K1",
-      "2": "LCD_LED_RETURN"
-    },
-    "x": 91,
-    "y": 74,
-    "side": "F",
-    "angle": 0,
-    "sheet": "display"
-  },
-  {
-    "ref": "R53",
-    "value": "150 1% 0.1W",
-    "libid": "Device:R",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "nets": {
-      "1": "LCD_K2",
-      "2": "LCD_LED_RETURN"
-    },
-    "x": 94,
-    "y": 74,
-    "side": "F",
-    "angle": 0,
-    "sheet": "display"
-  },
-  {
-    "ref": "R54",
-    "value": "150 1% 0.1W",
-    "libid": "Device:R",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "nets": {
-      "1": "LCD_K3",
-      "2": "LCD_LED_RETURN"
-    },
-    "x": 97,
-    "y": 74,
-    "side": "F",
-    "angle": 0,
-    "sheet": "display"
-  },
-  {
-    "ref": "R55",
-    "value": "150 1% 0.1W",
-    "libid": "Device:R",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "nets": {
-      "1": "LCD_K4",
-      "2": "LCD_LED_RETURN"
-    },
-    "x": 100,
-    "y": 74,
-    "side": "F",
-    "angle": 0,
-    "sheet": "display"
-  },
-  {
-    "ref": "Q2",
-    "value": "AO3400A",
-    "libid": "Transistor_FET:Q_NMOS_GSD",
-    "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "nets": {
-      "1": "LCD_BL_GATE",
-      "2": "GND",
-      "3": "LCD_LED_RETURN"
-    },
-    "x": 107,
-    "y": 74,
     "side": "F",
     "angle": 0,
     "sheet": "display"
@@ -2633,7 +2557,7 @@
     "libid": "Device:C",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "nets": {
-      "1": "+3V3",
+      "1": "LCD_3V0",
       "2": "GND"
     },
     "x": 118,
@@ -2648,7 +2572,7 @@
     "libid": "Device:C",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "nets": {
-      "1": "+3V3",
+      "1": "LCD_3V0",
       "2": "GND"
     },
     "x": 118,
@@ -2727,7 +2651,7 @@
     "x": 103,
     "y": 45,
     "side": "F",
-    "angle": 0,
+    "angle": 270,
     "sheet": "modem-power"
   },
   {
@@ -2769,10 +2693,10 @@
       "1": "MODEM_SUPPLY",
       "2": "GND"
     },
-    "x": 102,
-    "y": 50,
+    "x": 99,
+    "y": 49.5,
     "side": "F",
-    "angle": 0,
+    "angle": 270,
     "sheet": "modem-power"
   },
   {
@@ -2784,10 +2708,10 @@
       "1": "MODEM_SUPPLY",
       "2": "GND"
     },
-    "x": 106,
-    "y": 50,
+    "x": 102,
+    "y": 49.5,
     "side": "F",
-    "angle": 0,
+    "angle": 270,
     "sheet": "modem-power"
   },
   {
@@ -2799,10 +2723,10 @@
       "1": "MODEM_SUPPLY",
       "2": "GND"
     },
-    "x": 110,
-    "y": 50,
+    "x": 105,
+    "y": 49.5,
     "side": "F",
-    "angle": 0,
+    "angle": 270,
     "sheet": "modem-power"
   },
   {
@@ -2829,10 +2753,10 @@
       "1": "MODEM_SUPPLY",
       "2": "MODEM_FB"
     },
-    "x": 94,
-    "y": 48,
+    "x": 95.4,
+    "y": 48.6,
     "side": "F",
-    "angle": 0,
+    "angle": 180,
     "sheet": "modem-power"
   },
   {
@@ -2844,8 +2768,8 @@
       "1": "MODEM_FB",
       "2": "GND"
     },
-    "x": 97,
-    "y": 49,
+    "x": 93.7,
+    "y": 49.7,
     "side": "F",
     "angle": 0,
     "sheet": "modem-power"
@@ -3001,9 +2925,9 @@
       "3": "USB_CC_QUALIFIED_N",
       "4": "GND",
       "5": "USB_PWR_FAULT_N",
-      "6": "I2C_SCL",
-      "7": "I2C_SDA",
-      "8": "+3V3"
+      "6": "CHG_I2C_SCL",
+      "7": "CHG_I2C_SDA",
+      "8": "PWR_AON_3V0"
     },
     "x": 104.5,
     "y": 55.8,
@@ -3018,7 +2942,7 @@
     "footprint": "Package_TO_SOT_SMD:SOT-23",
     "nets": {
       "1": "CHG_ENABLE",
-      "2": "GND",
+      "2": "CHG_CE_RETURN",
       "3": "CHG_CE_N"
     },
     "x": 115.5,
@@ -3141,7 +3065,7 @@
     "libid": "Device:R",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "nets": {
-      "1": "+3V3",
+      "1": "PWR_AON_3V0",
       "2": "USB_PWR_FAULT_N"
     },
     "x": 110,
@@ -3186,7 +3110,7 @@
     "libid": "Device:R",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "nets": {
-      "1": "+3V3",
+      "1": "PWR_AON_3V0",
       "2": "USB_CC_QUALIFIED_N"
     },
     "x": 112,
@@ -3276,7 +3200,7 @@
     "libid": "Device:C",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "nets": {
-      "1": "+3V3",
+      "1": "PWR_AON_3V0",
       "2": "GND"
     },
     "x": 101.5,
@@ -3727,5 +3651,671 @@
     "sheet": "radios",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local supply bypass for U4.11"
+  },
+  {
+    "ref": "U25",
+    "value": "STM32G031G8U6",
+    "libid": "Handset:STM32G031G8U6",
+    "footprint": "Package_DFN_QFN:QFN-28_4x4mm_P0.5mm",
+    "nets": {
+      "1": null,
+      "2": null,
+      "3": "PWR_AON_3V0",
+      "4": "GND",
+      "5": "PWR_NRST",
+      "6": "CHG_ARM",
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": null,
+      "11": null,
+      "12": null,
+      "13": null,
+      "14": null,
+      "15": null,
+      "16": null,
+      "17": null,
+      "18": "PWR_HOST_SCL",
+      "19": "PWR_HOST_SDA",
+      "20": "PWR_SWDIO",
+      "21": "PWR_SWCLK",
+      "22": null,
+      "23": null,
+      "24": null,
+      "25": null,
+      "26": null,
+      "27": "CHG_I2C_SDA",
+      "28": "CHG_I2C_SCL"
+    },
+    "x": 100,
+    "y": 113,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "STM32G031G8U6",
+    "role": "Always-on charger supervisor; firmware not yet ported"
+  },
+  {
+    "ref": "U26",
+    "value": "TPS7A0230PDBVR",
+    "libid": "Handset:TPS7A0230PDBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "nets": {
+      "1": "VSYS",
+      "2": "GND",
+      "3": "VSYS",
+      "4": null,
+      "5": "PWR_AON_3V0"
+    },
+    "x": 91,
+    "y": 111,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "TPS7A0230PDBVR",
+    "role": "Always-on 3.0 V supply upstream of SW19"
+  },
+  {
+    "ref": "U27",
+    "value": "TCA9800DGKR",
+    "libid": "Interface:TCA9800",
+    "footprint": "Package_SO:VSSOP-8_3x3mm_P0.65mm",
+    "nets": {
+      "1": "+3V3",
+      "2": "I2C_SCL",
+      "3": "I2C_SDA",
+      "4": "GND",
+      "5": "+3V3",
+      "6": "PWR_HOST_SDA",
+      "7": "PWR_HOST_SCL",
+      "8": "PWR_AON_3V0"
+    },
+    "x": 111,
+    "y": 115,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "TCA9800DGKR",
+    "role": "Powered-off host bus isolation; no B-side pull-ups"
+  },
+  {
+    "ref": "C77",
+    "value": "4.7uF 10% X5R 25V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VSYS",
+      "2": "GND"
+    },
+    "x": 95,
+    "y": 109.8,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "GRM188R61E475KE11D",
+    "role": "Local bypass / reset filter"
+  },
+  {
+    "ref": "C78",
+    "value": "4.7uF 10% X5R 25V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PWR_AON_3V0",
+      "2": "GND"
+    },
+    "x": 87.4,
+    "y": 109.8,
+    "side": "B",
+    "angle": 180,
+    "sheet": "power-supervisor",
+    "mpn": "GRM188R61E475KE11D",
+    "role": "Local bypass / reset filter"
+  },
+  {
+    "ref": "C79",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "PWR_AON_3V0",
+      "2": "GND"
+    },
+    "x": 103.8,
+    "y": 110.5,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "GRM155R71C104KA88D",
+    "role": "Local bypass / reset filter"
+  },
+  {
+    "ref": "C80",
+    "value": "4.7uF 10% X5R 25V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PWR_AON_3V0",
+      "2": "GND"
+    },
+    "x": 105,
+    "y": 109,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "GRM188R61E475KE11D",
+    "role": "Local bypass / reset filter"
+  },
+  {
+    "ref": "C81",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 115.2,
+    "y": 113.2,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "GRM155R71C104KA88D",
+    "role": "Local bypass / reset filter"
+  },
+  {
+    "ref": "C82",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "PWR_AON_3V0",
+      "2": "GND"
+    },
+    "x": 106.4,
+    "y": 114,
+    "side": "B",
+    "angle": 180,
+    "sheet": "power-supervisor",
+    "mpn": "GRM155R71C104KA88D",
+    "role": "Local bypass / reset filter"
+  },
+  {
+    "ref": "C83",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "PWR_NRST",
+      "2": "GND"
+    },
+    "x": 98,
+    "y": 118,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "GRM155R71C104KA88D",
+    "role": "Local bypass / reset filter"
+  },
+  {
+    "ref": "R76",
+    "value": "10k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "PWR_AON_3V0",
+      "2": "CHG_I2C_SCL"
+    },
+    "x": 96,
+    "y": 113,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "RC0402FR-0710KL",
+    "role": "Private bus or reset pull-up"
+  },
+  {
+    "ref": "R77",
+    "value": "10k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "PWR_AON_3V0",
+      "2": "CHG_I2C_SDA"
+    },
+    "x": 96,
+    "y": 115,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "RC0402FR-0710KL",
+    "role": "Private bus or reset pull-up"
+  },
+  {
+    "ref": "R78",
+    "value": "10k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "PWR_AON_3V0",
+      "2": "PWR_NRST"
+    },
+    "x": 98,
+    "y": 120,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "RC0402FR-0710KL",
+    "role": "Private bus or reset pull-up"
+  },
+  {
+    "ref": "TP2",
+    "value": "PWR_AON_3V0",
+    "libid": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "PWR_AON_3V0"
+    },
+    "x": 90,
+    "y": 125,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "PCB copper",
+    "role": "SWD service pad; VTREF is sense only"
+  },
+  {
+    "ref": "TP3",
+    "value": "GND",
+    "libid": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "GND"
+    },
+    "x": 94,
+    "y": 125,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "PCB copper",
+    "role": "SWD service pad; VTREF is sense only"
+  },
+  {
+    "ref": "TP4",
+    "value": "PWR_SWDIO",
+    "libid": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "PWR_SWDIO"
+    },
+    "x": 98,
+    "y": 125,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "PCB copper",
+    "role": "SWD service pad; VTREF is sense only"
+  },
+  {
+    "ref": "TP5",
+    "value": "PWR_SWCLK",
+    "libid": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "PWR_SWCLK"
+    },
+    "x": 102,
+    "y": 125,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "PCB copper",
+    "role": "SWD service pad; VTREF is sense only"
+  },
+  {
+    "ref": "TP6",
+    "value": "PWR_NRST",
+    "libid": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "PWR_NRST"
+    },
+    "x": 106,
+    "y": 125,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power-supervisor",
+    "mpn": "PCB copper",
+    "role": "SWD service pad; VTREF is sense only"
+  },
+  {
+    "ref": "Q8",
+    "value": "AO3400A",
+    "libid": "Transistor_FET:Q_NMOS_GSD",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "CHG_ARM",
+      "2": "GND",
+      "3": "CHG_CE_RETURN"
+    },
+    "x": 112,
+    "y": 70,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power",
+    "mpn": "AO3400A",
+    "role": "Second series CE sink; default OFF during STM32 reset"
+  },
+  {
+    "ref": "R79",
+    "value": "4.7k 1%",
+    "libid": "Device:R",
+    "nets": {
+      "1": "CHG_ARM",
+      "2": "GND"
+    },
+    "x": 108,
+    "y": 67,
+    "side": "B",
+    "angle": 0,
+    "sheet": "power",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "mpn": "RC0402FR-074K7L",
+    "role": "Local gate pull-down; not on the I2C bus"
+  },
+  {
+    "ref": "U28",
+    "value": "TPS7A2030PDBVR",
+    "libid": "Handset:TPS7A2030PDBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "nets": {
+      "1": "+5V_RF",
+      "2": "GND",
+      "3": "SYS_EN",
+      "4": null,
+      "5": "LCD_3V0"
+    },
+    "x": 80,
+    "y": 55,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "TPS7A2030PDBVR",
+    "manufacturer": "Texas Instruments"
+  },
+  {
+    "ref": "U29",
+    "value": "SN74LVC244APWR",
+    "libid": "Handset:SN74LVC244APWR",
+    "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "nets": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "LCD_3V0",
+      "15": "GND",
+      "17": "GND",
+      "5": null,
+      "3": null,
+      "2": "SPI_SCK",
+      "18": "PANEL_SPI_SCK",
+      "4": "SPI_MOSI",
+      "16": "PANEL_SPI_MOSI",
+      "6": "LCD_CS",
+      "14": "PANEL_LCD_CS",
+      "8": "LCD_DC",
+      "12": "PANEL_LCD_DC",
+      "11": "LCD_RESET",
+      "9": "PANEL_LCD_RESET",
+      "13": "TOUCH_RESET",
+      "7": "PANEL_TOUCH_RESET"
+    },
+    "x": 91,
+    "y": 55,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "SN74LVC244APWR",
+    "manufacturer": "Texas Instruments"
+  },
+  {
+    "ref": "U30",
+    "value": "SN74LVC2G125DCUR",
+    "libid": "Handset:SN74LVC2G125DCUR",
+    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "nets": {
+      "1": "LCD_CS",
+      "2": "PANEL_SPI_MISO",
+      "3": "TOUCH_IRQ",
+      "4": "GND",
+      "5": "PANEL_TOUCH_IRQ",
+      "6": "SPI_MISO",
+      "7": "GND",
+      "8": "+3V3"
+    },
+    "x": 79,
+    "y": 73,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "SN74LVC2G125DCUR",
+    "manufacturer": "Texas Instruments"
+  },
+  {
+    "ref": "U31",
+    "value": "TCA9406DCUR",
+    "libid": "Handset:TCA9406DCUR",
+    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "nets": {
+      "1": "I2C_SDA",
+      "2": "GND",
+      "3": "LCD_3V0",
+      "4": "PANEL_I2C_SDA",
+      "5": "PANEL_I2C_SCL",
+      "6": "LCD_3V0",
+      "7": "+3V3",
+      "8": "I2C_SCL"
+    },
+    "x": 79.8,
+    "y": 66,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "TCA9406DCUR",
+    "manufacturer": "Texas Instruments"
+  },
+  {
+    "ref": "C84",
+    "value": "4.7uF 10% X5R 25V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V_RF",
+      "2": "GND"
+    },
+    "x": 77.8,
+    "y": 59,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "GRM188R61E475KE11D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "C85",
+    "value": "4.7uF 10% X5R 25V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "LCD_3V0",
+      "2": "GND"
+    },
+    "x": 81,
+    "y": 59,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "GRM188R61E475KE11D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "C86",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "LCD_3V0",
+      "2": "GND"
+    },
+    "x": 91,
+    "y": 50,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "GRM155R71C104KA88D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "C87",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 79,
+    "y": 77,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "GRM155R71C104KA88D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "C88",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "LCD_3V0",
+      "2": "GND"
+    },
+    "x": 77.5,
+    "y": 63,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "GRM155R71C104KA88D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "C89",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 81,
+    "y": 63,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "GRM155R71C104KA88D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "R80",
+    "value": "100k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "PANEL_SPI_MISO",
+      "2": "GND"
+    },
+    "x": 79,
+    "y": 80,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "RC0402FR-07100KL",
+    "manufacturer": "Yageo"
+  },
+  {
+    "ref": "R81",
+    "value": "100k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "LCD_3V0",
+      "2": "PANEL_TOUCH_IRQ"
+    },
+    "x": 82,
+    "y": 77,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display-interface",
+    "mpn": "RC0402FR-07100KL",
+    "manufacturer": "Yageo"
+  },
+  {
+    "ref": "U32",
+    "value": "CAT4004AHU2-GT3",
+    "libid": "Handset:CAT4004AHU2",
+    "footprint": "Handset:CAT4004A_UDFN-8_2x2mm_P0.5mm_EP1x1.73mm",
+    "nets": {
+      "1": "LCD_BL_GATE",
+      "2": "GND",
+      "3": "LCD_K1",
+      "4": "LCD_K2",
+      "5": "LCD_K3",
+      "6": "LCD_K4",
+      "7": "LCD_BL_RSET",
+      "8": "+5V_RF",
+      "9": "GND"
+    },
+    "x": 94,
+    "y": 77,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display",
+    "mpn": "CAT4004AHU2-GT3",
+    "manufacturer": "onsemi"
+  },
+  {
+    "ref": "R82",
+    "value": "4.99k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "LCD_BL_RSET",
+      "2": "GND"
+    },
+    "x": 97,
+    "y": 74,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display",
+    "mpn": "RC0402FR-074K99L",
+    "manufacturer": "Yageo"
+  },
+  {
+    "ref": "C90",
+    "value": "1uF 10% X7R 25V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V_RF",
+      "2": "GND"
+    },
+    "x": 98,
+    "y": 77,
+    "side": "F",
+    "angle": 0,
+    "sheet": "display",
+    "mpn": "GRM188R71E105KA12D",
+    "manufacturer": "Murata"
   }
 ]

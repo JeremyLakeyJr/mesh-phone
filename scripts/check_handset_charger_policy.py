@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check the register contract against BQ25186/TCA9536 field encodings.
 
-This does not implement an ESP32 driver or validate hardware behavior.
+Also checks the portable controller constants; does not validate hardware behavior.
 """
 import json
 from pathlib import Path
@@ -15,7 +15,7 @@ def validate(policy):
     regs = {int(k, 16): int(v, 16) for k, v in policy['common_registers'].items()}
     require(policy['charger_address_7bit'] == 0x6a, 'charger I2C address')
     require(policy['expander_address_7bit'] == 0x41, 'expander I2C address')
-    require(regs[3] == 0x44, '4.18V regulation target')
+    require(regs[3] == 0x43, '4.17V regulation target with +0.5% below 4.2V')
     require(regs[5] == 0x25, 'termination/VINDPM/thermal regulation')
     require(regs[6] == 0x56, '1A charger discharge limit and 3V UVLO')
     require(regs[7] & 0x80 != 0, 'TS hardware protection must remain enabled')
@@ -50,6 +50,11 @@ if __name__ == '__main__':
     errors = validate(policy)
     if errors:
         raise SystemExit('\n'.join(errors))
+    import re
+    header=(path.parents[2]/'firmware/power/charger.hpp').read_text()
+    encoded=re.search(r'values\[6\] = \{([^}]+)\}',header).group(1)
+    actual=[int(v.strip(),0) for v in encoded.split(',')]
+    assert actual == [int(policy['common_registers'][f'0x{r:02x}'],16) for r in (3,5,6,7,10,11)], 'Controller/policy register drift'
     # Deliberate unsafe mutations must be rejected, not just a golden-file check.
     import copy
     for field, value in [('0x07','0x1b'), ('0x0b','0x00'), ('0x05','0xa5')]:
@@ -62,4 +67,4 @@ if __name__ == '__main__':
     broken = copy.deepcopy(policy)
     broken['expander_startup'].reverse()
     assert validate(broken), 'failed to reject unsafe GPIO initialization order'
-    print('Charger register contract and five negative tests passed; firmware/bench validation remain.')
+    print('Charger register contract and five negative tests passed; STM32 supervisor integration/bench validation remain.')

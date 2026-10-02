@@ -1,0 +1,354 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "net": "LCD_3V0",
+      "pads": [
+        "U28.5",
+        "C85.1",
+        "U29.20",
+        "C86.1",
+        "U31.3",
+        "U31.6",
+        "C88.1",
+        "R81.1",
+        "C47.1",
+        "C48.1",
+        "J26.7",
+        "J26.8",
+        "J26.9",
+        "J26.35",
+        "J26.40",
+        "J26.41",
+        "J26.42"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+3V3",
+      "pads": [
+        "U1.2",
+        "C89.1",
+        "U31.7",
+        "C87.1",
+        "U30.8",
+        "R58.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+5V_RF",
+      "pads": [
+        "C26.1",
+        "U28.1",
+        "C84.1",
+        "J26.1",
+        "C49.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SYS_EN",
+      "pads": [
+        "Q4.1",
+        "U28.3"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SPI_SCK",
+      "pads": [
+        "U1.20",
+        "U29.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SPI_MOSI",
+      "pads": [
+        "U1.21",
+        "U29.4"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SPI_MISO",
+      "pads": [
+        "U1.22",
+        "U30.6"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_CS",
+      "pads": [
+        "U1.19",
+        "U29.6",
+        "U30.1",
+        "R58.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_DC",
+      "pads": [
+        "U2.1",
+        "U29.8"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_RESET",
+      "pads": [
+        "U2.2",
+        "U29.11"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "TOUCH_RESET",
+      "pads": [
+        "U2.3",
+        "U29.13"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "TOUCH_IRQ",
+      "pads": [
+        "U2.15",
+        "U30.3"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SDA",
+      "pads": [
+        "U1.18",
+        "U31.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SCL",
+      "pads": [
+        "U1.17",
+        "U31.8"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_SPI_SCK",
+      "pads": [
+        "U29.18",
+        "J26.37"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_SPI_MOSI",
+      "pads": [
+        "U29.16",
+        "J26.34"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_SPI_MISO",
+      "pads": [
+        "U30.2",
+        "R80.1",
+        "J26.33"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_LCD_CS",
+      "pads": [
+        "U29.14",
+        "J26.38"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_LCD_DC",
+      "pads": [
+        "U29.12",
+        "J26.36"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_LCD_RESET",
+      "pads": [
+        "U29.9",
+        "J26.10"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_TOUCH_RESET",
+      "pads": [
+        "U29.7",
+        "J26.47"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_TOUCH_IRQ",
+      "pads": [
+        "U30.5",
+        "R81.2",
+        "J26.46"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_I2C_SDA",
+      "pads": [
+        "U31.4",
+        "J26.45"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "PANEL_I2C_SCL",
+      "pads": [
+        "U31.5",
+        "J26.44"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U28.2",
+        "U29.1",
+        "U29.10",
+        "U29.15",
+        "U29.17",
+        "U29.19",
+        "U30.4",
+        "U30.7",
+        "U31.2",
+        "C84.2",
+        "C85.2",
+        "C86.2",
+        "C87.2",
+        "C88.2",
+        "C89.2",
+        "R80.2",
+        "C47.2",
+        "C48.2",
+        "C49.2",
+        "J26.6",
+        "J26.43",
+        "J26.48",
+        "J26.49",
+        "J26.50",
+        "J26.11",
+        "J26.12",
+        "J26.13",
+        "J26.14",
+        "J26.15",
+        "J26.16",
+        "J26.17",
+        "J26.18",
+        "J26.19",
+        "J26.20",
+        "J26.21",
+        "J26.22",
+        "J26.23",
+        "J26.24",
+        "J26.25",
+        "J26.26",
+        "J26.27",
+        "J26.28",
+        "J26.29",
+        "J26.30",
+        "J26.31",
+        "J26.32"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "pin_contract_failures": [],
+  "fabrication_released": false,
+  "scope": "Physical continuity only; does not establish current capacity, thermal margin, signal timing or full-board completeness"
+}

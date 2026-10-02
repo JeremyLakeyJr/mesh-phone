@@ -1,10 +1,10 @@
-// MAKERphone-inspired industrial design. Requires a NEW PCB and smaller display.
+// Rounded handset with sculpted back; current handset PCB envelope retained.
 // This source does not fit the existing 87x154 Rev F PCB.
 part="layout"; // [rear,front,keycap,port_cover,module_pod,assembly,layout,fit]
 $fn=48;
 w=74; h=154; depth=26;
 wall=2.4; floor_t=2.2; face_t=2.4; seam=depth-face_t;
-corner=7; fit=0.3;
+corner=11; fit=0.3;
 board=[66,142,1.6]; board_z=17.2;
 battery=[38,67,12]; battery_center=[0,-39]; battery_z=2.8;
 // Rotated ER-TFT024IPS-3 candidate. Envelope includes provisional CTP/Z margin.
@@ -14,29 +14,49 @@ keys=[for(y=[-11,-26,-41,-56],x=[-22.5,-7.5,7.5,22.5]) [x,y]];
 mounts=[[-30.5,68],[30.5,68],[-30.5,-68],[30.5,-68]];
 dock_center=[0,40]; dock=[66,48]; dock_recess=1.2;
 pod_depth=18;
-// Straight clipped corners and broad bevels establish the reference silhouette.
+// Continuous-radius corners replace the old clipped rectangular silhouette.
 module outline(ww,hh,c) {
+ offset(r=c) square([ww-2*c,hh-2*c],center=true);
+}
+// Actual PCB retains clipped corners; do not round its fit proxy with the shell.
+module board_outline(ww,hh,c) {
  polygon([[-ww/2+c,-hh/2],[ww/2-c,-hh/2],[ww/2,-hh/2+c],
  [ww/2,hh/2-c],[ww/2-c,hh/2],[-ww/2+c,hh/2],[-ww/2,hh/2-c],[-ww/2,-hh/2+c]]);
 }
 module slab(ww,hh,zz,c=4) {linear_extrude(zz) outline(ww,hh,c);}
-module rr(ww,hh,zz,r=1) {
- linear_extrude(zz) offset(r=r) square([ww-2*r,hh-2*r],center=true);
-}
+module rr(ww,hh,zz,r=1) {slab(ww,hh,zz,r);}
+// Front rolls into the side frame instead of meeting it at a sharp shoulder.
 module skin(zz) {
  hull() {
-  slab(w-3,h-3,0.02,corner-0.8);
-  translate([0,0,1.5]) slab(w,h,0.02,corner);
+  slab(w-4,h-4,0.02,corner-2);
+  translate([0,0,0.7]) slab(w-1.8,h-1.8,0.02,corner-0.9);
+  translate([0,0,1.8]) slab(w,h,0.02,corner);
  }
- translate([0,0,1.5]) slab(w,h,zz-1.5,corner);
+ translate([0,0,1.8]) slab(w,h,zz-1.8,corner);
+}
+// Flat central print/dock surface, rolling lower flanks and full PCB width above.
+module rear_outer() {
+ hull() {
+  slab(w-6,h-2,0.02,corner-1);
+  translate([0,0,2.8]) slab(w-2,h,0.02,corner);
+  translate([0,0,7]) slab(w,h,0.02,corner);
+ }
+ translate([0,0,7]) slab(w,h,seam-7,corner);
+}
+module rear_cavity() {
+ hull() {
+  translate([0,0,floor_t]) slab(w-2*wall-2.8,h-2*wall,0.02,corner-wall);
+  translate([0,0,8]) slab(w-2*wall,h-2*wall,0.02,corner-wall);
+ }
+ translate([0,0,8]) slab(w-2*wall,h-2*wall,seam,corner-wall);
 }
 module dock_at() {translate([dock_center[0],dock_center[1],0]) children();}
 module rear() {
  difference() {
   union() {
    difference() {
-    skin(seam);
-    translate([0,0,floor_t]) slab(w-2*wall,h-2*wall,seam,corner-wall);
+    rear_outer();
+    rear_cavity();
    }
    // Future-board mounting posts; holes differ from Rev F.
    for(p=mounts) translate([p[0],p[1],floor_t-0.1]) cylinder(d=6,h=board_z-floor_t+0.1);
@@ -58,9 +78,9 @@ module rear() {
   translate([w/2+1,0,board_z+1.5]) rotate([0,-90,0]) linear_extrude(6) offset(r=0.4) square([1.8,13],center=true);
   // Speaker vents: upper left side, separate from the display envelope.
   for(y=[56,59,62]) translate([-w/2-1,y,10]) rotate([0,90,0]) cylinder(d=1.5,h=7);
-  // Side grip channels are shallow: minimum side wall 1.8 mm.
-  for(x=[-1,1], y=[-49,-44,-39,-34,-29])
-   translate([x*(w/2-0.15),y,9]) cube([0.9,1.1,8],center=true);
+  // Smooth thumb channels; depth limited to 0.45 mm of the 2.4 mm wall.
+  for(x=[-1,1]) translate([x*(w/2+1.75),-30,14])
+   scale([1,8,1.7]) sphere(r=2.2);
   // USB and power: proposed board locations, not Rev F locations.
   translate([w/2+1,44,board_z+1.8]) rotate([0,-90,0]) linear_extrude(6) offset(r=1) square([4.5,10],center=true);
   translate([-w/2-1,59,board_z+2.2]) rotate([0,90,0]) linear_extrude(6) offset(r=0.8) square([3,6],center=true);
@@ -92,8 +112,8 @@ module front() {
   }
   translate([screen_center[0],screen_center[1],-1]) slab(screen_window[0],screen_window[1],face_t+2,1.5);
   // Recessed display lens surround and keypad deck retain a structural web.
-  translate([0,42.5,-0.01]) slab(62,41,0.55,2.5);
-  translate([0,-33.5,-0.01]) slab(63,62,0.4,3);
+  translate([0,42.5,-0.01]) slab(62,41,0.55,5);
+  translate([0,-33.5,-0.01]) slab(63,62,0.4,6);
   translate([ball_center[0],ball_center[1],-1]) cylinder(d=11.2,h=face_t+2);
   translate([ball_center[0],ball_center[1],-0.01]) cylinder(d=16,h=0.5);
   for(p=keys) translate([p[0],p[1],-1]) rr(10.2,7.6,face_t+2,1);
@@ -132,8 +152,12 @@ module module_pod() {
  difference() {
   union() {
    difference() {
-    slab(dock[0],dock[1],pod_depth,3);
-    translate([0,0,2.2]) slab(dock[0]-4.8,dock[1]-4.8,pod_depth,1.4);
+    hull() {
+     slab(dock[0]-4,dock[1]-4,0.02,7);
+     translate([0,0,3]) slab(dock[0],dock[1],0.02,8);
+    }
+    translate([0,0,3]) slab(dock[0],dock[1],pod_depth-3,8);
+    translate([0,0,2.2]) slab(dock[0]-4.8,dock[1]-4.8,pod_depth,5.6);
    }
    for(x=[-29,29]) translate([x,0,0]) cylinder(d=7,h=pod_depth);
    translate([-24,19,2.1]) cylinder(d=4,h=pod_depth-2.1);
@@ -159,14 +183,14 @@ module fit_view() {
  assembly();
  %translate([battery_center[0],battery_center[1],battery_z]) rr(battery[0],battery[1],battery[2],1);
  %translate([0,0,board_z]) difference() {
-  slab(board[0],board[1],board[2],1.5);
+  linear_extrude(board[2]) board_outline(board[0],board[1],1.5);
   translate([ball_center[0],ball_center[1],-1]) rr(ball_aperture[0],ball_aperture[1],4,1);
  }
  %translate([0,42.5,seam-screen_envelope[2]]) slab(screen_envelope[0],screen_envelope[1],screen_envelope[2],1);
 }
 assert(battery_center[1]+battery[1]/2 < ball_center[1]-ball_aperture[1]/2-1);
 assert(board_z-battery_z-battery[2]>=2.3);
-echo(design="NEW PCB REQUIRED",body=[w,h,depth],battery=battery);
+echo(design="ROUNDED HANDSET / POPULATED FIT UNVERIFIED",body=[w,h,depth],battery=battery);
 if(part=="rear") rear();
 else if(part=="front") front();
 else if(part=="keycap") keycap();

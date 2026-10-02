@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "contract_pins": 12,
+  "negative_tests": 5,
+  "truth_table_cases": 4,
+  "continuity": [
+    {
+      "net": "CHG_ARM",
+      "pads": [
+        "U25.6",
+        "R79.1",
+        "Q8.1"
+      ],
+      "passed": true
+    },
+    {
+      "net": "CHG_CE_RETURN",
+      "pads": [
+        "Q5.2",
+        "Q8.3"
+      ],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "R7.2",
+        "R79.2",
+        "Q8.2"
+      ],
+      "passed": true
+    },
+    {
+      "net": "CHG_CE_N",
+      "pads": [
+        "Q5.3",
+        "R6.2",
+        "U3.4"
+      ],
+      "passed": true
+    }
+  ],
+  "scope": "Reset-default-off topology and routed CE permission; reset timing, leakage, IWDG and target firmware require qualification",
+  "fabrication_released": false
+}

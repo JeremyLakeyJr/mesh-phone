@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "checked_physical_pads": 36,
+  "groups": [
+    {
+      "net": "VSYS",
+      "pads": [
+        "U3.1",
+        "C20.1",
+        "U10.3",
+        "C25.1",
+        "L2.1"
+      ],
+      "physical_pad_count": 5,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG5_SW",
+      "pads": [
+        "U10.5",
+        "L2.2"
+      ],
+      "physical_pad_count": 2,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+5V_RF",
+      "pads": [
+        "U10.6",
+        "C26.1",
+        "R34.1",
+        "C24.1",
+        "U9.3",
+        "C45.1",
+        "U18.14",
+        "U18.13",
+        "U18.10"
+      ],
+      "physical_pad_count": 9,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG5_FB",
+      "pads": [
+        "U10.1",
+        "R34.2",
+        "R35.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SYS_EN",
+      "pads": [
+        "U10.2",
+        "SW19.2",
+        "U7.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U10.4",
+        "C25.2",
+        "C26.2",
+        "R35.2",
+        "C24.2",
+        "U9.1",
+        "U9.5",
+        "C45.2",
+        "U18.7",
+        "U18.1",
+        "U18.4",
+        "U18.9",
+        "U18.12"
+      ],
+      "physical_pad_count": 14,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "U10 feed and LF RFID power/ground; display branch and signal routing/qualification remain"
+}

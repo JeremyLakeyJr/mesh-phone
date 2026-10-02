@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "target": "STM32G031G8U6 / Cortex-M0+",
+  "binary_bytes": 2336,
+  "static_ram_bytes": 44,
+  "reserved_stack_bytes": 1024,
+  "reserved_flash_bytes": 4096,
+  "load_regions": [
+    {
+      "address": "0x8000000",
+      "file_bytes": 192,
+      "memory_bytes": 192
+    },
+    {
+      "address": "0x80000c0",
+      "file_bytes": 2128,
+      "memory_bytes": 2128
+    },
+    {
+      "address": "0x8000910",
+      "file_bytes": 16,
+      "memory_bytes": 16
+    },
+    {
+      "address": "0x20000000",
+      "file_bytes": 0,
+      "memory_bytes": 44
+    }
+  ],
+  "sha256": "e10e9d3f3929b58991b82c40ceac5795a41c6183b58d2a65abfc904dbe411ab5",
+  "charging_enabled": false,
+  "hardware_tested": false,
+  "date": "2026-09-26",
+  "compiler": "clang version 22.1.8",
+  "sources": {
+    "main.cpp": "fe1a88865f413677dc4f77ecd0fffc4bb91f7cbea4014953b3aadae6a1575121",
+    "startup.S": "ea714c8d3380f5b2d6d0e334e7c71b87989efe9ca653ad0649285ba4fbfc8a5c",
+    "linker.ld": "c5172500e5473362467c880624a716a0858ea886536063c8cccee8fe9846bb5f",
+    "build.sh": "d46ce1656e33975e72624856b8e0ac26f3ac9da2746fe5385f10a70f39868a08",
+    "verify_image.py": "38a8b521da2c8d8b648090a2a824d5860547035e47a7ba6121c8081a43044403"
+  },
+  "portable_controller_sha256": "6a564b9da6bfa6e320a930473bcd4c67ea1857ef06327849d6d3e4ffd90e0bf8"
+}

@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-24T16:58:06",
+    "date": "2026-10-01T21:58:54",
     "ignored_checks": [
         {
             "description": "Global label only appears once in the schematic",
@@ -588,6 +588,16 @@
         {
             "path": "/External display, touch and backlight/",
             "uuid_path": "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/9f54018f-ab50-5dac-b75b-65eb6a4e9510",
+            "violations": []
+        },
+        {
+            "path": "/Always-on charging supervisor/",
+            "uuid_path": "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/549f091e-472d-592b-842d-337d8dd19e32",
+            "violations": []
+        },
+        {
+            "path": "/Display supply and translation/",
+            "uuid_path": "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/b8de36b4-51ed-573c-b41d-2898647e7ec1",
             "violations": []
         }
     ],

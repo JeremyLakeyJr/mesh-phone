@@ -1,0 +1,90 @@
+{
+  "scope": "J1.1 to F2.1 only; excludes fuse, contact, harness, VBAT distribution and return",
+  "board_sha256": "521d0573b5d85ed28d03928b546e3c21ce3d40884f8f0bcf4e1f91373cfd71fb",
+  "segment_count": 8,
+  "cases": [
+    {
+      "copper_thickness_um_assumed": 18,
+      "copper_temperature_c_assumed": 20,
+      "length_mm": 21.35460678118654,
+      "resistance_ohm": 0.02506920563959778,
+      "minimum_width_mm": 0.6,
+      "maximum_width_mm": 1.2,
+      "loads": [
+        {
+          "current_a": 3.302,
+          "voltage_drop_v": 0.08277851702195188,
+          "dissipation_w": 0.2733346632064851
+        },
+        {
+          "current_a": 5.0,
+          "voltage_drop_v": 0.1253460281979889,
+          "dissipation_w": 0.6267301409899445
+        }
+      ]
+    },
+    {
+      "copper_thickness_um_assumed": 18,
+      "copper_temperature_c_assumed": 70,
+      "length_mm": 21.35460678118654,
+      "resistance_ohm": 0.029995304547778743,
+      "minimum_width_mm": 0.6,
+      "maximum_width_mm": 1.2,
+      "loads": [
+        {
+          "current_a": 3.302,
+          "voltage_drop_v": 0.09904449561676541,
+          "dissipation_w": 0.3270449245265594
+        },
+        {
+          "current_a": 5.0,
+          "voltage_drop_v": 0.14997652273889372,
+          "dissipation_w": 0.7498826136944686
+        }
+      ]
+    },
+    {
+      "copper_thickness_um_assumed": 35,
+      "copper_temperature_c_assumed": 20,
+      "length_mm": 21.35460678118654,
+      "resistance_ohm": 0.012892734328936001,
+      "minimum_width_mm": 0.6,
+      "maximum_width_mm": 1.2,
+      "loads": [
+        {
+          "current_a": 3.302,
+          "voltage_drop_v": 0.04257180875414668,
+          "dissipation_w": 0.14057211250619234
+        },
+        {
+          "current_a": 5.0,
+          "voltage_drop_v": 0.06446367164468,
+          "dissipation_w": 0.32231835822340005
+        }
+      ]
+    },
+    {
+      "copper_thickness_um_assumed": 35,
+      "copper_temperature_c_assumed": 70,
+      "length_mm": 21.35460678118654,
+      "resistance_ohm": 0.015426156624571924,
+      "minimum_width_mm": 0.6,
+      "maximum_width_mm": 1.2,
+      "loads": [
+        {
+          "current_a": 3.302,
+          "voltage_drop_v": 0.050937169174336494,
+          "dissipation_w": 0.1681945326136591
+        },
+        {
+          "current_a": 5.0,
+          "voltage_drop_v": 0.07713078312285962,
+          "dissipation_w": 0.38565391561429807
+        }
+      ]
+    }
+  ],
+  "assumptions": "18/35 um copper and 20/70 C are sensitivity cases, not fabrication or temperature specifications. Uniform cross-section DC model excludes pads and spreading.",
+  "thermal_current_rating_established": false,
+  "fabrication_released": false
+}

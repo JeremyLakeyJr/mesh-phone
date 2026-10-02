@@ -1,0 +1,2 @@
+References,Quantity,Manufacturer,MPN,Value,Footprint,Qualification
+R52 R53 R54 R55,4,Vishay,CRCW0603150RFKEAHP,150 1% 0.33W,Resistor_SMD:R_0603_1608Metric,0.33W P70 per current datasheet; assembly thermal qualification open

@@ -1,0 +1,1654 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "ff58a307-ebf9-5c1b-a778-ac3f01e64985")
+  (paper "A3")
+  (title_block
+    (title "Media speaker amplifier and digital microphone")
+    (date "2026-09-24")
+    (rev "A - engineering draft")
+    (comment 1 "Circuit review in progress - not released for fabrication"))
+  (lib_symbols
+    (symbol "Handset:MAX98357A_Audited"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at -8.89 11.43 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "MAX98357A"
+        (at 10.16 11.43 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm"
+        (at -1.27 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf"
+        (at 0 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "pcm tdm i2s left-justified amplifier audio dac"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TQFN*3x3mm*P0.5mm*EP1.23x1.23mm*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "MAX98357A_Audited_1_1"
+        (rectangle
+          (start -10.16 10.16)
+          (end 10.16 -10.16)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin input line
+          (at -12.7 7.62 0)
+          (length 2.54)
+          (name "DIN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -5.08 0)
+          (length 2.54)
+          (name "GAIN_SLOT"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at -2.54 -12.7 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -12.7 -2.54 0)
+          (length 2.54)
+          (name "~{SD_MODE}"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 10.16 2.54 180)
+          (length 2.54)
+          (hide yes)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 10.16 0 180)
+          (length 2.54)
+          (hide yes)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 12.7 270)
+          (length 2.54)
+          (name "VDD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 12.7 270)
+          (length 2.54)
+          (hide yes)
+          (name "VDD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 12.7 7.62 180)
+          (length 2.54)
+          (name "OUTP"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 12.7 5.08 180)
+          (length 2.54)
+          (name "OUTN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -2.54 -12.7 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 10.16 -5.08 180)
+          (length 2.54)
+          (hide yes)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 10.16 -7.62 180)
+          (length 2.54)
+          (hide yes)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -12.7 2.54 0)
+          (length 2.54)
+          (name "LRCLK"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -2.54 -12.7 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "15"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -12.7 5.08 0)
+          (length 2.54)
+          (name "BCLK"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "16"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 2.54 -12.7 90)
+          (length 2.54)
+          (name "PAD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "17"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Sensor_Audio:SPH0645LM4H"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "MK"
+        (at -7.62 6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "SPH0645LM4H"
+        (at 1.27 6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Sensor_Audio:Knowles_SPH0645LM4H-6_3.5x2.65mm"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.knowles.com/docs/default-source/default-document-library/sph0645lm4h-1-datasheet.pdf"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Knowles MEMS Microphone, 24-bit I2S, 65 dBA SNR, LGA-6"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "microphone MEMS I2S 24bit Knowles SPH0645LM4H Crawford"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Knowles*SPH0645LM4H*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "SPH0645LM4H_1_1"
+        (rectangle
+          (start -7.62 5.08)
+          (end 7.62 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -5.08 1.27)
+            (xy -5.08 -1.27))
+          (stroke
+            (width 0.381)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -3.81 0)
+          (radius 1.27)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (pin input line
+          (at 10.16 2.54 180)
+          (length 2.54)
+          (name "WS"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 2.54 0)
+          (length 2.54)
+          (name "SEL"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -7.62 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at 10.16 0 180)
+          (length 2.54)
+          (name "BCLK"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 7.62 270)
+          (length 2.54)
+          (name "VDD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 10.16 -2.54 180)
+          (length 2.54)
+          (name "DATA"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:GND"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "Media speaker amplifier and digital microphone"
+    (at 15 15 0)
+    (effects
+      (font
+        (size 2 2))
+      (justify left top))
+    (uuid "adce6b29-15e9-54e8-9595-bbc5805aeacf"))
+  (text "Top-mounted media speaker uses differential outputs: neither speaker wire is ground. Digital microphone is case-bottom\nmounted."
+    (at 15 22 0)
+    (effects
+      (font
+        (size 1.15 1.15))
+      (justify left top))
+    (uuid "5c8b66a5-a8f3-5984-a078-9c411bb0bf1b"))
+  (text "Engineering draft / named nets are common / NC = intentional unused pin"
+    (at 15 282 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left top))
+    (uuid "f2153366-5a09-53f4-8dee-4abc518af4dd"))
+  (symbol
+    (lib_id "Handset:MAX98357A_Audited")
+    (at 86.36 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9dbe4061-e183-5132-ac3d-ffabcf097b4f")
+    (property "Reference" "U6"
+      (at 86.36 63.5 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "MAX98357AETE+"
+      (at 86.36 66.04 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm"
+      (at 86.36 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "U6")
+          (unit 1))))
+    (pin "1"
+      (uuid "79466b00-5ecb-513e-a4c3-0c3ef59374a0"))
+    (pin "2"
+      (uuid "46d6863e-2d67-5d32-a8c3-ca052cf9c8fa"))
+    (pin "3"
+      (uuid "f8fdfa4f-d97e-56bf-b284-777671005e03"))
+    (pin "4"
+      (uuid "13b251ec-7236-533c-8c94-dc9d5a7d63b2"))
+    (pin "5"
+      (uuid "371415d5-12c2-5c01-a693-2baa86c15d6b"))
+    (pin "6"
+      (uuid "bffd0318-1c86-5ea7-ac1c-3c5d1683097d"))
+    (pin "7"
+      (uuid "fd9c8966-5605-5dab-9df4-513078d63001"))
+    (pin "8"
+      (uuid "3d2de671-c50c-5fb1-b728-dac14b03fddc"))
+    (pin "9"
+      (uuid "9fc16913-6f51-51da-91e7-7c0a877d5a5b"))
+    (pin "10"
+      (uuid "95cf4da0-6c2b-5a2f-9bfa-08fa993bdd72"))
+    (pin "11"
+      (uuid "9ac41ce4-55d4-5f16-ae70-d677e71758bf"))
+    (pin "12"
+      (uuid "025bceb1-aadc-5541-ad05-38b501fc420c"))
+    (pin "13"
+      (uuid "52e24224-af22-5dcd-b3f2-4b56ac019e48"))
+    (pin "14"
+      (uuid "59a0a9d8-898a-5c25-9046-058b683a2ad6"))
+    (pin "15"
+      (uuid "10493f99-6070-5334-93f5-9f84b010160a"))
+    (pin "16"
+      (uuid "d951bb17-60ff-5bc9-afc9-949195fa8213"))
+    (pin "17"
+      (uuid "6a487d3d-c4ab-5261-a38c-3df692cce6aa")))
+  (symbol
+    (lib_id "Sensor_Audio:SPH0645LM4H")
+    (at 218.44 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5efdb742-5682-5abe-9530-b090a2187267")
+    (property "Reference" "MK1"
+      (at 218.44 68.58 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "SPH0645LM4H-1"
+      (at 218.44 71.12 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Sensor_Audio:Knowles_SPH0645LM4H-6_3.5x2.65mm"
+      (at 218.44 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "MK1")
+          (unit 1))))
+    (pin "1"
+      (uuid "7682cf23-1b0c-5c5b-943e-86b57f934e8f"))
+    (pin "2"
+      (uuid "dcb234e6-5489-5d63-9728-5aaf1660b607"))
+    (pin "3"
+      (uuid "0a6b58da-2fd1-503c-bfeb-d7a71ef1f81c"))
+    (pin "4"
+      (uuid "10699c1d-e7e3-54d8-8812-adbfe324ffb8"))
+    (pin "5"
+      (uuid "8dc38f25-bbdb-57b8-8f27-4b5754b6af7a"))
+    (pin "6"
+      (uuid "015dad33-29a2-5a28-96ed-160d4813bb1d")))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 350.52000000000004 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cdbfc513-52c2-5be8-a8bf-3f427068bf72")
+    (property "Reference" "J3"
+      (at 350.52000000000004 76.2 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "MEDIA_SPEAKER_DIFFERENTIAL"
+      (at 350.52000000000004 78.74 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Footprint" "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical"
+      (at 350.52000000000004 86.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "J3")
+          (unit 1))))
+    (pin "1"
+      (uuid "d08ceed1-ec4c-5ff4-a193-a2defbd5f680"))
+    (pin "2"
+      (uuid "6e4a3608-a9e1-561f-8409-a078d8f8e5ce")))
+  (symbol
+    (lib_id "Device:C")
+    (at 40.64 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f809debf-9339-5b40-8aac-2b24c6969654")
+    (property "Reference" "C13"
+      (at 44.45 156.20999999999998 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 44.45 158.75 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 40.64 157.48 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "C13")
+          (unit 1))))
+    (pin "1"
+      (uuid "daddf511-76f9-52fd-8971-5fdca65290e4"))
+    (pin "2"
+      (uuid "ee18372b-2325-5383-8c3e-4c2007431f14")))
+  (wire
+    (pts
+      (xy 40.6400 153.6700)
+      (xy 40.6400 147.3200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0eaaf09f-12b7-5c9a-8833-3fc879e4202a"))
+  (wire
+    (pts
+      (xy 40.6400 161.2900)
+      (xy 40.6400 167.6400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "55dc531d-10a6-5a53-a16f-ceef6d210b56"))
+  (symbol
+    (lib_id "Device:C")
+    (at 66.03999999999999 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9559c9c7-1f37-55e8-92f5-3de290dfefcc")
+    (property "Reference" "C14"
+      (at 69.85 156.20999999999998 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Value" "10uF"
+      (at 69.85 158.75 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 66.03999999999999 157.48 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "C14")
+          (unit 1))))
+    (pin "1"
+      (uuid "fce67fcb-6554-531f-ad30-38039cfc8c8f"))
+    (pin "2"
+      (uuid "f00580d2-0083-5a39-9247-0aaaf04c38ab")))
+  (wire
+    (pts
+      (xy 66.0400 153.6700)
+      (xy 66.0400 147.3200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8650b377-e822-58ef-8eb0-110b43504852"))
+  (wire
+    (pts
+      (xy 66.0400 161.2900)
+      (xy 66.0400 167.6400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b2aaaff2-35bb-5d5a-868d-a9161a53a684"))
+  (wire
+    (pts
+      (xy 40.6400 147.3200)
+      (xy 66.0400 147.3200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0595785a-ad16-5e11-90fe-defd14fe7f1d"))
+  (wire
+    (pts
+      (xy 40.6400 167.6400)
+      (xy 66.0400 167.6400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7f0a4a1b-a4b4-5551-917c-bc7d3ce1824c"))
+  (symbol
+    (lib_id "Device:C")
+    (at 91.44 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f9c7068a-911d-5c5f-b476-07acc7076c1f")
+    (property "Reference" "C15"
+      (at 95.25 156.20999999999998 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 95.25 158.75 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 91.44 157.48 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "C15")
+          (unit 1))))
+    (pin "1"
+      (uuid "708b54bb-34a4-5f7c-ba9d-603b4add8e8d"))
+    (pin "2"
+      (uuid "b15d6981-affc-58e9-9a96-142b163ed9af")))
+  (wire
+    (pts
+      (xy 91.4400 153.6700)
+      (xy 91.4400 147.3200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "af41c1d3-6628-51ff-a0a9-9edda79d4171"))
+  (wire
+    (pts
+      (xy 91.4400 161.2900)
+      (xy 91.4400 167.6400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "901c558d-4fd7-5e0f-9d79-bf8cfce6efdb"))
+  (wire
+    (pts
+      (xy 66.0400 147.3200)
+      (xy 91.4400 147.3200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d894cc81-6ca7-5212-9636-948029eb9b2c"))
+  (wire
+    (pts
+      (xy 66.0400 167.6400)
+      (xy 91.4400 167.6400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1477766a-fab6-589e-bdc6-a4ecf8d79d87"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 40.64 147.32 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "2560851c-fe3a-54de-bf98-ab2fdc48d8c4"))
+  (symbol
+    (lib_id "power:GND")
+    (at 40.64 167.64 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "30d49aa5-eb1d-5a43-857c-48d0ff6a2a26")
+    (property "Reference" "#PWR18014"
+      (at 40.64 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "2fa44c01-3cfe-5a01-b34b-45b0c7302ebb"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "#PWR18014")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R")
+    (at 165.1 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "91bc0c92-07e2-5a3d-8b03-910eca6622d2")
+    (property "Reference" "R13"
+      (at 168.91 156.20999999999998 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Value" "100k"
+      (at 168.91 158.75 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 165.1 157.48 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "R13")
+          (unit 1))))
+    (pin "1"
+      (uuid "63df0113-988c-53f0-b45c-f6ca5d88fb82"))
+    (pin "2"
+      (uuid "f501cea5-54a1-5803-aafc-ab66c39c9740")))
+  (wire
+    (pts
+      (xy 165.1000 153.6700)
+      (xy 165.1000 147.3200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "934629ca-b9b7-5bfc-8e3f-8bd375439e79"))
+  (wire
+    (pts
+      (xy 165.1000 161.2900)
+      (xy 165.1000 167.6400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "665d8176-665d-59af-882a-29fdee77ff81"))
+  (global_label "MEDIA_EN"
+    (shape bidirectional)
+    (at 165.1 147.32 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "f96aa0f1-c00a-5e69-a8b8-6316457746e5"))
+  (symbol
+    (lib_id "power:GND")
+    (at 165.1 167.64 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1e5a43f7-9ef4-5515-ba37-5246d75583e9")
+    (property "Reference" "#PWR18019"
+      (at 165.1 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 165.1 172.72 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "ecc0c4f5-4e1e-5e61-8626-ae609399f868"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "#PWR18019")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 73.6600 78.7400)
+      (xy 66.0400 78.7400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e294b730-9217-5f49-8210-4fa0571b1803"))
+  (global_label "I2S_DOUT"
+    (shape bidirectional)
+    (at 66.04 78.74 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "1177b57d-144a-5d4f-990f-3501422e11a9"))
+  (no_connect
+    (at 73.66 91.44)
+    (uuid "c4b0c55d-ca93-5e70-b91f-90ae18cfeb71"))
+  (wire
+    (pts
+      (xy 83.8200 99.0600)
+      (xy 83.8200 106.6800))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "06bcfccb-249b-5173-ae63-549311a0c48c"))
+  (symbol
+    (lib_id "power:GND")
+    (at 83.82 106.68 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4cf947eb-a6d3-5398-b656-a443736d06e1")
+    (property "Reference" "#PWR18025"
+      (at 83.82 106.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 111.76 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "efa6ce31-c39b-5c57-8145-22caef74e4fa"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "#PWR18025")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 73.6600 88.9000)
+      (xy 66.0400 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "53cbedf8-3c0b-52f1-b174-59492a29b7d4"))
+  (global_label "MEDIA_EN"
+    (shape bidirectional)
+    (at 66.04 88.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "92d57ee8-04ef-513f-bf12-1696824ee016"))
+  (no_connect
+    (at 96.52 83.82)
+    (uuid "97914590-a53b-5f95-9209-d41087833c3c"))
+  (no_connect
+    (at 96.52 86.36)
+    (uuid "a5cb41bf-f06f-54b5-8407-467c2cd5bdf6"))
+  (wire
+    (pts
+      (xy 86.3600 73.6600)
+      (xy 86.3600 66.0400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cc3ab934-4088-59d2-a0d6-e5b4ef1bab11"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 86.36 66.04 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "134bcaac-395b-531f-844c-8faa5468b12a"))
+  (wire
+    (pts
+      (xy 99.0600 78.7400)
+      (xy 106.6800 78.7400))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "070a312e-92ca-58a4-b916-69d2bcbb4547"))
+  (global_label "SPK_P"
+    (shape bidirectional)
+    (at 106.68 78.74 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "593aec0a-3e53-5a79-9f70-1d4d07ea6fa7"))
+  (wire
+    (pts
+      (xy 99.0600 81.2800)
+      (xy 106.6800 81.2800))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3ef8ff3d-3962-5da0-b847-1276f421ef32"))
+  (global_label "SPK_N"
+    (shape bidirectional)
+    (at 106.68 81.28 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "49e60704-f1fd-5c6d-9c9e-51e74a83c76d"))
+  (no_connect
+    (at 96.52 91.44)
+    (uuid "ee7acaed-90b3-555a-b4af-32292f9df263"))
+  (no_connect
+    (at 96.52 93.98)
+    (uuid "813b2858-676d-5b8a-ab5b-54d219f65ae6"))
+  (wire
+    (pts
+      (xy 73.6600 83.8200)
+      (xy 66.0400 83.8200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0198826c-d594-5496-86b9-666dc54fdd45"))
+  (global_label "I2S_LRCLK"
+    (shape bidirectional)
+    (at 66.04 83.82 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "56415896-8811-5684-a388-f6495898a8a1"))
+  (wire
+    (pts
+      (xy 73.6600 81.2800)
+      (xy 66.0400 81.2800))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e3521b2a-7a7d-5f54-a26f-f7943cfe0b63"))
+  (global_label "I2S_BCLK"
+    (shape bidirectional)
+    (at 66.04 81.28 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "39110701-4a51-5801-84fc-aa3ecaa39d0d"))
+  (wire
+    (pts
+      (xy 88.9000 99.0600)
+      (xy 88.9000 106.6800))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2ba63475-b66e-5cfe-8816-bafefacea79d"))
+  (symbol
+    (lib_id "power:GND")
+    (at 88.9 106.68 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "aff1ab0b-cf05-51ab-b21b-f201b2259930")
+    (property "Reference" "#PWR18044"
+      (at 88.9 106.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 88.9 111.76 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "b37a4646-eebd-5ccc-b93a-d3aafbf3a313"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "#PWR18044")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 228.6000 83.8200)
+      (xy 236.2200 83.8200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "246cfa05-93c0-5980-a0be-8ac8d6f65697"))
+  (global_label "I2S_LRCLK"
+    (shape bidirectional)
+    (at 236.22 83.82 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "58b44004-4e0f-564d-861f-fb2e6092f61a"))
+  (wire
+    (pts
+      (xy 208.2800 83.8200)
+      (xy 200.6600 83.8200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c16d42f3-c931-511b-be63-4aac803a4cdf"))
+  (symbol
+    (lib_id "power:GND")
+    (at 200.66 83.82 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6174561d-9fd5-5011-8c66-2371d6ddc346")
+    (property "Reference" "#PWR18049"
+      (at 200.66 83.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 200.66 88.89999999999999 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "c0eb6441-1664-5f89-99ae-b1aa725446a5"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "#PWR18049")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 218.4400 93.9800)
+      (xy 218.4400 101.6000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b54f1b4f-35ed-5239-b336-ee21ffa16d73"))
+  (symbol
+    (lib_id "power:GND")
+    (at 218.44 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ba88fea1-5945-5018-9707-a6815f35ab39")
+    (property "Reference" "#PWR18052"
+      (at 218.44 101.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 218.44 106.67999999999999 0)
+      (effects
+        (font
+          (size 1 1))))
+    (pin "1"
+      (uuid "c91ea1d0-74a3-5b32-b87b-a67ebeefe4c5"))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5/ff58a307-ebf9-5c1b-a778-ac3f01e64985"
+          (reference "#PWR18052")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 228.6000 86.3600)
+      (xy 236.2200 86.3600))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4f060d4f-0252-54c4-92cc-ce352fda380b"))
+  (global_label "I2S_BCLK"
+    (shape bidirectional)
+    (at 236.22 86.36 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "218b6e5b-c4ae-59d3-8e95-f28e4f0e4951"))
+  (wire
+    (pts
+      (xy 218.4400 78.7400)
+      (xy 218.4400 71.1200))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "268eb9c9-b6c0-5022-9848-7780b7da29d6"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 218.44 71.12 270.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a3352633-16e0-594a-a969-43f6f40e69a6"))
+  (wire
+    (pts
+      (xy 228.6000 88.9000)
+      (xy 236.2200 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c55abfa1-dedc-5aa7-85f1-0907fb141f55"))
+  (global_label "I2S_DIN"
+    (shape bidirectional)
+    (at 236.22 88.9 180.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "f6072ec9-bcfe-5a58-98de-1d8e24178af1"))
+  (wire
+    (pts
+      (xy 345.4400 86.3600)
+      (xy 337.8200 86.3600))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "01b5f7c9-6400-5231-9f26-0b12aab00378"))
+  (global_label "SPK_P"
+    (shape bidirectional)
+    (at 337.82 86.36 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "f385598d-4061-511d-b4e6-6d655a5e4ae5"))
+  (wire
+    (pts
+      (xy 345.4400 88.9000)
+      (xy 337.8200 88.9000))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "38dcf8f3-7946-5eec-ab8c-9619fd3e6066"))
+  (global_label "SPK_N"
+    (shape bidirectional)
+    (at 337.82 88.9 0.0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "1dcb49df-c6fe-530e-aee2-84521d918dcd")))

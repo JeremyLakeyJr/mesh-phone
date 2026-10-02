@@ -1,0 +1,11 @@
+{
+  "scope": "Illustrative modem load screening, not measured worst-case budget",
+  "charge_target_v": 4.17,
+  "charge_target_at_plus_0_5_percent_v": 4.19085,
+  "below_4_2v_at_regulation_tolerance": true,
+  "scenario_battery_current_a": 3.2241,
+  "scenario_within_published_operating_limit": false,
+  "maximum_modem_output_a_under_assumptions": 0.8406,
+  "physical_pack_qualified": false,
+  "fabrication_released": false
+}

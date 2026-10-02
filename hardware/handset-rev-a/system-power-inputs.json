@@ -1,0 +1,269 @@
+{
+  "date": "2026-09-28",
+  "cad_contract": {
+    "U1": {
+      "2": "+3V3"
+    },
+    "U3": {
+      "1": "VSYS",
+      "2": "VBAT"
+    },
+    "U7": {
+      "10": "VSYS",
+      "6": "+3V3"
+    },
+    "U10": {
+      "3": "VSYS",
+      "6": "+5V_RF"
+    },
+    "U20": {
+      "12": "VBAT",
+      "7": "MODEM_SUPPLY"
+    },
+    "U14": {
+      "1": "+3V3",
+      "3": "+3V3",
+      "6": "EXP_3V3"
+    },
+    "J26": {
+      "1": "+5V_RF",
+      "7": "LCD_3V0"
+    },
+    "U28": {
+      "1": "+5V_RF",
+      "5": "LCD_3V0"
+    }
+  },
+  "sources": {
+    "charger": "https://www.ti.com/lit/ds/symlink/bq25186.pdf",
+    "main_converter": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+    "host": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+  },
+  "host_tx_reference": {
+    "current_a": 0.355,
+    "rail_v": 3.3,
+    "conditions": "Table 6-4: 802.11b 1 Mbps at 20.5 dBm; 3.3 V and 25 C; 100% TX duty. Reference case, not whole-assembly worst-case qualification."
+  },
+  "screening_assumptions": {
+    "battery_voltages_v": [
+      3,
+      3.3,
+      3.7,
+      4.17
+    ],
+    "main_rail_sweep_a": [
+      0.355,
+      0.75,
+      1,
+      1.5,
+      2
+    ],
+    "aux_rail_sweep_a": [
+      0,
+      0.25,
+      0.5
+    ],
+    "modem_output_a": 2,
+    "conversion_efficiency": 0.85,
+    "status": "Sensitivity sweep only; selected currents are not measured profiles or approved simultaneous operating modes. Zero auxiliary current is a hypothetical disabled-load case, not unknown loads treated as zero."
+  },
+  "load_inventory": [
+    {
+      "function": "ESP32 with flash/PSRAM",
+      "refs": [
+        "U1"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "Keypad and GPIO",
+      "refs": [
+        "U2"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "LoRa radio and TCXO",
+      "refs": [
+        "U4"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "CC1101 radio",
+      "refs": [
+        "U5"
+      ],
+      "rail": "+3V3 via CC_VDD",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "Media amplifier and speaker",
+      "refs": [
+        "U6",
+        "J3"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "Fuel gauge",
+      "refs": [
+        "U8"
+      ],
+      "rail": "VBAT",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "LF reader and logic",
+      "refs": [
+        "U9",
+        "U18"
+      ],
+      "rail": "+5V_RF",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "GNSS",
+      "refs": [
+        "U12"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "NFC and antenna driver",
+      "refs": [
+        "U13"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "Expansion module and switch",
+      "refs": [
+        "U14",
+        "J16"
+      ],
+      "rail": "+3V3 via EXP_3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions",
+      "current_limit_evidence": "R41=100k 1%: calculated TPS2553 limit 0.2320\u20130.3058 A; accessory demand remains unknown; see display-expansion-power-report.json"
+    },
+    {
+      "function": "Trackball",
+      "refs": [
+        "J7"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "microSD",
+      "refs": [
+        "J23"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "IR transmitter and receiver",
+      "refs": [
+        "J24",
+        "J25"
+      ],
+      "rail": "+3V3",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "Display logic and touch",
+      "refs": [
+        "J26",
+        "U28",
+        "U29",
+        "U31"
+      ],
+      "rail": "LCD_3V0 via +5V_RF / U28 LDO",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions",
+      "supply_status": "Dedicated 3.0V rail captured; 2.955\u20133.045V in regulation. Physical routing checked; load, heat, trace sizing and startup qualification pending. Count LDO input current on 5V branch, including translator A-side and quiescent current; do not use lossless 3V/5V scaling."
+    },
+    {
+      "function": "Display backlight",
+      "refs": [
+        "J26",
+        "U32",
+        "R82",
+        "C90"
+      ],
+      "rail": "+5V_RF",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions",
+      "reference_evidence": "CAT4004A with 4.99k RSET: approximately 15mA/channel, 60mA total typical. Absolute current, quiescent current, transients and thermal limits remain unqualified; see backlight-routing-review.md."
+    },
+    {
+      "function": "Modem and call audio",
+      "refs": [
+        "J9",
+        "J4"
+      ],
+      "rail": "MODEM_SUPPLY",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "Supervisor and always-on logic",
+      "refs": [
+        "U24",
+        "U25",
+        "U26",
+        "U27"
+      ],
+      "rail": "VSYS via PWR_AON_3V0",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions"
+    },
+    {
+      "function": "Converter, charger and miscellaneous logic quiescent loads",
+      "refs": [
+        "U3",
+        "U7",
+        "U10",
+        "U11",
+        "U19",
+        "U30",
+        "U31"
+      ],
+      "rail": "multiple rails",
+      "qualified_peak_a": null,
+      "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions; U30 and U31 B-side are on +3V3; separate U31 A-side load belongs to LCD_3V0 inventory."
+    }
+  ],
+  "operating_mode_profiles_required": [
+    "Powered off charging with supervisor active",
+    "Host idle with display and GNSS",
+    "Cellular call/data with host and display",
+    "LoRa or sub-GHz transmit with host",
+    "NFC/LF read with host and display",
+    "Media playback with display",
+    "External module startup and sustained use",
+    "USB attach/detach and battery supplement"
+  ],
+  "mode_concurrency_enforced": false,
+  "fabrication_released": false
+}

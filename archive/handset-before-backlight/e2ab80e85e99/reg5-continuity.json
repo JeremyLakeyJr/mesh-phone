@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "checked_physical_pads": 19,
+  "groups": [
+    {
+      "net": "VSYS",
+      "pads": [
+        "U10.3",
+        "C25.1",
+        "L2.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG5_SW",
+      "pads": [
+        "U10.5",
+        "L2.2"
+      ],
+      "physical_pad_count": 2,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "+5V_RF",
+      "pads": [
+        "U10.6",
+        "C26.1",
+        "R34.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "REG5_FB",
+      "pads": [
+        "U10.1",
+        "R34.2",
+        "R35.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SYS_EN",
+      "pads": [
+        "U10.2",
+        "SW19.2",
+        "U7.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U10.4",
+        "C25.2",
+        "C26.2",
+        "R35.2"
+      ],
+      "physical_pad_count": 5,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "Local U10 boost and enable; input/load distribution and electrical qualification remain"
+}
