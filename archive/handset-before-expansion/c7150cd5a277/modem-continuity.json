@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "checked_physical_pads": 48,
+  "groups": [
+    {
+      "net": "VBAT",
+      "pads": [
+        "U20.12",
+        "U20.13",
+        "C50.1",
+        "C51.1",
+        "R62.1",
+        "R64.1"
+      ],
+      "physical_pad_count": 7,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MODEM_L1",
+      "pads": [
+        "U20.11",
+        "L4.1"
+      ],
+      "physical_pad_count": 2,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MODEM_L2",
+      "pads": [
+        "U20.9",
+        "L4.2"
+      ],
+      "physical_pad_count": 2,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MODEM_SUPPLY",
+      "pads": [
+        "U20.7",
+        "U20.8",
+        "C52.1",
+        "C53.1",
+        "C54.1",
+        "R60.1"
+      ],
+      "physical_pad_count": 7,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MODEM_FB",
+      "pads": [
+        "U20.5",
+        "R60.2",
+        "R61.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MODEM_VAUX",
+      "pads": [
+        "U20.3",
+        "C55.1"
+      ],
+      "physical_pad_count": 2,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MODEM_REG_EN",
+      "pads": [
+        "U20.14",
+        "R62.2",
+        "R63.1",
+        "Q3.3"
+      ],
+      "physical_pad_count": 4,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SYS_EN",
+      "pads": [
+        "Q4.1",
+        "SW19.2",
+        "U7.1"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MODEM_DISABLE",
+      "pads": [
+        "R64.2",
+        "Q3.1",
+        "Q4.3"
+      ],
+      "physical_pad_count": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U20.1",
+        "U20.4",
+        "U20.10",
+        "U20.15",
+        "C50.2",
+        "C51.2",
+        "C52.2",
+        "C53.2",
+        "C54.2",
+        "C55.2",
+        "R61.2",
+        "R63.2",
+        "Q3.2",
+        "Q4.2"
+      ],
+      "physical_pad_count": 15,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "Local U20 stage/enable network only; external battery/modem feeds and qualification remain"
+}

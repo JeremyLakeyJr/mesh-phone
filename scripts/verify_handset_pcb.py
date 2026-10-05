@@ -94,6 +94,9 @@ if (OUT/'charge-inhibit-update.json').exists():
 if (OUT/'display-interface-update.json').exists():
     from handset_display_contract import PINS
     contracts.update({(ref,str(pin)):net for ref,pins in PINS.items() for pin,net in pins.items() if net is not None})
+if (OUT/'expansion-update.json').exists():
+    from handset_expansion_contract import PINS as EXPANSION_PINS
+    contracts.update({(ref,pin):net for ref,pins in EXPANSION_PINS.items() for pin,net in pins.items() if net is not None})
 for key,net in contracts.items():
     check(f'review contract {key[0]}.{key[1]} = {net}',sch.get(key)==net)
 for pin in ('6','9','15','18'):

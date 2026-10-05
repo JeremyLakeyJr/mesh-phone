@@ -1,0 +1,13 @@
+Reference,Manufacturer,MPN,Value,Footprint,Qualification
+U33,Texas Instruments,TCA9537DGSR,TCA9537DGSR,Package_SO:MSOP-10_3x3mm_P0.5mm,Captured; hardware qualification pending
+U34,Texas Instruments,SN74CB3Q3245PWR,SN74CB3Q3245PWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,Captured; hardware qualification pending
+U35,Texas Instruments,SN74HCS10PWR,SN74HCS10PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,Captured; hardware qualification pending
+C91,Murata,GRM155R71C104KA88D,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,Captured; hardware qualification pending
+C92,Murata,GRM155R71C104KA88D,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,Captured; hardware qualification pending
+C93,Murata,GRM155R71C104KA88D,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,Captured; hardware qualification pending
+R83,Yageo,RC0402FR-074K7L,4.7k 1%,Resistor_SMD:R_0402_1005Metric,Captured; hardware qualification pending
+R84,Yageo,RC0402FR-074K7L,4.7k 1%,Resistor_SMD:R_0402_1005Metric,Captured; hardware qualification pending
+R85,Yageo,RC0402FR-07100KL,100k 1%,Resistor_SMD:R_0402_1005Metric,Captured; hardware qualification pending
+R86,Yageo,RC0402FR-07220KL,220k 1%,Resistor_SMD:R_0402_1005Metric,Captured; hardware qualification pending
+R87,Yageo,RC0402FR-0710KL,10k 1%,Resistor_SMD:R_0402_1005Metric,Captured; hardware qualification pending
+R42,Yageo,RC0402FR-0710KL,10k 1%,Resistor_SMD:R_0402_1005Metric,Captured; hardware qualification pending

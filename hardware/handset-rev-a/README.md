@@ -42,6 +42,7 @@ The clock and RF frontend are still incomplete.
   limiter and TPD4E05U06 protection arrays; Hirose DM3D-SF microSD socket;
   LF level translators; transistor-driven case-mounted IR; top-contact
   display connector/backlight switch; TPS63070 regulated modem supply.
+- Routed TCA9537 expansion control, SN74CB3Q3245 signal isolation and SN74HCS10 fault interlock; portable controller host tests pass. [Design and remaining qualification](expansion-control-review.md).
 - Named Coilcraft XFL4020 inductors replace the generic inductor allowances.
   Details and outstanding electrical work: [population-review.md](population-review.md).
 

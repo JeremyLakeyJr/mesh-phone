@@ -592,4 +592,29 @@
     (instances
       (project "handset"
         (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
-          (page "24"))))))
+          (page "24")))))
+  (sheet
+    (at 401.32 365.76)
+    (size 172.72 25.4)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "18257a68-20d8-50cc-8254-60c08d1e6ec0")
+    (property "Sheetname" "Expansion control and isolation"
+      (at 401.32 363.22 0)
+      (effects
+        (font
+          (size 1.2 1.2))
+        (justify left bottom)))
+    (property "Sheetfile" "expansion-control.kicad_sch"
+      (at 401.32 393.7 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "handset"
+        (path "/4170cf98-dd26-5fa4-8ee5-b0af1f1df8d5"
+          (page "25"))))))

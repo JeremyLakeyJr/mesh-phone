@@ -1083,7 +1083,7 @@
     "value": "33",
     "libid": "Device:R",
     "nets": {
-      "1": "I2C_SCL",
+      "1": "EXP_SW_SCL",
       "2": "EXP_SCL"
     },
     "x": 94,
@@ -1098,7 +1098,7 @@
     "value": "33",
     "libid": "Device:R",
     "nets": {
-      "1": "I2C_SDA",
+      "1": "EXP_SW_SDA",
       "2": "EXP_SDA"
     },
     "x": 96,
@@ -1113,7 +1113,7 @@
     "value": "33",
     "libid": "Device:R",
     "nets": {
-      "1": "SPI_SCK",
+      "1": "EXP_SW_SCK",
       "2": "EXP_SCK"
     },
     "x": 98,
@@ -1128,7 +1128,7 @@
     "value": "33",
     "libid": "Device:R",
     "nets": {
-      "1": "SPI_MOSI",
+      "1": "EXP_SW_MOSI",
       "2": "EXP_MOSI"
     },
     "x": 100,
@@ -1143,7 +1143,7 @@
     "value": "33",
     "libid": "Device:R",
     "nets": {
-      "1": "SPI_MISO",
+      "1": "EXP_SW_MISO",
       "2": "EXP_MISO"
     },
     "x": 102,
@@ -1158,7 +1158,7 @@
     "value": "33",
     "libid": "Device:R",
     "nets": {
-      "1": "EXP_CS",
+      "1": "EXP_SW_CS",
       "2": "EXP_CS_PORT"
     },
     "x": 104,
@@ -1173,7 +1173,7 @@
     "value": "33",
     "libid": "Device:R",
     "nets": {
-      "1": "EXP_IRQ",
+      "1": "EXP_SW_IRQ",
       "2": "EXP_IRQ_PORT"
     },
     "x": 106,
@@ -1977,7 +1977,7 @@
     "nets": {
       "1": "+3V3",
       "2": "GND",
-      "3": "+3V3",
+      "3": "EXP_PWR_EN",
       "4": "EXP_FAULT_N",
       "5": "EXP_ILIM",
       "6": "EXP_3V3"
@@ -2005,7 +2005,7 @@
   },
   {
     "ref": "R42",
-    "value": "100k",
+    "value": "10k 1%",
     "libid": "Device:R",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "nets": {
@@ -2016,7 +2016,9 @@
     "y": 100,
     "side": "B",
     "angle": 0,
-    "sheet": "protection"
+    "sheet": "protection",
+    "mpn": "RC0402FR-0710KL",
+    "manufacturer": "Yageo"
   },
   {
     "ref": "C40",
@@ -2065,8 +2067,8 @@
       "9": null,
       "10": null
     },
-    "x": 89,
-    "y": 75,
+    "x": 84,
+    "y": 76,
     "side": "B",
     "angle": 0,
     "sheet": "protection"
@@ -4317,5 +4319,230 @@
     "sheet": "display",
     "mpn": "GRM188R71E105KA12D",
     "manufacturer": "Murata"
+  },
+  {
+    "ref": "U33",
+    "value": "TCA9537DGSR",
+    "libid": "Handset:TCA9537DGS",
+    "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+    "nets": {
+      "1": "EXP_PWR_EN",
+      "2": "EXP_FAULT_N",
+      "3": "EXP_IO_ARM",
+      "4": "EXP_GPIO_SPARE",
+      "5": "GND",
+      "6": "MCU_EN",
+      "7": null,
+      "8": "I2C_SCL",
+      "9": "I2C_SDA",
+      "10": "+3V3"
+    },
+    "x": 80,
+    "y": 88.8,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "TCA9537DGSR",
+    "manufacturer": "Texas Instruments"
+  },
+  {
+    "ref": "U34",
+    "value": "SN74CB3Q3245PWR",
+    "libid": "Handset:SN74CB3Q3245PW",
+    "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "nets": {
+      "1": null,
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "19": "EXP_IO_OE_N",
+      "20": "+3V3",
+      "2": "I2C_SCL",
+      "18": "EXP_SW_SCL",
+      "3": "I2C_SDA",
+      "17": "EXP_SW_SDA",
+      "4": "SPI_SCK",
+      "16": "EXP_SW_SCK",
+      "5": "SPI_MOSI",
+      "15": "EXP_SW_MOSI",
+      "6": "SPI_MISO",
+      "14": "EXP_SW_MISO",
+      "7": "EXP_CS",
+      "13": "EXP_SW_CS",
+      "8": "EXP_IRQ",
+      "12": "EXP_SW_IRQ"
+    },
+    "x": 78,
+    "y": 101,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "SN74CB3Q3245PWR",
+    "manufacturer": "Texas Instruments"
+  },
+  {
+    "ref": "U35",
+    "value": "SN74HCS10PWR",
+    "libid": "Handset:SN74HCS10PW",
+    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "nets": {
+      "1": "EXP_PWR_EN",
+      "2": "EXP_IO_ARM",
+      "13": "EXP_FAULT_N",
+      "12": "EXP_IO_OE_N",
+      "3": "GND",
+      "4": "GND",
+      "5": "GND",
+      "6": null,
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "8": null,
+      "7": "GND",
+      "14": "+3V3"
+    },
+    "x": 78,
+    "y": 94,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "SN74HCS10PWR",
+    "manufacturer": "Texas Instruments"
+  },
+  {
+    "ref": "C91",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 83.5,
+    "y": 86.5,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "GRM155R71C104KA88D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "C92",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 83.5,
+    "y": 97,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "GRM155R71C104KA88D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "C93",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 83.5,
+    "y": 91,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "GRM155R71C104KA88D",
+    "manufacturer": "Murata"
+  },
+  {
+    "ref": "R83",
+    "value": "4.7k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "EXP_PWR_EN",
+      "2": "GND"
+    },
+    "x": 83.5,
+    "y": 94.5,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "RC0402FR-074K7L",
+    "manufacturer": "Yageo"
+  },
+  {
+    "ref": "R84",
+    "value": "4.7k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "EXP_IO_ARM",
+      "2": "GND"
+    },
+    "x": 83.5,
+    "y": 92.5,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "RC0402FR-074K7L",
+    "manufacturer": "Yageo"
+  },
+  {
+    "ref": "R85",
+    "value": "100k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "EXP_GPIO_SPARE",
+      "2": "GND"
+    },
+    "x": 73,
+    "y": 90,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "RC0402FR-07100KL",
+    "manufacturer": "Yageo"
+  },
+  {
+    "ref": "R86",
+    "value": "220k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "EXP_IO_OE_N"
+    },
+    "x": 83.5,
+    "y": 102,
+    "side": "F",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "RC0402FR-07220KL",
+    "manufacturer": "Yageo"
+  },
+  {
+    "ref": "R87",
+    "value": "10k 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "EXP_3V3",
+      "2": "GND"
+    },
+    "x": 82,
+    "y": 104,
+    "side": "B",
+    "angle": 0,
+    "sheet": "expansion-control",
+    "mpn": "RC0402FR-0710KL",
+    "manufacturer": "Yageo"
   }
 ]

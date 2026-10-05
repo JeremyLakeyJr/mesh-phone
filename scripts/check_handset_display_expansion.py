@@ -6,13 +6,14 @@ import re
 import xml.etree.ElementTree as ET
 from check_handset_modem_power import ROOT, resistance, divider_range
 from handset_display_contract import validate
+from handset_expansion_contract import validate as validate_expansion
 from handset_backlight_contract import validate as validate_backlight, screening
 
 CONTRACT={
  'R31':{'1':'+3V3','2':'REG3_FB'},'R32':{'1':'REG3_FB','2':'GND'},
  'R34':{'1':'+5V_RF','2':'REG5_FB'},'R35':{'1':'REG5_FB','2':'GND'},
  'R41':{'1':'EXP_ILIM','2':'GND'},
- 'U14':{'1':'+3V3','3':'+3V3','4':'EXP_FAULT_N','5':'EXP_ILIM','6':'EXP_3V3'},
+ 'U14':{'1':'+3V3','3':'EXP_PWR_EN','4':'EXP_FAULT_N','5':'EXP_ILIM','6':'EXP_3V3'},
  'J26':{'1':'+5V_RF','7':'LCD_3V0','8':'LCD_3V0','9':'LCD_3V0'},
 }
 
@@ -51,11 +52,12 @@ def build_report(root=ROOT):
     aux_nom=.595*(1+resistance(values['R34'])[0]/resistance(values['R35'])[0])
     fields={c.attrib['ref']:{f.attrib['name']:f.text for f in c.findall('./fields/field')} for c in xml.findall('./components/comp')}
     validate_backlight(spec,values,nets,fields)
+    validate_expansion(spec,values,nets,fields)
     current=screening(aux[1])
     routed=(root/'generated/display-routing.json').exists()
     return dict(scope='Component tolerance screening; panel logic/touch consumption and accessory demand remain unknown',
         expansion_current_limit=expansion_limits(*resistance(values['R41'])),
-        expansion_enable='Tied to +3V3; no independent software power control',
+        expansion_enable='TCA9537 P0 with reset-default-off pull-down; P2 and FAULT gate signal isolation. See expansion-control-review.md',
         display_recommended_supply_max_v=3.3,display_regulated_range_v=[3*.985,3*1.015],
         display_range_conditions="U28 in regulation; excludes startup, ripple, thermal shutdown and load transients",
         display_interface_status=("Routed; physical continuity checked separately; electrical qualification pending" if routed else "Captured and placed; routing and hardware qualification pending"),main_pwm_reference_resistor_range_v=main,
@@ -67,7 +69,7 @@ def build_report(root=ROOT):
         blocking_findings=[
             ('Display supply and translation are routed; qualify load, heat, power sequencing, touch option and shared-bus timing.' if routed else 'Dedicated LCD_3V0 and signal translation are captured; route and qualify load, heat, power sequencing, touch option and shared-bus timing.'),
             'CAT4004A current regulation is installed and routed; qualify absolute current across voltage/temperature, LED-short heat, exposed-pad assembly, GPIO startup and dimming timing. Typical current is not a qualified maximum.',
-            'Expansion current-limit range does not establish accessory startup/continuous demand; enable control and fault monitoring remain unresolved.',
+            'Expansion enable, polled fault input and hardware signal interlock are captured. Current limit does not establish permitted load; qualify startup, current, signal integrity, leakage, reset and brief-fault behavior. Shared-bus lockup requires external reset or power-off recovery; target firmware remains unintegrated.',
             'Ripple, feedback leakage, transients, resistor thermal derating and measured load profiles remain unqualified.'],
         fabrication_released=False)
 

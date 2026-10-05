@@ -1,0 +1,410 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "net": "+3V3",
+      "pads": [
+        "U7.6",
+        "U14.1",
+        "C40.1",
+        "R42.1",
+        "U33.10",
+        "U34.20",
+        "U35.14",
+        "C91.1",
+        "C92.1",
+        "C93.1",
+        "R86.1",
+        "R1.1",
+        "R3.1",
+        "R4.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_3V3",
+      "pads": [
+        "U14.6",
+        "C41.1",
+        "R87.1",
+        "J16.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_PWR_EN",
+      "pads": [
+        "U33.1",
+        "U35.1",
+        "R83.1",
+        "U14.3"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_IO_ARM",
+      "pads": [
+        "U33.3",
+        "U35.2",
+        "R84.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_FAULT_N",
+      "pads": [
+        "U14.4",
+        "R42.2",
+        "U33.2",
+        "U35.13"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_IO_OE_N",
+      "pads": [
+        "U35.12",
+        "U34.19",
+        "R86.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_ILIM",
+      "pads": [
+        "U14.5",
+        "R41.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_GPIO_SPARE",
+      "pads": [
+        "U33.4",
+        "R85.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MCU_EN",
+      "pads": [
+        "U1.3",
+        "U33.6",
+        "R1.2",
+        "C1.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SCL",
+      "pads": [
+        "U1.17",
+        "U33.8",
+        "U34.2",
+        "R3.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "I2C_SDA",
+      "pads": [
+        "U1.18",
+        "U33.9",
+        "U34.3",
+        "R4.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SPI_SCK",
+      "pads": [
+        "U1.20",
+        "U34.4"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SPI_MOSI",
+      "pads": [
+        "U1.21",
+        "U34.5"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "SPI_MISO",
+      "pads": [
+        "U1.22",
+        "U34.6"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_CS",
+      "pads": [
+        "U1.7",
+        "U34.7"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_IRQ",
+      "pads": [
+        "U1.8",
+        "U34.8"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U14.2",
+        "R41.2",
+        "C40.2",
+        "C41.2",
+        "U33.5",
+        "U34.9",
+        "U34.10",
+        "U34.11",
+        "U35.3",
+        "U35.4",
+        "U35.5",
+        "U35.7",
+        "U35.9",
+        "U35.10",
+        "U35.11",
+        "C91.2",
+        "C92.2",
+        "C93.2",
+        "R83.2",
+        "R84.2",
+        "R85.2",
+        "R87.2",
+        "J16.1",
+        "J16.10",
+        "U15.3",
+        "U15.8",
+        "U16.3",
+        "U16.8",
+        "C1.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SW_SCL",
+      "pads": [
+        "U34.18",
+        "R20.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SW_SDA",
+      "pads": [
+        "U34.17",
+        "R21.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SW_SCK",
+      "pads": [
+        "U34.16",
+        "R22.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SW_MOSI",
+      "pads": [
+        "U34.15",
+        "R23.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SW_MISO",
+      "pads": [
+        "U34.14",
+        "R24.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SW_CS",
+      "pads": [
+        "U34.13",
+        "R25.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SW_IRQ",
+      "pads": [
+        "U34.12",
+        "R26.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SCL",
+      "pads": [
+        "R20.2",
+        "J16.3",
+        "U15.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SDA",
+      "pads": [
+        "R21.2",
+        "J16.4",
+        "U15.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_SCK",
+      "pads": [
+        "R22.2",
+        "J16.5",
+        "U15.4"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_MOSI",
+      "pads": [
+        "R23.2",
+        "J16.6",
+        "U15.5"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_MISO",
+      "pads": [
+        "R24.2",
+        "J16.7",
+        "U16.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_CS_PORT",
+      "pads": [
+        "R25.2",
+        "J16.8",
+        "U16.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "EXP_IRQ_PORT",
+      "pads": [
+        "R26.2",
+        "J16.9",
+        "U16.4"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "pin_contract_failures": [],
+  "fabrication_released": false,
+  "scope": "Connectivity and topology only; not startup, isolation leakage, current, thermal, fault recovery or signal-timing qualification"
+}

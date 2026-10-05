@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "net": "+5V_RF",
+      "pads": [
+        "C26.1",
+        "J26.1",
+        "C49.1",
+        "C90.1",
+        "U32.8"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": [
+        "U7.8",
+        "U32.2",
+        "U32.9",
+        "C90.2",
+        "R82.2",
+        "R57.2"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_K1",
+      "pads": [
+        "J26.2",
+        "U32.3"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_K2",
+      "pads": [
+        "J26.3",
+        "U32.4"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_K3",
+      "pads": [
+        "J26.4",
+        "U32.5"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_K4",
+      "pads": [
+        "J26.5",
+        "U32.6"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_BL_RSET",
+      "pads": [
+        "U32.7",
+        "R82.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_BL_GATE",
+      "pads": [
+        "U32.1",
+        "R56.2",
+        "R57.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "LCD_BL_EN",
+      "pads": [
+        "U2.14",
+        "R56.1"
+      ],
+      "disconnected": [],
+      "wrong_net": [],
+      "passed": true
+    }
+  ],
+  "pin_contract_failures": [],
+  "fabrication_released": false,
+  "scope": "Physical continuity only; current capacity, thermal performance and firmware timing remain unqualified"
+}

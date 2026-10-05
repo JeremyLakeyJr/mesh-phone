@@ -5,7 +5,7 @@
     "nominal_a": 0.2662597486839411,
     "maximum_a": 0.3058108863010809
   },
-  "expansion_enable": "Tied to +3V3; no independent software power control",
+  "expansion_enable": "TCA9537 P0 with reset-default-off pull-down; P2 and FAULT gate signal isolation. See expansion-control-review.md",
   "display_recommended_supply_max_v": 3.3,
   "display_regulated_range_v": [
     2.955,
@@ -45,7 +45,7 @@
   "blocking_findings": [
     "Display supply and translation are routed; qualify load, heat, power sequencing, touch option and shared-bus timing.",
     "CAT4004A current regulation is installed and routed; qualify absolute current across voltage/temperature, LED-short heat, exposed-pad assembly, GPIO startup and dimming timing. Typical current is not a qualified maximum.",
-    "Expansion current-limit range does not establish accessory startup/continuous demand; enable control and fault monitoring remain unresolved.",
+    "Expansion enable, polled fault input and hardware signal interlock are captured. Current limit does not establish permitted load; qualify startup, current, signal integrity, leakage, reset and brief-fault behavior. Shared-bus lockup requires external reset or power-off recovery; target firmware remains unintegrated.",
     "Ripple, feedback leakage, transients, resistor thermal derating and measured load profiles remain unqualified."
   ],
   "fabrication_released": false

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "removed_net_copper": "CHG_I2C_SCL",
+      "checker_rejected": true
+    },
+    {
+      "removed_net_copper": "VSYS",
+      "checker_rejected": true
+    }
+  ],
+  "scope": "Temporary board copies with physical copper removed; original board unaffected"
+}

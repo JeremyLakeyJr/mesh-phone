@@ -30,7 +30,8 @@
     "Display backlight",
     "Modem and call audio",
     "Supervisor and always-on logic",
-    "Converter, charger and miscellaneous logic quiescent loads"
+    "Converter, charger and miscellaneous logic quiescent loads",
+    "Expansion control and signal isolation"
   ],
   "scenarios": [
     {
@@ -635,16 +636,16 @@
     }
   ],
   "blocking_findings": [
-    "Unqualified load profiles: ESP32 with flash/PSRAM, Keypad and GPIO, LoRa radio and TCXO, CC1101 radio, Media amplifier and speaker, Fuel gauge, LF reader and logic, GNSS, NFC and antenna driver, Expansion module and switch, Trackball, microSD, IR transmitter and receiver, Display logic and touch, Display backlight, Modem and call audio, Supervisor and always-on logic, Converter, charger and miscellaneous logic quiescent loads",
+    "Unqualified load profiles: ESP32 with flash/PSRAM, Keypad and GPIO, LoRa radio and TCXO, CC1101 radio, Media amplifier and speaker, Fuel gauge, LF reader and logic, GNSS, NFC and antenna driver, Expansion module and switch, Trackball, microSD, IR transmitter and receiver, Display logic and touch, Display backlight, Modem and call audio, Supervisor and always-on logic, Converter, charger and miscellaneous logic quiescent loads, Expansion control and signal isolation",
     "Handset load sweep crosses the configured BQ25186 discharge OCP typical threshold; raising it requires path and thermal qualification.",
     "Simultaneous rail-load sweep exceeds the provisional pack target; converter ratings are not a permitted simultaneous-use budget.",
     "Battery-only sensitivity model excludes FET/wiring drop, converter Iq, startup/inrush and USB load sharing; hardware operating modes remain unqualified."
   ],
   "fabrication_released": false,
   "input_sha256": {
-    "system-power-inputs.json": "44cf441518c9d785f696756e808d458d5480b53be68408b5c68707069792719a",
-    "generated/netlist.xml": "0cd64c76b0e7f4ba5fd3ad212d1c197711127e1dfe453231fcc5e3f184b6e184",
-    "generated/connectivity.json": "ed2b08c916d43c602146c7754cb064a9ff3349e87b9e2eaa4c6bd00bd6057dc5",
+    "system-power-inputs.json": "64271528d7be71c45949dbd720e20caece698208ec50e66e15a0207b80fa8762",
+    "generated/netlist.xml": "b038702ff18092793b8432c4d86b073b463d52e90c7f418786b646027a48932b",
+    "generated/connectivity.json": "5e22ca1407ae3d09ca4f7be771f197144991c2ed79febe6edde9802a4b5605a2",
     "charger-policy.json": "6af0fdc61a946b67e9c8ed9f99db0ccbfab4c120ae3f87bbed32501f0e419baa",
     "battery-upgrade-requirements.json": "d31f49edf0624f78d942495ca4f6d9435e388a97696a09f0be63f10a37731ac8",
     "battery-qualification.json": "6da41ab8446575574853bfda2ff0e4855448482ada4bb79ebd91d133f5c2f5f0"

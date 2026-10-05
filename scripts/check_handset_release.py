@@ -34,6 +34,12 @@ if (out/'backlight-update.json').exists():
     from check_handset_backlight_routing import check_board as check_backlight
     backlight=check_backlight(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['backlight_routing_failures']=[g['net'] for g in backlight['groups'] if not g['passed']]+backlight['pin_contract_failures']
+if (out/'expansion-update.json').exists():
+    import pcbnew as pcb
+    from check_handset_expansion import check_board as check_expansion,check_circuit
+    check_circuit(out)
+    expansion=check_expansion(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
+    issues['expansion_routing_failures']=[g['net'] for g in expansion['groups'] if not g['passed']]+expansion['pin_contract_failures']
 blocked=any(issues.values())
 print(json.dumps({'status':'DO NOT FABRICATE' if blocked else 'Checks clear; independent release review required',**issues},indent=2))
 sys.exit(1 if blocked else 0)

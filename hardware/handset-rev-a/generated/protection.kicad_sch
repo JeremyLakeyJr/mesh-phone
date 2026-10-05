@@ -1202,7 +1202,7 @@
         (size 2 2))
       (justify left top))
     (uuid "d3467259-998b-55d8-8ed0-b4b44585e7ec"))
-  (text "J16 pin order retained. Switch accessories with power off. TPS2553 limit and ESD path require qualification."
+  (text "Port signals pass through U34 on expansion-control. U14 EN defaults low; fault drives U33 and the hardware signal interlock.\nNo hot-plug approval."
     (at 15 22 0)
     (effects
       (font
@@ -1218,24 +1218,24 @@
     (uuid "5d5efdca-3de0-5a1e-89c7-76b57cbaa62d"))
   (symbol
     (lib_id "Connector_Generic:Conn_01x10")
-    (at 53.34 86.36 0)
+    (at 76.2 81.28 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "2e7ef89c-2db0-56fe-a92c-e97355699314")
     (property "Reference" "J16"
-      (at 53.34 66.04 0)
+      (at 76.2 60.96 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Value" "EXPANSION_J16"
-      (at 53.34 68.58 0)
+      (at 76.2 63.5 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Footprint" "Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical"
-      (at 53.34 86.36 0)
+      (at 76.2 81.28 0)
       (effects
         (font
           (size 1 1))
@@ -1267,24 +1267,24 @@
       (uuid "ce33eca6-adca-52cb-a1ef-6f53a51c6f9d")))
   (symbol
     (lib_id "Handset:TPS2553DBVR")
-    (at 154.94 86.36 0)
+    (at 187.96 71.12 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "0e89fadb-cde3-51ac-a535-c9704d808c3e")
     (property "Reference" "U14"
-      (at 154.94 73.66 0)
+      (at 187.96 58.42 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Value" "TPS2553DBVR"
-      (at 154.94 76.2 0)
+      (at 187.96 60.96 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-      (at 154.94 86.36 0)
+      (at 187.96 71.12 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1308,24 +1308,24 @@
       (uuid "16d55657-f55b-5817-817b-dd005e92f5cc")))
   (symbol
     (lib_id "Handset:TPD4E05U06DQA")
-    (at 256.53999999999996 86.36 0)
+    (at 289.56 71.12 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "2c790469-b86d-5a9e-8ffb-8ec759f8c8f8")
     (property "Reference" "U15"
-      (at 256.53999999999996 68.58 0)
+      (at 289.56 53.34 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Value" "TPD4E05U06DQAR"
-      (at 256.53999999999996 71.12 0)
+      (at 289.56 55.88 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-      (at 256.53999999999996 86.36 0)
+      (at 289.56 71.12 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1357,24 +1357,24 @@
       (uuid "9f226b46-dad6-5e51-ba1a-87fefe4c97b1")))
   (symbol
     (lib_id "Handset:TPD4E05U06DQA")
-    (at 358.14 86.36 0)
+    (at 375.92 71.12 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "a903aedc-0aef-5622-a022-e08fbeddfb72")
     (property "Reference" "U16"
-      (at 358.14 68.58 0)
+      (at 375.92 53.34 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Value" "TPD4E05U06DQAR"
-      (at 358.14 71.12 0)
+      (at 375.92 55.88 0)
       (effects
         (font
           (size 1.1 1.1))))
     (property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-      (at 358.14 86.36 0)
+      (at 375.92 71.12 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1406,26 +1406,26 @@
       (uuid "663cf929-dcd0-5741-945c-24d79b799bf7")))
   (symbol
     (lib_id "Device:R")
-    (at 40.64 157.48 0)
+    (at 35.56 157.48 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "54475d39-b2cd-5564-b8b8-6fb723a0fc54")
     (property "Reference" "R20"
-      (at 44.45 156.20999999999998 0)
+      (at 39.370000000000005 156.20999999999998 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "33"
-      (at 44.45 158.75 0)
+      (at 39.370000000000005 158.75 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 40.64 157.48 0)
+      (at 35.56 157.48 0)
       (effects
         (font
           (size 1 1))
@@ -1441,23 +1441,23 @@
       (uuid "9cc9f236-eff8-5887-942d-00b301f261df")))
   (wire
     (pts
-      (xy 40.6400 153.6700)
-      (xy 40.6400 147.3200))
+      (xy 35.5600 153.6700)
+      (xy 35.5600 147.3200))
     (stroke
       (width 0)
       (type default))
     (uuid "ec941981-3971-5ad1-be80-b01f650329dc"))
   (wire
     (pts
-      (xy 40.6400 161.2900)
-      (xy 40.6400 167.6400))
+      (xy 35.5600 161.2900)
+      (xy 35.5600 167.6400))
     (stroke
       (width 0)
       (type default))
     (uuid "f0d015a5-21f1-5df4-856a-357cd8b8a69f"))
-  (global_label "I2C_SCL"
+  (global_label "EXP_SW_SCL"
     (shape bidirectional)
-    (at 40.64 147.32 0)
+    (at 35.56 147.32 0)
     (effects
       (font
         (size 1 1))
@@ -1465,7 +1465,7 @@
     (uuid "217295e2-450d-5304-b575-fcf729eb292a"))
   (global_label "EXP_SCL"
     (shape bidirectional)
-    (at 40.64 167.64 0)
+    (at 35.56 167.64 0)
     (effects
       (font
         (size 1 1))
@@ -1473,26 +1473,26 @@
     (uuid "8bec2167-d750-57ce-bdd3-c4dc4dc47b37"))
   (symbol
     (lib_id "Device:R")
-    (at 165.1 157.48 0)
+    (at 134.62 157.48 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "c7bd5427-07d6-5121-89ac-6a2573a3342d")
     (property "Reference" "R21"
-      (at 168.91 156.20999999999998 0)
+      (at 138.43 156.20999999999998 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "33"
-      (at 168.91 158.75 0)
+      (at 138.43 158.75 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 165.1 157.48 0)
+      (at 134.62 157.48 0)
       (effects
         (font
           (size 1 1))
@@ -1508,23 +1508,23 @@
       (uuid "55614a0c-3a1f-5c9a-be34-06b5c08545cf")))
   (wire
     (pts
-      (xy 165.1000 153.6700)
-      (xy 165.1000 147.3200))
+      (xy 134.6200 153.6700)
+      (xy 134.6200 147.3200))
     (stroke
       (width 0)
       (type default))
     (uuid "b5259211-3549-5bfa-85d4-e9d27b2f80f3"))
   (wire
     (pts
-      (xy 165.1000 161.2900)
-      (xy 165.1000 167.6400))
+      (xy 134.6200 161.2900)
+      (xy 134.6200 167.6400))
     (stroke
       (width 0)
       (type default))
     (uuid "f82dfc49-c2a9-5bcc-a570-a75b31d958ac"))
-  (global_label "I2C_SDA"
+  (global_label "EXP_SW_SDA"
     (shape bidirectional)
-    (at 165.1 147.32 0)
+    (at 134.62 147.32 0)
     (effects
       (font
         (size 1 1))
@@ -1532,7 +1532,7 @@
     (uuid "520a0b8b-bcfa-5d11-b8bf-3d67c7c926f8"))
   (global_label "EXP_SDA"
     (shape bidirectional)
-    (at 165.1 167.64 0)
+    (at 134.62 167.64 0)
     (effects
       (font
         (size 1 1))
@@ -1540,26 +1540,26 @@
     (uuid "1da6e626-8a28-5af2-b02a-476d676c1d8e"))
   (symbol
     (lib_id "Device:R")
-    (at 289.56 157.48 0)
+    (at 233.68 157.48 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "93561d9d-dd6c-5ca1-8c35-891935abfb5f")
     (property "Reference" "R22"
-      (at 293.37 156.20999999999998 0)
+      (at 237.49 156.20999999999998 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "33"
-      (at 293.37 158.75 0)
+      (at 237.49 158.75 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 289.56 157.48 0)
+      (at 233.68 157.48 0)
       (effects
         (font
           (size 1 1))
@@ -1575,23 +1575,23 @@
       (uuid "a2926616-fffb-5fc5-8d30-9fea8c53b6e8")))
   (wire
     (pts
-      (xy 289.5600 153.6700)
-      (xy 289.5600 147.3200))
+      (xy 233.6800 153.6700)
+      (xy 233.6800 147.3200))
     (stroke
       (width 0)
       (type default))
     (uuid "b25b3a71-bd4e-5bb0-9bb4-dd16675cb867"))
   (wire
     (pts
-      (xy 289.5600 161.2900)
-      (xy 289.5600 167.6400))
+      (xy 233.6800 161.2900)
+      (xy 233.6800 167.6400))
     (stroke
       (width 0)
       (type default))
     (uuid "e56c5703-efab-532d-85ae-90407222d2c5"))
-  (global_label "SPI_SCK"
+  (global_label "EXP_SW_SCK"
     (shape bidirectional)
-    (at 289.56 147.32 0)
+    (at 233.68 147.32 0)
     (effects
       (font
         (size 1 1))
@@ -1599,7 +1599,7 @@
     (uuid "c5d2482c-ba57-5407-8255-93378323de9d"))
   (global_label "EXP_SCK"
     (shape bidirectional)
-    (at 289.56 167.64 0)
+    (at 233.68 167.64 0)
     (effects
       (font
         (size 1 1))
@@ -1607,26 +1607,26 @@
     (uuid "4f318904-4db0-58dd-a5be-3cb6beb5477d"))
   (symbol
     (lib_id "Device:R")
-    (at 40.64 190.5 0)
+    (at 332.74 157.48 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "3e001e5e-9bfd-56ae-b65a-28b22b0b4e87")
     (property "Reference" "R23"
-      (at 44.45 189.23 0)
+      (at 336.55 156.20999999999998 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "33"
-      (at 44.45 191.77 0)
+      (at 336.55 158.75 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 40.64 190.5 0)
+      (at 332.74 157.48 0)
       (effects
         (font
           (size 1 1))
@@ -1642,23 +1642,23 @@
       (uuid "b8bd2a79-04c9-58cd-8098-73f082c4afd9")))
   (wire
     (pts
-      (xy 40.6400 186.6900)
-      (xy 40.6400 180.3400))
+      (xy 332.7400 153.6700)
+      (xy 332.7400 147.3200))
     (stroke
       (width 0)
       (type default))
     (uuid "39825ace-3397-5be3-86b1-9755c22f6f2f"))
   (wire
     (pts
-      (xy 40.6400 194.3100)
-      (xy 40.6400 200.6600))
+      (xy 332.7400 161.2900)
+      (xy 332.7400 167.6400))
     (stroke
       (width 0)
       (type default))
     (uuid "7919b366-4037-5d53-807c-5f5654f81ddd"))
-  (global_label "SPI_MOSI"
+  (global_label "EXP_SW_MOSI"
     (shape bidirectional)
-    (at 40.64 180.34 0)
+    (at 332.74 147.32 0)
     (effects
       (font
         (size 1 1))
@@ -1666,7 +1666,7 @@
     (uuid "2f85cc58-745a-5f44-bff1-56b0b1e66817"))
   (global_label "EXP_MOSI"
     (shape bidirectional)
-    (at 40.64 200.66 0)
+    (at 332.74 167.64 0)
     (effects
       (font
         (size 1 1))
@@ -1674,26 +1674,26 @@
     (uuid "4a0ff31d-ae5a-57e9-a9c4-8e012f09fb1e"))
   (symbol
     (lib_id "Device:R")
-    (at 165.1 190.5 0)
+    (at 35.56 195.57999999999998 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "29d13739-046f-51d2-b239-e5ab37014c9a")
     (property "Reference" "R24"
-      (at 168.91 189.23 0)
+      (at 39.370000000000005 194.30999999999997 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "33"
-      (at 168.91 191.77 0)
+      (at 39.370000000000005 196.85 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 165.1 190.5 0)
+      (at 35.56 195.57999999999998 0)
       (effects
         (font
           (size 1 1))
@@ -1709,23 +1709,23 @@
       (uuid "14350869-718b-51e7-8885-c01b8ab6b6f3")))
   (wire
     (pts
-      (xy 165.1000 186.6900)
-      (xy 165.1000 180.3400))
+      (xy 35.5600 191.7700)
+      (xy 35.5600 185.4200))
     (stroke
       (width 0)
       (type default))
     (uuid "249a5ed8-2e1c-58d4-8cf0-69d6121edbf4"))
   (wire
     (pts
-      (xy 165.1000 194.3100)
-      (xy 165.1000 200.6600))
+      (xy 35.5600 199.3900)
+      (xy 35.5600 205.7400))
     (stroke
       (width 0)
       (type default))
     (uuid "aa71752f-c1ff-507b-b292-9123e82d73ce"))
-  (global_label "SPI_MISO"
+  (global_label "EXP_SW_MISO"
     (shape bidirectional)
-    (at 165.1 180.34 0)
+    (at 35.56 185.42 0)
     (effects
       (font
         (size 1 1))
@@ -1733,7 +1733,7 @@
     (uuid "3dc5c00d-f421-5c6c-95e1-4de115742cdd"))
   (global_label "EXP_MISO"
     (shape bidirectional)
-    (at 165.1 200.66 0)
+    (at 35.56 205.73999999999998 0)
     (effects
       (font
         (size 1 1))
@@ -1741,26 +1741,26 @@
     (uuid "1515342c-13c2-5558-b532-93e79198fd06"))
   (symbol
     (lib_id "Device:R")
-    (at 289.56 190.5 0)
+    (at 134.62 195.57999999999998 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "1ef97e5f-d380-5712-a0ab-b81861264247")
     (property "Reference" "R25"
-      (at 293.37 189.23 0)
+      (at 138.43 194.30999999999997 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "33"
-      (at 293.37 191.77 0)
+      (at 138.43 196.85 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 289.56 190.5 0)
+      (at 134.62 195.57999999999998 0)
       (effects
         (font
           (size 1 1))
@@ -1776,23 +1776,23 @@
       (uuid "a3de4d57-65cc-53e0-889c-e0f12875fcf4")))
   (wire
     (pts
-      (xy 289.5600 186.6900)
-      (xy 289.5600 180.3400))
+      (xy 134.6200 191.7700)
+      (xy 134.6200 185.4200))
     (stroke
       (width 0)
       (type default))
     (uuid "ddadb3e0-b7ad-571e-9478-8468a9f8d763"))
   (wire
     (pts
-      (xy 289.5600 194.3100)
-      (xy 289.5600 200.6600))
+      (xy 134.6200 199.3900)
+      (xy 134.6200 205.7400))
     (stroke
       (width 0)
       (type default))
     (uuid "4a72b3df-b0d2-53c6-8574-7852b77825b9"))
-  (global_label "EXP_CS"
+  (global_label "EXP_SW_CS"
     (shape bidirectional)
-    (at 289.56 180.34 0)
+    (at 134.62 185.42 0)
     (effects
       (font
         (size 1 1))
@@ -1800,7 +1800,7 @@
     (uuid "8d5d693f-1a69-5fc8-b486-a589ddd57f83"))
   (global_label "EXP_CS_PORT"
     (shape bidirectional)
-    (at 289.56 200.66 0)
+    (at 134.62 205.73999999999998 0)
     (effects
       (font
         (size 1 1))
@@ -1808,26 +1808,26 @@
     (uuid "5b9d23f9-7d95-58f6-8a31-f43afa24b1a5"))
   (symbol
     (lib_id "Device:R")
-    (at 40.64 223.51999999999998 0)
+    (at 233.68 195.57999999999998 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "6fab93c4-3829-5922-b9b2-2e7b50c70729")
     (property "Reference" "R26"
-      (at 44.45 222.24999999999997 0)
+      (at 237.49 194.30999999999997 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "33"
-      (at 44.45 224.79 0)
+      (at 237.49 196.85 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 40.64 223.51999999999998 0)
+      (at 233.68 195.57999999999998 0)
       (effects
         (font
           (size 1 1))
@@ -1843,23 +1843,23 @@
       (uuid "4db31c92-e8fc-5a75-9499-1147ed868743")))
   (wire
     (pts
-      (xy 40.6400 219.7100)
-      (xy 40.6400 213.3600))
+      (xy 233.6800 191.7700)
+      (xy 233.6800 185.4200))
     (stroke
       (width 0)
       (type default))
     (uuid "3011c99e-5d96-5d30-91fa-871bd8fc130c"))
   (wire
     (pts
-      (xy 40.6400 227.3300)
-      (xy 40.6400 233.6800))
+      (xy 233.6800 199.3900)
+      (xy 233.6800 205.7400))
     (stroke
       (width 0)
       (type default))
     (uuid "2caa0c90-bdaa-532f-8dfd-d8ab12fb82a6"))
-  (global_label "EXP_IRQ"
+  (global_label "EXP_SW_IRQ"
     (shape bidirectional)
-    (at 40.64 213.35999999999999 0)
+    (at 233.68 185.42 0)
     (effects
       (font
         (size 1 1))
@@ -1867,7 +1867,7 @@
     (uuid "6bdab31f-ff2e-5da9-bde1-6084ad334da6"))
   (global_label "EXP_IRQ_PORT"
     (shape bidirectional)
-    (at 40.64 233.67999999999998 0)
+    (at 233.68 205.73999999999998 0)
     (effects
       (font
         (size 1 1))
@@ -1875,26 +1875,26 @@
     (uuid "fe0c3109-e415-5c8c-8e2d-4ad6be63c68e"))
   (symbol
     (lib_id "Device:R")
-    (at 165.1 223.51999999999998 0)
+    (at 332.74 195.57999999999998 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "a310b605-2366-5d8b-aa3d-e3eb6f4bc456")
     (property "Reference" "R41"
-      (at 168.91 222.24999999999997 0)
+      (at 336.55 194.30999999999997 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "100k 1%"
-      (at 168.91 224.79 0)
+      (at 336.55 196.85 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 165.1 223.51999999999998 0)
+      (at 332.74 195.57999999999998 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1910,23 +1910,23 @@
       (uuid "91468925-1041-5e37-9fec-151938773245")))
   (wire
     (pts
-      (xy 165.1000 219.7100)
-      (xy 165.1000 213.3600))
+      (xy 332.7400 191.7700)
+      (xy 332.7400 185.4200))
     (stroke
       (width 0)
       (type default))
     (uuid "003e38a1-3df7-5f56-9507-e631addc9e19"))
   (wire
     (pts
-      (xy 165.1000 227.3300)
-      (xy 165.1000 233.6800))
+      (xy 332.7400 199.3900)
+      (xy 332.7400 205.7400))
     (stroke
       (width 0)
       (type default))
     (uuid "7e562289-d40f-5d44-9975-63b3a13b8c24"))
   (global_label "EXP_ILIM"
     (shape bidirectional)
-    (at 165.1 213.35999999999999 0)
+    (at 332.74 185.42 0)
     (effects
       (font
         (size 1 1))
@@ -1934,20 +1934,20 @@
     (uuid "e935da79-0db1-56c1-8433-1c85ef391027"))
   (symbol
     (lib_id "power:GND")
-    (at 165.1 233.67999999999998 0)
+    (at 332.74 205.73999999999998 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "fb7a77f0-5177-54d2-a888-8053af38601a")
     (property "Reference" "#PWR20034"
-      (at 165.1 233.67999999999998 0)
+      (at 332.74 205.73999999999998 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 165.1 238.76 0)
+      (at 332.74 210.82 0)
       (effects
         (font
           (size 1 1))))
@@ -1960,26 +1960,26 @@
           (unit 1)))))
   (symbol
     (lib_id "Device:R")
-    (at 289.56 223.51999999999998 0)
+    (at 35.56 233.68 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "7401367e-89d6-5028-a7ec-bcad124961ae")
     (property "Reference" "R42"
-      (at 293.37 222.24999999999997 0)
+      (at 39.370000000000005 232.41 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
-    (property "Value" "100k"
-      (at 293.37 224.79 0)
+    (property "Value" "10k 1%"
+      (at 39.370000000000005 234.95000000000002 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-      (at 289.56 223.51999999999998 0)
+      (at 35.56 233.68 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1992,26 +1992,32 @@
     (pin "1"
       (uuid "be72c3cf-3f77-5fb5-a350-14206626cf86"))
     (pin "2"
-      (uuid "d919f203-0b61-5b8e-bc51-a34ddebe3ff5")))
+      (uuid "d919f203-0b61-5b8e-bc51-a34ddebe3ff5"))
+    (property "MPN" "RC0402FR-0710KL"
+      (at 35.56 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
   (wire
     (pts
-      (xy 289.5600 219.7100)
-      (xy 289.5600 213.3600))
+      (xy 35.5600 229.8700)
+      (xy 35.5600 223.5200))
     (stroke
       (width 0)
       (type default))
     (uuid "09f03c0d-fb2e-5214-8279-42cdb86cc9f5"))
   (wire
     (pts
-      (xy 289.5600 227.3300)
-      (xy 289.5600 233.6800))
+      (xy 35.5600 237.4900)
+      (xy 35.5600 243.8400))
     (stroke
       (width 0)
       (type default))
     (uuid "36975cf7-b271-5644-af8a-2110e4e745c2"))
   (global_label "+3V3"
     (shape bidirectional)
-    (at 289.56 213.35999999999999 0)
+    (at 35.56 223.52 0)
     (effects
       (font
         (size 1 1))
@@ -2019,7 +2025,7 @@
     (uuid "a5746b58-a1b6-5cb2-83ad-02a81db95ab2"))
   (global_label "EXP_FAULT_N"
     (shape bidirectional)
-    (at 289.56 233.67999999999998 0)
+    (at 35.56 243.84 0)
     (effects
       (font
         (size 1 1))
@@ -2027,26 +2033,26 @@
     (uuid "4fc7ff79-c253-5bb8-bea6-288aeddcd222"))
   (symbol
     (lib_id "Device:C")
-    (at 40.64 256.53999999999996 0)
+    (at 134.62 233.68 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "41aba8a5-1f36-5681-a7ff-1db1fbf114e6")
     (property "Reference" "C40"
-      (at 44.45 255.26999999999995 0)
+      (at 138.43 232.41 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "100nF"
-      (at 44.45 257.80999999999995 0)
+      (at 138.43 234.95000000000002 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-      (at 40.64 256.53999999999996 0)
+      (at 134.62 233.68 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2062,23 +2068,23 @@
       (uuid "8d34c409-e9d4-5477-8115-8d078df6ae88")))
   (wire
     (pts
-      (xy 40.6400 252.7300)
-      (xy 40.6400 246.3800))
+      (xy 134.6200 229.8700)
+      (xy 134.6200 223.5200))
     (stroke
       (width 0)
       (type default))
     (uuid "eb1d06fd-07b6-5173-85f1-bb9dd308116c"))
   (wire
     (pts
-      (xy 40.6400 260.3500)
-      (xy 40.6400 266.7000))
+      (xy 134.6200 237.4900)
+      (xy 134.6200 243.8400))
     (stroke
       (width 0)
       (type default))
     (uuid "f296ffd1-261f-5c65-a9cf-aa45c3a9770e"))
   (global_label "+3V3"
     (shape bidirectional)
-    (at 40.64 246.37999999999997 0)
+    (at 134.62 223.52 0)
     (effects
       (font
         (size 1 1))
@@ -2086,20 +2092,20 @@
     (uuid "2e013f39-b15a-5129-9d79-53e22c9ed9aa"))
   (symbol
     (lib_id "power:GND")
-    (at 40.64 266.7 0)
+    (at 134.62 243.84 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "1ff311ed-26e4-5c8e-8ced-ec4b4f585d05")
     (property "Reference" "#PWR20043"
-      (at 40.64 266.7 0)
+      (at 134.62 243.84 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 40.64 271.78 0)
+      (at 134.62 248.92000000000002 0)
       (effects
         (font
           (size 1 1))))
@@ -2112,26 +2118,26 @@
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 165.1 256.53999999999996 0)
+    (at 233.68 233.68 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "a103e6c3-93ea-506e-8a0a-cb35de81e8ca")
     (property "Reference" "C41"
-      (at 168.91 255.26999999999995 0)
+      (at 237.49 232.41 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Value" "10uF"
-      (at 168.91 257.80999999999995 0)
+      (at 237.49 234.95000000000002 0)
       (effects
         (font
           (size 0.95 0.95))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-      (at 165.1 256.53999999999996 0)
+      (at 233.68 233.68 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2147,23 +2153,23 @@
       (uuid "2e525558-758f-5935-87d8-c66f3071acec")))
   (wire
     (pts
-      (xy 165.1000 252.7300)
-      (xy 165.1000 246.3800))
+      (xy 233.6800 229.8700)
+      (xy 233.6800 223.5200))
     (stroke
       (width 0)
       (type default))
     (uuid "2f42b575-96ce-5e7e-899c-6121d6b06bc8"))
   (wire
     (pts
-      (xy 165.1000 260.3500)
-      (xy 165.1000 266.7000))
+      (xy 233.6800 237.4900)
+      (xy 233.6800 243.8400))
     (stroke
       (width 0)
       (type default))
     (uuid "ff12fa39-218a-5b28-9414-412742c48070"))
   (global_label "EXP_3V3"
     (shape bidirectional)
-    (at 165.1 246.37999999999997 0)
+    (at 233.68 223.52 0)
     (effects
       (font
         (size 1 1))
@@ -2171,20 +2177,20 @@
     (uuid "6402275c-0aea-56b9-9a6d-bb1f1e86ce1d"))
   (symbol
     (lib_id "power:GND")
-    (at 165.1 266.7 0)
+    (at 233.68 243.84 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "2383e179-2b34-5031-b1dc-7c1a6a53b19d")
     (property "Reference" "#PWR20048"
-      (at 165.1 266.7 0)
+      (at 233.68 243.84 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 165.1 271.78 0)
+      (at 233.68 248.92000000000002 0)
       (effects
         (font
           (size 1 1))))
@@ -2197,28 +2203,28 @@
           (unit 1)))))
   (wire
     (pts
-      (xy 48.2600 76.2000)
-      (xy 40.6400 76.2000))
+      (xy 71.1200 71.1200)
+      (xy 63.5000 71.1200))
     (stroke
       (width 0)
       (type default))
     (uuid "5eb88ce4-0ee4-5587-a786-f9241b50e03d"))
   (symbol
     (lib_id "power:GND")
-    (at 40.64 76.2 0)
+    (at 63.5 71.12 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "1259e291-5488-5294-b736-6e92062ae8f4")
     (property "Reference" "#PWR20051"
-      (at 40.64 76.2 0)
+      (at 63.5 71.12 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 40.64 81.28 0)
+      (at 63.5 76.2 0)
       (effects
         (font
           (size 1 1))))
@@ -2231,15 +2237,15 @@
           (unit 1)))))
   (wire
     (pts
-      (xy 48.2600 78.7400)
-      (xy 40.6400 78.7400))
+      (xy 71.1200 73.6600)
+      (xy 63.5000 73.6600))
     (stroke
       (width 0)
       (type default))
     (uuid "5b9f2370-2fbd-55a8-8506-ee0a722390e5"))
   (global_label "EXP_3V3"
     (shape bidirectional)
-    (at 40.64 78.74 0.0)
+    (at 63.5 73.66 0.0)
     (effects
       (font
         (size 1 1))
@@ -2247,15 +2253,15 @@
     (uuid "3e1917a1-717e-5e29-bd2d-3ca1fb8390af"))
   (wire
     (pts
-      (xy 48.2600 81.2800)
-      (xy 40.6400 81.2800))
+      (xy 71.1200 76.2000)
+      (xy 63.5000 76.2000))
     (stroke
       (width 0)
       (type default))
     (uuid "da1b3a91-5f1d-5a7d-88f6-b4d6ec579864"))
   (global_label "EXP_SCL"
     (shape bidirectional)
-    (at 40.64 81.28 0.0)
+    (at 63.5 76.2 0.0)
     (effects
       (font
         (size 1 1))
@@ -2263,15 +2269,15 @@
     (uuid "4749c9e8-0e47-50f8-8247-781b17cebf50"))
   (wire
     (pts
-      (xy 48.2600 83.8200)
-      (xy 40.6400 83.8200))
+      (xy 71.1200 78.7400)
+      (xy 63.5000 78.7400))
     (stroke
       (width 0)
       (type default))
     (uuid "0bf558ac-77a4-5216-8851-a0a4f99dd9b3"))
   (global_label "EXP_SDA"
     (shape bidirectional)
-    (at 40.64 83.82 0.0)
+    (at 63.5 78.74 0.0)
     (effects
       (font
         (size 1 1))
@@ -2279,15 +2285,15 @@
     (uuid "3da68e0b-d438-5ec9-b076-41a6e0aac094"))
   (wire
     (pts
-      (xy 48.2600 86.3600)
-      (xy 40.6400 86.3600))
+      (xy 71.1200 81.2800)
+      (xy 63.5000 81.2800))
     (stroke
       (width 0)
       (type default))
     (uuid "ef1f2d86-3f40-5293-84a5-2510f254830c"))
   (global_label "EXP_SCK"
     (shape bidirectional)
-    (at 40.64 86.36 0.0)
+    (at 63.5 81.28 0.0)
     (effects
       (font
         (size 1 1))
@@ -2295,15 +2301,15 @@
     (uuid "8850d3ab-d234-5b97-b22e-de4da4e78b35"))
   (wire
     (pts
-      (xy 48.2600 88.9000)
-      (xy 40.6400 88.9000))
+      (xy 71.1200 83.8200)
+      (xy 63.5000 83.8200))
     (stroke
       (width 0)
       (type default))
     (uuid "ec4c70b9-5590-52b8-866e-129f4f3545dc"))
   (global_label "EXP_MOSI"
     (shape bidirectional)
-    (at 40.64 88.9 0.0)
+    (at 63.5 83.82 0.0)
     (effects
       (font
         (size 1 1))
@@ -2311,15 +2317,15 @@
     (uuid "6286c864-f9ef-50cd-b6cd-a7ec8d6920c5"))
   (wire
     (pts
-      (xy 48.2600 91.4400)
-      (xy 40.6400 91.4400))
+      (xy 71.1200 86.3600)
+      (xy 63.5000 86.3600))
     (stroke
       (width 0)
       (type default))
     (uuid "e390d91c-2385-5c80-8442-d8f22b3c0e06"))
   (global_label "EXP_MISO"
     (shape bidirectional)
-    (at 40.64 91.44 0.0)
+    (at 63.5 86.36 0.0)
     (effects
       (font
         (size 1 1))
@@ -2327,15 +2333,15 @@
     (uuid "b6df1a69-008b-5054-964c-b8fca6e43bd6"))
   (wire
     (pts
-      (xy 48.2600 93.9800)
-      (xy 40.6400 93.9800))
+      (xy 71.1200 88.9000)
+      (xy 63.5000 88.9000))
     (stroke
       (width 0)
       (type default))
     (uuid "fc2c1f23-e98b-593c-95cc-b58c43ee6549"))
   (global_label "EXP_CS_PORT"
     (shape bidirectional)
-    (at 40.64 93.98 0.0)
+    (at 63.5 88.9 0.0)
     (effects
       (font
         (size 1 1))
@@ -2343,15 +2349,15 @@
     (uuid "6c757975-35ef-5780-a131-cac327769840"))
   (wire
     (pts
-      (xy 48.2600 96.5200)
-      (xy 40.6400 96.5200))
+      (xy 71.1200 91.4400)
+      (xy 63.5000 91.4400))
     (stroke
       (width 0)
       (type default))
     (uuid "61301ad5-f6ff-5ad1-a24f-bc85c122e49b"))
   (global_label "EXP_IRQ_PORT"
     (shape bidirectional)
-    (at 40.64 96.52 0.0)
+    (at 63.5 91.44 0.0)
     (effects
       (font
         (size 1 1))
@@ -2359,28 +2365,28 @@
     (uuid "e5b183b9-f6ac-528c-888e-02e93c880854"))
   (wire
     (pts
-      (xy 48.2600 99.0600)
-      (xy 40.6400 99.0600))
+      (xy 71.1200 93.9800)
+      (xy 63.5000 93.9800))
     (stroke
       (width 0)
       (type default))
     (uuid "1dee639d-47af-541f-bb21-835c3d72a449"))
   (symbol
     (lib_id "power:GND")
-    (at 40.64 99.06 0)
+    (at 63.5 93.98 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "f4ce3c07-703c-5aaa-b414-ceff991492e2")
     (property "Reference" "#PWR20070"
-      (at 40.64 99.06 0)
+      (at 63.5 93.98 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 40.64 104.14 0)
+      (at 63.5 99.06 0)
       (effects
         (font
           (size 1 1))))
@@ -2393,15 +2399,15 @@
           (unit 1)))))
   (wire
     (pts
-      (xy 139.7000 83.8200)
-      (xy 132.0800 83.8200))
+      (xy 172.7200 68.5800)
+      (xy 165.1000 68.5800))
     (stroke
       (width 0)
       (type default))
     (uuid "cc9512dd-43c2-52d6-88ec-7e3b2ac2c408"))
   (global_label "+3V3"
     (shape bidirectional)
-    (at 132.08 83.82 0.0)
+    (at 165.1 68.58 0.0)
     (effects
       (font
         (size 1 1))
@@ -2409,28 +2415,28 @@
     (uuid "fb9ec5b4-6ff1-5fa3-a36f-69d85b1d5249"))
   (wire
     (pts
-      (xy 139.7000 86.3600)
-      (xy 132.0800 86.3600))
+      (xy 172.7200 71.1200)
+      (xy 165.1000 71.1200))
     (stroke
       (width 0)
       (type default))
     (uuid "47ff1172-498f-570f-b2ee-05470ed944fe"))
   (symbol
     (lib_id "power:GND")
-    (at 132.08 86.36 0)
+    (at 165.1 71.12 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "321fb72c-5663-51ed-85d7-5e766009eebf")
     (property "Reference" "#PWR20075"
-      (at 132.08 86.36 0)
+      (at 165.1 71.12 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 132.08 91.44 0)
+      (at 165.1 76.2 0)
       (effects
         (font
           (size 1 1))))
@@ -2443,15 +2449,15 @@
           (unit 1)))))
   (wire
     (pts
-      (xy 139.7000 88.9000)
-      (xy 132.0800 88.9000))
+      (xy 172.7200 73.6600)
+      (xy 165.1000 73.6600))
     (stroke
       (width 0)
       (type default))
     (uuid "aa1eb99e-7ca2-553a-856f-48bfd654f096"))
-  (global_label "+3V3"
+  (global_label "EXP_PWR_EN"
     (shape bidirectional)
-    (at 132.08 88.9 0.0)
+    (at 165.1 73.66 0.0)
     (effects
       (font
         (size 1 1))
@@ -2459,15 +2465,15 @@
     (uuid "864e3cab-0267-5a80-8888-2b5ac71d43b5"))
   (wire
     (pts
-      (xy 170.1800 83.8200)
-      (xy 177.8000 83.8200))
+      (xy 203.2000 68.5800)
+      (xy 210.8200 68.5800))
     (stroke
       (width 0)
       (type default))
     (uuid "aa3feceb-2f27-5c7b-8e6b-7ba4d22b34b1"))
   (global_label "EXP_FAULT_N"
     (shape bidirectional)
-    (at 177.8 83.82 180.0)
+    (at 210.82 68.58 180.0)
     (effects
       (font
         (size 1 1))
@@ -2475,15 +2481,15 @@
     (uuid "fb721cd1-c2a0-5e5f-8e2f-3026e3082599"))
   (wire
     (pts
-      (xy 170.1800 86.3600)
-      (xy 177.8000 86.3600))
+      (xy 203.2000 71.1200)
+      (xy 210.8200 71.1200))
     (stroke
       (width 0)
       (type default))
     (uuid "b9db33b5-b9e0-5d3c-ba74-357c0c21a750"))
   (global_label "EXP_ILIM"
     (shape bidirectional)
-    (at 177.8 86.36 180.0)
+    (at 210.82 71.12 180.0)
     (effects
       (font
         (size 1 1))
@@ -2491,15 +2497,15 @@
     (uuid "11076ff6-f8c6-50f6-ab0c-904a62995519"))
   (wire
     (pts
-      (xy 170.1800 88.9000)
-      (xy 177.8000 88.9000))
+      (xy 203.2000 73.6600)
+      (xy 210.8200 73.6600))
     (stroke
       (width 0)
       (type default))
     (uuid "3396b51d-80e3-563f-bbe0-36bf355c1536"))
   (global_label "EXP_3V3"
     (shape bidirectional)
-    (at 177.8 88.9 180.0)
+    (at 210.82 73.66 180.0)
     (effects
       (font
         (size 1 1))
@@ -2507,15 +2513,15 @@
     (uuid "a9578c33-a932-5fb6-bca7-069a73c0b591"))
   (wire
     (pts
-      (xy 243.8400 83.8200)
-      (xy 236.2200 83.8200))
+      (xy 276.8600 68.5800)
+      (xy 269.2400 68.5800))
     (stroke
       (width 0)
       (type default))
     (uuid "301c37d8-dc28-533f-9dfd-afb0642e1766"))
   (global_label "EXP_SCL"
     (shape bidirectional)
-    (at 236.22 83.82 0.0)
+    (at 269.24 68.58 0.0)
     (effects
       (font
         (size 1 1))
@@ -2523,15 +2529,15 @@
     (uuid "6736c2e3-112b-5415-8427-188c4a200bb8"))
   (wire
     (pts
-      (xy 243.8400 88.9000)
-      (xy 236.2200 88.9000))
+      (xy 276.8600 73.6600)
+      (xy 269.2400 73.6600))
     (stroke
       (width 0)
       (type default))
     (uuid "7ef006b0-ab59-5496-9a29-4d74499faa17"))
   (global_label "EXP_SDA"
     (shape bidirectional)
-    (at 236.22 88.9 0.0)
+    (at 269.24 73.66 0.0)
     (effects
       (font
         (size 1 1))
@@ -2539,28 +2545,28 @@
     (uuid "3bec1f7e-8d97-5630-92a4-8b6adbdf3af8"))
   (wire
     (pts
-      (xy 256.5400 99.0600)
-      (xy 256.5400 106.6800))
+      (xy 289.5600 83.8200)
+      (xy 289.5600 91.4400))
     (stroke
       (width 0)
       (type default))
     (uuid "303e15be-1d22-526e-905b-3256f6497081"))
   (symbol
     (lib_id "power:GND")
-    (at 256.54 106.68 0)
+    (at 289.56 91.44 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "730bb88c-6d33-5762-a972-53140d1d37b4")
     (property "Reference" "#PWR20090"
-      (at 256.54 106.68 0)
+      (at 289.56 91.44 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 256.54 111.76 0)
+      (at 289.56 96.52 0)
       (effects
         (font
           (size 1 1))))
@@ -2573,15 +2579,15 @@
           (unit 1)))))
   (wire
     (pts
-      (xy 269.2400 83.8200)
-      (xy 276.8600 83.8200))
+      (xy 302.2600 68.5800)
+      (xy 309.8800 68.5800))
     (stroke
       (width 0)
       (type default))
     (uuid "e4e39661-92c5-55d9-a36f-e9c46079cc31"))
   (global_label "EXP_SCK"
     (shape bidirectional)
-    (at 276.86 83.82 180.0)
+    (at 309.88 68.58 180.0)
     (effects
       (font
         (size 1 1))
@@ -2589,43 +2595,43 @@
     (uuid "f7cbd49d-efa3-5735-b8d3-698cb62c0b78"))
   (wire
     (pts
-      (xy 269.2400 88.9000)
-      (xy 276.8600 88.9000))
+      (xy 302.2600 73.6600)
+      (xy 309.8800 73.6600))
     (stroke
       (width 0)
       (type default))
     (uuid "ef9f8300-fe26-5111-8c88-c58141a297cc"))
   (global_label "EXP_MOSI"
     (shape bidirectional)
-    (at 276.86 88.9 180.0)
+    (at 309.88 73.66 180.0)
     (effects
       (font
         (size 1 1))
       (justify left))
     (uuid "334661c3-3c76-57a2-9bd0-4ef5c2ba4c40"))
   (no_connect
-    (at 269.24 93.98)
+    (at 302.26 78.74)
     (uuid "382e402a-d380-53b8-8dbb-b4bd3e0a522e"))
   (no_connect
-    (at 269.24 78.74)
+    (at 302.26 63.5)
     (uuid "115147cc-3f34-5c34-8fc6-170d09afb295"))
   (no_connect
-    (at 243.84 93.98)
+    (at 276.86 78.74)
     (uuid "6be6317f-77a2-5ebf-b421-803f4a6d8302"))
   (no_connect
-    (at 243.84 78.74)
+    (at 276.86 63.5)
     (uuid "5e3ec0e4-f8a5-55cd-8360-1efe4b80cdb0"))
   (wire
     (pts
-      (xy 345.4400 83.8200)
-      (xy 337.8200 83.8200))
+      (xy 363.2200 68.5800)
+      (xy 355.6000 68.5800))
     (stroke
       (width 0)
       (type default))
     (uuid "3e5832f3-7a86-5fb3-ade9-528af18ec39e"))
   (global_label "EXP_MISO"
     (shape bidirectional)
-    (at 337.82 83.82 0.0)
+    (at 355.6 68.58 0.0)
     (effects
       (font
         (size 1 1))
@@ -2633,15 +2639,15 @@
     (uuid "66fc0d6f-2ecc-5582-9997-0e067895d9fc"))
   (wire
     (pts
-      (xy 345.4400 88.9000)
-      (xy 337.8200 88.9000))
+      (xy 363.2200 73.6600)
+      (xy 355.6000 73.6600))
     (stroke
       (width 0)
       (type default))
     (uuid "31f0ddcb-378b-5b9c-b64a-4b9832bd6ebd"))
   (global_label "EXP_CS_PORT"
     (shape bidirectional)
-    (at 337.82 88.9 0.0)
+    (at 355.6 73.66 0.0)
     (effects
       (font
         (size 1 1))
@@ -2649,28 +2655,28 @@
     (uuid "0f56857b-7415-5c46-867c-7391cd953cd5"))
   (wire
     (pts
-      (xy 358.1400 99.0600)
-      (xy 358.1400 106.6800))
+      (xy 375.9200 83.8200)
+      (xy 375.9200 91.4400))
     (stroke
       (width 0)
       (type default))
     (uuid "dc5d605a-e108-5ba8-8455-42b45333c680"))
   (symbol
     (lib_id "power:GND")
-    (at 358.14 106.68 0)
+    (at 375.92 91.44 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "63d221a5-a358-58e5-a384-15448cfac43a")
     (property "Reference" "#PWR20105"
-      (at 358.14 106.68 0)
+      (at 375.92 91.44 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
     (property "Value" "GND"
-      (at 358.14 111.76 0)
+      (at 375.92 96.52 0)
       (effects
         (font
           (size 1 1))))
@@ -2683,32 +2689,32 @@
           (unit 1)))))
   (wire
     (pts
-      (xy 370.8400 83.8200)
-      (xy 378.4600 83.8200))
+      (xy 388.6200 68.5800)
+      (xy 396.2400 68.5800))
     (stroke
       (width 0)
       (type default))
     (uuid "fbb68e9b-e0ee-52f1-9483-de0fb589d87d"))
   (global_label "EXP_IRQ_PORT"
     (shape bidirectional)
-    (at 378.46 83.82 180.0)
+    (at 396.24 68.58 180.0)
     (effects
       (font
         (size 1 1))
       (justify left))
     (uuid "a635d99e-95b1-55c2-bb08-2538e8c74ef6"))
   (no_connect
-    (at 370.84 88.9)
+    (at 388.62 73.66)
     (uuid "4a80c5cb-2148-5d27-a79e-1d99b9352c25"))
   (no_connect
-    (at 370.84 93.98)
+    (at 388.62 78.74)
     (uuid "5db7d951-dac5-5549-b1b4-05a6752f254f"))
   (no_connect
-    (at 370.84 78.74)
+    (at 388.62 63.5)
     (uuid "c6b3b8e9-8078-567a-8785-6ef84be85e52"))
   (no_connect
-    (at 345.44 93.98)
+    (at 363.22 78.74)
     (uuid "011d97fd-c29a-5823-be64-56632c2ca4ad"))
   (no_connect
-    (at 345.44 78.74)
+    (at 363.22 63.5)
     (uuid "bf870d46-5455-5879-a56b-9d25142963d4")))

@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-28",
+  "date": "2026-10-05",
   "cad_contract": {
     "U1": {
       "2": "+3V3"
@@ -22,7 +22,7 @@
     },
     "U14": {
       "1": "+3V3",
-      "3": "+3V3",
+      "3": "EXP_PWR_EN",
       "6": "EXP_3V3"
     },
     "J26": {
@@ -32,6 +32,21 @@
     "U28": {
       "1": "+5V_RF",
       "5": "LCD_3V0"
+    },
+    "U33": {
+      "1": "EXP_PWR_EN",
+      "2": "EXP_FAULT_N",
+      "3": "EXP_IO_ARM",
+      "6": "MCU_EN",
+      "10": "+3V3"
+    },
+    "U34": {
+      "19": "EXP_IO_OE_N",
+      "20": "+3V3"
+    },
+    "U35": {
+      "12": "EXP_IO_OE_N",
+      "14": "+3V3"
     }
   },
   "sources": {
@@ -252,6 +267,22 @@
       "rail": "multiple rails",
       "qualified_peak_a": null,
       "needed_evidence": "Mode-specific peak/continuous/inrush profile and applicable voltage/temperature conditions; U30 and U31 B-side are on +3V3; separate U31 A-side load belongs to LCD_3V0 inventory."
+    },
+    {
+      "function": "Expansion control and signal isolation",
+      "refs": [
+        "U33",
+        "U34",
+        "U35",
+        "R42",
+        "R83",
+        "R84",
+        "R86",
+        "R87"
+      ],
+      "rail": "+3V3 and EXP_3V3 bleed",
+      "qualified_peak_a": null,
+      "needed_evidence": "Include bus-switch charge-pump supply current, controller/gate quiescent and dynamic current, enabled pull-down current, fault pull-up current and R87 bleed; qualify total peak and startup demand. See expansion-control-review.md."
     }
   ],
   "operating_mode_profiles_required": [

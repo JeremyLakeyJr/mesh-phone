@@ -1,5 +1,7 @@
 # Display and expansion power review — 2026-09-27
 
+The expansion topology in this earlier audit is superseded by the [power-control and isolation update](expansion-control-review.md). Current limits remain screening values, not qualified accessory demand.
+
 **Historical resistor update (superseded 2026-10-01):** R52–R55 now specify **Vishay CRCW0603150RFKEAHP**, 150 Ω ±1%, in the existing 0603 footprints. The schematic and PCB contain explicit MPN fields; the connectivity specification, placement table and `generated/backlight-resistor-bom.csv` agree. Resistance, nets, component placement and copper geometry are unchanged.
 
 The [current Vishay CRCW-HP e3 datasheet](https://www.vishay.com/docs/20043/crcwhpe3.pdf), revision 17-Mar-2026, specifies 0.33 W P70 for the 0603 part. It makes that rating conditional on permissible film temperature and assembly thermal performance. This replaces the previous 0.1 W specification; it is not a completed thermal qualification.

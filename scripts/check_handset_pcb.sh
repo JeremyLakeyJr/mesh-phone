@@ -9,6 +9,9 @@ python3 scripts/verify_handset_pcb.py
 python3 scripts/check_handset_modem_power.py
 python3 scripts/check_handset_system_power.py
 python3 scripts/check_handset_display_expansion.py
+if [[ -f "$project/expansion-update.json" ]]; then
+  python3 scripts/check_handset_expansion.py "$project"
+fi
 if [[ -f "$project/backlight-update.json" ]]; then
   python3 scripts/check_handset_backlight_routing.py "$project"
 fi
