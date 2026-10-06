@@ -1607,8 +1607,8 @@
   ],
   "source_copper_items": 4183,
   "preserved_copper_items": 4183,
-  "added_copper_items": 3677,
-  "net_copper_change": 3677,
+  "added_copper_items": 3763,
+  "net_copper_change": 3763,
   "fabrication_released": false,
   "removed_unused_escape_copper_ids": [],
   "routes_are_construction_history": true,
@@ -1629,6 +1629,7 @@
     "EXP_SW_IRQ": 1.876,
     "EXP_SW_MISO": 3.824,
     "EXP_SW_SDA": 4.149,
+    "GND": 16.331,
     "MCU_EN": 2.819
   },
   "filled_and_capped_via_in_pad_review_required": [
@@ -1661,6 +1662,5 @@
       ]
     }
   ],
-  "final_board_sha256": "ef24884f9bbbf846761f11c99117c0794c9cc0a6a264afae7c1fddc37c48a6f0",
-  "ground_revision": "expansion-ground-update.json"
+  "final_board_sha256": "a952add783fb0230f4e51548cd235f076bede00a42b10318a01737b7678297bf"
 }

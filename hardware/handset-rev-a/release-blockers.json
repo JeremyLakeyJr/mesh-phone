@@ -115,7 +115,7 @@
       "U35"
     ],
     "required": "Finish GNSS RF feed/decoupling and antenna coexistence. Qualify expansion load/inrush, current limit, discharge, isolation leakage, shared-bus timing, MCU_EN reset, brief-fault reconnection and stuck-I2C recovery. Integrate the portable controller into target firmware. Power-off module exchange only.",
-    "completed": "Expansion enable, polled fault input and hardware signal interlock captured and routed: 31 physical net groups, six topology/copper regression tests and portable controller failure tests pass. All 4183 prior copper items preserved. Target integration and electrical/ESD/layout qualification remain open; see expansion-control-review.md."
+    "completed": "Expansion enable, polled fault input and hardware signal interlock captured and routed: 31 physical net groups, six topology/copper regression tests and portable controller failure tests pass. All 4183 prior copper items preserved. Target integration and electrical/ESD/layout qualification remain open; see expansion-control-review.md. Local inner-layer ground pours and a U16 ground bridge replace 36.237 mm of ground detours; two ground-return tests pass. Remaining ESD path/plane qualification is open."
   },
   {
     "id": "usb-connector",

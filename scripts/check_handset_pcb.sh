@@ -12,6 +12,9 @@ python3 scripts/check_handset_display_expansion.py
 if [[ -f "$project/expansion-update.json" ]]; then
   python3 scripts/check_handset_expansion.py "$project"
 fi
+if [[ -f "$project/expansion-ground-update.json" ]]; then
+  python3 scripts/test_handset_expansion_ground.py "$project"
+fi
 if [[ -f "$project/backlight-update.json" ]]; then
   python3 scripts/check_handset_backlight_routing.py "$project"
 fi
@@ -67,5 +70,10 @@ kicad-cli pcb export svg "$project/handset.kicad_pcb" --mode-single --layers F.C
 kicad-cli pcb export svg "$project/handset.kicad_pcb" --mode-single --layers B.Cu,B.SilkS,Edge.Cuts,User.1 --page-size-mode 2 -o "$project/previews/board-back.svg"
 kicad-cli pcb export svg "$project/handset.kicad_pcb" --mode-single --layers F.Fab,Edge.Cuts --page-size-mode 2 -o "$project/previews/assembly-front.svg"
 kicad-cli pcb export svg "$project/handset.kicad_pcb" --mode-single --layers B.Fab,Edge.Cuts --page-size-mode 2 -o "$project/previews/assembly-back.svg"
+if [[ -f "$project/expansion-ground-update.json" ]]; then
+  for layer in In1 In2; do
+    kicad-cli pcb export svg "$project/handset.kicad_pcb" --mode-single --layers "$layer.Cu,Edge.Cuts" --page-size-mode 2 -o "$project/previews/expansion-ground-$layer.svg"
+  done
+fi
 # Native ERC/DRC findings are retained in JSON; this script tests artifact integrity.
 # It does not suppress errors or declare the design electrically released.

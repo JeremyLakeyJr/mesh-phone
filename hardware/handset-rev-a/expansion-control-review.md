@@ -4,6 +4,41 @@ The expansion update replaces U14's permanently enabled supply and direct
 host signal connections with separately controlled power and signal isolation.
 This is an engineering implementation, not fabrication or power-up approval.
 
+## Ground-return revision — 2026-10-05
+
+Local GND pours on In1.Cu and In2.Cu fill previously uncovered areas above
+the trackball cutout. Their outlines subtract existing pours, preserving
+existing zone geometry and avoiding isolated overlap fragments. Ninety
+expansion-added inner-layer ground segments (36.237 mm total) are removed.
+Four short B.Cu ground segments (3.985 mm total) reinforce the ESD escapes
+and directly join U16 ground pads 3/8. Three segments are 0.30 mm wide; the
+U16.3 escape is 0.18 mm to retain clearance from the IRQ via.
+
+All signal routing, all footprint positions and 7,856 retained copper items
+are unchanged, including all 4,183 pre-expansion copper items. The final board
+has 7,860 copper items. The previous board and reports are in
+[`archive/handset-before-expansion-ground/a952add783fb`](../../archive/handset-before-expansion-ground/a952add783fb).
+The current geometry/hash and removed segment IDs are recorded in
+[generated/expansion-ground-update.json](generated/expansion-ground-update.json).
+
+The [In1 ground preview](generated/previews/expansion-ground-In1.svg) and
+[In2 ground preview](generated/previews/expansion-ground-In2.svg) show the
+updated fill and remaining signal clearances.
+
+Both ground-return tests and all six expansion regression tests pass. Removing
+the new pours in a test copy breaks ESD ground continuity, demonstrating that
+the new return does not rely on the removed detours. All previous copper checks
+pass. Native DRC retains only the four USB1 hole-clearance findings, with 285
+unconnected items and zero schematic parity findings.
+
+This is a geometric/DC improvement, not ESD qualification. TI recommends
+short, low-impedance ground returns and protection close to the connector
+([TPD4E05U06 datasheet, layout section](https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf)).
+U15 connector distance, remaining signal-created plane slots, current
+spreading and transient clamping still require review and measurement. No
+new vias are added; the existing J16.8/U14.1/U14.6/U16.1 filled-and-capped
+via-in-pad requirements remain open with the assembler.
+
 ## Circuit and evidence
 
 U33, TCA9537DGSR, shares the host I2C bus at fixed 7-bit address 0x49.
@@ -112,10 +147,11 @@ enclosed areas. Their measured lengths are recorded in the routing manifest. Gro
 fill clears these traces; physical ground continuity and high-frequency return
 quality are different checks. The latter remains an independent layout review.
 
-The new ESD ground connections include long, narrow paths (one construction
-route is about 53 mm). DC continuity does not establish effective surge
-return impedance. ESD protection is not qualified; these paths and the
-inner-plane slots require redesign or measured justification before release.
+The initial routing included a roughly 53 mm ESD ground construction route.
+The ground-return revision above removes its inner-layer detours and adds
+local pours and a direct U16 ground bridge. DC continuity still does not
+establish effective surge return impedance; ESD protection and remaining
+plane slots require independent qualification before release.
 
 The full `scripts/check_handset_pcb.sh` check passes and regenerates the
 schematic PDF and board/assembly previews. System-power and display/expansion
