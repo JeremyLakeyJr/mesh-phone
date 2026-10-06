@@ -19,7 +19,7 @@ Display with capacitive touch,EastRising ER-TFT024IPS-3 CTP option,ER-TFT024IPS-
 Trackball module,Pimoroni trackball breakout,PIM447,25x22x11mm,YES,Recess through the main-PCB cutout and retain serviceable module connection
 microSD socket,Hirose push-pull microSD,DM3D-SF,1.55mm high,POPULATED J23,Manufacturer contact map and KiCad footprint; confirm card insertion access in enclosure
 nano-SIM socket,JAE push-push nano-SIM,SF72S006,11.2x14.3x1.25mm,YES,Route only to the selected modem SIM supply/interface
-USB-C receptacle,GCT USB4105,USB4105,7.35mm body / 3.31mm profile,YES,Include USB2 D+/D- CC resistors ESD and protected VBUS input
+USB-C receptacle,GCT USB4105,USB4105,7.35mm body / 3.31mm profile,YES,USB4105_GroundCornerRelief footprint; assembler DFM and ordering suffix remain open; finish USB2 data routing and qualification
 IR transmitter,Vishay case-mounted IR LED and AOS driver,TSAL6400 + AO3400A,5mm LED off-board and SOT-23 driver,DRIVER AND J24 POPULATED,Confirm optical range and enclosure alignment; 47 ohm series resistor
 IR receiver,Vishay case-mounted 38kHz receiver,TSOP38438,5x6.95x4.8mm off-board,J25 INTERFACE POPULATED,GPIO3 receives directly; validate protocol and boot behavior
 Battery,MakerFocus protected 3000mAh LiPo,MakerFocus 3000mAh protected pouch,65x36x10mm nominal +/-2mm,YES,Verify the exact purchased pack connector polarity protection-board current and measured dimensions

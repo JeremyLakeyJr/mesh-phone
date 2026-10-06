@@ -1,0 +1,169 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "USB4105 retained",
+      "passed": true
+    },
+    {
+      "check": "custom footprint selected",
+      "passed": true
+    },
+    {
+      "check": "placement unchanged",
+      "passed": true
+    },
+    {
+      "check": "two 0.65 mm locating holes",
+      "passed": true
+    },
+    {
+      "check": "locating holes stay at drawing coordinates",
+      "passed": true
+    },
+    {
+      "check": "all four named ground pads present",
+      "passed": true
+    },
+    {
+      "check": "A1 ground",
+      "passed": true
+    },
+    {
+      "check": "A1 unchanged envelope",
+      "passed": true
+    },
+    {
+      "check": "A1 unchanged position",
+      "passed": true
+    },
+    {
+      "check": "A1 hole clearance >= 0.25 mm",
+      "passed": true
+    },
+    {
+      "check": "A1 retained solder core (-0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "A1 retained solder core (0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "A1 retained solder core (0.225, 0.275)",
+      "passed": true
+    },
+    {
+      "check": "A1 retained solder core (-0.225, 0.275)",
+      "passed": true
+    },
+    {
+      "check": "A12 ground",
+      "passed": true
+    },
+    {
+      "check": "A12 unchanged envelope",
+      "passed": true
+    },
+    {
+      "check": "A12 unchanged position",
+      "passed": true
+    },
+    {
+      "check": "A12 hole clearance >= 0.25 mm",
+      "passed": true
+    },
+    {
+      "check": "A12 retained solder core (-0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "A12 retained solder core (0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "A12 retained solder core (0.225, 0.275)",
+      "passed": true
+    },
+    {
+      "check": "A12 retained solder core (-0.225, 0.275)",
+      "passed": true
+    },
+    {
+      "check": "B1 ground",
+      "passed": true
+    },
+    {
+      "check": "B1 unchanged envelope",
+      "passed": true
+    },
+    {
+      "check": "B1 unchanged position",
+      "passed": true
+    },
+    {
+      "check": "B1 hole clearance >= 0.25 mm",
+      "passed": true
+    },
+    {
+      "check": "B1 retained solder core (-0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "B1 retained solder core (0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "B1 retained solder core (0.225, 0.275)",
+      "passed": true
+    },
+    {
+      "check": "B1 retained solder core (-0.225, 0.275)",
+      "passed": true
+    },
+    {
+      "check": "B12 ground",
+      "passed": true
+    },
+    {
+      "check": "B12 unchanged envelope",
+      "passed": true
+    },
+    {
+      "check": "B12 unchanged position",
+      "passed": true
+    },
+    {
+      "check": "B12 hole clearance >= 0.25 mm",
+      "passed": true
+    },
+    {
+      "check": "B12 retained solder core (-0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "B12 retained solder core (0.225, -0.475)",
+      "passed": true
+    },
+    {
+      "check": "B12 retained solder core (0.225, 0.275)",
+      "passed": true
+    },
+    {
+      "check": "B12 retained solder core (-0.225, 0.275)",
+      "passed": true
+    }
+  ],
+  "ground_to_hole_clearance_mm": {
+    "A1": 0.263302,
+    "A12": 0.263302,
+    "B1": 0.263302,
+    "B12": 0.263302
+  },
+  "retained_solder_core_mm": [
+    0.45,
+    0.75
+  ],
+  "scope": "Nominal CAD geometry; modified contour requires assembler DFM/solder-joint review",
+  "fabrication_released": false
+}

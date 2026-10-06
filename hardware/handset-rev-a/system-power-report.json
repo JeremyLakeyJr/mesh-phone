@@ -644,8 +644,8 @@
   "fabrication_released": false,
   "input_sha256": {
     "system-power-inputs.json": "64271528d7be71c45949dbd720e20caece698208ec50e66e15a0207b80fa8762",
-    "generated/netlist.xml": "9df563bc016c8693cdf10e607475bb5b30ad26506bb12a79a57493f568ff70ed",
-    "generated/connectivity.json": "5e22ca1407ae3d09ca4f7be771f197144991c2ed79febe6edde9802a4b5605a2",
+    "generated/netlist.xml": "7a2ef15eea8bb22fe6a7efff66a62a5e006f9b875e909f645b2c5854b2b03450",
+    "generated/connectivity.json": "ee63ba1d53de1a59af3dd63889867a05eac140bec62bed66f9f93dc41b1b675a",
     "charger-policy.json": "6af0fdc61a946b67e9c8ed9f99db0ccbfab4c120ae3f87bbed32501f0e419baa",
     "battery-upgrade-requirements.json": "d31f49edf0624f78d942495ca4f6d9435e388a97696a09f0be63f10a37731ac8",
     "battery-qualification.json": "6da41ab8446575574853bfda2ff0e4855448482ada4bb79ebd91d133f5c2f5f0"

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/lakey/Documents/mesh-phone/hardware/handset-rev-a/generated/handset.kicad_sch</source>
-    <date>2026-10-05T18:59:27</date>
+    <date>2026-10-06T06:56:20</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1256,9 +1256,9 @@
     </comp>
     <comp ref="USB1">
       <value>USB4105</value>
-      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <footprint>Handset:USB4105_GroundCornerRelief</footprint>
       <fields>
-        <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Footprint">Handset:USB4105_GroundCornerRelief</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>

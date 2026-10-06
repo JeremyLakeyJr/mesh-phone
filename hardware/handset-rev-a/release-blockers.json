@@ -124,8 +124,8 @@
       "USB1",
       "U17"
     ],
-    "required": "Resolve four internal USB connector hole-clearance findings against GCT drawing and fabricator process. Finish controlled-impedance USB routing; qualify protection/ESD and source-current behavior.",
-    "completed": "Fused VBUS, TVS, eFuse and Type-C source detection local copper installed; USB data excluded from power continuity check."
+    "required": "Complete controlled-impedance USB data routing and qualify protection/ESD and source-current behavior. Obtain assembler DFM/solder-joint approval of the USB4105 ground-corner relief and freeze the exact ordering suffix/connector fit.",
+    "completed": "Four locating-hole clearance findings eliminated without changing hole geometry, connector placement, any routed copper or board rules. Ground land nominal clearance is 0.263302 mm versus the retained 0.25 mm rule; native DRC and parity both zero. Four footprint regression tests and 118 power-entry pad checks pass; see usb-connector-review.md."
   },
   {
     "id": "layout-assembly-fit",
@@ -145,6 +145,6 @@
       "complete handset"
     ],
     "required": "Clear native ERC/DRC/parity without blanket waivers and obtain independent circuit/footprint review. Bring up on a current-limited supply and test every feature before any fabrication release for production.",
-    "completed": "259 components; 2525 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC four USB1 hole-clearance findings; 285 unconnected items. Expansion, backlight, display and previous power continuity pass. See expansion-control-review.md. No fabrication release."
+    "completed": "259 components; 2525 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC zero findings; 285 unconnected items. Expansion, backlight, display and previous power continuity pass. See usb-connector-review.md. No fabrication release."
   }
 ]

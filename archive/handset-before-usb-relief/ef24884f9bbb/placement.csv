@@ -36,7 +36,7 @@ R7,4.7k,Resistor_SMD:R_0402_1005Metric,111.5,66,B,0,power
 C5,2.2uF 25V X7R,Capacitor_SMD:C_0805_2012Metric,124,58,B,90,power
 C6,10uF 25V X5R,Capacitor_SMD:C_0805_2012Metric,124,63.5,B,0,power
 C7,4.7uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,118.8,64.5,B,0,power
-USB1,USB4105,Handset:USB4105_GroundCornerRelief,130,56,F,90,usb
+USB1,USB4105,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,130,56,F,90,usb
 R8,100k,Resistor_SMD:R_0402_1005Metric,119,61.8,F,0,usb-detect
 R9,887k 1%,Resistor_SMD:R_0402_1005Metric,124,59,F,0,usb-detect
 U4,SX1262IMLTRT,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,113,36,B,0,radios

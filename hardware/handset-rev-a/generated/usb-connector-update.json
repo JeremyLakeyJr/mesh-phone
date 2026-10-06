@@ -1,0 +1,22 @@
+{
+  "source_board_sha256": "ef24884f9bbbf846761f11c99117c0794c9cc0a6a264afae7c1fddc37c48a6f0",
+  "final_board_sha256": "2cb4ad59cd64d3ea649b1848fa661a79f0ff696556afa9bc8682640a0ef0308e",
+  "changed_refs": [
+    "USB1"
+  ],
+  "changed_pads": [
+    "A1",
+    "B12",
+    "A12",
+    "B1"
+  ],
+  "chamfer_mm": 0.3,
+  "preserved_copper_items": 7860,
+  "hole_dimensions_and_positions_preserved": true,
+  "board_rules_preserved": true,
+  "fabrication_released": false,
+  "source_drawing": "https://gct.co/files/drawings/usb4105.pdf",
+  "drawing_revision": "B4 2023-12-18",
+  "contour_status": "Engineered corner relief; remaining land and solder joint require assembler DFM review",
+  "source_project_sha256": "ed5d97cd1c6c8d2a038b94a9064da3c541fe97b4dda1dd835b88b0139d84d265"
+}

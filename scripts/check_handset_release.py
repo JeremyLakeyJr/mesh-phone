@@ -40,6 +40,11 @@ if (out/'expansion-update.json').exists():
     check_circuit(out)
     expansion=check_expansion(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['expansion_routing_failures']=[g['net'] for g in expansion['groups'] if not g['passed']]+expansion['pin_contract_failures']
+if (out/'usb-connector-update.json').exists():
+    import pcbnew as pcb
+    from check_handset_usb_connector import inspect as check_usb
+    usb=check_usb(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
+    issues['usb_footprint_failures']=[c['check'] for c in usb['checks'] if not c['passed']]
 blocked=any(issues.values())
 print(json.dumps({'status':'DO NOT FABRICATE' if blocked else 'Checks clear; independent release review required',**issues},indent=2))
 sys.exit(1 if blocked else 0)
