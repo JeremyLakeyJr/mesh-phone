@@ -76,8 +76,8 @@
       "1": "+3V3",
       "2": "MCU_BOOT"
     },
-    "x": 98.8,
-    "y": 63.3,
+    "x": 98,
+    "y": 62,
     "side": "B",
     "angle": 0,
     "sheet": "core",
@@ -204,9 +204,9 @@
       "1": "+3V3",
       "2": "GND"
     },
-    "x": 123.5,
-    "y": 117.6,
-    "side": "B",
+    "x": 128,
+    "y": 119,
+    "side": "F",
     "angle": 0,
     "sheet": "keys",
     "footprint": "Capacitor_SMD:C_0402_1005Metric"

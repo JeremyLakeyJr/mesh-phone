@@ -1,14 +1,14 @@
 ref,value,footprint,x,y,side,angle,sheet
 U1,ESP32-S3-WROOM-1-N16R8,Handset:ESP32-S3-WROOM-1_0.3mm_ThermalDrills,82,58,B,270,core
 R1,10k,Resistor_SMD:R_0402_1005Metric,98,59,B,0,core
-R2,10k,Resistor_SMD:R_0402_1005Metric,98.8,63.3,B,0,core
+R2,10k,Resistor_SMD:R_0402_1005Metric,98,62,B,0,core
 C1,1uF,Capacitor_SMD:C_0402_1005Metric,98,65,B,0,core
 C2,10uF,Capacitor_SMD:C_0805_2012Metric,86,72,B,0,core
 C3,100nF,Capacitor_SMD:C_0402_1005Metric,98,68,B,0,core
 SW17,MCU_BOOT,Button_Switch_SMD:SW_SPST_TL3342,78,166,F,0,core
 SW18,MCU_EN,Button_Switch_SMD:SW_SPST_TL3342,87,166,F,0,core
 U2,TCA8418RTWR,Package_DFN_QFN:Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,123,119,F,0,keys
-C4,100nF,Capacitor_SMD:C_0402_1005Metric,123.5,117.6,B,0,keys
+C4,100nF,Capacitor_SMD:C_0402_1005Metric,128,119,F,0,keys
 R3,4.7k,Resistor_SMD:R_0402_1005Metric,119,115,F,0,keys
 R4,4.7k,Resistor_SMD:R_0402_1005Metric,122,115,F,0,keys
 R5,10k,Resistor_SMD:R_0402_1005Metric,125,115,F,0,keys

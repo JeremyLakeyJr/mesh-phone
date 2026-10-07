@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "+3V3",
+      "physical_pads": 9,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "check": "GND",
+      "physical_pads": 9,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "check": "MCU_EN",
+      "physical_pads": 7,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "check": "MCU_BOOT",
+      "physical_pads": 4,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "check": "I2C_SCL",
+      "physical_pads": 4,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "check": "I2C_SDA",
+      "physical_pads": 4,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "check": "KEY_IRQ",
+      "physical_pads": 3,
+      "disconnected": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "check": "R1 value",
+      "actual": "10k",
+      "expected": "10k",
+      "passed": true
+    },
+    {
+      "check": "R2 value",
+      "actual": "10k",
+      "expected": "10k",
+      "passed": true
+    },
+    {
+      "check": "R5 value",
+      "actual": "10k",
+      "expected": "10k",
+      "passed": true
+    },
+    {
+      "check": "R3 value",
+      "actual": "4.7k",
+      "expected": "4.7k",
+      "passed": true
+    },
+    {
+      "check": "R4 value",
+      "actual": "4.7k",
+      "expected": "4.7k",
+      "passed": true
+    },
+    {
+      "check": "C1 value",
+      "actual": "1uF",
+      "expected": "1uF",
+      "passed": true
+    },
+    {
+      "check": "C4 value",
+      "actual": "100nF",
+      "expected": "100nF",
+      "passed": true
+    },
+    {
+      "check": "C4 local bypass placement",
+      "distance_mm": 0.608,
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "Copper continuity and component intent; power-up timing, button noise immunity, firmware and full-board routing remain unqualified."
+}

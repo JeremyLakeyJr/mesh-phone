@@ -1,0 +1,159 @@
+{
+  "reworked_copper": [
+    {
+      "uuid": "5eec6d30-c980-42dd-9bda-4df89736249b",
+      "net": "KEY_COL3",
+      "start": [
+        122.5,
+        112.9
+      ],
+      "end": [
+        122.5,
+        157.9
+      ],
+      "layer": 6,
+      "width": 0.2
+    }
+  ],
+  "source_board_sha256": "b9ee8244a88f47a139a3823ee170d2c7bc693cf995e72c34e48b48d5f0ec7e94",
+  "final_board_sha256": "24e35cd12f1f5855102194c76c0772188eaeb077c84a71e4f464ed15bc7a2365",
+  "preserved_copper_items": 7946,
+  "added_copper_items": 799,
+  "moved_refs": {
+    "R2": {
+      "from_mm": [
+        98,
+        62
+      ],
+      "to_mm": [
+        98.8,
+        63.3
+      ],
+      "reason": "Unrouted boot pull-up moved into a clear escape corridor"
+    },
+    "C4": {
+      "from_mm": [
+        128,
+        119
+      ],
+      "to_mm": [
+        123.5,
+        117.6
+      ],
+      "to_side": "B",
+      "reason": "Place the unrouted local bypass beside the TCA8418 supply pad"
+    }
+  },
+  "routes": [
+    {
+      "start": "U2.23",
+      "end": "R3.2",
+      "net": "I2C_SCL",
+      "width_mm": 0.15,
+      "trace_length_mm": 3.729,
+      "layer_transitions": 2
+    },
+    {
+      "start": "U2.22",
+      "end": "R4.2",
+      "net": "I2C_SDA",
+      "width_mm": 0.15,
+      "trace_length_mm": 4.429,
+      "layer_transitions": 2
+    },
+    {
+      "start": "U2.24",
+      "end": "R5.2",
+      "net": "KEY_IRQ",
+      "width_mm": 0.15,
+      "trace_length_mm": 6.652,
+      "layer_transitions": 1
+    },
+    {
+      "start": "U2.20",
+      "end": "U33.6",
+      "net": "MCU_EN",
+      "width_mm": 0.15,
+      "trace_length_mm": 71.439,
+      "layer_transitions": 6
+    },
+    {
+      "start": "U2.21",
+      "end": "C4.1",
+      "net": "+3V3",
+      "width_mm": 0.2,
+      "trace_length_mm": 1.927,
+      "layer_transitions": 0
+    },
+    {
+      "start": "C4.2",
+      "end": "U2.19",
+      "net": "GND",
+      "width_mm": 0.2,
+      "trace_length_mm": 13.956,
+      "layer_transitions": 2
+    },
+    {
+      "start": "R5.1",
+      "end": "C4.1",
+      "net": "+3V3",
+      "width_mm": 0.2,
+      "trace_length_mm": 3.753,
+      "layer_transitions": 1
+    },
+    {
+      "start": "R4.1",
+      "end": "R5.1",
+      "net": "+3V3",
+      "width_mm": 0.2,
+      "trace_length_mm": 13.964,
+      "layer_transitions": 1
+    },
+    {
+      "start": "R1.1",
+      "end": "R2.1",
+      "net": "+3V3",
+      "width_mm": 0.2,
+      "trace_length_mm": 3.546,
+      "layer_transitions": 2
+    },
+    {
+      "start": "U1.27",
+      "end": "R2.2",
+      "net": "MCU_BOOT",
+      "width_mm": 0.15,
+      "trace_length_mm": 19.699,
+      "layer_transitions": 2
+    },
+    {
+      "start": "U1.12",
+      "end": "R5.2",
+      "net": "KEY_IRQ",
+      "width_mm": 0.15,
+      "trace_length_mm": 106.197,
+      "layer_transitions": 4
+    },
+    {
+      "start": "U33.6",
+      "end": "SW18.1",
+      "net": "MCU_EN",
+      "width_mm": 0.15,
+      "trace_length_mm": 80.136,
+      "layer_transitions": 9
+    },
+    {
+      "start": "U1.27",
+      "end": "SW17.1",
+      "net": "MCU_BOOT",
+      "width_mm": 0.15,
+      "trace_length_mm": 130.53,
+      "layer_transitions": 7
+    }
+  ],
+  "reference_pours": [
+    "In1.Cu",
+    "In2.Cu"
+  ],
+  "fabrication_released": false,
+  "preserved_pad_groups": 642
+}

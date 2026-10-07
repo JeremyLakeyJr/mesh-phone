@@ -89,7 +89,7 @@
       "C90"
     ],
     "required": "Validate SPI sharing, scanner GPIO controls, display/CTP purchase configuration, panel supply limits, IR boot behavior, storage, keypad and audio firmware. Qualify CAT4004A absolute current, exposed-pad thermal performance, LED faults and U2 default-off/on sequencing; pulse-counted dimming requires separate timing qualification.",
-    "completed": "CAT4004A backlight current driver installed and routed; nine groups / 26 endpoints and seven regression tests pass. Existing display continuity retained; no new native ERC/DRC findings. See backlight-routing-review.md."
+    "completed": "CAT4004A backlight current driver installed and routed; nine groups / 26 endpoints and seven regression tests pass. Existing display continuity retained; no new native ERC/DRC findings. See backlight-routing-review.md. ESP32 boot/reset controls and U2 supply, ground, reset, I2C and interrupt copper now pass seven net-group checks and eight regression cases. See core-bringup-review.md; keypad matrix and control firmware remain incomplete."
   },
   {
     "id": "passive-bom",
@@ -147,6 +147,6 @@
       "complete handset"
     ],
     "required": "Clear native ERC/DRC/parity without blanket waivers and obtain independent circuit/footprint review. Bring up on a current-limited supply and test every feature before any fabrication release for production.",
-    "completed": "261 components; 2537 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC zero findings; 279 unconnected items. USB data, expansion, backlight, display and previous power continuity pass. See usb-data-routing-review.md. No fabrication release."
+    "completed": "261 components; 2537 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC zero findings; 258 unconnected items. Core boot/reset and U2, USB data, expansion, backlight, display and previous power continuity pass. See core-bringup-review.md and usb-data-routing-review.md. No fabrication release."
   }
 ]

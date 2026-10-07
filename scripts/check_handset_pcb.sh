@@ -13,6 +13,10 @@ if [[ -f "$project/usb-data-update.json" ]]; then
   python3 scripts/check_handset_usb_data.py "$project"
   python3 scripts/test_handset_usb_data.py "$project"
 fi
+if [[ -f "$project/core-routing.json" ]]; then
+  python3 scripts/check_handset_core.py "$project"
+  python3 scripts/test_handset_core.py "$project"
+fi
 python3 scripts/check_handset_modem_power.py
 python3 scripts/check_handset_system_power.py
 python3 scripts/check_handset_display_expansion.py

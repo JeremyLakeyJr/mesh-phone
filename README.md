@@ -65,12 +65,13 @@ Checkpoint: **2026-10-07**. Checked items mean the stated design-file work is
 complete, not that the hardware has passed bench testing. Current status:
 **261 schematic components, 2,537 passing integrity checks, zero schematic/PCB
 parity findings, 30 ERC findings, zero DRC findings, and
-279 unconnected items.** Eleven engineering blocker groups remain open.
+258 unconnected items.** Eleven engineering blocker groups remain open.
 The detailed source of truth is
 [release-blockers.json](hardware/handset-rev-a/release-blockers.json).
 
 ### Completed design work
 
+- [x] Route ESP32 boot/reset service controls and U2 power, reset, I²C and interrupt connections; eight regression cases pass with zero DRC/parity findings. [Evidence and remaining bring-up work](hardware/handset-rev-a/core-bringup-review.md).
 - [x] Organize hardware, mechanical designs, research, reviews and archived checkpoints.
 - [x] Create the four-layer handset PCB and rebuild the schematic as a system index plus 24 functional sheets.
 - [x] Retain ESP32-S3-WROOM-1-N16R8 and preserve interfaces for the external display, keypad, trackball, cellular adapter, radios, GNSS, NFC/LF RFID, storage, IR, audio and expansion.
@@ -128,7 +129,7 @@ before final routing and manufacturing exports.
 - [ ] **BOM and footprints:** freeze all orderable parts with tolerance, voltage, power, dielectric, temperature and lifecycle requirements. Independently audit every custom symbol pin map, package, exposed pad, paste pattern, orientation and connector mating direction. Define DNP options and approved substitutions.
 - [ ] **Mechanical fit:** reconcile the PCB with the pocketable case, actual battery, external screen/FPC, trackball opening and retention, top speaker, bottom microphone, antennas, mounting hardware and external module port. Check populated heights, cable bends and moved power-switch access using a full assembly model and fit prototype.
 - [ ] **Fabricator rules:** confirm the proposed JLC04161H-7628 four-layer stackup, copper weights, impedance targets, drill/via limits, solder-mask rules and ESP32 and expansion J16.8/U14.1/U14.6/U16.1 via-in-pad filling/capping requirements with the chosen fabricator. Resolve RF reference via sizes against those capabilities.
-- [ ] **Complete PCB routing:** connect all 279 currently unconnected items; finish return planes, ground stitching, thermal paths and supply distribution. Review switching loops, RF/USB impedance, antenna keepouts and analog/digital interference. Recheck clearances after all placement changes.
+- [ ] **Complete PCB routing:** connect all 258 currently unconnected items; finish return planes, ground stitching, thermal paths and supply distribution. Review switching loops, RF/USB impedance, antenna keepouts and analog/digital interference. Recheck clearances after all placement changes.
 - [ ] **Independent electrical review:** check every pin and power state against manufacturer documents, including boot straps, pull resistors, power sequencing, unpowered interfaces and test access. Close each blocker with evidence rather than marking an incomplete subsystem complete.
 - [ ] **Final native checks:** regenerate netlist/ERC/DRC from the exact release revision; resolve the 30 current ERC findings and all airwires; retain zero DRC findings. Require zero parity errors and passing circuit/continuity checks. Any genuinely intentional rule exception needs a documented engineering justification, not a blanket waiver.
 - [ ] **Prototype manufacturing package:** export and inspect Gerbers, plated/non-plated drill files, fabrication drawing/stackup, assembly drawings, full MPN BOM, DNP list and pick-and-place files. Verify units, origin, bottom-side rotation, pin 1, polarity and layer alignment in an independent viewer; obtain fabricator/assembler DFM feedback.
