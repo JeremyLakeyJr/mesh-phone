@@ -17,6 +17,11 @@ if [[ -f "$project/core-routing.json" ]]; then
   python3 scripts/check_handset_core.py "$project"
   python3 scripts/test_handset_core.py "$project"
 fi
+if [[ -f "$project/keypad-routing.json" ]]; then
+  python3 scripts/check_handset_keypad.py "$project"
+  python3 scripts/test_handset_keypad.py "$project"
+  python3 scripts/check_handset_keypad_firmware.py
+fi
 python3 scripts/check_handset_modem_power.py
 python3 scripts/check_handset_system_power.py
 python3 scripts/check_handset_display_expansion.py

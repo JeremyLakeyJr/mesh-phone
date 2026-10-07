@@ -2,6 +2,10 @@
 
 2026-10-07. **Engineering checkpoint; not released for fabrication or power-up.**
 
+Follow-up: the matrix connections are completed in the
+[keypad routing checkpoint](keypad-routing-review.md); target firmware and bench
+qualification remain open.
+
 The ESP32 boot pull-up and both service buttons now have copper connections.
 U2 (TCA8418) has 3.3 V, exposed-pad/pin ground, shared MCU reset, SDA, SCL and
 an interrupt connection to the ESP32. R5 supplies the interrupt pull-up.

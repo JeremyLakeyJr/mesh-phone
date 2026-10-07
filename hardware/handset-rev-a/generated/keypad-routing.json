@@ -1,0 +1,192 @@
+{
+  "source_board_sha256": "24e35cd12f1f5855102194c76c0772188eaeb077c84a71e4f464ed15bc7a2365",
+  "final_board_sha256": "a31246005c3d5d6aa29dfd59e4b5d697aa794ebdab3368404171c9db5001cd33",
+  "preserved_copper_items": 8745,
+  "added_copper_items": 330,
+  "fanouts": {
+    "5": [
+      [
+        121.0375,
+        119.75
+      ],
+      [
+        119.8,
+        119.75
+      ]
+    ],
+    "6": [
+      [
+        121.0375,
+        120.25
+      ],
+      [
+        120.05,
+        120.25
+      ],
+      [
+        119.8,
+        120.5
+      ]
+    ],
+    "7": [
+      [
+        121.75,
+        120.9625
+      ],
+      [
+        120.5,
+        120.9625
+      ],
+      [
+        119.7,
+        121.7
+      ]
+    ],
+    "8": [
+      [
+        122.25,
+        120.9625
+      ],
+      [
+        122.25,
+        121.4
+      ],
+      [
+        122.65,
+        121.8
+      ],
+      [
+        122.65,
+        122.8
+      ],
+      [
+        121.75,
+        123.2
+      ]
+    ],
+    "9": [
+      [
+        122.75,
+        120.9625
+      ],
+      [
+        122.75,
+        121.4
+      ],
+      [
+        123.05,
+        121.7
+      ],
+      [
+        123.05,
+        122.35
+      ],
+      [
+        123.25,
+        122.55
+      ]
+    ],
+    "10": [
+      [
+        123.25,
+        120.9625
+      ],
+      [
+        123.25,
+        121.4
+      ],
+      [
+        123.6,
+        121.85
+      ]
+    ],
+    "11": [
+      [
+        123.75,
+        120.9625
+      ],
+      [
+        123.75,
+        121.3
+      ],
+      [
+        124.3,
+        121.9
+      ]
+    ],
+    "12": [
+      [
+        124.25,
+        120.9625
+      ],
+      [
+        124.25,
+        121.1
+      ],
+      [
+        125.0,
+        121.85
+      ]
+    ]
+  },
+  "routes": [
+    {
+      "pin": 5,
+      "net": "KEY_ROW3",
+      "switch": 16,
+      "trace_length_mm": 43.677,
+      "layer_transitions": 5
+    },
+    {
+      "pin": 6,
+      "net": "KEY_ROW2",
+      "switch": 12,
+      "trace_length_mm": 21.123,
+      "layer_transitions": 3
+    },
+    {
+      "pin": 7,
+      "net": "KEY_ROW1",
+      "switch": 8,
+      "trace_length_mm": 2.545,
+      "layer_transitions": 1
+    },
+    {
+      "pin": 8,
+      "net": "KEY_ROW0",
+      "switch": 4,
+      "trace_length_mm": 21.135,
+      "layer_transitions": 5
+    },
+    {
+      "pin": 9,
+      "net": "KEY_COL0",
+      "switch": 5,
+      "trace_length_mm": 70.537,
+      "layer_transitions": 11
+    },
+    {
+      "pin": 10,
+      "net": "KEY_COL1",
+      "switch": 6,
+      "trace_length_mm": 39.83,
+      "layer_transitions": 12
+    },
+    {
+      "pin": 11,
+      "net": "KEY_COL2",
+      "switch": 7,
+      "trace_length_mm": 30.579,
+      "layer_transitions": 5
+    },
+    {
+      "pin": 12,
+      "net": "KEY_COL3",
+      "switch": 8,
+      "trace_length_mm": 10.23,
+      "layer_transitions": 1
+    }
+  ],
+  "fabrication_released": false,
+  "preserved_pad_groups": 621
+}

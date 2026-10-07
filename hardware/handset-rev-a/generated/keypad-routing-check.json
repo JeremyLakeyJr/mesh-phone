@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "net": "KEY_ROW0",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "KEY_ROW1",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "KEY_ROW2",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "KEY_ROW3",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "KEY_COL0",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "KEY_COL1",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "KEY_COL2",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    },
+    {
+      "net": "KEY_COL3",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false
+}

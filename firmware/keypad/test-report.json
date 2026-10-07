@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "Host fake-bus tests only; no ESP32 target build or hardware execution",
+  "result": "12 keypad firmware scenarios passed",
+  "source_sha256": {
+    "firmware/keypad/controller.hpp": "9eff3c1c79b1598ac7d959933f209b9bea8d995d0eeaced6c0a0be999c70cd58",
+    "firmware/keypad/tests/controller_test.cpp": "d2182dfe31785a0dc4967c6f26242d455be0365d6599633ffaef0ebc9e854018"
+  },
+  "fabrication_released": false
+}

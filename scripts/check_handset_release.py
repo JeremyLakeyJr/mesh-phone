@@ -45,6 +45,11 @@ if (out/'usb-connector-update.json').exists():
     from check_handset_usb_connector import inspect as check_usb
     usb=check_usb(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['usb_footprint_failures']=[c['check'] for c in usb['checks'] if not c['passed']]
+if (out/'keypad-routing.json').exists():
+    import pcbnew as pcb
+    from check_handset_keypad import check_board as check_keypad
+    keypad=check_keypad(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
+    issues['keypad_routing_failures']=[g['net'] for g in keypad['groups'] if not g['passed']]
 if (out/'core-routing.json').exists():
     import pcbnew as pcb
     from check_handset_core import check_board as check_core
