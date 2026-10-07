@@ -258,5 +258,3 @@ R84,4.7k 1%,Resistor_SMD:R_0402_1005Metric,83.5,92.5,F,0,expansion-control
 R85,100k 1%,Resistor_SMD:R_0402_1005Metric,73,90,F,0,expansion-control
 R86,220k 1%,Resistor_SMD:R_0402_1005Metric,83.5,102,F,0,expansion-control
 R87,10k 1%,Resistor_SMD:R_0402_1005Metric,82,104,B,0,expansion-control
-R88,22 1%,Resistor_SMD:R_0402_1005Metric,97.25,47.98,B,0,usb
-R89,22 1%,Resistor_SMD:R_0402_1005Metric,97.25,49.25,B,0,usb

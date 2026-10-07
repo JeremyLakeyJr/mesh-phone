@@ -7,8 +7,8 @@
       "1": "GND",
       "2": "+3V3",
       "3": "MCU_EN",
-      "13": "USB_HOST_D_N",
-      "14": "USB_HOST_D_P",
+      "13": "USB_D_N",
+      "14": "USB_D_P",
       "15": "IR_RX",
       "16": null,
       "26": null,
@@ -2102,16 +2102,16 @@
     "libid": "Handset:TPD4E05U06DQA",
     "footprint": "Package_SON:USON-10_2.5x1.0mm_P0.5mm",
     "nets": {
-      "1": "USB_D_N",
-      "2": "USB_D_P",
+      "1": "USB_D_P",
+      "2": "USB_D_N",
       "3": "GND",
       "4": "USB_CC1",
       "5": "USB_CC2",
       "6": null,
       "7": null,
       "8": "GND",
-      "9": "USB_D_P",
-      "10": "USB_D_N"
+      "9": null,
+      "10": null
     },
     "x": 121,
     "y": 53,
@@ -4543,40 +4543,6 @@
     "angle": 0,
     "sheet": "expansion-control",
     "mpn": "RC0402FR-0710KL",
-    "manufacturer": "Yageo"
-  },
-  {
-    "ref": "R88",
-    "value": "22 1%",
-    "libid": "Device:R",
-    "footprint": "Resistor_SMD:R_0402_1005Metric",
-    "nets": {
-      "1": "USB_HOST_D_N",
-      "2": "USB_D_N"
-    },
-    "x": 97.25,
-    "y": 47.98,
-    "side": "B",
-    "angle": 0,
-    "sheet": "usb",
-    "mpn": "RC0402FR-0722RL",
-    "manufacturer": "Yageo"
-  },
-  {
-    "ref": "R89",
-    "value": "22 1%",
-    "libid": "Device:R",
-    "footprint": "Resistor_SMD:R_0402_1005Metric",
-    "nets": {
-      "1": "USB_HOST_D_P",
-      "2": "USB_D_P"
-    },
-    "x": 97.25,
-    "y": 49.25,
-    "side": "B",
-    "angle": 0,
-    "sheet": "usb",
-    "mpn": "RC0402FR-0722RL",
     "manufacturer": "Yageo"
   }
 ]

@@ -122,10 +122,12 @@
     "status": "open",
     "refs": [
       "USB1",
-      "U17"
+      "U17",
+      "R88",
+      "R89"
     ],
-    "required": "Complete controlled-impedance USB data routing and qualify protection/ESD and source-current behavior. Obtain assembler DFM/solder-joint approval of the USB4105 ground-corner relief and freeze the exact ordering suffix/connector fit.",
-    "completed": "Four locating-hole clearance findings eliminated without changing hole geometry, connector placement, any routed copper or board rules. Ground land nominal clearance is 0.263302 mm versus the retained 0.25 mm rule; native DRC and parity both zero. Four footprint regression tests and 118 power-entry pad checks pass; see usb-connector-review.md."
+    "required": "Obtain fabricator approval of the JLC04161H-7628 stackup/90-ohm target and review uncoupled fanout/tuning, three transitions per leg, ESD placement, termination, USB eye and source-current behavior. Qualify the rerouted VBUS bridge against 15.2 um inner copper. Obtain assembler DFM/solder-joint approval of the USB4105 ground relief and freeze the exact ordering suffix/fit.",
+    "completed": "Four locating-hole clearance findings eliminated without changing hole geometry, connector placement, any routed copper or board rules. Ground land nominal clearance is 0.263302 mm versus the retained 0.25 mm rule; native DRC and parity both zero. Four footprint regression tests and 118 power-entry pad checks pass; see usb-connector-review.md. USB data is now physically routed through U17 and R88/R89 in both orientations. CAD path skew is below 0.01 mm; reference corridor and seven regression cases pass. Native DRC/parity remain zero; all 118 power-entry pads remain connected. See usb-data-routing-review.md; impedance estimate is not fabricator approval."
   },
   {
     "id": "layout-assembly-fit",
@@ -145,6 +147,6 @@
       "complete handset"
     ],
     "required": "Clear native ERC/DRC/parity without blanket waivers and obtain independent circuit/footprint review. Bring up on a current-limited supply and test every feature before any fabrication release for production.",
-    "completed": "259 components; 2525 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC zero findings; 285 unconnected items. Expansion, backlight, display and previous power continuity pass. See usb-connector-review.md. No fabrication release."
+    "completed": "261 components; 2537 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC zero findings; 279 unconnected items. USB data, expansion, backlight, display and previous power continuity pass. See usb-data-routing-review.md. No fabrication release."
   }
 ]

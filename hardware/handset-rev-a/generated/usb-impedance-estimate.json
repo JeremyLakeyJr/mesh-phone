@@ -1,0 +1,38 @@
+{
+  "stackup": "JLC04161H-7628",
+  "source": "https://jlcpcb.com/impedance",
+  "coarse": {
+    "width_mm": 0.29,
+    "gap_mm": 0.21,
+    "grid_mm": 0.005,
+    "rounded_dielectric_height_mm": 0.21,
+    "odd_capacitance_F_per_m": 1.3023672408723742e-10,
+    "air_odd_capacitance_F_per_m": 4.2616201516050275e-11,
+    "differential_ohms": 89.54785600062475,
+    "iterations": [
+      1354,
+      1222
+    ],
+    "scope": "Uniform infinite line only; rectangular copper, approximate solder mask, nominal Dk, finite boundaries. Excludes pads, bends, vias, plane slots, etch/tolerance and glass weave. Fabricator calculation/coupon required.",
+    "fabricator_approved": false
+  },
+  "fine": {
+    "width_mm": 0.29,
+    "gap_mm": 0.21,
+    "grid_mm": 0.0025,
+    "rounded_dielectric_height_mm": 0.21,
+    "odd_capacitance_F_per_m": 1.296446378623783e-10,
+    "air_odd_capacitance_F_per_m": 4.25466656746816e-11,
+    "differential_ohms": 89.82541822140713,
+    "iterations": [
+      2452,
+      2388
+    ],
+    "scope": "Uniform infinite line only; rectangular copper, approximate solder mask, nominal Dk, finite boundaries. Excludes pads, bends, vias, plane slots, etch/tolerance and glass weave. Fabricator calculation/coupon required.",
+    "fabricator_approved": false
+  },
+  "grid_refinement_delta_ohms": 0.2775622207823858,
+  "fabricator_approved": false,
+  "fabrication_released": false,
+  "estimator_sha256": "aecb854ea9a560d408dca3a2edcd51a5a7458e0b9800fdbfd7486dc0eadcbea9"
+}

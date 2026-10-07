@@ -9,6 +9,10 @@ python3 scripts/verify_handset_pcb.py
 if [[ -f "$project/usb-connector-update.json" ]]; then
   python3 scripts/check_handset_usb_connector.py "$project"
 fi
+if [[ -f "$project/usb-data-update.json" ]]; then
+  python3 scripts/check_handset_usb_data.py "$project"
+  python3 scripts/test_handset_usb_data.py "$project"
+fi
 python3 scripts/check_handset_modem_power.py
 python3 scripts/check_handset_system_power.py
 python3 scripts/check_handset_display_expansion.py

@@ -61,11 +61,11 @@ and [`hardware/handset-rev-a/candidate-components.csv`](hardware/handset-rev-a/c
 
 ## Fabrication readiness checklist
 
-Checkpoint: **2026-10-06**. Checked items mean the stated design-file work is
+Checkpoint: **2026-10-07**. Checked items mean the stated design-file work is
 complete, not that the hardware has passed bench testing. Current status:
-**259 schematic components, 2,525 passing integrity checks, zero schematic/PCB
+**261 schematic components, 2,537 passing integrity checks, zero schematic/PCB
 parity findings, 30 ERC findings, zero DRC findings, and
-285 unconnected items.** Eleven engineering blocker groups remain open.
+279 unconnected items.** Eleven engineering blocker groups remain open.
 The detailed source of truth is
 [release-blockers.json](hardware/handset-rev-a/release-blockers.json).
 
@@ -96,6 +96,7 @@ The detailed source of truth is
 - [x] Capture and route expansion power control, fault sensing and hardware signal isolation; verify 31 physical net groups and six regression tests, and add a host-tested portable controller. Preserve all 4,183 existing copper items. [Implementation and qualification limits](hardware/handset-rev-a/expansion-control-review.md).
 - [x] Improve expansion ESD ground returns with local inner-layer pours and a direct U16 ground bridge; remove 36.24 mm of ground detours, preserve all signal routing and pass ground-return regression tests. [Evidence and remaining limits](hardware/handset-rev-a/expansion-control-review.md).
 - [x] Clear all four USB connector hole-clearance findings using a dedicated ground-corner-relief footprint; preserve holes, routed copper and board rules. Native DRC is now zero; four geometry regression tests pass. [Footprint change and remaining qualification](hardware/handset-rev-a/usb-connector-review.md).
+- [x] Route both USB-C data orientations through ESD protection and 22 Ω host termination; match CAD path lengths, add reference copper and verify seven regression cases. Record the JLC04161H-7628 stackup target; fabricator impedance and electrical qualification remain open. [Routing evidence and limits](hardware/handset-rev-a/usb-data-routing-review.md).
 - [x] Route the local TPS63802 main 3.3 V regulator circuit; verify continuity of 26 pads.
 - [x] Route U20 local modem converter, feedback, ground and switch-controlled enable network; verify 48 pads with no new DRC findings. [Layout and startup limits](hardware/handset-rev-a/modem-layout-review.md).
 - [x] Route U10 local 5 V boost, feedback, ground and switch enable; verify 19 pads with no new DRC findings. [Layout and voltage limits](hardware/handset-rev-a/reg5-layout-review.md).
@@ -121,13 +122,13 @@ before final routing and manufacturing exports.
 - [ ] **CC1101:** refine and route the oscillator, bypass, balun/filter and separate antenna feed against the selected stackup. Review crystal load/drive and the optional spur filter; define firmware SPI/GDO configuration.
 - [ ] **NFC and LF RFID:** finish ST25R3916B matching/receive circuitry and HTRC110 clock, analog reference, coil network and timing-capable host return path. Specify external coils, crystal loading and tuning provisions.
 - [ ] **GNSS:** finish MAX-M10S decoupling and RF feed; select the passive antenna and verify mounting, keepouts and coexistence requirements.
-- [ ] **Expansion and USB:** qualify routed J16 current limits, inrush, isolation, ESD return paths, fault recovery and shared-bus timing; integrate the portable controller. Exchange modules only with handset power off. Complete controlled-impedance USB data routing. Obtain assembler DFM approval of the USB4105 relieved ground-land contour and qualify connector fit/solder joints.
+- [ ] **Expansion and USB:** qualify routed J16 current limits, inrush, isolation, ESD return paths, fault recovery and shared-bus timing; integrate the portable controller. Exchange modules only with handset power off. Qualify the routed USB fanout, uncoupled tuning, three via transitions per leg, termination and eye performance; obtain fabricator impedance approval. Obtain assembler DFM approval of the USB4105 relieved ground-land contour and qualify connector fit/solder joints.
 - [ ] **Display, controls and peripherals:** next, qualify the routed U28–U31 interface for regulator load/heat, trace sizing, capacitor DC bias, power sequencing and shared-bus timing; qualify the routed CAT4004A backlight current, heat and default-off/on sequencing. Confirm the purchased display/touch configuration, FPC contact orientation, supply/backlight requirements and GPIO budget. Review keypad-scanner controls, shared SPI chip selects, IR boot behavior, microSD and audio interfaces; implement the firmware needed for safe bring-up.
 - [ ] **Antennas and coexistence:** select actual LTE, LoRa, CC1101, GNSS and Wi-Fi/BLE antenna arrangements, cable/connectors and matching provisions. Establish ground clearance, spacing and simultaneous-transmit policy; retain access for RF measurements.
 - [ ] **BOM and footprints:** freeze all orderable parts with tolerance, voltage, power, dielectric, temperature and lifecycle requirements. Independently audit every custom symbol pin map, package, exposed pad, paste pattern, orientation and connector mating direction. Define DNP options and approved substitutions.
 - [ ] **Mechanical fit:** reconcile the PCB with the pocketable case, actual battery, external screen/FPC, trackball opening and retention, top speaker, bottom microphone, antennas, mounting hardware and external module port. Check populated heights, cable bends and moved power-switch access using a full assembly model and fit prototype.
-- [ ] **Fabricator rules:** agree the four-layer stackup, copper weights, impedance targets, drill/via limits, solder-mask rules and ESP32 and expansion J16.8/U14.1/U14.6/U16.1 via-in-pad filling/capping requirements with the chosen fabricator. Resolve RF reference via sizes against those capabilities.
-- [ ] **Complete PCB routing:** connect all 285 currently unconnected items; finish return planes, ground stitching, thermal paths and supply distribution. Review switching loops, RF/USB impedance, antenna keepouts and analog/digital interference. Recheck clearances after all placement changes.
+- [ ] **Fabricator rules:** confirm the proposed JLC04161H-7628 four-layer stackup, copper weights, impedance targets, drill/via limits, solder-mask rules and ESP32 and expansion J16.8/U14.1/U14.6/U16.1 via-in-pad filling/capping requirements with the chosen fabricator. Resolve RF reference via sizes against those capabilities.
+- [ ] **Complete PCB routing:** connect all 279 currently unconnected items; finish return planes, ground stitching, thermal paths and supply distribution. Review switching loops, RF/USB impedance, antenna keepouts and analog/digital interference. Recheck clearances after all placement changes.
 - [ ] **Independent electrical review:** check every pin and power state against manufacturer documents, including boot straps, pull resistors, power sequencing, unpowered interfaces and test access. Close each blocker with evidence rather than marking an incomplete subsystem complete.
 - [ ] **Final native checks:** regenerate netlist/ERC/DRC from the exact release revision; resolve the 30 current ERC findings and all airwires; retain zero DRC findings. Require zero parity errors and passing circuit/continuity checks. Any genuinely intentional rule exception needs a documented engineering justification, not a blanket waiver.
 - [ ] **Prototype manufacturing package:** export and inspect Gerbers, plated/non-plated drill files, fabrication drawing/stackup, assembly drawings, full MPN BOM, DNP list and pick-and-place files. Verify units, origin, bottom-side rotation, pin 1, polarity and layer alignment in an independent viewer; obtain fabricator/assembler DFM feedback.

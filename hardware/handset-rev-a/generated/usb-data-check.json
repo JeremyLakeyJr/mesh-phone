@@ -1,0 +1,462 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "USB_D_N required pads present",
+      "passed": true
+    },
+    {
+      "check": "USB_D_N pin assignment",
+      "passed": true
+    },
+    {
+      "check": "USB_D_N physical continuity",
+      "passed": true
+    },
+    {
+      "check": "USB_D_N no foreign copper net",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P required pads present",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P pin assignment",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P physical continuity",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P no foreign copper net",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_N required pads present",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_N pin assignment",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_N physical continuity",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_N no foreign copper net",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_P required pads present",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_P pin assignment",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_P physical continuity",
+      "passed": true
+    },
+    {
+      "check": "USB_HOST_D_P no foreign copper net",
+      "passed": true
+    },
+    {
+      "check": "GND required pads present",
+      "passed": true
+    },
+    {
+      "check": "GND pin assignment",
+      "passed": true
+    },
+    {
+      "check": "GND physical continuity",
+      "passed": true
+    },
+    {
+      "check": "GND no foreign copper net",
+      "passed": true
+    },
+    {
+      "check": "R88 populated 22 ohm termination",
+      "passed": true
+    },
+    {
+      "check": "R89 populated 22 ohm termination",
+      "passed": true
+    },
+    {
+      "check": "all copper graph paths exist",
+      "passed": true
+    },
+    {
+      "check": "orientation A planar skew <= 0.25 mm",
+      "passed": true
+    },
+    {
+      "check": "orientation B planar skew <= 0.25 mm",
+      "passed": true
+    },
+    {
+      "check": "USB_D_N orientation branches balanced",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P orientation branches balanced",
+      "passed": true
+    },
+    {
+      "check": "three through vias per data leg",
+      "passed": true
+    },
+    {
+      "check": "ground return via (106.5, 49.1)",
+      "passed": true
+    },
+    {
+      "check": "ground return via (107.4, 51.6)",
+      "passed": true
+    },
+    {
+      "check": "ground return via (128.2, 54.75)",
+      "passed": true
+    },
+    {
+      "check": "ground return via (129.4, 54.8)",
+      "passed": true
+    },
+    {
+      "check": "ground return via (124.2, 51.5)",
+      "passed": true
+    },
+    {
+      "check": "ground return via (124.4, 52.8)",
+      "passed": true
+    },
+    {
+      "check": "USB_D_N two ground vias within 2.5 mm at (106.5, 49.95)",
+      "passed": true
+    },
+    {
+      "check": "USB_D_N two ground vias within 2.5 mm at (127.4, 56.25)",
+      "passed": true
+    },
+    {
+      "check": "USB_D_N two ground vias within 2.5 mm at (123.5, 52.0)",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P two ground vias within 2.5 mm at (124.6, 55.25)",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P two ground vias within 2.5 mm at (106.5, 50.75)",
+      "passed": true
+    },
+    {
+      "check": "USB_D_P two ground vias within 2.5 mm at (122.8, 52.3)",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 0f07a864-9f7d-433a-8e2a-3a8186377541",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 0f9c34a7-376a-4432-adeb-a1737c9e032e",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 21c856ce-d8d3-4188-b576-9576d2a69c1e",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 25b7f1cd-d5aa-43ef-8794-6912a8a8d999",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 4340eea5-6bca-4da2-bf24-58bf3f33184d",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 4c4d3d65-a215-4206-b150-ccdccf60d931",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 567ae880-1c93-4325-bfa2-34d77030585d",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 6c39410c-7e2e-4207-a893-d173451b5683",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 7276bce9-bc25-4686-ae38-7bf5b1263f4d",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace abf7d45f-3232-4e23-aab8-570674f55079",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace c3911b98-629a-46e7-8c96-99b9a890980e",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace c6bf6f56-625f-47cd-bd22-4730bb63b559",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace f27bf4f4-7f3d-4aa4-b400-6ad30e5ac296",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 012a574d-c50b-481c-95b2-38fb3b510783",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 2785dee3-006f-4a3c-b4a1-77c91a40b2ca",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 2ed4b3ab-22c3-48ce-a8ff-03d712a97654",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 39142382-2852-4f77-9dba-50ac13bfbc9e",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 4d87182b-1c57-424b-9a3b-b629d019223f",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 50f71e10-231f-49b2-9a2c-80bb8695f327",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 90809678-b8f9-4e8c-bf23-afd5dc5658c2",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace b07072df-a265-44c6-9953-7c47b3efaace",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace c4ac0921-5913-4b83-8091-82f619d25d9a",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 08cc7713-8b2f-4fa1-9184-14e5a2865f58",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 3c894e2b-18ed-4238-b475-a4473efcb4c1",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 3ffd9778-fc14-48a7-a187-d5e76b3dd97e",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 488b9093-1e69-4c53-8f93-91f333d497e8",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 5eb4b3e4-f75b-44c7-8476-cccf124dac7f",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 766a46d1-dac4-438f-bc67-5c85699f0f25",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 85b82af5-d9b3-43d1-9dc8-e44b9a0ac0c7",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 8de47b74-a505-43b8-a048-412544feedb1",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace ae0fc700-408d-4d57-a822-aa47cfd7a227",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace b18c05e2-d708-45ac-9769-4041b80ce6b9",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace c7ef9952-ce15-41e7-b526-d70c0b1c8034",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace da622a99-13ec-49a2-b8e2-f0abb39033ea",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace f0de0bbc-b5c8-4dfa-9387-a392a127f119",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace f8cd6a3e-645b-4e32-906d-ce5adaef824a",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 0993f5fa-7cb1-403f-96bc-cc695aba6b69",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 1d9135bc-a958-490e-8767-5602e0b1de66",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 1f2d1d6d-72a6-4526-a030-7744d69eba73",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 23575edf-6c18-49f9-9f5a-7bbc8bae3796",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 3262a1c6-2838-4b53-a97c-5eeb1b49b2c0",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 3cd1fd17-1d04-41f6-b890-ef326aa4c718",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 540f7533-6e00-4b3a-a5ab-d50bf4ee8dac",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 63a0cdc8-c293-4b2c-b13d-51b07a7bffdf",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace acd33717-7ebd-41ac-aab5-fab993b7a1f7",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace befc074f-61ef-45fa-a8dd-202a60e463e0",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace bfbff9e1-d3ad-40be-97cc-1c4dccaded0c",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace c6daab87-fc47-4838-840a-0bf602e35ec4",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 3e5cd988-577f-4ee4-b779-95a30c9770a2",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace e81e9ada-ab92-4720-9ef6-345a0a85fba9",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 10d7662b-e61e-4050-bad0-8b9b860ad2a2",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 3236baaa-24d3-46b9-8763-8c9e5c8e92c4",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 5cbed91c-cd36-4eab-a8ad-8e1b641f73ad",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 61d1e801-f7f8-4c88-a7f8-146568588036",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 68164bf0-aba1-495b-9af3-03cb01b2f7d7",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 712d1beb-5c3d-4987-80dc-fe3d990e28e0",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 74b6ddf4-9711-4374-8211-90176cd2a186",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 88383559-3735-496e-b5e2-c09ab283b22b",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 8dde8a8c-1cd5-47ce-8457-1126bacae2b4",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 8f364fc3-04dc-48f3-b66e-4964602aa9d9",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace 903c06ad-4d22-4a06-bda7-bf71cd6a2164",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace bf67da36-8ae8-4ed6-9877-68abcc8b47ff",
+      "passed": true
+    },
+    {
+      "check": "outer layer trace edaff036-87f0-44ad-b17d-aa4dc81b3af5",
+      "passed": true
+    },
+    {
+      "check": "filled reference corridor outside via antipads",
+      "passed": true
+    }
+  ],
+  "planar_path_lengths_mm": {
+    "USB_D_N": {
+      "USB1.A7": 36.607596,
+      "USB1.B7": 36.607596,
+      "U17.1": 24.564169
+    },
+    "USB_D_P": {
+      "USB1.A6": 36.607784,
+      "USB1.B6": 36.607784,
+      "U17.2": 27.807199
+    },
+    "USB_HOST_D_N": {
+      "U1.13": 6.03
+    },
+    "USB_HOST_D_P": {
+      "U1.14": 6.03
+    }
+  },
+  "connector_to_module_planar_mm": {
+    "A": {
+      "N": 42.637596,
+      "P": 42.637784
+    },
+    "B": {
+      "N": 42.637596,
+      "P": 42.637784
+    }
+  },
+  "skew_mm": {
+    "A": 0.000188,
+    "B": 0.000188
+  },
+  "signal_via_counts": {
+    "USB_D_N": 3,
+    "USB_D_P": 3
+  },
+  "reference_samples": 2928,
+  "via_antipad_exempt_samples": 224,
+  "reference_gaps": [],
+  "fabrication_released": false,
+  "scope": "CAD connectivity, planar path balance and sampled filled ground corridor; excludes barrel delay, module internals, component parasitics, fabrication tolerances and electrical compliance"
+}

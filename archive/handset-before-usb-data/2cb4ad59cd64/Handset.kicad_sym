@@ -2095,7 +2095,7 @@
           (effects
             (font
               (size 1.27 1.27)))))
-      (pin passive line
+      (pin free line
         (at -12.7 -7.62 0)
         (length 5.08)
         (name "NC"
@@ -2106,7 +2106,7 @@
           (effects
             (font
               (size 1.27 1.27)))))
-      (pin passive line
+      (pin free line
         (at -12.7 7.62 0)
         (length 5.08)
         (name "NC"

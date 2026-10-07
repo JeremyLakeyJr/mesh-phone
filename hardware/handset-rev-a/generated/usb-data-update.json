@@ -1,0 +1,30 @@
+{
+  "source_board_sha256": "2cb4ad59cd64d3ea649b1848fa661a79f0ff696556afa9bc8682640a0ef0308e",
+  "added_refs": [
+    "R88",
+    "R89"
+  ],
+  "preserved_copper_items": 7858,
+  "fabrication_released": false,
+  "final_board_sha256": "b9ee8244a88f47a139a3823ee170d2c7bc693cf995e72c34e48b48d5f0ec7e94",
+  "modified_existing_copper_ids": [
+    "133b2a53-8f57-4c5f-a939-40cd57a5d368",
+    "c52c4bf4-c7c2-41fc-8dad-6b9d597d5916"
+  ],
+  "added_copper_items": 87,
+  "existing_footprints_preserved": true,
+  "stackup": "JLC04161H-7628",
+  "stackup_source": "https://jlcpcb.com/impedance",
+  "nominal_board_thickness_mm": 1.6,
+  "published_copper_dielectric_sum_mm": 1.5862,
+  "stackup_status": "Design target; fabricator tolerance/impedance approval pending",
+  "pair_trunk_width_mm": 0.29,
+  "pair_trunk_gap_mm": 0.21,
+  "nominal_differential_target_ohms": 90,
+  "impedance_tolerance_percent": 10,
+  "return_reference_layers": [
+    "In1.Cu",
+    "In2.Cu"
+  ],
+  "qualification": "Nominal cross-section estimate only. Local breakouts, uncoupled tuning, three transitions per leg, ESD, termination and USB eye remain unqualified."
+}

@@ -66,3 +66,4 @@ Backlight current control,onsemi CAT4004A,CAT4004AHU2-GT3,UDFN-8 2x2mm exposed p
 Expansion controller,Resettable 4-bit I2C GPIO,TCA9537DGSR,DGS 3x3mm / KiCad MSOP10,CAPTURED U33,Host target integration and external-reset/stuck-bus qualification
 Expansion bus switch,8-channel bidirectional switch; 7 used,SN74CB3Q3245PWR,TSSOP20,CAPTURED U34,"Compatible 3.3V modules only; leakage, timing, current and startup qualification"
 Expansion fault interlock,Triple 3-input Schmitt NAND,SN74HCS10PWR,TSSOP14,CAPTURED U35,"Qualify thresholds, delays and brief-fault reconnection; no hardware fault latch"
+USB data termination,R88/R89: 22 ohm 1% series resistors,RC0402FR-0722RL,0402 / 1005,POPULATED AND ROUTED,Initial termination; qualify USB eye and stackup impedance; see usb-data-routing-review.md

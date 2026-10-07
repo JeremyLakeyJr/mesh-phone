@@ -45,6 +45,11 @@ if (out/'usb-connector-update.json').exists():
     from check_handset_usb_connector import inspect as check_usb
     usb=check_usb(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['usb_footprint_failures']=[c['check'] for c in usb['checks'] if not c['passed']]
+if (out/'usb-data-update.json').exists():
+    import pcbnew as pcb
+    from check_handset_usb_data import inspect as check_usb_data
+    usb_data=check_usb_data(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
+    issues['usb_data_failures']=[c['check'] for c in usb_data['checks'] if not c['passed']]
 blocked=any(issues.values())
 print(json.dumps({'status':'DO NOT FABRICATE' if blocked else 'Checks clear; independent release review required',**issues},indent=2))
 sys.exit(1 if blocked else 0)

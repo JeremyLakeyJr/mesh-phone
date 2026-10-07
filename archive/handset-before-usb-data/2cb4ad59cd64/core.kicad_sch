@@ -1896,7 +1896,7 @@
       (width 0)
       (type default))
     (uuid "101fdf5e-97b9-5be1-8b49-5fd43b6a03d5"))
-  (global_label "USB_HOST_D_N"
+  (global_label "USB_D_N"
     (shape bidirectional)
     (at 193.04 99.06 180.0)
     (effects
@@ -1912,7 +1912,7 @@
       (width 0)
       (type default))
     (uuid "89d33692-484c-5930-b02e-76cf7c5aedef"))
-  (global_label "USB_HOST_D_P"
+  (global_label "USB_D_P"
     (shape bidirectional)
     (at 193.04 101.6 180.0)
     (effects
