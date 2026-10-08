@@ -1,0 +1,15 @@
+{
+  "source_board_sha256": "e36b11dc744669d2895504e07137467743ee9fbb376834e7fbdae15f6b68d68d",
+  "final_board_sha256": "eaa92c47fb4f4fff56e895693c0c5db2411e924c53b421bee38ff1f17ff1a730",
+  "rotated_refs": [
+    "L12"
+  ],
+  "preserved_copper_items": 9265,
+  "added_copper_items": 15,
+  "preserved_pad_groups": 602,
+  "fabrication_released": false,
+  "native_drc_findings": 0,
+  "schematic_parity_findings": 0,
+  "unconnected_items": 231,
+  "archive": "archive/handset-before-sx1262-regulator/e36b11dc7446"
+}

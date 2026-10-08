@@ -3615,7 +3615,7 @@
     "x": 111,
     "y": 31.5,
     "side": "B",
-    "angle": 180.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "MLZ2012M150WT000",
     "role": "Semtech recommended core DC-DC inductor; shielded; DCR max 1.235ohm; Isat 120mA at 50% L reduction"

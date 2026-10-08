@@ -144,3 +144,32 @@ and 237 remaining unconnected items. Evidence is in
 `sx1262-clock-tests.json` and the clock BOM subset. The source checkpoint is
 archived at `archive/handset-before-sx1262-clock/7d4b34c23603/` in the repository
 root. The manufacturing gate retains clock qualification as an explicit blocker.
+
+
+## Regulator routing checkpoint — 2026-10-08
+
+The local DC-DC switching and VREG paths are routed on B.Cu without vias.
+L12 rotates 180 degrees in place so its switching terminal faces U4.9;
+its VREG terminal joins U4.7 and C9.1. C9.2 returns through a new ground
+via into the existing inner return. U4.8 and the exposed pad U4.25 join
+the established U4.5 ground connection. This establishes electrical
+continuity; it does not qualify the final thermal or switching layout.
+
+Fifteen copper items are added. All 9,265 previous tracks/vias and all
+602 previous connected pad groups are preserved; L12 is the only rotated
+footprint. Independent checks cover the three net groups, back-layer-only
+regulator routing, short trace limits and six deliberately disconnected
+pads. The existing clock continuity and reference-plane checks still pass.
+Native DRC and schematic parity remain zero; open connections fall from
+237 to 231. ERC remains at 27 findings.
+
+Evidence: `generated/sx1262-regulator-routing.json` and
+`generated/sx1262-regulator-checks.json`. The previous board and placement
+are archived at `archive/handset-before-sx1262-regulator/e36b11dc7446/`.
+Both the board-check script and manufacturing gate enforce this contract.
+
+**Still open:** U4 input supply/bypass distribution, remaining ground pins,
+thermal ground stitching, PA feed and RF frontend. Review loop return
+geometry in the completed layout and measure regulator startup/ripple and
+RF performance. The TCXO qualification requirements above still apply.
+This checkpoint does not release fabrication or authorize power-up.

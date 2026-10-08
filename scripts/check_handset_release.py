@@ -65,6 +65,10 @@ if (out/'audio-routing.json').exists():
     from check_handset_audio import check_board as check_audio
     audio=check_audio(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['audio_routing_failures']=[g['net'] for g in audio['groups'] if not g['passed']]
+if (out/'sx1262-regulator-routing.json').exists():
+    from check_handset_sx1262_regulator import inspect as check_sx_regulator
+    regulator=check_sx_regulator(out)
+    issues['sx1262_regulator_failures']=regulator['failures']+[str(t) for t in regulator['negative_tests'] if not t['rejected']]
 if (out/'sx1262-clock-update.json').exists():
     from check_handset_sx1262_clock import inspect as check_sx_clock
     clock=check_sx_clock(out)

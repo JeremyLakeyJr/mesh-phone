@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "failures": [],
+  "fabrication_released": false,
+  "negative_tests": [
+    {
+      "open_pad": "L12.1",
+      "rejected": true
+    },
+    {
+      "open_pad": "L12.2",
+      "rejected": true
+    },
+    {
+      "open_pad": "C9.1",
+      "rejected": true
+    },
+    {
+      "open_pad": "C9.2",
+      "rejected": true
+    },
+    {
+      "open_pad": "U4.8",
+      "rejected": true
+    },
+    {
+      "open_pad": "U4.25",
+      "rejected": true
+    }
+  ]
+}
