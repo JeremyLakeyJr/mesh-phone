@@ -58,6 +58,10 @@ fi
 if [[ -f "$project/sx1262-power-update.json" ]]; then
   python3 scripts/check_handset_sx1262_power.py "$project"
 fi
+if [[ -f "$project/sx1262-clock-update.json" ]]; then
+  python3 scripts/check_handset_sx1262_clock.py "$project"
+  python3 scripts/test_handset_sx1262_clock.py "$project"
+fi
 if [[ -f "$project/power-supervisor-update.json" ]]; then
   python3 scripts/check_handset_power_supervisor.py "$project"
 fi

@@ -688,12 +688,12 @@
   {
     "ref": "U4",
     "value": "SX1262IMLTRT",
-    "libid": "RF:SX1262IMLTRT",
+    "libid": "Handset:SX1262_TCXO_DIO3Supply",
     "nets": {
       "1": "+3V3",
       "2": "GND",
       "3": "SX_XTA",
-      "4": "SX_XTB",
+      "4": null,
       "5": "GND",
       "6": "SX_TCXO_PWR",
       "7": "SX_VREG",
@@ -4578,5 +4578,75 @@
     "sheet": "usb",
     "mpn": "RC0402FR-0722RL",
     "manufacturer": "Yageo"
+  },
+  {
+    "ref": "Y3",
+    "value": "32MHz TCXO 0.5ppm temp",
+    "libid": "Handset:ECS_TXO_32CSMV",
+    "footprint": "Handset:ECS_TXO_32CSMV_3225",
+    "nets": {
+      "1": "GND",
+      "2": "GND",
+      "3": "SX_TCXO_OUT",
+      "4": "SX_TCXO_PWR"
+    },
+    "x": 113.3,
+    "y": 40.6,
+    "side": "B",
+    "angle": 180,
+    "sheet": "radios",
+    "mpn": "ECS-TXO-32CSMV-320-AN-TR",
+    "role": "1.8V DIO3 supply; clipped sine; maximum amplitude requires supplier/bench qualification"
+  },
+  {
+    "ref": "R90",
+    "value": "220R 1%",
+    "libid": "Device:R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "nets": {
+      "1": "SX_TCXO_OUT",
+      "2": "SX_TCXO_COUPLED"
+    },
+    "x": 109.4,
+    "y": 39.8,
+    "side": "B",
+    "angle": 180,
+    "sheet": "radios",
+    "mpn": "RC0402FR-07220RL",
+    "role": "Semtech series clock resistor"
+  },
+  {
+    "ref": "C94",
+    "value": "100nF 10% X7R 16V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "SX_TCXO_PWR",
+      "2": "GND"
+    },
+    "x": 116.5,
+    "y": 39.0,
+    "side": "B",
+    "angle": 0,
+    "sheet": "radios",
+    "mpn": "GRM155R71C104KA88D",
+    "role": "Local TCXO supply bypass"
+  },
+  {
+    "ref": "C95",
+    "value": "10pF 5% C0G 50V",
+    "libid": "Device:C",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "nets": {
+      "1": "SX_TCXO_COUPLED",
+      "2": "SX_XTA"
+    },
+    "x": 109.4,
+    "y": 38.6,
+    "side": "B",
+    "angle": 0,
+    "sheet": "radios",
+    "mpn": "GRM1555C1H100JA01D",
+    "role": "Semtech XTA series DC blocking capacitor"
   }
 ]

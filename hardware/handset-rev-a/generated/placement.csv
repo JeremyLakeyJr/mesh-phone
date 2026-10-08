@@ -260,3 +260,7 @@ R86,220k 1%,Resistor_SMD:R_0402_1005Metric,83.5,102,F,0,expansion-control
 R87,10k 1%,Resistor_SMD:R_0402_1005Metric,82,104,B,0,expansion-control
 R88,22 1%,Resistor_SMD:R_0402_1005Metric,97.25,47.98,B,0,usb
 R89,22 1%,Resistor_SMD:R_0402_1005Metric,97.25,49.25,B,0,usb
+Y3,32MHz TCXO 0.5ppm temp,Handset:ECS_TXO_32CSMV_3225,113.3,40.6,B,180,radios
+R90,220R 1%,Resistor_SMD:R_0402_1005Metric,109.4,39.8,B,180,radios
+C94,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,116.5,39.0,B,0,radios
+C95,10pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,109.4,38.6,B,0,radios

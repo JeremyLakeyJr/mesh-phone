@@ -5,7 +5,7 @@ This is a new board and hierarchical schematic, not the old Rev F layout.
 **It is incomplete, partially routed, and not ready to fabricate or power.**
 The original Rev F project is preserved in `../rev-f/`.
 
-Latest: [amplifier power routing](#audio-power-routing-checkpoint). Fabrication
+Latest: [SX1262 TCXO clock](sx1262-power-review.md#tcxo-clock-checkpoint--2026-10-08). Fabrication
 readiness takes priority over additional firmware features. RF, NFC/LF and other
 unfinished circuits remain fabrication blockers.
 
@@ -33,8 +33,8 @@ unfinished circuits remain fabrication blockers.
 - CC1101 clock, filtered supply and 868/915 MHz balun/matching/filter circuit
   are captured with specified parts and checked PCB placement. RF routing and
   tuning remain; see [cc1101-review.md](cc1101-review.md).
-- SX1262 and HTRC110 footprints with host/control nets; their oscillator,
-  RF matching and antenna circuits are not complete.
+- SX1262 TCXO clock and local routing are captured; its RF frontend and
+  electrical qualification remain open. HTRC110 clock/analog/coil circuits are incomplete.
 - MAX98357A media amplifier, SPH0645 digital mic, separate analog call-audio
   harnesses, native ESP32 USB-C and dedicated modem/expansion connectors.
 - Manufacturer-derived custom pin definitions and TPS63802 DLA0010A land
@@ -62,7 +62,7 @@ circuits are complete or that the PCB can be ordered.
 | Cellular | Select exact unlocked modem/firmware and establish calls, SMS and data on target carriers. The detachable adapter needs its own SIM, antenna feeds, voltage translation, regulated peak-current supply and audio implementation. |
 | LCD / touch | ER-TFT024IPS-3 pinout and FH12A-50S-0.5SH(55) connector are captured with backlight switching. Confirm purchased CTP configuration, rail tolerances, FPC orientation/bending and firmware. |
 | NFC | ST25R3916B, crystal and bypass components are populated. Finish and tune the antenna matching/receive network and validate oscillator loading. |
-| Radio frontends | SX1262 core DC-DC support is captured; finish TCXO/PA/RF switch/matching and routing. Route and qualify the implemented CC1101 clock/decoupling/balun/filter circuit and separate antenna feed. |
+| Radio frontends | SX1262 core DC-DC support is captured; qualify the captured TCXO and finish PA/RF switch/matching and routing. Route and qualify the implemented CC1101 clock/decoupling/balun/filter circuit and separate antenna feed. |
 | LF RFID | SN74AHCT125 and SN74LVC1G17 translation is populated. Clock, analog reference, coil network and timing-capable host return path remain incomplete. |
 | GPIO budget | Confirm scanner GPIO behavior and LCD D/C throughput. IR_RX now uses ESP32 GPIO3; preserve default JTAG eFuse policy and verify boot behavior with active IR. |
 | USB / J16 | TPS2553 and signal ESD arrays are captured. Finish protected routing, VBUS protection and power-off accessory policy; test current limit and ESD response. |

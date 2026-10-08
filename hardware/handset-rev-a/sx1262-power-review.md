@@ -1,5 +1,9 @@
 # SX1262 core regulator support — 2026-09-24
 
+Follow-up: the [TCXO clock checkpoint](#tcxo-clock-checkpoint--2026-10-08) below
+adds the clock circuit and its local routing. The original regulator review is
+retained as history.
+
 **Engineering draft. Do not fabricate or power.** This step corrects the
 core regulator circuit and initial component placement. It does not complete
 or qualify the LoRa radio. No new copper has been routed.
@@ -58,8 +62,8 @@ independently of the circuit generator.
 
 ## Remaining LoRa work
 
-1. Finish the 32 MHz TCXO selection, DIO3 supply/filter, AC coupling and
-   startup timing. XTA/XTB are not a working clock yet.
+1. Qualify the captured TCXO clock below: maximum output amplitude, DIO3
+   supply behavior, startup timing and temperature drift remain open.
 2. Complete PA choke/bypass, RF switch, matching/filter and antenna feed.
    C10 remains provisional, and J20 is not connected to a working frontend.
 3. Route against a frozen stackup, with local returns and thermal vias;
@@ -87,3 +91,56 @@ layout also needs reconciliation with this board's fabrication rules.
 - [Johanson AN101](https://www.johansontechnology.com/docs/4476/Johanson_AN101.pdf)
   and [IPD datasheet](https://www.johansontechnology.com/datasheets/0900FM15K0039/0900FM15K0039.pdf):
   compact frontend candidate and remaining external components.
+
+
+## TCXO clock checkpoint — 2026-10-08
+
+The clock circuit and local copper are now present. The PA feed, matching/filter,
+RF switch, antenna path and remaining radio power/ground are still incomplete.
+This does not release the radio or handset for fabrication.
+
+| Ref | Selected part | Connection |
+| --- | --- | --- |
+| Y3 | ECS-TXO-32CSMV-320-AN-TR | DIO3-powered 32 MHz clipped-sine TCXO |
+| R90 | RC0402FR-07220RL, 220 Ω 1% | Series clock resistor |
+| C94 | GRM155R71C104KA88D, 100 nF | TCXO supply bypass |
+| C95 | GRM1555C1H100JA01D, 10 pF C0G | Series coupling into XTA |
+
+[ECS’s product page](https://ecsxtal.com/products/oscillators/surface-mount-oscillators/ecs-txo-32csmv-320-an-tr/)
+lists the selected 32 MHz AN option. Its
+[series datasheet](https://ecsxtal.com/store/pdf/ECS-TXO-32CSMV.pdf)
+specifies a 1.7–3.465 V supply, 2.5 mA maximum consumption at this frequency,
+2 ms maximum startup and 0.8 Vpp **minimum** output. The 0.5 ppm temperature
+option is not total frequency accuracy: initial tolerance, aging and other
+terms still apply. The audited footprint follows its 1.4 × 1.2 mm lands on
+2.2 × 1.6 mm centers; pins 1 and 2 are both ground, 3 is output, 4 is supply.
+The older Abracon ASVTX/ASTX-13 datasheet is marked EOL and was not selected.
+
+Semtech DS rev 1.2 §4.1.4 specifies the 220 Ω / 10 pF series network and an open
+XTB. DIO3 is reserved for the regulated TCXO supply. The specialized U4 symbol
+models this selected supply function; other pin functions are retained.
+The proposed setting is 1.8 V (`tcxoVoltage=0x02`) with a provisional 5 ms delay
+(`0x000140` at 15.625 µs/tick, §13.3.6). VBAT must exceed the programmed voltage
+by 200 mV. These settings require target integration and measurement.
+
+**Open qualification:** Semtech requires TCXO output no greater than 1.2 Vpp,
+but ECS’s series sheet supplies no maximum. Obtain a supplier guarantee or
+appropriate measurement evidence before approving this interface. Confirm
+loaded startup, DIO3 ramp/current, temperature drift, phase noise and radio
+sensitivity; the series RC network alone is not proof of compliance.
+
+The routed clock path is 6.789 mm on B.Cu with no signal vias. Two local inner
+GND extensions provide its return; 228 sampled corridor points pass. All 14
+required physical pads pass continuity. Five netlist mutations and five copper
+regression cases detect wrong wiring, capacitance, open pads and a missing
+reference plane. Existing component locations and all 9,238 previous copper
+items remain intact; all 601 previous connected pad groups remain connected.
+Only U12’s reference text moves to B.Fab to clear the new lands.
+
+Native DRC/parity are zero. The three former isolated clock labels are resolved:
+ERC falls from 30 to 27. There are 265 components, 2,560 integrity assertions
+and 237 remaining unconnected items. Evidence is in
+`generated/sx1262-clock-update.json`, `sx1262-clock-checks.json`,
+`sx1262-clock-tests.json` and the clock BOM subset. The source checkpoint is
+archived at `archive/handset-before-sx1262-clock/7d4b34c23603/` in the repository
+root. The manufacturing gate retains clock qualification as an explicit blocker.

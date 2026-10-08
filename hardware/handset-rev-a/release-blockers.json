@@ -56,8 +56,8 @@
       "J20",
       "J21"
     ],
-    "required": "Complete SX1262 clock/PA/switching circuits and DC-DC routing/qualification. Refine and route CC1101 RF/oscillator layout against a chosen stackup; qualify frequency/startup/drive, supply noise, RF power/sensitivity, emissions, optional spur filter and antenna coexistence.",
-    "completed": "CC1101 clock, 868/915MHz matching/filter, dedicated supply bypass/filter and GDO2 test pad captured with named MPNs. 90 topology/value checks and five negative tests pass; zero native CC1101 sheet ERC findings. SX1262 15uH core inductor, corrected 470nF VREG capacitor and separate input bypass captured; 30 contract checks and four negative tests pass. Unrouted."
+    "required": "Complete SX1262 PA/switching/matching circuits and DC-DC routing/qualification. Refine and route CC1101 RF/oscillator layout against a chosen stackup; qualify frequency/startup/drive, supply noise, RF power/sensitivity, emissions, optional spur filter and antenna coexistence. Qualify the captured TCXO interface, including supplier/bench confirmation of <=1.2Vpp output, DIO3 supply ramp/current, loaded startup and drift. See sx1262-power-review.md#tcxo-clock-checkpoint--2026-10-08.",
+    "completed": "CC1101 clock, 868/915MHz matching/filter, dedicated supply bypass/filter and GDO2 test pad captured with named MPNs. 90 topology/value checks and five negative tests pass; zero native CC1101 sheet ERC findings. SX1262 15uH core inductor, corrected 470nF VREG capacitor and separate input bypass captured; 30 contract checks and four negative tests pass. Core power remains unrouted. SX1262 TCXO circuit and local copper now pass 14-pad continuity, 228 ground-reference samples, five netlist mutations and five copper regression cases. Clock trace length is 6.789 mm without signal vias. Native ERC is reduced by three; RF frontend and electrical qualification remain open."
   },
   {
     "id": "nfc-lf",
@@ -147,6 +147,6 @@
       "complete handset"
     ],
     "required": "Clear native ERC/DRC/parity without blanket waivers and obtain independent circuit/footprint review. Bring up on a current-limited supply and test every feature before any fabrication release for production.",
-    "completed": "261 components; 2537 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 30 findings and DRC zero findings; 238 unconnected items. Amplifier power/ground and shutdown bias, keypad matrix, core boot/reset and U2, USB data, expansion, backlight, display and previous power continuity pass. See keypad-routing-review.md, core-bringup-review.md and usb-data-routing-review.md. No fabrication release."
+    "completed": "265 components; 2560 integrity assertions pass; zero schematic parity or placement findings. Native ERC retains 27 findings and DRC zero findings; 237 unconnected items. Amplifier power/ground and shutdown bias, keypad matrix, core boot/reset and U2, USB data, expansion, backlight, display and previous power continuity pass. See keypad-routing-review.md, core-bringup-review.md and usb-data-routing-review.md. No fabrication release. SX1262 TCXO clock circuitry and local copper are captured and checked; qualification remains open."
   }
 ]

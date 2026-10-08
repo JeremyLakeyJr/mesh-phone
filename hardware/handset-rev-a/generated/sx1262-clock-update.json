@@ -1,0 +1,28 @@
+{
+  "source_board_sha256": "7d4b34c23603e10de7fc26a3ee87e2f1e0ec41fb42c035e0aa0548b371f8cae6",
+  "added_refs": [
+    "Y3",
+    "R90",
+    "C94",
+    "C95"
+  ],
+  "changed_pin_nets": {
+    "U4.4": "intentional NC"
+  },
+  "reference_to_fab": [
+    "U12"
+  ],
+  "components": 265,
+  "preserved_copper_items": 9238,
+  "unchanged_footprints": 265,
+  "fabrication_released": false,
+  "scope": "TCXO schematic, placement and local copper; RF frontend, remaining radio supply/ground and qualification remain open",
+  "added_copper_items": 27,
+  "added_ground_zones": 2,
+  "final_board_sha256": "e36b11dc744669d2895504e07137467743ee9fbb376834e7fbdae15f6b68d68d",
+  "preserved_pad_groups": 601,
+  "final_pad_group_preservation_verified": true,
+  "native_drc_findings": 0,
+  "schematic_parity_findings": 0,
+  "unconnected_items": 237
+}

@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "circuit_failures": [],
+  "negative_tests": [
+    {
+      "mutation": "Y3.1 -> SX_TCXO_PWR",
+      "rejected": true
+    },
+    {
+      "mutation": "U4.4 -> GND",
+      "rejected": true
+    },
+    {
+      "mutation": "Y3.4 -> +3V3",
+      "rejected": true
+    },
+    {
+      "mutation": "C95.2 -> GND",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong coupling capacitance",
+      "rejected": true
+    }
+  ],
+  "copper": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "SX_TCXO_PWR physical continuity",
+        "passed": true
+      },
+      {
+        "check": "SX_TCXO_OUT physical continuity",
+        "passed": true
+      },
+      {
+        "check": "SX_TCXO_COUPLED physical continuity",
+        "passed": true
+      },
+      {
+        "check": "SX_XTA physical continuity",
+        "passed": true
+      },
+      {
+        "check": "GND physical continuity",
+        "passed": true
+      },
+      {
+        "check": "XTB isolated NC",
+        "passed": true
+      },
+      {
+        "check": "SX_TCXO_OUT back layer without vias",
+        "passed": true
+      },
+      {
+        "check": "SX_TCXO_COUPLED back layer without vias",
+        "passed": true
+      },
+      {
+        "check": "SX_XTA back layer without vias",
+        "passed": true
+      },
+      {
+        "check": "clock copper length below 10mm",
+        "passed": true
+      },
+      {
+        "check": "filled In2 ground under clock corridor",
+        "passed": true
+      }
+    ],
+    "physical_pads": 14,
+    "clock_trace_length_mm": 6.789,
+    "reference_samples": 228,
+    "reference_gaps": [],
+    "fabrication_released": false
+  },
+  "qualification_open": [
+    "TCXO maximum output amplitude is not specified in series data; confirm <=1.2Vpp with supplier/bench evidence.",
+    "Verify DIO3 ramp/current, oscillator startup, loaded frequency, temperature drift and phase noise.",
+    "Complete remaining SX1262 supply/ground, RF frontend and conducted/antenna qualification."
+  ],
+  "fabrication_released": false
+}

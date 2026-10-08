@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-08T10:59:40",
+    "date": "2026-10-08T11:21:02",
     "ignored_checks": [
         {
             "description": "Global label only appears once in the schematic",
@@ -244,57 +244,12 @@
                     "description": "Label connected to only one pin",
                     "items": [
                         {
-                            "description": "Global Label 'SX_XTA'",
-                            "pos": {
-                                "x": 1.143,
-                                "y": 0.8128
-                            },
-                            "uuid": "fe2e2f77-854c-570b-9141-5275b1ee5538"
-                        }
-                    ],
-                    "severity": "warning",
-                    "type": "isolated_pin_label"
-                },
-                {
-                    "description": "Label connected to only one pin",
-                    "items": [
-                        {
-                            "description": "Global Label 'SX_XTB'",
-                            "pos": {
-                                "x": 1.143,
-                                "y": 0.8382
-                            },
-                            "uuid": "77dc226e-c167-5432-93e6-c7392343e07b"
-                        }
-                    ],
-                    "severity": "warning",
-                    "type": "isolated_pin_label"
-                },
-                {
-                    "description": "Label connected to only one pin",
-                    "items": [
-                        {
                             "description": "Global Label 'SX_RF_SW'",
                             "pos": {
                                 "x": 1.143,
                                 "y": 0.9652
                             },
-                            "uuid": "bce19b58-dea1-5550-844e-092f5582cc6e"
-                        }
-                    ],
-                    "severity": "warning",
-                    "type": "isolated_pin_label"
-                },
-                {
-                    "description": "Label connected to only one pin",
-                    "items": [
-                        {
-                            "description": "Global Label 'SX_TCXO_PWR'",
-                            "pos": {
-                                "x": 1.143,
-                                "y": 0.9906
-                            },
-                            "uuid": "b89948d4-7c60-5480-9cf7-4572261b32cc"
+                            "uuid": "95e1f8b6-26cc-5849-bf15-4e03b0e40dfc"
                         }
                     ],
                     "severity": "warning",
@@ -309,7 +264,7 @@
                                 "x": 1.6002,
                                 "y": 0.9652
                             },
-                            "uuid": "25c28f10-8cc1-5e48-8245-70a1046c7e97"
+                            "uuid": "a01e0dcd-f5b0-52f9-b6be-6d5895bf0b45"
                         }
                     ],
                     "severity": "warning",
@@ -324,7 +279,7 @@
                                 "x": 1.6002,
                                 "y": 0.9906
                             },
-                            "uuid": "d2019c35-2a48-5150-a692-55022c3fae02"
+                            "uuid": "24ae47c7-5aa5-5ff5-b01a-eadaf12de877"
                         }
                     ],
                     "severity": "warning",
@@ -339,7 +294,7 @@
                                 "x": 1.6002,
                                 "y": 1.016
                             },
-                            "uuid": "4ecfbd30-6001-5e63-81d3-310338cec9b7"
+                            "uuid": "c6bb6b42-7b35-52f9-af84-03583a8ca254"
                         }
                     ],
                     "severity": "warning",
@@ -354,7 +309,7 @@
                                 "x": 3.1496,
                                 "y": 0.9652
                             },
-                            "uuid": "3c3e15e0-40db-5b5f-80d0-e9071068e9ff"
+                            "uuid": "4d45a68f-3c72-5a71-aa20-eff75f07e60c"
                         }
                     ],
                     "severity": "warning",

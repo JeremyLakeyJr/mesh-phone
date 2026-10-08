@@ -1,0 +1,5 @@
+ref,value,mpn,footprint,role
+Y3,32MHz TCXO 0.5ppm temp,ECS-TXO-32CSMV-320-AN-TR,Handset:ECS_TXO_32CSMV_3225,1.8V DIO3 supply; clipped sine; maximum amplitude requires supplier/bench qualification
+R90,220R 1%,RC0402FR-07220RL,Resistor_SMD:R_0402_1005Metric,Semtech series clock resistor
+C94,100nF 10% X7R 16V,GRM155R71C104KA88D,Capacitor_SMD:C_0402_1005Metric,Local TCXO supply bypass
+C95,10pF 5% C0G 50V,GRM1555C1H100JA01D,Capacitor_SMD:C_0402_1005Metric,Semtech XTA series DC blocking capacitor
