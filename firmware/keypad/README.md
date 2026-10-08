@@ -1,13 +1,14 @@
 # Keypad commissioning driver
 
 Portable C++17 `controller.hpp` controls the handset's U2 keypad scanner at
-7-bit I²C address 0x34. This is host-tested driver code, not an installed ESP32
-application. Target HAL integration, target build and bench testing remain open.
+7-bit I²C address 0x34. The [ESP32 bring-up application](../bringup/README.md) now integrates it with
+I²C, GPIO8 interrupts and USB logging and has been cross-built for ESP32-S3.
+No image has been flashed or tested on the physical handset.
 
 Implement `keypad::Bus` using serialized, bounded I²C transfers. Give this driver
 exclusive ownership of U2's scan/configuration/FIFO registers. Call
 `initialize()` with all keys released after hardware commissioning approval.
-A GPIO18 falling-edge ISR should wake a task; perform I²C work in that task,
+A GPIO8 falling-edge ISR should wake a task; perform I²C work in that task,
 not the ISR. Poll periodically as well as on IRQ, drain while IRQ stays low,
 and bound the task's work per scheduling interval. Determine the actual service
 rate by measurement; each call returns at most ten events.

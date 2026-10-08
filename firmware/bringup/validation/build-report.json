@@ -1,0 +1,59 @@
+{
+  "compiler": "xtensa-esp-elf-gcc (crosstool-NG esp-14.2.0_20241119) 14.2.0",
+  "python_version": "3.12.13",
+  "passed": true,
+  "target": "esp32s3",
+  "idf_version": "v5.4.2",
+  "idf_commit": "f5c3654a1c2d2a01f7f67def7a0dc48e691f63c0",
+  "flash_size_mb": 16,
+  "psram_enabled": false,
+  "pin_map": {
+    "SDA": 10,
+    "SCL": 9,
+    "KEY_IRQ": 8
+  },
+  "source_sha256": {
+    "firmware/bringup/CMakeLists.txt": "3b2ff868e48686630026dce29d9931ada9f5e6414b6856a9c92dc9fa68924d84",
+    "firmware/bringup/build.sh": "dcf4274b33df3253172b54bae8bff2ee63916ef2167d78b66102451527330f64",
+    "firmware/bringup/main/CMakeLists.txt": "1766c1e371e273174f2abd726f7a96485cfde7291a9f1b3ea5fd431b65fcae06",
+    "firmware/bringup/main/board.hpp": "c2e34e1c5c0df59cb6c51cd263cbfe773e7ee6c10a68e98cb9f9f2961f20b5c5",
+    "firmware/bringup/main/main.cpp": "83ba4fe15801192a374d58da145652eb69fd6312c696cb4796303d0556f649a0",
+    "firmware/bringup/main/session.hpp": "9349afe4ff8d2074aec300e869ace166133ad7f355f3478013e69d585e4f8f72",
+    "firmware/bringup/monitor.py": "a77492daea9a3c09124eced9e7ed64c8a4c61c4bdf438a488abbe6bddd7eccb4",
+    "firmware/bringup/sdkconfig.defaults": "17a39141cdb6eeba21ad4a1f52228340f764899f5fabd641aa1b491aafa50dab",
+    "firmware/bringup/tests/session_test.cpp": "207a2ce4256016fea400b2a16832cfc8d1b5ebd5fcb9fb0aff17d85ef9b87fc9",
+    "firmware/bringup/verify_build.py": "8f1caa16c5b1a9ddc10c9a93bb12dd66684b90c4304b1bff92c580f9f6b66495",
+    "firmware/keypad/controller.hpp": "9eff3c1c79b1598ac7d959933f209b9bea8d995d0eeaced6c0a0be999c70cd58",
+    "hardware/handset-rev-a/generated/connectivity.json": "e70e4458d24b155fafa7da8a6c981250d32669487c1feb3a60d1daaecb1fa284",
+    "hardware/handset-rev-a/generated/core.kicad_sch": "79a4d823dedddb74431ee51edc8300ee5c2b2d2307a8facdf3346556840bf55a"
+  },
+  "artifacts": {
+    "handset_keypad_bringup.bin": {
+      "bytes": 209616,
+      "sha256": "b11432d1be84c808abea0996700251184a55540dcac60c790b2daeb05afe4c00"
+    },
+    "handset_keypad_bringup.elf": {
+      "bytes": 3390064,
+      "sha256": "f7fb6b79739ab8054f2e7b51e7ebcd8f2e96d9b17cbe441707c6b78070bd3c33"
+    },
+    "bootloader/bootloader.bin": {
+      "bytes": 13600,
+      "sha256": "b411e83f0cf44ba11237d59a879fa5e63276989e2f1e71f920192bf4cabc1f19"
+    },
+    "partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "7f00b6c042a89b15b0cac534f82ed988caf29278ff5700b0c511eb1b5bb7c820"
+    },
+    "flasher_args.json": {
+      "bytes": 937,
+      "sha256": "31376fd4d7d06538756557c55860ff34623a6d44d8f0cab09a56bba367452488"
+    },
+    "sdkconfig": {
+      "bytes": 44079,
+      "sha256": "f777f349b494217520ecebd02a47572de305c27a9abd3679645407eedb989303"
+    }
+  },
+  "hardware_tested": false,
+  "flashed": false,
+  "fabrication_released": false
+}

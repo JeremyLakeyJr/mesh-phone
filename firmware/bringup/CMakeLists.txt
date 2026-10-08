@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+set(IDF_TARGET esp32s3)
+set(PROJECT_VER "keypad-bringup-0.1")
+set(COMPONENTS main)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(handset_keypad_bringup)

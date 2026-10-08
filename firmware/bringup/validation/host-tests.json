@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "session_tests": 12,
+  "pin_contract_checks": 3,
+  "source_sha256": {
+    "firmware/bringup/main/board.hpp": "c2e34e1c5c0df59cb6c51cd263cbfe773e7ee6c10a68e98cb9f9f2961f20b5c5",
+    "firmware/bringup/main/session.hpp": "9349afe4ff8d2074aec300e869ace166133ad7f355f3478013e69d585e4f8f72",
+    "firmware/bringup/tests/session_test.cpp": "207a2ce4256016fea400b2a16832cfc8d1b5ebd5fcb9fb0aff17d85ef9b87fc9",
+    "firmware/keypad/controller.hpp": "9eff3c1c79b1598ac7d959933f209b9bea8d995d0eeaced6c0a0be999c70cd58"
+  },
+  "hardware_tested": false
+}

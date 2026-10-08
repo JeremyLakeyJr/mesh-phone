@@ -2,6 +2,10 @@
 
 2026-10-07. **Engineering checkpoint; fabrication release remains blocked.**
 
+Follow-up: the [ESP32 bring-up application](../../firmware/bringup/README.md) now
+integrates this driver and cross-builds for the target. Hardware testing remains
+open; the layout results below are unchanged.
+
 All eight matrix branches now connect U2 to the existing 16-switch matrix.
 All 64 physical switch contacts and eight controller pins pass independent
 connectivity checks. No parts, existing tracks/vias, stackup or design rules

@@ -71,6 +71,7 @@ The detailed source of truth is
 
 ### Completed design work
 
+- [x] Cross-build an ESP32-S3 keypad bring-up application with I²C, GPIO8 interrupts, USB logs and start/stop/recovery commands. Twelve session tests and native pin-map checks pass. [Build and commissioning instructions](firmware/bringup/README.md); hardware testing remains open.
 - [x] Complete the 16-key matrix copper (72 physical pads), add five routing regression cases and a host-tested keypad driver with overflow recovery. [Routing and firmware evidence](hardware/handset-rev-a/keypad-routing-review.md).
 - [x] Route ESP32 boot/reset service controls and U2 power, reset, I²C and interrupt connections; eight regression cases pass with zero DRC/parity findings. [Evidence and remaining bring-up work](hardware/handset-rev-a/core-bringup-review.md).
 - [x] Organize hardware, mechanical designs, research, reviews and archived checkpoints.
