@@ -173,3 +173,34 @@ thermal ground stitching, PA feed and RF frontend. Review loop return
 geometry in the completed layout and measure regulator startup/ripple and
 RF performance. The TCXO qualification requirements above still apply.
 This checkpoint does not release fabrication or authorize power-up.
+
+
+## Input supply routing checkpoint — 2026-10-08
+
+U4.1 (VDD_IN), U4.10 (VBAT), U4.11 (VBAT_IO), C8, C75 and C76
+are connected to the established +3V3 and ground networks. U4.2 and U4.20
+join the already routed ground pins and exposed pad. C75 rotates 180 degrees
+in place; all other footprint geometry stays unchanged. A front-layer supply
+bridge clears the back-layer XTA clock trace.
+
+The new main-rail feed is 0.5 mm wide and 76.695 mm long with ten layer
+transitions. The local front-layer bridges are 0.3 mm wide, with 0.2 mm IC
+pad escapes. These dimensions describe the implemented copper, not a supply
+integrity approval. Review the feed/via impedance, VDD_IN bypass loop and
+return geometry; measure rail droop and noise under transmit load before
+release. Thermal stitching/spreading and the PA/RF frontend remain open.
+
+All 16 physical pads in the input-supply/ground contract pass, including
+continuity to established U1 rail/ground anchors. Six deliberately opened
+pads are rejected, alongside the installed-board positive test. Existing
+clock continuity/reference coverage and regulator checks pass. All 9,280
+previous copper items and 596 previous connected pad groups are preserved;
+191 copper items are added. Native DRC/parity are zero; open connections fall
+from 231 to 220. The manufacturing gate enforces the new continuity contract
+and retains the outstanding engineering blockers.
+
+Evidence: `generated/sx1262-supply-routing.json`, `sx1262-supply-checks.json`
+and `sx1262-supply-tests.json`. The previous board and placement are archived
+at `archive/handset-before-sx1262-supply/eaa92c47fb4f/`. This checkpoint does
+not release fabrication or power-up; the RF and TCXO qualification requirements
+above still apply.

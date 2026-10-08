@@ -3632,7 +3632,7 @@
     "x": 108.6,
     "y": 37.3,
     "side": "B",
-    "angle": 180.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local supply bypass for U4.1"

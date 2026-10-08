@@ -91,7 +91,7 @@ def inspect(out):
   circuit_failures=errors,negative_tests=negative,copper=board,
   qualification_open=['TCXO maximum output amplitude is not specified in series data; confirm <=1.2Vpp with supplier/bench evidence.',
    'Verify DIO3 ramp/current, oscillator startup, loaded frequency, temperature drift and phase noise.',
-   'Complete remaining SX1262 supply/ground, RF frontend and conducted/antenna qualification.'],fabrication_released=False)
+   'Qualify routed SX1262 supply/ground; complete thermal layout, RF frontend and conducted/antenna qualification.'],fabrication_released=False)
 
 if __name__=='__main__':
  out=Path(sys.argv[1]) if len(sys.argv)>1 else ROOT

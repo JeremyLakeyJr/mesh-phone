@@ -210,7 +210,7 @@ C74,1uF 10% X5R 10V,Capacitor_SMD:C_0402_1005Metric,121.2,46,B,90,cc-radio
 L11,1kohm @100MHz,Inductor_SMD:L_0402_1005Metric,116.8,41.3,B,90,cc-radio
 TP1,CC_GDO2_TEST,TestPoint:TestPoint_Pad_D1.0mm,118.2,30,B,0,cc-radio
 L12,15uH 20%,Inductor_SMD:L_TDK_MLZ2012_h1.25mm,111,31.5,B,180.0,radios
-C75,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,108.6,37.3,B,180.0,radios
+C75,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,108.6,37.3,B,0,radios
 C76,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,114.8,30.5,B,0,radios
 U25,STM32G031G8U6,Package_DFN_QFN:QFN-28_4x4mm_P0.5mm,100,113,B,0,power-supervisor
 U26,TPS7A0230PDBVR,Package_TO_SOT_SMD:SOT-23-5,91,111,B,0,power-supervisor

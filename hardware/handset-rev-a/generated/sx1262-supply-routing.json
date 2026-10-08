@@ -1,0 +1,57 @@
+{
+  "rotated_refs": [
+    "C75"
+  ],
+  "preserved_pad_groups": 596,
+  "source_board_sha256": "eaa92c47fb4f4fff56e895693c0c5db2411e924c53b421bee38ff1f17ff1a730",
+  "final_board_sha256": "f178a595df447fabd589798bf3ee2393394b458c0178051075f2736e28f066b1",
+  "preserved_copper_items": 9280,
+  "added_copper_items": 191,
+  "routes": [
+    {
+      "start": [
+        111.15,
+        38.65
+      ],
+      "end": [
+        107.4,
+        36.02
+      ],
+      "width_mm": 0.3,
+      "trace_length_mm": 4.868,
+      "layer_transitions": 0
+    },
+    {
+      "start": [
+        107.4,
+        36.02
+      ],
+      "end": [
+        113.4,
+        30.5
+      ],
+      "width_mm": 0.3,
+      "trace_length_mm": 8.679,
+      "layer_transitions": 0
+    },
+    {
+      "start": [
+        113.4,
+        30.5
+      ],
+      "end": [
+        84.3,
+        72.2
+      ],
+      "width_mm": 0.5,
+      "trace_length_mm": 76.695,
+      "layer_transitions": 10
+    }
+  ],
+  "fabrication_released": false,
+  "native_drc_findings": 0,
+  "schematic_parity_findings": 0,
+  "unconnected_items": 220,
+  "archive": "archive/handset-before-sx1262-supply/eaa92c47fb4f",
+  "final_pad_group_preservation_verified": true
+}

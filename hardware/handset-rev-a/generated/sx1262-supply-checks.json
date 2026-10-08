@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "net": "+3V3",
+      "physical_pads": 7,
+      "missing": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "physical_pads": 9,
+      "missing": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "SX1262 input supplies and ground continuity; RF frontend, thermal layout and electrical qualification remain open."
+}
