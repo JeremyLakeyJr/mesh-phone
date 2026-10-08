@@ -61,15 +61,22 @@ and [`hardware/handset-rev-a/candidate-components.csv`](hardware/handset-rev-a/c
 
 ## Fabrication readiness checklist
 
-Checkpoint: **2026-10-07**. Checked items mean the stated design-file work is
+Checkpoint: **2026-10-08**. Checked items mean the stated design-file work is
 complete, not that the hardware has passed bench testing. Current status:
 **261 schematic components, 2,537 passing integrity checks, zero schematic/PCB
 parity findings, 30 ERC findings, zero DRC findings, and
-250 unconnected items.** Eleven engineering blocker groups remain open.
+238 unconnected items.** Eleven engineering blocker groups remain open.
 The detailed source of truth is
 [release-blockers.json](hardware/handset-rev-a/release-blockers.json).
 
+Current priority is prototype fabrication readiness: complete the missing circuits,
+finish copper and return paths, clear ERC/DRC, freeze the BOM and mechanical fit,
+and obtain fabricator/assembler DFM review. Firmware feature work follows this
+hardware work. Bench qualification remains required after prototype assembly.
+
 ### Completed design work
+
+- [x] Route amplifier power, ground and local shutdown bias; move C13 beside U6. Fifteen physical pads pass continuity, five regression cases pass, and existing copper remains intact. Speaker/I²S/microphone routing remains open. [Layout checkpoint](hardware/handset-rev-a/README.md#audio-power-routing-checkpoint).
 
 - [x] Cross-build an ESP32-S3 keypad bring-up application with I²C, GPIO8 interrupts, USB logs and start/stop/recovery commands. Twelve session tests and native pin-map checks pass. [Build and commissioning instructions](firmware/bringup/README.md); hardware testing remains open.
 - [x] Complete the 16-key matrix copper (72 physical pads), add five routing regression cases and a host-tested keypad driver with overflow recovery. [Routing and firmware evidence](hardware/handset-rev-a/keypad-routing-review.md).
@@ -131,7 +138,7 @@ before final routing and manufacturing exports.
 - [ ] **BOM and footprints:** freeze all orderable parts with tolerance, voltage, power, dielectric, temperature and lifecycle requirements. Independently audit every custom symbol pin map, package, exposed pad, paste pattern, orientation and connector mating direction. Define DNP options and approved substitutions.
 - [ ] **Mechanical fit:** reconcile the PCB with the pocketable case, actual battery, external screen/FPC, trackball opening and retention, top speaker, bottom microphone, antennas, mounting hardware and external module port. Check populated heights, cable bends and moved power-switch access using a full assembly model and fit prototype.
 - [ ] **Fabricator rules:** confirm the proposed JLC04161H-7628 four-layer stackup, copper weights, impedance targets, drill/via limits, solder-mask rules and ESP32 and expansion J16.8/U14.1/U14.6/U16.1 via-in-pad filling/capping requirements with the chosen fabricator. Resolve RF reference via sizes against those capabilities.
-- [ ] **Complete PCB routing:** connect all 250 currently unconnected items; finish return planes, ground stitching, thermal paths and supply distribution. Review switching loops, RF/USB impedance, antenna keepouts and analog/digital interference. Recheck clearances after all placement changes.
+- [ ] **Complete PCB routing:** connect all 238 currently unconnected items; finish return planes, ground stitching, thermal paths and supply distribution. Review switching loops, RF/USB impedance, antenna keepouts and analog/digital interference. Recheck clearances after all placement changes.
 - [ ] **Independent electrical review:** check every pin and power state against manufacturer documents, including boot straps, pull resistors, power sequencing, unpowered interfaces and test access. Close each blocker with evidence rather than marking an incomplete subsystem complete.
 - [ ] **Final native checks:** regenerate netlist/ERC/DRC from the exact release revision; resolve the 30 current ERC findings and all airwires; retain zero DRC findings. Require zero parity errors and passing circuit/continuity checks. Any genuinely intentional rule exception needs a documented engineering justification, not a blanket waiver.
 - [ ] **Prototype manufacturing package:** export and inspect Gerbers, plated/non-plated drill files, fabrication drawing/stackup, assembly drawings, full MPN BOM, DNP list and pick-and-place files. Verify units, origin, bottom-side rotation, pin 1, polarity and layer alignment in an independent viewer; obtain fabricator/assembler DFM feedback.

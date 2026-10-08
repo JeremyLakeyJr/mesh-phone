@@ -1,0 +1,125 @@
+{
+  "moved_refs": {
+    "C13": [
+      77.45,
+      80.9,
+      90
+    ]
+  },
+  "preserved_pad_groups": 613,
+  "source_board_sha256": "a31246005c3d5d6aa29dfd59e4b5d697aa794ebdab3368404171c9db5001cd33",
+  "final_board_sha256": "7d4b34c23603e10de7fc26a3ee87e2f1e0ec41fb42c035e0aa0548b371f8cae6",
+  "preserved_copper_items": 9075,
+  "added_copper_items": 163,
+  "routes": [
+    {
+      "start": "U6.4",
+      "end": "(74.2, 82.65)",
+      "net": "MEDIA_EN",
+      "width_mm": 0.15,
+      "trace_length_mm": 9.895,
+      "layer_transitions": 2
+    },
+    {
+      "start": "R13.1",
+      "end": "(82.2, 85.2)",
+      "net": "MEDIA_EN",
+      "width_mm": 0.15,
+      "trace_length_mm": 1.1,
+      "layer_transitions": 0
+    },
+    {
+      "start": "U6.4 escape",
+      "end": "R13.1",
+      "net": "MEDIA_EN",
+      "width_mm": 0.15,
+      "trace_length_mm": 15.472,
+      "layer_transitions": 3
+    },
+    {
+      "start": "C13.1",
+      "end": "C14.1",
+      "net": "+3V3",
+      "width_mm": 0.3,
+      "trace_length_mm": 10.172,
+      "layer_transitions": 3
+    },
+    {
+      "start": "C13.1",
+      "end": "main +3V3 trunk 84.3,72.2",
+      "net": "+3V3",
+      "width_mm": 0.5,
+      "trace_length_mm": 19.812,
+      "layer_transitions": 3
+    },
+    {
+      "start": "U6.11",
+      "end": "(80.4, 85.1)",
+      "net": "GND",
+      "width_mm": 0.25,
+      "trace_length_mm": 1.549,
+      "layer_transitions": 0
+    },
+    {
+      "start": "C13.2",
+      "end": "(80.3, 81.55)",
+      "net": "GND",
+      "width_mm": 0.25,
+      "trace_length_mm": 5.951,
+      "layer_transitions": 2
+    },
+    {
+      "start": "C14.2",
+      "end": "(80.4, 85.1)",
+      "net": "GND",
+      "width_mm": 0.25,
+      "trace_length_mm": 9.334,
+      "layer_transitions": 2
+    },
+    {
+      "start": "R13.2",
+      "end": "existing ground via 83.45,85.8",
+      "net": "GND",
+      "width_mm": 0.25,
+      "trace_length_mm": 1.043,
+      "layer_transitions": 0
+    }
+  ],
+  "fabrication_released": false,
+  "removed_unused_escape_copper_ids": [
+    "7c651990-bb05-4447-9191-9080fb42a330",
+    "75c5979b-d3f6-40a4-8eef-291adc3075eb",
+    "9b8e04d9-fb6b-4739-9e09-1d4ad2e8ac52",
+    "36b6ea9c-d5fa-4814-ad75-ca43d70bcc17",
+    "f95f622d-1986-4299-9350-10696f133121",
+    "77c2aa86-5d46-457a-b43f-1a8c2a7718b0",
+    "4176186a-4c48-446e-9d9d-f5c042575b23",
+    "5a08ee99-711f-42b0-92a0-b611a77dbb1a",
+    "5337dd1f-fa7a-472e-a580-afa60dfed2d3",
+    "24617edd-f90e-42b5-99ca-67b5974c4259",
+    "08f63b03-5d99-467b-9335-664cb66378e4",
+    "82e6a049-6498-4d98-9f7b-2f889b45312e",
+    "8110de36-3af1-45f6-8a6c-e9baaf653af5",
+    "fa36330a-c68b-4166-b9f5-5714c21578e4",
+    "98aa6a24-64e2-42df-898e-662793f00bb8",
+    "80ae3b37-ecd1-4537-b887-c49351c1f98f",
+    "000ce2e3-6b1b-4a28-8aeb-ce6266bde87d",
+    "1b8706a8-0e05-4d3c-b753-d8f8d2f68ce8",
+    "fb50e2fa-2388-4c49-8c94-a4ba6b0c7f19",
+    "432d9dc8-1ab6-42b7-8728-06f8f6b4cdf6",
+    "a81a019a-de63-4da2-98d3-f7a5381f797e",
+    "65f6dfd9-dbdf-43c3-8238-af7ae18a4915",
+    "c0faa470-fed8-4052-8159-2ab52d1bb66a",
+    "7c95fbef-64e6-4c04-8afa-238e3f2571fc",
+    "424a8ab9-bfb9-4b7c-bf9a-6650116f17f7",
+    "278891c7-ca39-4ab3-a9ae-b84392bfd342",
+    "3ccea6f3-b5f1-474d-adf1-f2df0ec90392",
+    "098cc7dc-2005-4d8c-b66c-48c8c32787d7",
+    "88202cea-5a62-4bb2-a911-394efb55f896"
+  ],
+  "routes_are_construction_history": true,
+  "final_continuity_report": "audio-routing-check.json",
+  "unconnected_items": 238,
+  "unchanged_footprints_preserved": true,
+  "final_pad_group_preservation_verified": true
+}

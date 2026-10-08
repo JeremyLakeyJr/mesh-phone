@@ -50,7 +50,7 @@ R12,10k,Resistor_SMD:R_0402_1005Metric,121.2,44.2,B,0,cc-radio
 C11,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,118,38.8,B,90,cc-radio
 C12,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,118,40.8,B,90,cc-radio
 U6,MAX98357AETE+,Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm,78,84,B,0,audio
-C13,100nF,Capacitor_SMD:C_0402_1005Metric,77.45,80.9,B,90,audio
+C13,100nF,Capacitor_SMD:C_0402_1005Metric,82,83,B,0,audio
 C14,10uF,Capacitor_SMD:C_0805_2012Metric,73,86,B,0,audio
 R13,100k,Resistor_SMD:R_0402_1005Metric,82,86,B,0,audio
 J3,MEDIA_SPEAKER_DIFFERENTIAL,Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical,88,35,B,0,audio

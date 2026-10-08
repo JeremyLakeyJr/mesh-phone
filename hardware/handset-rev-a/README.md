@@ -5,8 +5,9 @@ This is a new board and hierarchical schematic, not the old Rev F layout.
 **It is incomplete, partially routed, and not ready to fabricate or power.**
 The original Rev F project is preserved in `../rev-f/`.
 
-Latest: [SX1262 core regulator correction](sx1262-power-review.md).
-The clock and RF frontend are still incomplete.
+Latest: [amplifier power routing](#audio-power-routing-checkpoint). Fabrication
+readiness takes priority over additional firmware features. RF, NFC/LF and other
+unfinished circuits remain fabrication blockers.
 
 ## Implemented in the design files
 
@@ -140,3 +141,33 @@ blockers remain. See [population-review.md](population-review.md) for the
 - [u-blox integration-document availability](https://content.u-blox.com/sites/default/files/documents/UBX-M10050-KB_IP_IN_UBX-22012688-2.pdf)
 - [SIMCom A7672G specifications and certification list](https://www.simcom.com/product/A7672G.html)
 - [Quectel EG25-G carrier and software documents](https://www.quectel.com/product/lte-eg25-g/)
+
+
+## Audio power routing checkpoint
+
+2026-10-08: U6 supply pins, exposed-pad/ground pins, C13/C14 bypass network and
+R13 local shutdown bias now pass physical continuity checks. C13 moved from
+(82, 83) mm to (77.45, 80.9) mm, rotated 90 degrees, to put its 100 nF bypass
+beside U6. No other footprint, previous track/via, stackup or design rule changed.
+All 613 pre-existing connected pad groups retain continuity; all 9,075 previous
+copper items remain. The original checkpoint is archived at
+`archive/handset-before-audio-routing/a31246005c3d/` in the repository root.
+
+The [MAX98357A datasheet, page 33](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf)
+specifies supply bypassing and low-resistance supply/output/ground paths.
+This routing uses a 0.5 mm feed to the existing 3.3 V trunk, a 0.3 mm bulk-capacitor
+branch and short 0.25 mm VDD pad escapes. It is a CAD continuity checkpoint;
+current capacity, ground-return/thermal performance, supply noise and audio
+performance still need engineering qualification. The 3.3 V system load budget
+remains open.
+
+[Construction and preservation evidence](generated/audio-routing.json),
+[15-pad continuity checks](generated/audio-routing-check.json) and
+[five routing regression cases](generated/audio-routing-tests.json) are included
+in the board checks. The release gate checks the new copper directly.
+Native DRC and schematic parity are zero; unconnected items fall from 250 to 238.
+Thirty ERC findings and eleven engineering blocker groups remain open.
+
+Speaker output placement/routing, I²S, the U2 MEDIA_EN connection and the microphone
+are still unfinished. Complete the speaker placement review before routing its
+switching-current paths. The circuit is not ready for power-up or fabrication.

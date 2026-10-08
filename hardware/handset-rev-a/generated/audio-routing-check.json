@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "net": "+3V3",
+      "physical_pads": 5,
+      "missing": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "physical_pads": 8,
+      "missing": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    },
+    {
+      "net": "MEDIA_EN",
+      "physical_pads": 2,
+      "missing": [],
+      "wrong_net": [],
+      "unexpected_nets": [],
+      "passed": true
+    }
+  ],
+  "fabrication_released": false,
+  "scope": "Amplifier supply/ground, local shutdown bias only; Speaker, I2S, U2 enable connection, microphone and electrical qualification remain open."
+}

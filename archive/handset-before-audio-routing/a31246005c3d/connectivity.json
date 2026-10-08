@@ -922,10 +922,10 @@
       "1": "+3V3",
       "2": "GND"
     },
-    "x": 77.45,
-    "y": 80.9,
+    "x": 82,
+    "y": 83,
     "side": "B",
-    "angle": 90,
+    "angle": 0,
     "sheet": "audio",
     "footprint": "Capacitor_SMD:C_0402_1005Metric"
   },
