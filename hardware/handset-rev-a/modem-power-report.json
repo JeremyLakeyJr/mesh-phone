@@ -118,8 +118,8 @@
     "existing_connector": "Connector_Molex:Molex_Pico-Lock_205338-0002_1x02-1MP_P2.00mm_Horizontal"
   },
   "input_sha256": {
-    "generated/connectivity.json": "728a7229f34851f1a0b463cfdc8207018a5e458c6d4a1c914901085f8c8bca46",
-    "generated/netlist.xml": "fc19d5c9b1ccd4c54bfb35f15cd0364e2018ef2982d8e1ea3807078575134b52",
+    "generated/connectivity.json": "009aa4ef709fe1da15f48c1cc5dd3d45171a143e91b56d34e7525d44237af0e6",
+    "generated/netlist.xml": "7c32c2f275cd543d224b23e9f27fee2d02f7072ccb508c4f3bf15f7aaba24b0f",
     "battery-qualification.json": "6da41ab8446575574853bfda2ff0e4855448482ada4bb79ebd91d133f5c2f5f0",
     "charger-policy.json": "6af0fdc61a946b67e9c8ed9f99db0ccbfab4c120ae3f87bbed32501f0e419baa",
     "battery-upgrade-requirements.json": "d31f49edf0624f78d942495ca4f6d9435e388a97696a09f0be63f10a37731ac8"

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/lakey/Documents/mesh-phone/hardware/handset-rev-a/generated/handset.kicad_sch</source>
-    <date>2026-10-08T19:48:06</date>
+    <date>2026-10-08T19:13:37</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -3158,16 +3158,14 @@
       </units>
     </comp>
     <comp ref="C10">
-      <value>47nF 10% X7R 25V</value>
+      <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
-        <field name="MPN">GRM155R71E473KA88D</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM155R71E473KA88D"/>
       <property name="Sheetname" value="SX1262 LoRa radio"/>
       <property name="Sheetfile" value="radios.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3417,32 +3415,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="C101">
-      <value>47pF 5% C0G 50V</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="MPN">C1005C0G1H470J050BA</field>
-        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="C1005C0G1H470J050BA"/>
-      <property name="Sheetname" value="SX1262 LoRa radio"/>
-      <property name="Sheetfile" value="radios.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/SX1262 LoRa radio/" tstamps="/2a081a7b-217e-58c7-a4a5-3710e9e9c4d2/"/>
-      <tstamps>84606a67-eab6-590d-8686-e02b1e770bfb</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="J20">
       <value>LORA_915_ANT</value>
       <footprint>Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical</footprint>
@@ -3484,32 +3456,6 @@
       <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
       <sheetpath names="/SX1262 LoRa radio/" tstamps="/2a081a7b-217e-58c7-a4a5-3710e9e9c4d2/"/>
       <tstamps>63edfa5e-c232-5e55-8874-b9f0c433ddb1</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="L13">
-      <value>47nH 2%</value>
-      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
-      <fields>
-        <field name="MPN">LQW15AN47NG80D</field>
-        <field name="Footprint">Inductor_SMD:L_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="MPN" value="LQW15AN47NG80D"/>
-      <property name="Sheetname" value="SX1262 LoRa radio"/>
-      <property name="Sheetfile" value="radios.kicad_sch"/>
-      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
-      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
-      <sheetpath names="/SX1262 LoRa radio/" tstamps="/2a081a7b-217e-58c7-a4a5-3710e9e9c4d2/"/>
-      <tstamps>9b815fd1-0686-5a39-bfae-5172c4ab835d</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -9575,7 +9521,6 @@
     <net code="56" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
-      <node ref="C101" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
       <node ref="C12" pin="2" pintype="passive"/>
       <node ref="C13" pin="2" pintype="passive"/>
@@ -10433,7 +10378,6 @@
       <node ref="U4" pin="21" pinfunction="RFI_P_21" pintype="input"/>
     </net>
     <net code="175" name="SX_RFO" class="Default">
-      <node ref="L13" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U36" pin="1" pinfunction="RFO_1" pintype="passive"/>
       <node ref="U4" pin="23" pinfunction="RFO_23" pintype="output"/>
     </net>
@@ -10488,8 +10432,6 @@
     </net>
     <net code="187" name="SX_VR_PA" class="Default">
       <node ref="C10" pin="1" pintype="passive"/>
-      <node ref="C101" pin="1" pintype="passive"/>
-      <node ref="L13" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U4" pin="24" pinfunction="VR_PA_24" pintype="power_out"/>
     </net>
     <net code="188" name="SX_XTA" class="Default">

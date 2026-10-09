@@ -65,6 +65,11 @@ if (out/'audio-routing.json').exists():
     from check_handset_audio import check_board as check_audio
     audio=check_audio(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['audio_routing_failures']=[g['net'] for g in audio['groups'] if not g['passed']]
+if (out/'sx1262-pa-update.json').exists():
+    from check_handset_sx1262_pa import inspect as check_sx_pa
+    pa=check_sx_pa(out)
+    issues['sx1262_pa_failures']=pa['failures']+[str(t) for t in pa['negative_tests'] if not t['rejected']]
+    issues['sx1262_pa_qualification']=pa['qualification_open']
 if (out/'sx1262-rf-update.json').exists():
     from check_handset_sx1262_rf import inspect as check_sx_rf
     rf=check_sx_rf(out)

@@ -759,7 +759,7 @@
   },
   {
     "ref": "C10",
-    "value": "47nF 10% X7R 25V",
+    "value": "100nF",
     "libid": "Device:C",
     "nets": {
       "1": "SX_VR_PA",
@@ -770,9 +770,7 @@
     "side": "B",
     "angle": 0,
     "sheet": "radios",
-    "footprint": "Capacitor_SMD:C_0402_1005Metric",
-    "mpn": "GRM155R71E473KA88D",
-    "role": "PA bypass on VR_PA side of choke; replaces provisional 100nF"
+    "footprint": "Capacitor_SMD:C_0402_1005Metric"
   },
   {
     "ref": "R10",
@@ -4832,39 +4830,5 @@
     "sheet": "radios",
     "mpn": "RC0402FR-07100KL",
     "role": "Default RX while DIO2 is high impedance"
-  },
-  {
-    "ref": "L13",
-    "value": "47nH 2%",
-    "libid": "Device:L",
-    "footprint": "Inductor_SMD:L_0402_1005Metric",
-    "nets": {
-      "1": "SX_VR_PA",
-      "2": "SX_RFO"
-    },
-    "x": 115,
-    "y": 45,
-    "side": "F",
-    "angle": 0,
-    "sheet": "radios",
-    "mpn": "LQW15AN47NG80D",
-    "role": "PA RF choke; 47nH baseline from RAK4270; qualify current, RF loss and harmonics"
-  },
-  {
-    "ref": "C101",
-    "value": "47pF 5% C0G 50V",
-    "libid": "Device:C",
-    "footprint": "Capacitor_SMD:C_0402_1005Metric",
-    "nets": {
-      "1": "SX_VR_PA",
-      "2": "GND"
-    },
-    "x": 115,
-    "y": 43.7,
-    "side": "F",
-    "angle": 0,
-    "sheet": "radios",
-    "mpn": "C1005C0G1H470J050BA",
-    "role": "PA high-frequency bypass on VR_PA side of choke; provisional RF placement"
   }
 ]

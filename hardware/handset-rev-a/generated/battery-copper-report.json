@@ -1,6 +1,6 @@
 {
   "scope": "J1.1 to F2.1 only; excludes fuse, contact, harness, VBAT distribution and return",
-  "board_sha256": "ba78918224a3de1dd34e390ddd224f4683346cb1faf75e19a896d27b5a80ee18",
+  "board_sha256": "9a212933222f6cdba85769860108008780895b07be7ed762b6e6fde98a637c03",
   "segment_count": 8,
   "cases": [
     {

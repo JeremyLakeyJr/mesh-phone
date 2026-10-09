@@ -268,3 +268,69 @@ finish RF placement, routing and ground vias; qualify switch timing, DC
 isolation, conducted power/harmonics, receive sensitivity, thermal behavior,
 clock and antenna coexistence. The release gate retains these requirements.
 No fabrication or power-up release is implied.
+
+
+## PA choke and bypass checkpoint — 2026-10-08
+
+The PA feed is now captured: `U4.24 (VR_PA)` feeds L13, whose other end
+joins `U4.23 (RFO)` and `U36.1`. C10 and C101 connect from VR_PA to ground,
+on the supply side of the choke. This rail remains separate from the core
+VREG output and +3V3. No extra power flag is needed for U4's PA output.
+
+| Ref | Selected part | Value / function |
+| --- | --- | --- |
+| L13 | LQW15AN47NG80D | 47 nH ±2%, 0402 wirewound PA choke |
+| C10 | GRM155R71E473KA88D | 47 nF ±10%, X7R, 25 V; replaces provisional 100 nF |
+| C101 | C1005C0G1H470J050BA | 47 pF ±5%, C0G, 50 V; high-frequency PA bypass |
+
+The values follow the manufacturer's
+[RAK4270 schematic](https://downloads.rakwireless.com/LoRa/RAK4270/Hardware-Specification/RAK4270_Schematic.pdf):
+L1 is 47 nH and the VR_PA shunts C32/C33 are 47 nF/47 pF.
+[Johanson AN101](https://www.johansontechnology.com/docs/4476/Johanson_AN101.pdf)
+also shows the external PA choke and two bypass capacitors around its IPD.
+**This combines a documented SX1262 PA baseline with the Johanson topology;
+it is not a qualified reference BOM/layout for this assembled frontend.**
+The chosen supplier parts are engineering selections; the RAK schematic
+establishes nominal values, not these exact order codes.
+
+[Murata's component list](https://www.murata.com/-/media/webrenewal/tool/library/common-pdf/static-model/component-list-ind-s-2602.ashx?cvid=20260515010000000000&la=en-gb)
+identifies LQW15AN47NG80. Its
+[manufacturer-authored data sheet, mirrored by Arrow](https://static6.arrow.com/aropdfconversion/dad745742b96a55e3970cd4197a24f0c7dc60c0/lqw15an47ng80.pdf)
+lists the D tape suffix, 440 mA temperature-rise rating and 0.648 ohm maximum
+DC resistance. These are component limits, not PA current/thermal approval.
+C10's value/dielectric/rating are recorded in
+[Murata's MLCC list](https://www.murata.com/-/media/webrenewal/tool/library/common-pdf/dynamic-model/component-list-d-mlcc-2506.ashx?cvid=20250805040419000000&la=en).
+[TDK's C101 product page](https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1005C0G1H470J050BA)
+identifies the selected 0402 part. Confirm procurement status and assembly
+land patterns when the BOM is frozen.
+
+C10 keeps its previous back-side position. L13/C101 have provisional
+front-side positions beside the RF circuit; no PA copper is added. Final
+layout must bring the choke/bypass next to U4's RF pins, with short ground
+returns and the required RF ground geometry. The existing TCXO occupies
+nearby back-side space, so resolve that placement conflict before routing.
+Do not route this provisional arrangement as if it were the final RF layout.
+
+The independent PA checker enforces exact VR_PA/RFO membership, bypass
+grounds, values, MPNs and PCB/netlist agreement. Eleven mutations reject
+wrong supply rails, the core-switch node, bypasses on the RFO side, a wrong
+IPD connection, the old C10 value, wrong choke value/package and missing MPN.
+Both the integrity gate and manufacturing gate enforce the PA contract;
+qualification remains an explicit manufacturing blocker.
+
+There are 277 components and 2,644 passing integrity assertions. Native DRC,
+schematic parity and placement findings are zero; overall ERC remains 20
+and the SX1262 sheet is clear. Open connections increase from 245 to 249
+because the new PA parts are still unrouted. All 9,471 existing copper items,
+279 existing footprint geometries and 623 existing connected pad groups are
+preserved. Only C10's value/MPN changes among existing PCB components.
+
+Evidence: `generated/sx1262-pa-update.json`, `sx1262-pa-checks.json` and
+`sx1262-pa-bom.csv`. The previous CAD is archived at
+`archive/handset-before-sx1262-pa/ba78918224a3/`.
+
+**Next:** resolve RF/TCXO placement, route PA and RF paths against the chosen
+stackup, complete ground/thermal geometry, and clear remaining circuit and
+routing blockers. PA current, supply droop, RF matching, power/harmonics and
+receive sensitivity require qualification. Fabrication and power-up remain
+unreleased.

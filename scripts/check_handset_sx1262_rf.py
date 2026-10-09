@@ -7,7 +7,7 @@ import pcbnew as p
 p.SwigPyIterator.next=p.SwigPyIterator.__next__
 ROOT=Path(__file__).resolve().parents[1]/'hardware/handset-rev-a/generated'
 NETS={
- 'SX_RFO':'U4.23 U36.1','SX_RFI_N':'U4.22 U36.3','SX_RFI_P':'U4.21 U36.4',
+ 'SX_RFO':'U4.23 U36.1 L13.2','SX_RFI_N':'U4.22 U36.3','SX_RFI_P':'U4.21 U36.4',
  'SX_TX_MATCH':'U36.8 C99.1','SX_TX_AC':'C99.2 U37.1',
  'SX_RX_MATCH':'U36.6 C100.1','SX_RX_AC':'C100.2 U37.3',
  'SX_ANT_AC':'U37.5 C98.1','LORA_RF_50R':'C98.2 J20.1',
@@ -53,7 +53,7 @@ def inspect(out):
    if q.GetNetname()!=nets.get(ref+'.'+pin):failures.append(ref+'.'+pin+' board net')
  return dict(passed=not failures and all(t['rejected'] for t in negative),failures=failures,negative_tests=negative,
   truth_table={'CTRL_low':'RFIN pin5 -> RF1 pin3 (RX)','CTRL_high':'RFIN pin5 -> RF2 pin1 (TX)'},
-  qualification_open=['PA choke and final VR_PA bypass values remain incomplete.',
+  qualification_open=['PA choke/bypass schematic is captured; complete local placement/copper and qualify PA load behavior.',
    'RF component placement is provisional; complete RF routing and manufacturer ground-via geometry against the selected stackup.',
    'Verify zero DC at all switch RF ports; qualify 100pF blocks, insertion loss, RF switch timing, conducted power/harmonics and sensitivity.',
    'Complete thermal layout, supply integrity, clock and antenna/coexistence qualification.'],fabrication_released=False)

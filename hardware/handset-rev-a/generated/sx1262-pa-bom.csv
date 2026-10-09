@@ -1,0 +1,4 @@
+ref,value,mpn,footprint,role
+C10,47nF 10% X7R 25V,GRM155R71E473KA88D,Capacitor_SMD:C_0402_1005Metric,PA bypass on VR_PA side of choke; replaces provisional 100nF
+L13,47nH 2%,LQW15AN47NG80D,Inductor_SMD:L_0402_1005Metric,"PA RF choke; 47nH baseline from RAK4270; qualify current, RF loss and harmonics"
+C101,47pF 5% C0G 50V,C1005C0G1H470J050BA,Capacitor_SMD:C_0402_1005Metric,PA high-frequency bypass on VR_PA side of choke; provisional RF placement

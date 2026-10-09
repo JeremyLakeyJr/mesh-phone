@@ -42,7 +42,7 @@ R9,887k 1%,Resistor_SMD:R_0402_1005Metric,124,59,F,0,usb-detect
 U4,SX1262IMLTRT,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,113,36,B,0,radios
 C8,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,114.8,32,B,0,radios
 C9,470nF 10% X5R 10V,Capacitor_SMD:C_0402_1005Metric,108.3,31.5,B,0,radios
-C10,47nF 10% X7R 25V,Capacitor_SMD:C_0402_1005Metric,117,37,B,0,radios
+C10,100nF,Capacitor_SMD:C_0402_1005Metric,117,37,B,0,radios
 R10,10k,Resistor_SMD:R_0402_1005Metric,110,42,B,0,radios
 U5,CC1101RGPR,Package_DFN_QFN:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,121.5,39,B,0,cc-radio
 R11,56k 1%,Resistor_SMD:R_0402_1005Metric,123.8,42.85,B,90,cc-radio
@@ -274,5 +274,3 @@ C98,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,123,45,F,0,radios
 C99,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,118,42.5,F,0,radios
 C100,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,121,43,F,0,radios
 R93,100k 1%,Resistor_SMD:R_0402_1005Metric,123,48,F,0,radios
-L13,47nH 2%,Inductor_SMD:L_0402_1005Metric,115,45,F,0,radios
-C101,47pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,115,43.7,F,0,radios

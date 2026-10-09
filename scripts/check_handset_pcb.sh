@@ -6,6 +6,9 @@ kicad-cli sch export netlist "$project/handset.kicad_sch" --format kicadxml -o "
 kicad-cli sch erc "$project/handset.kicad_sch" --format json -o "$project/erc.json"
 kicad-cli pcb drc "$project/handset.kicad_pcb" --schematic-parity --format json -o "$project/drc.json"
 python3 scripts/verify_handset_pcb.py
+if [[ -f "$project/sx1262-pa-update.json" ]]; then
+  python3 scripts/check_handset_sx1262_pa.py "$project"
+fi
 if [[ -f "$project/sx1262-rf-update.json" ]]; then
   python3 scripts/check_handset_sx1262_rf.py "$project"
 fi
