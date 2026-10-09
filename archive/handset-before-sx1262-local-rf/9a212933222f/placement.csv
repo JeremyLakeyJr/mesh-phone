@@ -42,8 +42,8 @@ R9,887k 1%,Resistor_SMD:R_0402_1005Metric,124,59,F,0,usb-detect
 U4,SX1262IMLTRT,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,113,36,B,0,radios
 C8,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,114.8,32,B,0,radios
 C9,470nF 10% X5R 10V,Capacitor_SMD:C_0402_1005Metric,108.3,31.5,B,0,radios
-C10,47nF 10% X7R 25V,Capacitor_SMD:C_0402_1005Metric,110.5,41.1,B,180.0,radios
-R10,10k,Resistor_SMD:R_0402_1005Metric,116.8,37.0,B,0.0,radios
+C10,47nF 10% X7R 25V,Capacitor_SMD:C_0402_1005Metric,117,37,B,0,radios
+R10,10k,Resistor_SMD:R_0402_1005Metric,110,42,B,0,radios
 U5,CC1101RGPR,Package_DFN_QFN:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,121.5,39,B,0,cc-radio
 R11,56k 1%,Resistor_SMD:R_0402_1005Metric,123.8,42.85,B,90,cc-radio
 R12,10k,Resistor_SMD:R_0402_1005Metric,121.2,44.2,B,0,cc-radio
@@ -132,9 +132,9 @@ R46,100,Resistor_SMD:R_0402_1005Metric,93,38,B,0,storage-ir
 R47,100k,Resistor_SMD:R_0402_1005Metric,96,38,B,0,storage-ir
 R48,47 1% 0.125W,Resistor_SMD:R_0805_2012Metric,96,31.5,B,0,storage-ir
 J24,TSAL6400_CASE_LED,Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical,81,34,B,0,storage-ir
-J25,TSOP38438_CASE_RX,Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical,103.0,33.7,B,0.0,storage-ir
-R49,100,Resistor_SMD:R_0402_1005Metric,101.0,38.4,B,0.0,storage-ir
-C44,1uF,Capacitor_SMD:C_0402_1005Metric,98.8,38.6,B,0.0,storage-ir
+J25,TSOP38438_CASE_RX,Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical,103,35,B,0,storage-ir
+R49,100,Resistor_SMD:R_0402_1005Metric,106,39,B,0,storage-ir
+C44,1uF,Capacitor_SMD:C_0402_1005Metric,108,42,B,0,storage-ir
 U18,SN74AHCT125PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,82,130,B,0,lf-support
 U19,SN74LVC1G17DBVR,Package_TO_SOT_SMD:SOT-23-5,82,136,B,0,lf-support
 C45,100nF,Capacitor_SMD:C_0402_1005Metric,87,130,B,0,lf-support
@@ -260,11 +260,11 @@ R86,220k 1%,Resistor_SMD:R_0402_1005Metric,83.5,102,F,0,expansion-control
 R87,10k 1%,Resistor_SMD:R_0402_1005Metric,82,104,B,0,expansion-control
 R88,22 1%,Resistor_SMD:R_0402_1005Metric,97.25,47.98,B,0,usb
 R89,22 1%,Resistor_SMD:R_0402_1005Metric,97.25,49.25,B,0,usb
-Y3,32MHz TCXO 0.5ppm temp,Handset:ECS_TXO_32CSMV_3225,105.3,38.8,B,0.0,radios
-R90,220R 1%,Resistor_SMD:R_0402_1005Metric,108.45,41.0,B,0.0,radios
-C94,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,102.2,39.5,B,180.0,radios
+Y3,32MHz TCXO 0.5ppm temp,Handset:ECS_TXO_32CSMV_3225,113.3,40.6,B,180,radios
+R90,220R 1%,Resistor_SMD:R_0402_1005Metric,109.4,39.8,B,180,radios
+C94,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,116.5,39.0,B,0,radios
 C95,10pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,109.4,38.6,B,0,radios
-U36,0900FM15K0039001E,RF_Converter:Balun_Johanson_0900FM15K0039,113.9,41.15,B,-90.0,radios
+U36,0900FM15K0039001E,RF_Converter:Balun_Johanson_0900FM15K0039,118,45,F,0,radios
 U37,BGS12WN6E6327,Package_LGA:Infineon_PG-TSNP-6-10_0.7x1.1mm_0.7x1.1mm_P0.4mm,121,45,F,0,radios
 R91,100R 1%,Resistor_SMD:R_0402_1005Metric,118,48,F,0,radios
 R92,100R 1%,Resistor_SMD:R_0402_1005Metric,121,48,F,0,radios
@@ -274,5 +274,5 @@ C98,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,123,45,F,0,radios
 C99,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,118,42.5,F,0,radios
 C100,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,121,43,F,0,radios
 R93,100k 1%,Resistor_SMD:R_0402_1005Metric,123,48,F,0,radios
-L13,47nH 2%,Inductor_SMD:L_0402_1005Metric,111.65,39.55,B,-90.0,radios
-C101,47pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,110.2,39.85,B,180.0,radios
+L13,47nH 2%,Inductor_SMD:L_0402_1005Metric,115,45,F,0,radios
+C101,47pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,115,43.7,F,0,radios

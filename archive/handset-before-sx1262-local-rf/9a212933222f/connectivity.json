@@ -765,10 +765,10 @@
       "1": "SX_VR_PA",
       "2": "GND"
     },
-    "x": 110.5,
-    "y": 41.1,
+    "x": 117,
+    "y": 37,
     "side": "B",
-    "angle": 180.0,
+    "angle": 0,
     "sheet": "radios",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "mpn": "GRM155R71E473KA88D",
@@ -782,10 +782,10 @@
       "1": "+3V3",
       "2": "SX_CS"
     },
-    "x": 116.8,
-    "y": 37.0,
+    "x": 110,
+    "y": 42,
     "side": "B",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "radios",
     "footprint": "Resistor_SMD:R_0402_1005Metric"
   },
@@ -2306,10 +2306,10 @@
       "2": "GND",
       "3": "IR_RX_VCC"
     },
-    "x": 103.0,
-    "y": 33.7,
+    "x": 103,
+    "y": 35,
     "side": "B",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "storage-ir"
   },
   {
@@ -2321,10 +2321,10 @@
       "1": "+3V3",
       "2": "IR_RX_VCC"
     },
-    "x": 101.0,
-    "y": 38.4,
+    "x": 106,
+    "y": 39,
     "side": "B",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "storage-ir"
   },
   {
@@ -2336,10 +2336,10 @@
       "1": "IR_RX_VCC",
       "2": "GND"
     },
-    "x": 98.8,
-    "y": 38.6,
+    "x": 108,
+    "y": 42,
     "side": "B",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "storage-ir"
   },
   {
@@ -4592,10 +4592,10 @@
       "3": "SX_TCXO_OUT",
       "4": "SX_TCXO_PWR"
     },
-    "x": 105.3,
-    "y": 38.8,
+    "x": 113.3,
+    "y": 40.6,
     "side": "B",
-    "angle": 0.0,
+    "angle": 180,
     "sheet": "radios",
     "mpn": "ECS-TXO-32CSMV-320-AN-TR",
     "role": "1.8V DIO3 supply; clipped sine; maximum amplitude requires supplier/bench qualification"
@@ -4609,10 +4609,10 @@
       "1": "SX_TCXO_OUT",
       "2": "SX_TCXO_COUPLED"
     },
-    "x": 108.45,
-    "y": 41.0,
+    "x": 109.4,
+    "y": 39.8,
     "side": "B",
-    "angle": 0.0,
+    "angle": 180,
     "sheet": "radios",
     "mpn": "RC0402FR-07220RL",
     "role": "Semtech series clock resistor"
@@ -4626,10 +4626,10 @@
       "1": "SX_TCXO_PWR",
       "2": "GND"
     },
-    "x": 102.2,
-    "y": 39.5,
+    "x": 116.5,
+    "y": 39.0,
     "side": "B",
-    "angle": 180.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local TCXO supply bypass"
@@ -4668,10 +4668,10 @@
       "9": "GND",
       "10": "GND"
     },
-    "x": 113.9,
-    "y": 41.15,
-    "side": "B",
-    "angle": -90.0,
+    "x": 118,
+    "y": 45,
+    "side": "F",
+    "angle": 0,
     "sheet": "radios",
     "mpn": "0900FM15K0039001E",
     "role": "Integrated SX1262 matching/filter; RF placement/routing and ground vias require qualification"
@@ -4842,10 +4842,10 @@
       "1": "SX_VR_PA",
       "2": "SX_RFO"
     },
-    "x": 111.65,
-    "y": 39.55,
-    "side": "B",
-    "angle": -90.0,
+    "x": 115,
+    "y": 45,
+    "side": "F",
+    "angle": 0,
     "sheet": "radios",
     "mpn": "LQW15AN47NG80D",
     "role": "PA RF choke; 47nH baseline from RAK4270; qualify current, RF loss and harmonics"
@@ -4859,10 +4859,10 @@
       "1": "SX_VR_PA",
       "2": "GND"
     },
-    "x": 110.2,
-    "y": 39.85,
-    "side": "B",
-    "angle": 180.0,
+    "x": 115,
+    "y": 43.7,
+    "side": "F",
+    "angle": 0,
     "sheet": "radios",
     "mpn": "C1005C0G1H470J050BA",
     "role": "PA high-frequency bypass on VR_PA side of choke; provisional RF placement"

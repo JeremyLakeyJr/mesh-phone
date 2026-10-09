@@ -47,13 +47,14 @@ def inspect(out):
   if set(pads)!=set(positions):failures.append(ref+' pad count')
   for pin,pos in positions.items():
    q=pads[pin];rel=q.GetFPRelativePosition();actual=(round(p.ToMM(rel.x),4),round(p.ToMM(rel.y),4))
+   if f.GetLayer()==p.B_Cu:actual=(actual[0],-actual[1])
    size=(round(p.ToMM(q.GetSize().x),4),round(p.ToMM(q.GetSize().y),4))
    wanted=(.25,.25) if ref=='U37' else ((.3,.625) if pin in ['5','10'] else (.6,.3))
    if actual!=pos or size!=wanted:failures.append(ref+'.'+pin+' land pattern')
    if q.GetNetname()!=nets.get(ref+'.'+pin):failures.append(ref+'.'+pin+' board net')
  return dict(passed=not failures and all(t['rejected'] for t in negative),failures=failures,negative_tests=negative,
   truth_table={'CTRL_low':'RFIN pin5 -> RF1 pin3 (RX)','CTRL_high':'RFIN pin5 -> RF2 pin1 (TX)'},
-  qualification_open=['PA choke/bypass schematic is captured; complete local placement/copper and qualify PA load behavior.',
+  qualification_open=[('Local PA and RF input copper is captured; qualify line geometry and PA load behavior.' if (out/'sx1262-local-rf-routing.json').exists() else 'PA choke/bypass schematic is captured; complete local placement/copper and qualify PA load behavior.'),
    'RF component placement is provisional; complete RF routing and manufacturer ground-via geometry against the selected stackup.',
    'Verify zero DC at all switch RF ports; qualify 100pF blocks, insertion loss, RF switch timing, conducted power/harmonics and sensitivity.',
    'Complete thermal layout, supply integrity, clock and antenna/coexistence qualification.'],fabrication_released=False)

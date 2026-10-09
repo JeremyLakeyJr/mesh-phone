@@ -72,8 +72,8 @@
       }
     ],
     "physical_pads": 14,
-    "clock_trace_length_mm": 6.789,
-    "reference_samples": 228,
+    "clock_trace_length_mm": 8.092,
+    "reference_samples": 276,
     "reference_gaps": [],
     "fabrication_released": false
   },

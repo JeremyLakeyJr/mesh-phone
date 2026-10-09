@@ -334,3 +334,74 @@ stackup, complete ground/thermal geometry, and clear remaining circuit and
 routing blockers. PA current, supply droop, RF matching, power/harmonics and
 receive sensitivity require qualification. Fabrication and power-up remain
 unreleased.
+
+
+## Local PA/RF routing checkpoint — 2026-10-09
+
+The TCXO has moved west of U4 to clear its RF pins. L13, C10, C101 and U36
+are now on the back layer beside U4. The PA feed, bypass returns and
+RFO/RFI_N/RFI_P connections to U36 are routed. **U36 ground lands and the
+downstream switch/antenna paths are still incomplete; this is not an
+operational RF frontend or a fabrication release.**
+
+Y3, R90 and C94 move together while C95 stays fixed. The clock signal path
+remains entirely on B.Cu without signal vias: 8.092 mm, below the unchanged
+10 mm check limit. All 14 clock pads and 276 In2 ground-reference samples
+pass. DIO3 power now crosses the local area on In1.Cu; it remains isolated
+from the main supply. Two local ground-zone extensions retain the adjacent
+reference plane. TCXO amplitude/startup/supply qualification is unchanged.
+
+The unrouted IR connector J25 moves from (103,35) to (103,33.7) mm; R49 and
+C44 move to (101,38.4) and (98.8,38.6) mm. These changes clear the oscillator
+courtyard while retaining connector pinout and nets. Review case-harness
+reach and assembly access before mechanical release. R10 moves to
+(116.8,37) mm. The U4 VDD_IN escape/via is rerouted locally to clear the PA
+choke; input-supply continuity still passes against the established anchors.
+All other footprint geometries stay unchanged.
+
+| Routed net | Total trace length | Geometry |
+| --- | --- | --- |
+| SX_VR_PA | 4.2094 mm | Local B.Cu choke/bypass feed, no vias |
+| SX_RFO | 4.5287 mm | B.Cu input route including choke branch, no vias |
+| SX_RFI_N | 3.0924 mm | B.Cu input fanout, no vias |
+| SX_RFI_P | 3.0924 mm | B.Cu input fanout, no vias |
+
+These are sums of CAD trace lengths, not electrical lengths. RFO includes
+its PA choke branch. The RF fanouts use 0.2 mm traces with native clearance
+checks; the receive routes have equal CAD lengths. **Neither equal length
+nor continuity validates RF impedance.** The fanouts are routing candidates
+pending adaptation/validation against the selected JLC04161H-7628 stackup.
+Do not treat them as approved 50-ohm transmission lines.
+
+The [Johanson layout guidance](https://www.johansontechnology.com/docs/4856/IPD-0900FM15K0039001E_w8h4xck.pdf)
+requires transmission-line geometry for the actual PCB material/thickness
+and emphasizes ground-via placement for harmonic attenuation. Its reference
+shows 0.2 mm ground vias; reconcile that geometry with the current board
+rules and fabricator before completing U36 grounds. The relocated U36 is a
+layout candidate, not a substitute for this review. Adjacent CC1101/GNSS
+parts constrain the downstream switch/antenna placement.
+
+Fourteen local PA/RF contract pads pass continuity, including both bypass
+returns to the established ground anchor. All 375 sampled In2 ground
+reference points under the RF input traces pass. Nine regression cases
+cover the installed board, six isolated pads, a wrong RF layer and a removed
+reference plane. The five existing clock regression cases also pass.
+The RF footprint checker now accounts for back-side mirroring while keeping
+the same terminal positions, dimensions and pin-net requirements.
+
+The change replaces 28 explicitly identified clock/local-supply copper items
+and adds 49. All other 9,443 copper items and all 627 previously connected
+pad groups are preserved; total copper items are 9,492. The manifest lists
+every removed item. Native DRC/parity and placement findings remain zero.
+All 2,644 integrity assertions pass; 277 components and 20 ERC findings are
+unchanged. Unconnected items fall from 249 to 240.
+
+Evidence: `generated/sx1262-local-rf-routing.json`,
+`sx1262-local-rf-checks.json`, `sx1262-local-rf-tests.json`, and refreshed
+clock/supply checks. Previous board/placement evidence is archived at
+`archive/handset-before-sx1262-local-rf/9a212933222f/`.
+
+**Next:** resolve RF transmission-line and U36 ground-via geometry, then
+finish switch/DC-block/antenna placement and copper. Complete thermal,
+supply, clock, conducted power/harmonics, sensitivity and coexistence
+qualification. The manufacturing gate retains these open requirements.

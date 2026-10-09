@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "SX_VR_PA continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_RFO continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_RFI_N continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_RFI_P continuity",
+      "passed": true
+    },
+    {
+      "check": "GND continuity",
+      "passed": true
+    },
+    {
+      "check": "U4 back-layer placement",
+      "passed": true
+    },
+    {
+      "check": "L13 back-layer placement",
+      "passed": true
+    },
+    {
+      "check": "C10 back-layer placement",
+      "passed": true
+    },
+    {
+      "check": "C101 back-layer placement",
+      "passed": true
+    },
+    {
+      "check": "U36 back-layer placement",
+      "passed": true
+    },
+    {
+      "check": "SX_RFO local back-layer copper without vias",
+      "passed": true
+    },
+    {
+      "check": "SX_RFO bounded route length",
+      "passed": true
+    },
+    {
+      "check": "SX_RFI_N local back-layer copper without vias",
+      "passed": true
+    },
+    {
+      "check": "SX_RFI_N bounded route length",
+      "passed": true
+    },
+    {
+      "check": "SX_RFI_P local back-layer copper without vias",
+      "passed": true
+    },
+    {
+      "check": "SX_RFI_P bounded route length",
+      "passed": true
+    },
+    {
+      "check": "SX_VR_PA local back-layer copper without vias",
+      "passed": true
+    },
+    {
+      "check": "SX_VR_PA bounded route length",
+      "passed": true
+    },
+    {
+      "check": "filled In2 ground beneath RF input corridors",
+      "passed": true
+    }
+  ],
+  "route_lengths_mm": {
+    "SX_RFO": 4.5287,
+    "SX_RFI_N": 3.0924,
+    "SX_RFI_P": 3.0924,
+    "SX_VR_PA": 4.2094
+  },
+  "reference_samples": 375,
+  "reference_gaps": [],
+  "physical_pads": 14,
+  "qualification_open": [
+    "U36 ground lands/via geometry and downstream TX/RX switch/antenna copper remain incomplete.",
+    "The 0.2mm RF input fanouts are local routing candidates, not validated 50-ohm lines; resolve geometry against Johanson layout and selected stackup.",
+    "Johanson specifies crucial 0.2mm ground vias; reconcile the selected implementation with board/fabricator drill rules before release.",
+    "Qualify clock, PA supply/thermal behavior, RF matching, conducted power/harmonics, receive sensitivity and antenna coexistence."
+  ],
+  "fabrication_released": false
+}

@@ -56,7 +56,7 @@ def inspect(out):
     return dict(passed=not failures and all(t['rejected'] for t in negative),failures=failures,
                 negative_tests=negative,scope='PA circuit captured; no claim of PA copper continuity or RF qualification',
                 qualification_open=[
-                    'PA placement is provisional and PA copper is incomplete; place VR_PA bypass/choke next to U4 RF pins with short ground returns.',
+                    ('Local PA copper is captured; qualify bypass/choke placement, RF parasitics and ground-return impedance.' if (out/'sx1262-local-rf-routing.json').exists() else 'PA placement is provisional and PA copper is incomplete; place VR_PA bypass/choke next to U4 RF pins with short ground returns.'),
                     '47nH/47nF/47pF values follow RAK4270, not a qualified BOM for this Johanson frontend; validate RF behavior and substitute-part parasitics.',
                     'Qualify PA current, supply droop, thermal rise, conducted power/harmonics and matching across the selected band.'],
                 fabrication_released=False)
