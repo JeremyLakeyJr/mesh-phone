@@ -1,0 +1,27 @@
+{
+  "source_board_sha256": "f178a595df447fabd589798bf3ee2393394b458c0178051075f2736e28f066b1",
+  "final_board_sha256": "ba78918224a3de1dd34e390ddd224f4683346cb1faf75e19a896d27b5a80ee18",
+  "added_refs": [
+    "U36",
+    "U37",
+    "R91",
+    "R92",
+    "C96",
+    "C97",
+    "C98",
+    "C99",
+    "C100",
+    "R93"
+  ],
+  "components": 275,
+  "preserved_copper_items": 9471,
+  "unchanged_footprints": 269,
+  "fabrication_released": false,
+  "scope": "Matching/filter, RF switch, control and DC blocks captured; placement provisional, PA feed and RF routing incomplete",
+  "native_drc_findings": 0,
+  "schematic_parity_findings": 0,
+  "unconnected_items": 245,
+  "archive": "archive/handset-before-sx1262-rf/f178a595df44",
+  "preserved_pad_groups": 585,
+  "final_pad_group_preservation_verified": true
+}

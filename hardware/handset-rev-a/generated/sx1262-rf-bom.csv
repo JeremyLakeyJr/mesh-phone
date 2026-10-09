@@ -1,0 +1,11 @@
+ref,value,mpn,footprint,role
+U36,0900FM15K0039001E,0900FM15K0039001E,RF_Converter:Balun_Johanson_0900FM15K0039,Integrated SX1262 matching/filter; RF placement/routing and ground vias require qualification
+U37,BGS12WN6E6327,BGS12WN6E6327XTSA1,Package_LGA:Infineon_PG-TSNP-6-10_0.7x1.1mm_0.7x1.1mm_P0.4mm,CTRL high selects TX RF2; low selects RX RF1; all RF ports require zero DC
+R91,100R 1%,RC0402FR-07100RL,Resistor_SMD:R_0402_1005Metric,DIO2 control series filter
+R92,100R 1%,RC0402FR-07100RL,Resistor_SMD:R_0402_1005Metric,Always-powered switch supply series filter
+C96,1nF 10% X7R 50V,GRM155R71H102KA01D,Capacitor_SMD:C_0402_1005Metric,Switch control/supply shunt filter
+C97,1nF 10% X7R 50V,GRM155R71H102KA01D,Capacitor_SMD:C_0402_1005Metric,Switch control/supply shunt filter
+C98,100pF 5% C0G 50V,GRM1555C1H101JA01D,Capacitor_SMD:C_0402_1005Metric,Explicit RF port DC block; 100pF starting value requires RF validation
+C99,100pF 5% C0G 50V,GRM1555C1H101JA01D,Capacitor_SMD:C_0402_1005Metric,Explicit RF port DC block; 100pF starting value requires RF validation
+C100,100pF 5% C0G 50V,GRM1555C1H101JA01D,Capacitor_SMD:C_0402_1005Metric,Explicit RF port DC block; 100pF starting value requires RF validation
+R93,100k 1%,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,Default RX while DIO2 is high impedance

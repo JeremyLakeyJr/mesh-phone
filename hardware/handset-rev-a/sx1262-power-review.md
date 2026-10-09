@@ -1,5 +1,7 @@
 # SX1262 core regulator support — 2026-09-24
 
+Latest: [RF matching/switch capture](#rf-matching-and-switch-checkpoint--2026-10-08).
+
 Follow-up: the [TCXO clock checkpoint](#tcxo-clock-checkpoint--2026-10-08) below
 adds the clock circuit and its local routing. The original regulator review is
 retained as history.
@@ -69,7 +71,7 @@ independently of the circuit generator.
 3. Route against a frozen stackup, with local returns and thermal vias;
    validate conducted RF, antenna matching and coexistence in the case.
 
-The **Johanson 0900FM15K0039001E** 2.0 × 1.25 mm integrated matching/filter
+At the original regulator checkpoint, the **Johanson 0900FM15K0039001E** 2.0 × 1.25 mm integrated matching/filter
 is a researched candidate for 862–928 MHz, not an installed component.
 Its reference still needs an external PA choke, PA bypass, RF switch and
 antenna DC block. **BGS12WN6** is a switch candidate; ordering suffix/package,
@@ -204,3 +206,65 @@ and `sx1262-supply-tests.json`. The previous board and placement are archived
 at `archive/handset-before-sx1262-supply/eaa92c47fb4f/`. This checkpoint does
 not release fabrication or power-up; the RF and TCXO qualification requirements
 above still apply.
+
+
+## RF matching and switch checkpoint — 2026-10-08
+
+Ten components now capture the matching/filter and TX/RX switch topology.
+**This is schematic capture with provisional front-side placement, not a
+routed RF frontend.** The clock area occupies space near U4's RF pins;
+final placement must be revised to follow the manufacturer layout geometry.
+No existing footprint or copper is moved at this checkpoint.
+
+| Ref | Selected part | Function |
+| --- | --- | --- |
+| U36 | 0900FM15K0039001E | Johanson integrated SX1262 TX/RX matching/filter |
+| U37 | BGS12WN6E6327XTSA1 | Infineon SPDT, PG-TSNP-6-10 |
+| R91/R92 | RC0402FR-07100RL, 100 Ω 1% | Control/supply series filters |
+| C96/C97 | GRM155R71H102KA01D, 1 nF 10% X7R 50 V | Control/supply shunt filters |
+| C98/C99/C100 | GRM1555C1H101JA01D, 100 pF 5% C0G 50 V | Antenna/TX/RX DC blocks |
+| R93 | RC0402FR-07100KL, 100 kΩ 1% | Default-RX pull-down |
+
+The [Johanson datasheet, revision 3.0](https://www.johansontechnology.com/docs/4856/IPD-0900FM15K0039001E_w8h4xck.pdf)
+identifies the part and terminal mapping. Its
+[AN101 reference](https://www.johansontechnology.com/docs/4476/Johanson_AN101.pdf)
+connects U4 RFO/RFI_N/RFI_P to the matching device, with separate TX and RX
+outputs feeding an SPDT. The PA choke and bypass remain external. RF trace
+geometry and ground-via placement are part of the filter implementation;
+component presence alone does not establish harmonic performance.
+
+The [Infineon product page](https://www.infineon.com/part/BGS12WN6)
+identifies the selected order code/package. The
+[revision 2.9 datasheet](https://www.infineon.com/assets/row/public/documents/24/49/infineon-bgs12wn6-datasheet-en.pdf)
+maps pins 1/2/3/4/5/6 to RF2/GND/RF1/VDD/RFIN/CTRL. Low selects RF1 (RX),
+high selects RF2 (TX). DIO2 drives CTRL through R91; R93 supplies the default
+low state. R92 feeds the switch from +3V3, independently of DIO3's TCXO rail.
+The schematic power flag identifies that passive supply feed, not an
+independent source. Firmware must select DIO2 RF-switch control and allow
+switch power-up/settling before transmitting.
+
+Infineon requires zero DC on all RF ports. All three ports therefore have
+explicit series capacitors. The 100 pF value is an engineering starting
+choice, reusing the specified C66 family, rather than a copied reference
+value or a validated RF match. Measure DC isolation, loss and return loss in
+the completed circuit. The control/supply 1 nF part is documented by
+[Murata](https://www.murata.com/en-sg/products/productdetail?partno=GRM155R71H102KA01D).
+
+Independent checks enforce exact net memberships, order codes, values and
+both IC land patterns. Eight mutations catch swapped TX/RX ports, bypassed
+DC blocks, swapped balanced input, wrong supply/ground and a short in place
+of the RF capacitor. Native DRC/parity are zero; the SX1262 sheet has no ERC
+findings. Overall ERC falls from 27 to 20. There are 275 components and
+2,634 passing integrity assertions. Open connections rise from 220 to 245
+because the new circuitry is deliberately still unrouted.
+
+All 9,471 prior copper items, 269 prior footprints and 585 prior connected
+pad groups are preserved. Evidence is in `generated/sx1262-rf-update.json`,
+`sx1262-rf-checks.json` and `sx1262-rf-bom.csv`; the previous CAD is archived
+at `archive/handset-before-sx1262-rf/f178a595df44/`.
+
+**Remaining:** select/capture the PA choke and final VR_PA bypass values;
+finish RF placement, routing and ground vias; qualify switch timing, DC
+isolation, conducted power/harmonics, receive sensitivity, thermal behavior,
+clock and antenna coexistence. The release gate retains these requirements.
+No fabrication or power-up release is implied.

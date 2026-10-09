@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "failures": [],
+  "negative_tests": [
+    {
+      "mutation": "U37.1 -> SX_RX_AC",
+      "rejected": true
+    },
+    {
+      "mutation": "U37.3 -> SX_TX_AC",
+      "rejected": true
+    },
+    {
+      "mutation": "U37.1 -> SX_TX_MATCH",
+      "rejected": true
+    },
+    {
+      "mutation": "U37.5 -> LORA_RF_50R",
+      "rejected": true
+    },
+    {
+      "mutation": "U36.4 -> SX_RFI_N",
+      "rejected": true
+    },
+    {
+      "mutation": "U37.4 -> SX_TCXO_PWR",
+      "rejected": true
+    },
+    {
+      "mutation": "U36.10 -> SX_RFO",
+      "rejected": true
+    },
+    {
+      "mutation": "DC block replaced by short",
+      "rejected": true
+    }
+  ],
+  "truth_table": {
+    "CTRL_low": "RFIN pin5 -> RF1 pin3 (RX)",
+    "CTRL_high": "RFIN pin5 -> RF2 pin1 (TX)"
+  },
+  "qualification_open": [
+    "PA choke and final VR_PA bypass values remain incomplete.",
+    "RF component placement is provisional; complete RF routing and manufacturer ground-via geometry against the selected stackup.",
+    "Verify zero DC at all switch RF ports; qualify 100pF blocks, insertion loss, RF switch timing, conducted power/harmonics and sensitivity.",
+    "Complete thermal layout, supply integrity, clock and antenna/coexistence qualification."
+  ],
+  "fabrication_released": false
+}
