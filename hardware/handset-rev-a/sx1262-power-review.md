@@ -405,3 +405,103 @@ clock/supply checks. Previous board/placement evidence is archived at
 finish switch/DC-block/antenna placement and copper. Complete thermal,
 supply, clock, conducted power/harmonics, sensitivity and coexistence
 qualification. The manufacturing gate retains these open requirements.
+
+
+## RF ground and impedance checkpoint — 2026-10-10
+
+All five U36 ground lands (2, 5, 7, 9, 10) now connect to local B.Cu ground
+and established ground planes. Each has a nearby through via: 0.45 mm land,
+0.2 mm hole, 0.125 mm nominal annular width, explicitly tented on both faces.
+The longest pad-center to nearest-via-center distance is 0.6 mm. No component
+moves in this checkpoint. Detailed return geometry and harmonic performance
+still require validation; this is not an RF performance sign-off.
+
+The [Johanson reference layout](https://www.johansontechnology.com/docs/4856/IPD-0900FM15K0039001E_w8h4xck.pdf)
+shows 0.2 mm ground vias and calls out their placement as important to harmonic
+attenuation. The implemented five-via/ground-pour arrangement follows those
+constraints as a layout candidate, not a claim to reproduce an unavailable
+manufacturer CAD file exactly. Confirm the intended hole definition and
+final return geometry with the manufacturer/fabricator before release.
+
+[JLCPCB's published drilling capabilities](https://jlcpcb.com/capabilities/pcb-capabilities)
+list 0.2 mm as the preferred minimum via hole and describe larger via lands
+for small-hole processing. The selected 0.45 mm land retains more than the
+board's 0.1 mm minimum annulus. The nominal board is still 1.6 mm/four layers;
+this change does not introduce blind vias or via-in-pad. Hole tolerance,
+plating, tenting and assembly acceptance remain fabricator review items.
+
+KiCad's global floors are now 0.45 mm via diameter and 0.2 mm hole so the RF
+vias can pass. **The new `generated/handset.kicad_dru` is required:** general
+rules retain the prior 0.5 mm via / 0.3 mm hole minimums. Only GND vias fully
+enclosed in the named `SX1262 RF grounding` area receive the exact
+0.45/0.2 mm exception. Copper/hole clearances and minimum annular width are
+unchanged. The checker rejects missing or weakened rule files. Native DRC
+mutation cases confirm that a small signal via in the area and a small GND
+via outside it are rejected, as is a larger drill within the RF exception.
+
+The nominal drill edges stay at least 0.15 mm outside all matching-device
+lands; a regression case rejects a drill moved onto a ground land. Fabricator
+drill-position and finished-hole tolerances still require review.
+
+The old 14.1 mm front-layer 3V3 segment crossed the new via locations. It is
+replaced by a 17.4154 mm path around the RF return area at the same 0.5 mm
+width. Input-supply continuity remains intact. Qualify the additional feed
+length and its supply impedance under transmit load; continuity and native
+clearance do not establish current/thermal performance.
+
+### Downstream 50-ohm routing target
+
+The selected [JLC04161H-7628 stackup](https://jlcpcb.com/impedance) retains
+0.2104 mm outer dielectric and 35 micrometre outer copper. A reproducible
+2-D finite-volume quasi-TEM screen uses nominal Dk 4.4 and an approximate
+solder-mask model, consistent with the existing USB screening approach.
+
+| Model at 0.34 mm trace width | Estimated single-ended impedance |
+| --- | --- |
+| 5 micrometre grid, 4 × 1.5 mm domain | 49.805 ohms |
+| 2.5 micrometre grid, same domain | 49.899 ohms |
+| 5 micrometre grid, 6 × 2.25 mm domain | 50.216 ohms |
+
+Grid refinement changes the result by 0.094 ohm; expanding the finite
+boundary changes it by 0.411 ohm. These are numerical sensitivity checks,
+not material-tolerance or impedance-coupon evidence. The same isolated-line
+model gives 63.755 ohms for a 0.2 mm trace, reinforcing that the existing
+short IC fanouts cannot simply be described as verified 50-ohm routing.
+That isolated-line result does not model the coupled RX pair or the actual
+complex chip-port impedances.
+
+A new **RF 50 ohm target** net class records a 0.34 mm routing width only for
+SX_TX_MATCH, SX_TX_AC, SX_RX_MATCH, SX_RX_AC, SX_ANT_AC and LORA_RF_50R.
+The radio's RFO/RFI_N/RFI_P fanouts remain outside this class. The model
+assumes a uniform isolated line above a continuous reference plane; pads,
+bends, near coplanar copper, vias, device matching and short transitions
+need separate review. No existing signal copper is widened at this checkpoint.
+The downstream switch/antenna layout must implement and validate these
+transitions rather than blindly apply the nominal trunk width everywhere.
+
+Evidence: `generated/rf-impedance-estimate.json` records inputs, results,
+limitations and the estimator hash. Reproduce with
+`scripts/estimate_handset_rf_impedance.py --width .34`, add `--step .0025`
+for refinement or `--span 3 --height 2.25` for the expanded domain.
+Fabricator field-solver/coupon evidence and assembled RF qualification remain
+required; no order or supplier approval is implied.
+
+### Verification and remaining work
+
+Thirteen regression cases pass: the installed board, five isolated ground
+lands, missing tenting, drill overlap with a land, three native drill-rule mutations, missing rules
+and weakened general limits. The full project integrity checks pass with
+2,644 assertions, 277 components, zero native DRC/parity/placement findings
+and unchanged 20 ERC findings. Unconnected items fall from 240 to 235.
+
+All 281 footprint geometries, 9,491 unreplaced copper items and 618 previously
+connected pad groups are preserved. One supply segment is replaced and 15
+copper items are added, for 9,506 total. Evidence is in
+`generated/sx1262-rf-ground-routing.json`, `sx1262-rf-ground-checks.json`
+and `sx1262-rf-ground-tests.json`; the previous board/project is archived at
+`archive/handset-before-sx1262-rf-ground/ca67f1aee4ed/`.
+
+**Next:** finish RF switch, DC-block and antenna placement/copper, then review
+all RF transitions and ground geometry against the reference design. Keep
+fabrication blocked pending RF/supply/clock/thermal qualification and the
+other recorded electrical/mechanical blockers.

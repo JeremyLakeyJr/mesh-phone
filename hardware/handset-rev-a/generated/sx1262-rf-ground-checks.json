@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "exactly five RF small-hole vias",
+      "passed": true
+    },
+    {
+      "check": "U36.2 established-ground continuity",
+      "passed": true
+    },
+    {
+      "check": "U36.2 via within 0.65mm",
+      "passed": true
+    },
+    {
+      "check": "U36.5 established-ground continuity",
+      "passed": true
+    },
+    {
+      "check": "U36.5 via within 0.65mm",
+      "passed": true
+    },
+    {
+      "check": "U36.7 established-ground continuity",
+      "passed": true
+    },
+    {
+      "check": "U36.7 via within 0.65mm",
+      "passed": true
+    },
+    {
+      "check": "U36.9 established-ground continuity",
+      "passed": true
+    },
+    {
+      "check": "U36.9 via within 0.65mm",
+      "passed": true
+    },
+    {
+      "check": "U36.10 established-ground continuity",
+      "passed": true
+    },
+    {
+      "check": "U36.10 via within 0.65mm",
+      "passed": true
+    },
+    {
+      "check": "separate nearest via for every ground land",
+      "passed": true
+    },
+    {
+      "check": "RF via (114.15, 41.25) drill/land/tenting/region/ground",
+      "passed": true
+    },
+    {
+      "check": "RF drill (114.15, 41.25) nominal land gap >=0.15mm",
+      "passed": true
+    },
+    {
+      "check": "RF via (113.15, 42.4) drill/land/tenting/region/ground",
+      "passed": true
+    },
+    {
+      "check": "RF drill (113.15, 42.4) nominal land gap >=0.15mm",
+      "passed": true
+    },
+    {
+      "check": "RF via (113.65, 41.0) drill/land/tenting/region/ground",
+      "passed": true
+    },
+    {
+      "check": "RF drill (113.65, 41.0) nominal land gap >=0.15mm",
+      "passed": true
+    },
+    {
+      "check": "RF via (112.25, 41.15) drill/land/tenting/region/ground",
+      "passed": true
+    },
+    {
+      "check": "RF drill (112.25, 41.15) nominal land gap >=0.15mm",
+      "passed": true
+    },
+    {
+      "check": "RF via (115.55, 41.15) drill/land/tenting/region/ground",
+      "passed": true
+    },
+    {
+      "check": "RF drill (115.55, 41.15) nominal land gap >=0.15mm",
+      "passed": true
+    },
+    {
+      "check": "one local back-layer ground zone",
+      "passed": true
+    },
+    {
+      "check": "local ground zone reaches all five via centers",
+      "passed": true
+    }
+  ],
+  "vias": [
+    {
+      "position_mm": [
+        114.15,
+        41.25
+      ],
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45,
+      "minimum_nominal_land_gap_mm": 0.2
+    },
+    {
+      "position_mm": [
+        113.15,
+        42.4
+      ],
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45,
+      "minimum_nominal_land_gap_mm": 0.15
+    },
+    {
+      "position_mm": [
+        113.65,
+        41.0
+      ],
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45,
+      "minimum_nominal_land_gap_mm": 0.15
+    },
+    {
+      "position_mm": [
+        112.25,
+        41.15
+      ],
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45,
+      "minimum_nominal_land_gap_mm": 0.175
+    },
+    {
+      "position_mm": [
+        115.55,
+        41.15
+      ],
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45,
+      "minimum_nominal_land_gap_mm": 0.175
+    }
+  ],
+  "qualification_open": [
+    "Validate detailed IPD ground/via placement and harmonic attenuation against the Johanson reference; continuity is not RF qualification.",
+    "Confirm 0.2mm finished-hole/tenting process and stackup with the fabricator; qualify the rerouted 0.5mm 3V3 feed under load.",
+    "Finish RF switch/DC-block/antenna copper and validate line transitions, matching, conducted power/harmonics and sensitivity."
+  ],
+  "fabrication_released": false,
+  "rule_failures": []
+}

@@ -119,7 +119,7 @@
   },
   "input_sha256": {
     "generated/connectivity.json": "62917fb9b41ba6075464e7d972e56a615bdf55085eb2b6bedb3819ec68295508",
-    "generated/netlist.xml": "e35440e3cc3858db410e6d34b98cd10335bf21db4fb53ea835efbd6c93d589d2",
+    "generated/netlist.xml": "345292e82a18caaeffb26146b65a7d50d9c633711a7d64d6ebe30604e91750c0",
     "battery-qualification.json": "6da41ab8446575574853bfda2ff0e4855448482ada4bb79ebd91d133f5c2f5f0",
     "charger-policy.json": "6af0fdc61a946b67e9c8ed9f99db0ccbfab4c120ae3f87bbed32501f0e419baa",
     "battery-upgrade-requirements.json": "d31f49edf0624f78d942495ca4f6d9435e388a97696a09f0be63f10a37731ac8"

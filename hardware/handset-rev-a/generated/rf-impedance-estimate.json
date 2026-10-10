@@ -1,0 +1,80 @@
+{
+  "stackup": "JLC04161H-7628",
+  "source": "https://jlcpcb.com/impedance",
+  "target_ohms": 50,
+  "target_width_mm": 0.34,
+  "narrow_line_screen": {
+    "width_mm": 0.2,
+    "coplanar_gap_mm": null,
+    "grid_mm": 0.005,
+    "domain_half_width_mm": 2,
+    "domain_height_mm": 1.5,
+    "rounded_dielectric_height_mm": 0.21,
+    "capacitance_F_per_m": 9.440044868740665e-11,
+    "air_capacitance_F_per_m": 2.8997578818913903e-11,
+    "single_ended_ohms": 63.75458146296271,
+    "iterations": [
+      1373,
+      1358
+    ],
+    "scope": "Uniform infinite line only; rectangular copper, approximate solder mask, nominal Dk, finite grounded boundaries. Excludes coupling to other signals, pads, bends, vias, plane slots, etch/material tolerance and component impedances. Fabricator calculation/coupon and RF qualification required.",
+    "fabricator_approved": false
+  },
+  "coarse": {
+    "width_mm": 0.34,
+    "coplanar_gap_mm": null,
+    "grid_mm": 0.005,
+    "domain_half_width_mm": 2,
+    "domain_height_mm": 1.5,
+    "rounded_dielectric_height_mm": 0.21,
+    "capacitance_F_per_m": 1.223644764111175e-10,
+    "air_capacitance_F_per_m": 3.665700707873932e-11,
+    "single_ended_ohms": 49.8050198200855,
+    "iterations": [
+      1362,
+      1343
+    ],
+    "scope": "Uniform infinite line only; rectangular copper, approximate solder mask, nominal Dk, finite grounded boundaries. Excludes coupling to other signals, pads, bends, vias, plane slots, etch/material tolerance and component impedances. Fabricator calculation/coupon and RF qualification required.",
+    "fabricator_approved": false
+  },
+  "fine": {
+    "width_mm": 0.34,
+    "coplanar_gap_mm": null,
+    "grid_mm": 0.0025,
+    "domain_half_width_mm": 2,
+    "domain_height_mm": 1.5,
+    "rounded_dielectric_height_mm": 0.21,
+    "capacitance_F_per_m": 1.2202793553754626e-10,
+    "air_capacitance_F_per_m": 3.662042337743509e-11,
+    "single_ended_ohms": 49.89855677223264,
+    "iterations": [
+      2461,
+      2623
+    ],
+    "scope": "Uniform infinite line only; rectangular copper, approximate solder mask, nominal Dk, finite grounded boundaries. Excludes coupling to other signals, pads, bends, vias, plane slots, etch/material tolerance and component impedances. Fabricator calculation/coupon and RF qualification required.",
+    "fabricator_approved": false
+  },
+  "expanded_domain": {
+    "width_mm": 0.34,
+    "coplanar_gap_mm": null,
+    "grid_mm": 0.005,
+    "domain_half_width_mm": 3.0,
+    "domain_height_mm": 2.25,
+    "rounded_dielectric_height_mm": 0.21,
+    "capacitance_F_per_m": 1.219843704130984e-10,
+    "air_capacitance_F_per_m": 3.6171449906465776e-11,
+    "single_ended_ohms": 50.216246072368975,
+    "iterations": [
+      1844,
+      2004
+    ],
+    "scope": "Uniform infinite line only; rectangular copper, approximate solder mask, nominal Dk, finite grounded boundaries. Excludes coupling to other signals, pads, bends, vias, plane slots, etch/material tolerance and component impedances. Fabricator calculation/coupon and RF qualification required.",
+    "fabricator_approved": false
+  },
+  "grid_refinement_delta_ohms": 0.09353695214714008,
+  "domain_delta_ohms": 0.41122625228347687,
+  "estimator_sha256": "452daff57117161325aff2b05cb1278f8bd6e7775e2c967b8b108a8a570894a3",
+  "applicability": "Uniform isolated downstream 50-ohm port trunks only. Does not validate the existing coupled RX/TX chip fanouts or short component transitions.",
+  "fabricator_approved": false,
+  "fabrication_released": false
+}

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/lakey/Documents/mesh-phone/hardware/handset-rev-a/generated/handset.kicad_sch</source>
-    <date>2026-10-09T07:32:50</date>
+    <date>2026-10-10T11:37:18</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -10100,7 +10100,7 @@
     <net code="104" name="LF_X2" class="Default">
       <node ref="U9" pin="7" pinfunction="XTAL2_7" pintype="output"/>
     </net>
-    <net code="105" name="LORA_RF_50R" class="Default">
+    <net code="105" name="LORA_RF_50R" class="RF 50 ohm target,Default">
       <node ref="C98" pin="2" pintype="passive"/>
       <node ref="J20" pin="1" pinfunction="In_1" pintype="passive"/>
     </net>
@@ -10399,7 +10399,7 @@
       <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="U6" pin="9" pinfunction="OUTP_9" pintype="output"/>
     </net>
-    <net code="167" name="SX_ANT_AC" class="Default">
+    <net code="167" name="SX_ANT_AC" class="RF 50 ohm target,Default">
       <node ref="C98" pin="1" pintype="passive"/>
       <node ref="U37" pin="5" pinfunction="RFIN_5" pintype="passive"/>
     </net>
@@ -10441,11 +10441,11 @@
       <node ref="R91" pin="1" pintype="passive"/>
       <node ref="U4" pin="12" pinfunction="DIO2_12" pintype="bidirectional"/>
     </net>
-    <net code="177" name="SX_RX_AC" class="Default">
+    <net code="177" name="SX_RX_AC" class="RF 50 ohm target,Default">
       <node ref="C100" pin="2" pintype="passive"/>
       <node ref="U37" pin="3" pinfunction="RF1_3" pintype="passive"/>
     </net>
-    <net code="178" name="SX_RX_MATCH" class="Default">
+    <net code="178" name="SX_RX_MATCH" class="RF 50 ohm target,Default">
       <node ref="C100" pin="1" pintype="passive"/>
       <node ref="U36" pin="6" pinfunction="SW_RFI_6" pintype="passive"/>
     </net>
@@ -10473,11 +10473,11 @@
       <node ref="U4" pin="6" pinfunction="DIO3_6" pintype="power_out"/>
       <node ref="Y3" pin="4" pinfunction="VDD_4" pintype="power_in"/>
     </net>
-    <net code="184" name="SX_TX_AC" class="Default">
+    <net code="184" name="SX_TX_AC" class="RF 50 ohm target,Default">
       <node ref="C99" pin="2" pintype="passive"/>
       <node ref="U37" pin="1" pinfunction="RF2_1" pintype="passive"/>
     </net>
-    <net code="185" name="SX_TX_MATCH" class="Default">
+    <net code="185" name="SX_TX_MATCH" class="RF 50 ohm target,Default">
       <node ref="C99" pin="1" pintype="passive"/>
       <node ref="U36" pin="8" pinfunction="SW_RFO_8" pintype="passive"/>
     </net>

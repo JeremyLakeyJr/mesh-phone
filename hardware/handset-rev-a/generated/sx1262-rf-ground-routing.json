@@ -1,0 +1,75 @@
+{
+  "source_board_sha256": "ca67f1aee4ed03c501d4947521802092e1d40a0c416a651279436aa3a4cbcc49",
+  "final_board_sha256": "6e88163d578374b3eb943b9212af0359a42bf48832eadcb9aabc988c395ae42e",
+  "source_project_sha256": "e34685e1f935643130298ba16ece0fb474a158f1c89f2d8a79882189bf54ec4e",
+  "final_project_sha256": "67b91e9c7f800a079be7ecf6f899e569188fdf506f21e388d755be483d0b45c0",
+  "custom_rules_sha256": "10c927639f788dba6384d3b81890a5b204e44edf5d0ec2543c6d4b52259a70b2",
+  "removed_copper": {
+    "70f29fed-51ee-483f-936c-3f2a7bbedee8": [
+      "PCB_TRACK",
+      113400000,
+      35150000,
+      113400000,
+      49250000,
+      500000,
+      0,
+      "+3V3"
+    ]
+  },
+  "preserved_copper_items": 9491,
+  "added_copper_items": 15,
+  "preserved_footprints": 281,
+  "ground_vias": [
+    {
+      "pin": "2",
+      "position_mm": [
+        113.65,
+        41.0
+      ],
+      "uuid": "a003fcd7-ea15-4665-8106-448a77e02717"
+    },
+    {
+      "pin": "5",
+      "position_mm": [
+        115.55,
+        41.15
+      ],
+      "uuid": "eef4175a-b5cc-41d1-9146-3abbc4c501af"
+    },
+    {
+      "pin": "7",
+      "position_mm": [
+        114.15,
+        41.25
+      ],
+      "uuid": "6a990823-c60e-481c-b9ec-b56d8733874c"
+    },
+    {
+      "pin": "9",
+      "position_mm": [
+        113.15,
+        42.4
+      ],
+      "uuid": "998e8c40-46a4-4c95-80dd-7da4831a0401"
+    },
+    {
+      "pin": "10",
+      "position_mm": [
+        112.25,
+        41.15
+      ],
+      "uuid": "bba436ee-98b9-4f0f-89d7-313d0887865f"
+    }
+  ],
+  "feed_width_mm": 0.5,
+  "old_feed_length_mm": 14.1,
+  "new_feed_length_mm": 17.4154,
+  "fabrication_released": false,
+  "scope": "IPD ground/via layout and constrained drill rule; RF matching/impedance and remaining switch/antenna qualification open",
+  "native_drc_findings": 0,
+  "schematic_parity_findings": 0,
+  "unconnected_items": 235,
+  "archive": "archive/handset-before-sx1262-rf-ground/ca67f1aee4ed",
+  "preserved_pad_groups": 618,
+  "final_pad_group_preservation_verified": true
+}

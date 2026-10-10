@@ -1,0 +1,59 @@
+{
+  "tests": 13,
+  "cases": [
+    {
+      "test": "installed board and rules",
+      "passed": true
+    },
+    {
+      "test": "isolated U36 ground 2",
+      "passed": true
+    },
+    {
+      "test": "isolated U36 ground 5",
+      "passed": true
+    },
+    {
+      "test": "isolated U36 ground 7",
+      "passed": true
+    },
+    {
+      "test": "isolated U36 ground 9",
+      "passed": true
+    },
+    {
+      "test": "isolated U36 ground 10",
+      "passed": true
+    },
+    {
+      "test": "missing back tenting",
+      "passed": true
+    },
+    {
+      "test": "drill overlapping a land rejected",
+      "passed": true
+    },
+    {
+      "test": "small via outside RF area rejected by native size rule",
+      "passed": true
+    },
+    {
+      "test": "small signal via inside RF area rejected by native size rule",
+      "passed": true
+    },
+    {
+      "test": "wrong RF ground drill rejected by native size rule",
+      "passed": true
+    },
+    {
+      "test": "missing custom rules fails closed",
+      "passed": true
+    },
+    {
+      "test": "weakened general drill rule rejected",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "fabrication_released": false
+}

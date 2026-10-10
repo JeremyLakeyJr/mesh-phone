@@ -88,9 +88,9 @@
   "reference_gaps": [],
   "physical_pads": 14,
   "qualification_open": [
-    "U36 ground lands/via geometry and downstream TX/RX switch/antenna copper remain incomplete.",
+    "U36 grounds are captured; validate detailed return geometry and complete downstream TX/RX switch/antenna copper.",
     "The 0.2mm RF input fanouts are local routing candidates, not validated 50-ohm lines; resolve geometry against Johanson layout and selected stackup.",
-    "Johanson specifies crucial 0.2mm ground vias; reconcile the selected implementation with board/fabricator drill rules before release.",
+    "The scoped 0.2mm ground-via rule is captured; confirm hole/tenting and reference-layout implementation with the fabricator.",
     "Qualify clock, PA supply/thermal behavior, RF matching, conducted power/harmonics, receive sensitivity and antenna coexistence."
   ],
   "fabrication_released": false

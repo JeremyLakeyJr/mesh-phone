@@ -39,13 +39,14 @@ def check_board(b):
                     pt=(a[0]+(z[0]-a[0])*i/steps+n[0]*offset,a[1]+(z[1]-a[1])*i/steps+n[1]*offset);samples+=1
                     if not any(poly.Contains(p.VECTOR2I(p.FromMM(pt[0]),p.FromMM(pt[1]))) for poly in planes):missing.append(pt)
     check('filled In2 ground beneath RF input corridors',not missing)
+    ground_captured=any(z.GetZoneName()=='SX1262 IPD ground' for z in b.Zones())
     return dict(passed=all(c['passed'] for c in checks),checks=checks,
                 route_lengths_mm=lengths,reference_samples=samples,reference_gaps=missing,
                 physical_pads=sum(len(v.split()) for v in GROUPS.values()),
                 qualification_open=[
-                    'U36 ground lands/via geometry and downstream TX/RX switch/antenna copper remain incomplete.',
+                    ('U36 grounds are captured; validate detailed return geometry and complete downstream TX/RX switch/antenna copper.' if ground_captured else 'U36 ground lands/via geometry and downstream TX/RX switch/antenna copper remain incomplete.'),
                     'The 0.2mm RF input fanouts are local routing candidates, not validated 50-ohm lines; resolve geometry against Johanson layout and selected stackup.',
-                    'Johanson specifies crucial 0.2mm ground vias; reconcile the selected implementation with board/fabricator drill rules before release.',
+                    ('The scoped 0.2mm ground-via rule is captured; confirm hole/tenting and reference-layout implementation with the fabricator.' if ground_captured else 'Johanson specifies crucial 0.2mm ground vias; reconcile the selected implementation with board/fabricator drill rules before release.'),
                     'Qualify clock, PA supply/thermal behavior, RF matching, conducted power/harmonics, receive sensitivity and antenna coexistence.'],
                 fabrication_released=False)
 
