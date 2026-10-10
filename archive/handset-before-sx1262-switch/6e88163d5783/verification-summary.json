@@ -10,7 +10,7 @@
     "pin_not_driven": 4
   },
   "drc_by_type": {},
-  "unconnected_items": 216,
+  "unconnected_items": 235,
   "schematic_parity_findings": 0,
   "placement_errors": [],
   "fabrication_released": false,

@@ -47,7 +47,7 @@ def check_board(b):
  return dict(passed=all(c['passed'] for c in checks),checks=checks,vias=records,
   qualification_open=['Validate detailed IPD ground/via placement and harmonic attenuation against the Johanson reference; continuity is not RF qualification.',
    'Confirm 0.2mm finished-hole/tenting process and stackup with the fabricator; qualify the rerouted 0.5mm 3V3 feed under load.',
-   'Finish RF switch/DC-block/antenna copper and validate line transitions, matching, conducted power/harmonics and sensitivity.'],fabrication_released=False)
+   ('RF switch/DC-block/antenna copper is captured; validate line transitions, matching, conducted power/harmonics and sensitivity.' if any(z.GetZoneName()=='SX1262 switch return' for z in b.Zones()) else 'Finish RF switch/DC-block/antenna copper and validate line transitions, matching, conducted power/harmonics and sensitivity.')],fabrication_released=False)
 
 def check_rules(out):
  errors=[]

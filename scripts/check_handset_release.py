@@ -65,6 +65,12 @@ if (out/'audio-routing.json').exists():
     from check_handset_audio import check_board as check_audio
     audio=check_audio(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['audio_routing_failures']=[g['net'] for g in audio['groups'] if not g['passed']]
+if (out/'sx1262-switch-routing.json').exists():
+    import pcbnew as pcb
+    from check_handset_sx1262_switch import check_board as check_sx_switch
+    switch=check_sx_switch(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
+    issues['sx1262_switch_failures']=[c['check'] for c in switch['checks'] if not c['passed']]
+    issues['sx1262_switch_qualification']=switch['qualification_open']
 if (out/'sx1262-rf-ground-routing.json').exists():
     from check_handset_sx1262_rf_ground import inspect as check_sx_rf_ground
     rf_ground=check_sx_rf_ground(out)

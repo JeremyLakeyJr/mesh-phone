@@ -1,0 +1,268 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "SX_TX_MATCH full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_AC full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_AC full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_ANT_AC full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_RF_SW full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_SWITCH_CTRL full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_SWITCH_VDD full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "+3V3 full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "GND full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "U37 front layer",
+      "passed": true
+    },
+    {
+      "check": "C98 front layer",
+      "passed": true
+    },
+    {
+      "check": "C99 front layer",
+      "passed": true
+    },
+    {
+      "check": "C100 front layer",
+      "passed": true
+    },
+    {
+      "check": "R91 front layer",
+      "passed": true
+    },
+    {
+      "check": "R92 front layer",
+      "passed": true
+    },
+    {
+      "check": "R93 front layer",
+      "passed": true
+    },
+    {
+      "check": "C96 front layer",
+      "passed": true
+    },
+    {
+      "check": "C97 front layer",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_MATCH signal via count",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_MATCH external copper only",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_MATCH reviewed width range",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_MATCH bounded copper length",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_MATCH close connected transition return",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_MATCH through via geometry/tenting",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_MATCH transition drill outside lands",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_AC signal via count",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_AC external copper only",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_AC reviewed width range",
+      "passed": true
+    },
+    {
+      "check": "SX_TX_AC bounded copper length",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH signal via count",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH external copper only",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH reviewed width range",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH bounded copper length",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH close connected transition return",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH through via geometry/tenting",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_MATCH transition drill outside lands",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_AC signal via count",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_AC external copper only",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_AC reviewed width range",
+      "passed": true
+    },
+    {
+      "check": "SX_RX_AC bounded copper length",
+      "passed": true
+    },
+    {
+      "check": "SX_ANT_AC signal via count",
+      "passed": true
+    },
+    {
+      "check": "SX_ANT_AC external copper only",
+      "passed": true
+    },
+    {
+      "check": "SX_ANT_AC reviewed width range",
+      "passed": true
+    },
+    {
+      "check": "SX_ANT_AC bounded copper length",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R signal via count",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R external copper only",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R reviewed width range",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R bounded copper length",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R close connected transition return",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R through via geometry/tenting",
+      "passed": true
+    },
+    {
+      "check": "LORA_RF_50R transition drill outside lands",
+      "passed": true
+    },
+    {
+      "check": "adjacent filled ground under RF corridors except transition antipads",
+      "passed": true
+    }
+  ],
+  "route_lengths_mm": {
+    "SX_TX_MATCH": 3.5105,
+    "SX_TX_AC": 2.2586,
+    "SX_RX_MATCH": 1.9524,
+    "SX_RX_AC": 2.57,
+    "SX_ANT_AC": 4.3875,
+    "LORA_RF_50R": 6.3381
+  },
+  "signal_transitions": [
+    {
+      "net": "SX_TX_MATCH",
+      "position_mm": [
+        113.4,
+        43.0
+      ],
+      "nearest_ground_via_mm": 0.65,
+      "minimum_nominal_land_gap_mm": 0.6865
+    },
+    {
+      "net": "SX_RX_MATCH",
+      "position_mm": [
+        115.3,
+        42.6
+      ],
+      "nearest_ground_via_mm": 0.8732,
+      "minimum_nominal_land_gap_mm": 0.44
+    },
+    {
+      "net": "LORA_RF_50R",
+      "position_mm": [
+        115.0,
+        38.3
+      ],
+      "nearest_ground_via_mm": 0.8062,
+      "minimum_nominal_land_gap_mm": 0.29
+    }
+  ],
+  "reference_samples": 753,
+  "via_antipad_exempt_samples": 103,
+  "reference_gaps": [],
+  "physical_pads": 30,
+  "qualification_open": [
+    "Qualify all RF layer transitions, neck-downs, bends, coplanar clearance and 100pF DC blocks against the selected stackup; nominal 0.34mm trunks are screening targets only.",
+    "Validate switch timing, DC isolation, insertion loss, conducted transmit power/harmonics, receive sensitivity, antenna match and coexistence on assembled hardware.",
+    "Confirm via drill/tenting tolerances, reference returns and the revised 3V3 feed under load with the fabricator and hardware review."
+  ],
+  "fabrication_released": false
+}

@@ -55,7 +55,7 @@ def inspect(out):
  return dict(passed=not failures and all(t['rejected'] for t in negative),failures=failures,negative_tests=negative,
   truth_table={'CTRL_low':'RFIN pin5 -> RF1 pin3 (RX)','CTRL_high':'RFIN pin5 -> RF2 pin1 (TX)'},
   qualification_open=[('Local PA and RF input copper is captured; qualify line geometry and PA load behavior.' if (out/'sx1262-local-rf-routing.json').exists() else 'PA choke/bypass schematic is captured; complete local placement/copper and qualify PA load behavior.'),
-   'RF component placement is provisional; complete RF routing and manufacturer ground-via geometry against the selected stackup.',
+   ('Switched RF copper is captured; qualify all transitions and manufacturer ground-via geometry against the selected stackup.' if (out/'sx1262-switch-routing.json').exists() else 'RF component placement is provisional; complete RF routing and manufacturer ground-via geometry against the selected stackup.'),
    'Verify zero DC at all switch RF ports; qualify 100pF blocks, insertion loss, RF switch timing, conducted power/harmonics and sensitivity.',
    'Complete thermal layout, supply integrity, clock and antenna/coexistence qualification.'],fabrication_released=False)
 if __name__=='__main__':

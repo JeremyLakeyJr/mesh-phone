@@ -1,0 +1,75 @@
+{
+  "tests": 17,
+  "cases": [
+    {
+      "test": "installed switched RF layout",
+      "passed": true
+    },
+    {
+      "test": "isolate U36.8",
+      "passed": true
+    },
+    {
+      "test": "isolate U36.6",
+      "passed": true
+    },
+    {
+      "test": "isolate C99.2",
+      "passed": true
+    },
+    {
+      "test": "isolate C100.2",
+      "passed": true
+    },
+    {
+      "test": "isolate U37.5",
+      "passed": true
+    },
+    {
+      "test": "isolate C98.2",
+      "passed": true
+    },
+    {
+      "test": "isolate U37.6",
+      "passed": true
+    },
+    {
+      "test": "isolate U37.4",
+      "passed": true
+    },
+    {
+      "test": "isolate U37.2",
+      "passed": true
+    },
+    {
+      "test": "isolate R92.1",
+      "passed": true
+    },
+    {
+      "test": "isolate J20.1",
+      "passed": true
+    },
+    {
+      "test": "isolate J20.2",
+      "passed": true
+    },
+    {
+      "test": "RF via tenting removed",
+      "passed": true
+    },
+    {
+      "test": "RF reference planes moved away",
+      "passed": true
+    },
+    {
+      "test": "transition return vias removed",
+      "passed": true
+    },
+    {
+      "test": "unreviewed RF trace width",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "fabrication_released": false
+}

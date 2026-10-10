@@ -505,3 +505,85 @@ and `sx1262-rf-ground-tests.json`; the previous board/project is archived at
 all RF transitions and ground geometry against the reference design. Keep
 fabrication blocked pending RF/supply/clock/thermal qualification and the
 other recorded electrical/mechanical blockers.
+
+## Switched RF routing checkpoint — 2026-10-10
+
+**CAD copper is captured; not fabrication or RF performance approval.** The
+matching device now connects through C99/C100 to the TX/RX switch, then through
+C98 to J20. DIO2 control, its RC filter and default-RX pull-down, filtered +3V3
+switch supply, bypass returns and both antenna-connector ground pads are routed.
+No schematic values, pin assignments or part selections change.
+
+U37 and its eight passives move within the available front-layer area. The
+matching device and connector remain on the back. Three tented 0.5 mm land /
+0.3 mm drill through vias transfer TX, RX and antenna signals between faces;
+the ordinary drill rules apply. The matching-device 0.45/0.2 mm GND exception
+remains limited to its previously checked area. GNSS and existing USB circuitry
+retain their placement and copper.
+
+The [Infineon BGS12WN6 datasheet, revision 2.9](https://www.infineon.com/assets/row/public/documents/24/49/infineon-bgs12wn6-datasheet-en.pdf)
+requires zero DC on the RF ports and identifies CTRL low with RX/RF1, high with
+TX/RF2. All three 100 pF DC blocks and the default-low control bias remain in
+that topology. The [Johanson reference](https://www.johansontechnology.com/docs/4856/IPD-0900FM15K0039001E_w8h4xck.pdf)
+still governs matching-device ground and port-layout review; the changed layer
+transitions require separate RF analysis and measurement.
+
+### Geometry and reference checks
+
+| Net | Planar trace length | Signal vias |
+| --- | ---: | ---: |
+| SX_TX_MATCH | 3.5105 mm | 1 |
+| SX_TX_AC | 2.2586 mm | 0 |
+| SX_RX_MATCH | 1.9524 mm | 1 |
+| SX_RX_AC | 2.5700 mm | 0 |
+| SX_ANT_AC | 4.3875 mm | 0 |
+| LORA_RF_50R | 6.3381 mm | 1 |
+
+Lengths exclude component internals and via barrels. Trunks use the previously
+screened 0.34 mm width, with 0.2 mm matching-device escapes and 0.15 mm local
+switch neck-downs. Neither the narrow sections nor the three transitions are
+qualified 50-ohm geometry. Bends, pads, coupling, loss and parasitics remain
+part of RF validation; the uniform-line screen does not cover them.
+
+The checker samples the adjacent In1 ground under front traces and In2 under
+back traces every 0.1 mm, at the center and 0.1 mm beyond each trace edge.
+All 753 samples pass: 103 points inside the explicitly bounded same-net
+signal-via antipads are exempt, and no other reference gaps remain. Filled
+return copper extends the existing reference planes. The nearest connected
+ground vias are 0.6500, 0.8732 and 0.8062 mm from the TX, RX and antenna
+transitions respectively. The 1.25 mm checker bound is a layout guard, not an
+RF return-inductance qualification. Nominal signal drill edges remain at least
+0.15 mm outside numbered lands; actual hole and registration tolerances still
+need fabricator review.
+
+The main 0.5 mm front-layer supply feed detours around the RF area. Its
+previous 17.4154 mm path is now 20.1225 mm; the width is unchanged and a
+0.25 mm branch feeds R92. Confirm the extra feed impedance and thermal behavior
+under load. The C8 ground via moves from (115.6, 34.1) to (115.6, 33.6) mm,
+shortening its ground stub to clear the DIO2 escape. Supply, clock, local PA/RF
+and matching-device ground checks continue to pass.
+
+### Evidence and remaining work
+
+Seventeen regression cases cover the installed layout, twelve disconnected
+pad controls, missing signal-via tenting, removed reference planes, missing
+transition ground returns and an unreviewed trace width. The full project
+checks retain 2,644 passing integrity assertions, 277 schematic components,
+zero native DRC/parity/placement findings and 20 existing ERC findings.
+Unconnected items fall from **235 to 216**.
+
+All 613 previously connected pad groups, 272 unmoved footprints and 9,501
+unreplaced copper items are preserved. Five copper items are replaced and 86
+are added, giving 9,587 total. The previous board, project/rules, placement and
+verification files are archived at
+`archive/handset-before-sx1262-switch/6e88163d5783/`. Current evidence:
+`generated/sx1262-switch-routing.json`, `sx1262-switch-checks.json` and
+`sx1262-switch-tests.json`. Both the full PCB gate and manufacturing release
+check run the new live copper checks; RF qualification still blocks release.
+
+**Next fabrication work:** place and route the CC1101 clock and local supply
+network, then its RF matching/filter and antenna path. Complete remaining
+routing and ERC corrections, mechanical/BOM review and fabricator DFM before
+prototype release. The SX1262 still needs stackup/transition review, switch
+DC and timing checks, conducted power/harmonics, sensitivity, antenna matching,
+coexistence and clock/supply/thermal qualification on assembled hardware.

@@ -4689,10 +4689,10 @@
       "5": "SX_ANT_AC",
       "6": "SX_SWITCH_CTRL"
     },
-    "x": 114.15,
-    "y": 44.2,
+    "x": 121,
+    "y": 45,
     "side": "F",
-    "angle": 90.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "BGS12WN6E6327XTSA1",
     "role": "CTRL high selects TX RF2; low selects RX RF1; all RF ports require zero DC"
@@ -4706,10 +4706,10 @@
       "1": "SX_RF_SW",
       "2": "SX_SWITCH_CTRL"
     },
-    "x": 115.2,
-    "y": 35.0,
+    "x": 118,
+    "y": 48,
     "side": "F",
-    "angle": 90.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "RC0402FR-07100RL",
     "role": "DIO2 control series filter"
@@ -4723,10 +4723,10 @@
       "1": "+3V3",
       "2": "SX_SWITCH_VDD"
     },
-    "x": 117.6,
-    "y": 45.8,
+    "x": 121,
+    "y": 48,
     "side": "F",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "RC0402FR-07100RL",
     "role": "Always-powered switch supply series filter"
@@ -4740,10 +4740,10 @@
       "1": "SX_SWITCH_CTRL",
       "2": "GND"
     },
-    "x": 109.9,
-    "y": 42.8,
+    "x": 116,
+    "y": 47.5,
     "side": "F",
-    "angle": 180.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "GRM155R71H102KA01D",
     "role": "Switch control/supply shunt filter"
@@ -4757,10 +4757,10 @@
       "1": "SX_SWITCH_VDD",
       "2": "GND"
     },
-    "x": 118.4,
-    "y": 42.0,
+    "x": 125,
+    "y": 47,
     "side": "F",
-    "angle": 180.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "GRM155R71H102KA01D",
     "role": "Switch control/supply shunt filter"
@@ -4774,10 +4774,10 @@
       "1": "SX_ANT_AC",
       "2": "LORA_RF_50R"
     },
-    "x": 115.0,
-    "y": 39.5,
+    "x": 123,
+    "y": 45,
     "side": "F",
-    "angle": 90.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "GRM1555C1H101JA01D",
     "role": "Explicit RF port DC block; 100pF starting value requires RF validation"
@@ -4791,10 +4791,10 @@
       "1": "SX_TX_MATCH",
       "2": "SX_TX_AC"
     },
-    "x": 111.9,
-    "y": 43.7,
+    "x": 118,
+    "y": 42.5,
     "side": "F",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "GRM1555C1H101JA01D",
     "role": "Explicit RF port DC block; 100pF starting value requires RF validation"
@@ -4808,10 +4808,10 @@
       "1": "SX_RX_MATCH",
       "2": "SX_RX_AC"
     },
-    "x": 116.2,
-    "y": 43.0,
+    "x": 121,
+    "y": 43,
     "side": "F",
-    "angle": -90.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "GRM1555C1H101JA01D",
     "role": "Explicit RF port DC block; 100pF starting value requires RF validation"
@@ -4825,10 +4825,10 @@
       "1": "SX_SWITCH_CTRL",
       "2": "GND"
     },
-    "x": 109.9,
-    "y": 44.0,
+    "x": 123,
+    "y": 48,
     "side": "F",
-    "angle": 180.0,
+    "angle": 0,
     "sheet": "radios",
     "mpn": "RC0402FR-07100KL",
     "role": "Default RX while DIO2 is high impedance"

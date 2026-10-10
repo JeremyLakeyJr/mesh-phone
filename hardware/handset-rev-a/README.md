@@ -5,7 +5,7 @@ This is a new board and hierarchical schematic, not the old Rev F layout.
 **It is incomplete, partially routed, and not ready to fabricate or power.**
 The original Rev F project is preserved in `../rev-f/`.
 
-Latest: [SX1262 RF grounds and impedance target](sx1262-power-review.md#rf-ground-and-impedance-checkpoint--2026-10-10). Fabrication
+Latest: [SX1262 switched RF routing](sx1262-power-review.md#switched-rf-routing-checkpoint--2026-10-10). Fabrication
 readiness takes priority over additional firmware features. RF, NFC/LF and other
 unfinished circuits remain fabrication blockers.
 

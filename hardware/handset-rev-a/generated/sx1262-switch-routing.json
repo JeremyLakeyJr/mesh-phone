@@ -1,0 +1,117 @@
+{
+  "source_board_sha256": "6e88163d578374b3eb943b9212af0359a42bf48832eadcb9aabc988c395ae42e",
+  "final_board_sha256": "913350983d68c5c22dd65e1601d530baff23b01579e6354099ba7507d8465057",
+  "placements": {
+    "U37": [
+      114.15,
+      44.2,
+      90
+    ],
+    "C99": [
+      111.9,
+      43.7,
+      0
+    ],
+    "C100": [
+      116.2,
+      43.0,
+      270
+    ],
+    "C98": [
+      115.0,
+      39.5,
+      90
+    ],
+    "R91": [
+      115.2,
+      35.0,
+      90
+    ],
+    "C96": [
+      109.9,
+      42.8,
+      180
+    ],
+    "R93": [
+      109.9,
+      44.0,
+      180
+    ],
+    "R92": [
+      117.6,
+      45.8,
+      0
+    ],
+    "C97": [
+      118.4,
+      42.0,
+      180
+    ]
+  },
+  "removed_copper": {
+    "36e5809b-6fe1-4412-bfac-52575fd8efa9": [
+      "PCB_TRACK",
+      116200000,
+      36250000,
+      116200000,
+      44000000,
+      500000,
+      0,
+      "+3V3"
+    ],
+    "9eb16d7a-bde7-4400-86b6-fea6e2567e3d": [
+      "PCB_TRACK",
+      116200000,
+      44000000,
+      113400000,
+      46800000,
+      500000,
+      0,
+      "+3V3"
+    ],
+    "c14661d4-c020-4978-a0bb-9b0de2ba8594": [
+      "PCB_TRACK",
+      114500000,
+      36250000,
+      116200000,
+      36250000,
+      500000,
+      0,
+      "+3V3"
+    ],
+    "135aab7e-5312-4dff-9e5d-85ea6b47ebe2": [
+      "PCB_VIA",
+      115600000,
+      34100000,
+      115600000,
+      34100000,
+      500000,
+      0,
+      "GND",
+      300000,
+      0,
+      2,
+      4
+    ],
+    "0c9a986e-a85d-4648-ab82-dcaff4f55b93": [
+      "PCB_TRACK",
+      115600000,
+      32320000,
+      115600000,
+      34100000,
+      250000,
+      2,
+      "GND"
+    ]
+  },
+  "preserved_copper_items": 9501,
+  "added_copper_items": 86,
+  "preserved_footprints": 272,
+  "fabrication_released": false,
+  "archive": "archive/handset-before-sx1262-switch/6e88163d5783",
+  "preserved_pad_groups": 613,
+  "final_pad_group_preservation_verified": true,
+  "native_drc_findings": 0,
+  "schematic_parity_findings": 0,
+  "unconnected_items": 216
+}
