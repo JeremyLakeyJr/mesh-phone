@@ -131,3 +131,37 @@ reference and exposed thermal holes. Native DRC and schematic parity are clear;
 180 open connections and 20 ERC findings remain across the board. Manufacturing
 release stays blocked. Next: refine and route the CC1101 balanced RF network
 and antenna connection, followed by its digital interface and remaining loads.
+
+## RF copper checkpoint — 2026-10-11
+
+The complete CC1101 balun, matching/filter network and J21 antenna path now
+have checked copper continuity. Twelve previously unrouted footprints were
+repositioned, including J21 at (130.5, 44.7) mm. All RF signal copper remains
+on B.Cu with no signal vias. The IC-to-inductor branches measure 2.1353 and
+2.1768 mm (0.0415 mm difference); the antenna feed totals 2.5092 mm. Internal
+matching tracks are 0.2 mm wide and the antenna feed is a 0.34 mm screening
+target. These dimensions do not certify a 50-ohm feed or matched RF ports.
+
+In1.Cu and In2.Cu ground extend beneath the network. Component-side ground
+uses 0.5 mm zone clearance with local grounded returns at C65, C66, C68 and
+both J21 ground pads. Nine added 0.5/0.3 mm ground vias are tented on both
+faces. All 1,014 sampled points along the RF tracks and their side margins
+have adjacent filled In2.Cu ground. The circuit values remain the previously
+reviewed 868/915 MHz network. [TI SWRS061I, Figure 11 and section 7.8](https://www.ti.com/lit/ds/symlink/cc1101.pdf)
+remain the circuit/layout references; this custom four-layer arrangement
+requires impedance review and conducted measurements before release.
+
+The guarded installation preserved all 9,680 previous copper items and 558
+connected pad groups. The archive, placements and board hashes are recorded
+in [cc1101-rf-routing.json](generated/cc1101-rf-routing.json). Live RF checks
+cover every matching node, all connector grounds, layer/width/length limits
+and adjacent reference copper. All 44 checks and 32 regression cases pass.
+The previous clock, bypass and thermal-via checks remain enabled. Native DRC
+and schematic parity have zero findings; 159 open connections and 20 ERC
+findings remain board-wide. Manufacturing release stays blocked.
+
+Next, route the CC1101 digital interface and its pull-up/test point, then
+continue the remaining peripheral routing. Before RF release, validate the
+actual stackup and copper geometry, connector/case placement, antenna match,
+conducted power, receive sensitivity, harmonics/spurs and coexistence. Determine
+from measurements whether the optional 699 MHz spur filter is necessary.

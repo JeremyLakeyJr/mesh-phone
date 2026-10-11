@@ -1733,8 +1733,8 @@
     "value": "CC1101_915_ANT",
     "libid": "Connector:Conn_Coaxial",
     "footprint": "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical",
-    "x": 130.2,
-    "y": 42.8,
+    "x": 130.5,
+    "y": 44.7,
     "side": "B",
     "angle": 0,
     "sheet": "cc-radio",
@@ -3275,10 +3275,10 @@
       "1": "CC_BAL_P",
       "2": "CC_BAL_N"
     },
-    "x": 127.8,
-    "y": 37.6,
+    "x": 127.45,
+    "y": 39,
     "side": "B",
-    "angle": 90,
+    "angle": 270,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H1R0CA01D",
     "role": "TI C121"
@@ -3292,8 +3292,8 @@
       "1": "CC_BAL_P",
       "2": "CC_MATCH"
     },
-    "x": 130,
-    "y": 35.6,
+    "x": 129,
+    "y": 37.5,
     "side": "B",
     "angle": 0,
     "sheet": "cc-radio",
@@ -3309,10 +3309,10 @@
       "1": "CC_LPF",
       "2": "GND"
     },
-    "x": 132,
-    "y": 37,
+    "x": 131.7,
+    "y": 41.3,
     "side": "B",
-    "angle": 90,
+    "angle": 0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H3R3CA01D",
     "role": "TI C123"
@@ -3326,10 +3326,10 @@
       "1": "CC_SHUNT",
       "2": "GND"
     },
-    "x": 128.0,
-    "y": 32.1,
+    "x": 128.2,
+    "y": 34.9,
     "side": "B",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H101JA01D",
     "role": "TI C124"
@@ -3343,10 +3343,10 @@
       "1": "CC_DC_BLOCK",
       "2": "CC_RF_50R"
     },
-    "x": 126.0,
-    "y": 43.6,
+    "x": 126.9,
+    "y": 43.2,
     "side": "B",
-    "angle": 0.0,
+    "angle": 270,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H120JA01D",
     "role": "TI C125 / DC block"
@@ -3360,10 +3360,10 @@
       "1": "CC_BAL_N",
       "2": "GND"
     },
-    "x": 127.6,
-    "y": 40.4,
+    "x": 127.5,
+    "y": 41,
     "side": "B",
-    "angle": 90.0,
+    "angle": 0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H1R5CA01D",
     "role": "TI C131"
@@ -3394,10 +3394,10 @@
       "1": "CC_RF_N",
       "2": "CC_BAL_N"
     },
-    "x": 126.0,
-    "y": 39.7,
+    "x": 126,
+    "y": 39.3,
     "side": "B",
-    "angle": 0.0,
+    "angle": 0,
     "sheet": "cc-radio",
     "mpn": "LQW15AN12NJ00D",
     "role": "TI L131"
@@ -3411,10 +3411,10 @@
       "1": "CC_BAL_P",
       "2": "CC_SHUNT"
     },
-    "x": 127.8,
-    "y": 35.4,
+    "x": 127,
+    "y": 36.35,
     "side": "B",
-    "angle": 0,
+    "angle": 90,
     "sheet": "cc-radio",
     "mpn": "LQW15AN18NJ00D",
     "role": "TI L122"
@@ -3428,8 +3428,8 @@
       "1": "CC_BAL_N",
       "2": "CC_MATCH"
     },
-    "x": 130,
-    "y": 38.2,
+    "x": 129,
+    "y": 39,
     "side": "B",
     "angle": 0,
     "sheet": "cc-radio",
@@ -3445,8 +3445,8 @@
       "1": "CC_MATCH",
       "2": "CC_LPF"
     },
-    "x": 130,
-    "y": 39.5,
+    "x": 131,
+    "y": 38.9,
     "side": "B",
     "angle": 0,
     "sheet": "cc-radio",
@@ -3462,10 +3462,10 @@
       "1": "CC_LPF",
       "2": "CC_DC_BLOCK"
     },
-    "x": 130,
-    "y": 36.9,
+    "x": 130.3,
+    "y": 40.3,
     "side": "B",
-    "angle": 0,
+    "angle": 180,
     "sheet": "cc-radio",
     "mpn": "LQW15AN12NJ00D",
     "role": "TI L124"

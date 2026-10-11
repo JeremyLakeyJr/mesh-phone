@@ -6,6 +6,10 @@ kicad-cli sch export netlist "$project/handset.kicad_sch" --format kicadxml -o "
 kicad-cli sch erc "$project/handset.kicad_sch" --format json -o "$project/erc.json"
 kicad-cli pcb drc "$project/handset.kicad_pcb" --schematic-parity --format json -o "$project/drc.json"
 python3 scripts/verify_handset_pcb.py
+if [[ -f "$project/cc1101-rf-routing.json" ]]; then
+  python3 scripts/check_handset_cc1101_rf.py "$project"
+  python3 scripts/test_handset_cc1101_rf.py "$project"
+fi
 if [[ -f "$project/cc1101-support-routing.json" ]]; then
   python3 scripts/check_handset_cc1101_support.py "$project"
   python3 scripts/test_handset_cc1101_support.py "$project"

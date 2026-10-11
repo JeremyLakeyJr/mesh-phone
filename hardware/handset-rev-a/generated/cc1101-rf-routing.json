@@ -1,0 +1,75 @@
+{
+  "source_board_sha256": "0ec66f5829a51163a46398ad062ccfeed96bbbb06d1a6f8118207fd289b088cf",
+  "final_board_sha256": "861f264d098458b2c630c94198212360a94471b3a54b4fce8771a266eedb1a57",
+  "placements": {
+    "L6": [
+      126,
+      39.3,
+      0
+    ],
+    "C63": [
+      127.45,
+      39,
+      270
+    ],
+    "L7": [
+      127,
+      36.35,
+      90
+    ],
+    "C66": [
+      128.2,
+      34.9,
+      0
+    ],
+    "C64": [
+      129,
+      37.5,
+      0
+    ],
+    "L8": [
+      129,
+      39,
+      0
+    ],
+    "L9": [
+      131,
+      38.9,
+      0
+    ],
+    "C65": [
+      131.7,
+      41.3,
+      0
+    ],
+    "L10": [
+      130.3,
+      40.3,
+      180
+    ],
+    "C67": [
+      126.9,
+      43.2,
+      270
+    ],
+    "C68": [
+      127.5,
+      41,
+      0
+    ],
+    "J21": [
+      130.5,
+      44.7,
+      0
+    ]
+  },
+  "preserved_copper_items": 9680,
+  "added_copper_items": 49,
+  "fabrication_released": false,
+  "archive": "archive/handset-before-cc1101-rf/0ec66f5829a5",
+  "preserved_pad_groups": 558,
+  "final_pad_group_preservation_verified": true,
+  "native_drc_findings": 0,
+  "schematic_parity_findings": 0,
+  "unconnected_items": 159
+}

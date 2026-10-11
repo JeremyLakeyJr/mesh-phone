@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "tests": 32,
+  "cases": [
+    {
+      "test": "installed RF copper",
+      "passed": true
+    },
+    {
+      "test": "disconnect C63.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C63.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect C64.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C64.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect C65.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C65.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect C66.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C66.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect C67.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C67.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect C68.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C68.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect J21.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect J21.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect L10.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L10.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect L5.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L5.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect L6.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L6.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect L7.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L7.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect L8.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L8.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect L9.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L9.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.12",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.13",
+      "passed": true
+    },
+    {
+      "test": "RF reference removed",
+      "passed": true
+    },
+    {
+      "test": "antenna width changed",
+      "passed": true
+    },
+    {
+      "test": "RF wrong layer",
+      "passed": true
+    }
+  ],
+  "fabrication_released": false
+}

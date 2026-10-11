@@ -32,8 +32,8 @@ unfinished circuits remain fabrication blockers.
   see [3v3-layout-review.md](3v3-layout-review.md).
 - CC1101 clock, filtered supply and 868/915 MHz balun/matching/filter circuit
   are captured with specified parts. Crystal, bias, filtered supply, six separate
-  bypass branches and masked thermal vias are routed and checked. RF routing and
-  tuning remain; see [cc1101-review.md](cc1101-review.md).
+  bypass branches, masked thermal vias and RF matching/antenna copper are routed
+  and checked. Digital routing and RF qualification remain; see [cc1101-review.md](cc1101-review.md).
 - SX1262 TCXO clock and local routing are captured; its RF frontend and
   electrical qualification remain open. HTRC110 clock/analog/coil circuits are incomplete.
 - MAX98357A media amplifier, SPH0645 digital mic, separate analog call-audio

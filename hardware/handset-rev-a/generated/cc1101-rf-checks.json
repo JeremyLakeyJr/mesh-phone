@@ -1,0 +1,199 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "CC_RF_P full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_P rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_P reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_P bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_N full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_N rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_N reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_N bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_P full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_P rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_P reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_P bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_N full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_N rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_N reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_BAL_N bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_SHUNT full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_SHUNT rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_SHUNT reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_SHUNT bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_MATCH full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_MATCH rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_MATCH reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_MATCH bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_LPF full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_LPF rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_LPF reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_LPF bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_DC_BLOCK full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_DC_BLOCK rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_DC_BLOCK reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_DC_BLOCK bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_50R full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_50R rear tracks without signal vias",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_50R reviewed width",
+      "passed": true
+    },
+    {
+      "check": "CC_RF_50R bounded length",
+      "passed": true
+    },
+    {
+      "check": "GND full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "balanced IC fanout lengths",
+      "passed": true
+    },
+    {
+      "check": "continuous adjacent ground under RF corridors",
+      "passed": true
+    },
+    {
+      "check": "C65.2 local grounded return via",
+      "passed": true
+    },
+    {
+      "check": "C66.2 local grounded return via",
+      "passed": true
+    },
+    {
+      "check": "C68.2 local grounded return via",
+      "passed": true
+    },
+    {
+      "check": "J21.2 local grounded return via",
+      "passed": true
+    },
+    {
+      "check": "J21.2 local grounded return via",
+      "passed": true
+    }
+  ],
+  "route_lengths_mm": {
+    "CC_RF_P": 2.1353,
+    "CC_RF_N": 2.1768,
+    "CC_BAL_P": 4.531,
+    "CC_BAL_N": 4.0977,
+    "CC_SHUNT": 1.685,
+    "CC_MATCH": 2.5349,
+    "CC_LPF": 4.295,
+    "CC_DC_BLOCK": 4.3187,
+    "CC_RF_50R": 2.5092
+  },
+  "reference_samples": 1014,
+  "reference_gaps": [],
+  "qualification_open": [
+    "Qualify the custom CC1101 RF layout and 0.34mm antenna feed against the selected stackup, actual copper/ground clearance and TI reference layout; CAD dimensions do not certify 50 ohms or RF matching.",
+    "Measure conducted output, sensitivity, harmonics/spurs and antenna/case coexistence; tune matching and determine whether the optional 699MHz spur filter is required."
+  ],
+  "fabrication_released": false
+}
