@@ -44,11 +44,11 @@ C8,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,114.8,32,B,0,radios
 C9,470nF 10% X5R 10V,Capacitor_SMD:C_0402_1005Metric,108.3,31.5,B,0,radios
 C10,47nF 10% X7R 25V,Capacitor_SMD:C_0402_1005Metric,110.5,41.1,B,180.0,radios
 R10,10k,Resistor_SMD:R_0402_1005Metric,116.8,37.0,B,0.0,radios
-U5,CC1101RGPR,Package_DFN_QFN:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,121.5,39,B,0,cc-radio
-R11,56k 1%,Resistor_SMD:R_0402_1005Metric,123.8,42.85,B,90,cc-radio
-R12,10k,Resistor_SMD:R_0402_1005Metric,121.2,44.2,B,0,cc-radio
-C11,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,118,38.8,B,90,cc-radio
-C12,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,118,40.8,B,90,cc-radio
+U5,CC1101RGPR,Handset:CC1101_RGP20_MaskedThermalVias,121.5,39,B,0,cc-radio
+R11,56k 1%,Resistor_SMD:R_0402_1005Metric,122.7,42.9,B,-90.0,cc-radio
+R12,10k,Resistor_SMD:R_0402_1005Metric,124.0,45.2,F,0.0,cc-radio
+C11,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,117.8,38.0,B,180.0,cc-radio
+C12,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,117.8,39.4,B,180.0,cc-radio
 U6,MAX98357AETE+,Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm,78,84,B,0,audio
 C13,100nF,Capacitor_SMD:C_0402_1005Metric,77.45,80.9,B,90,audio
 C14,10uF,Capacitor_SMD:C_0805_2012Metric,73,86,B,0,audio
@@ -186,28 +186,28 @@ C57,2.2uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,112.9,59.3,F,0,usb-detect
 C58,100nF 10V X7R,Capacitor_SMD:C_0402_1005Metric,122,59.8,F,0,usb-detect
 C59,100nF 50V X7R,Capacitor_SMD:C_0603_1608Metric,129.5,63.5,F,0,usb-input
 C60,100nF 10V X7R,Capacitor_SMD:C_0402_1005Metric,101.5,53.5,B,0,power-control
-Y2,26MHz CL10pF,Handset:ABM8_3225,123.5,31,B,0,cc-radio
-C61,15pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,120.9,30.4,B,90,cc-radio
-C62,15pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,126.5,30.4,B,90,cc-radio
+Y2,26MHz CL10pF,Handset:ABM8_3225,123.4,32.4,B,0.0,cc-radio
+C61,15pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,121.5,30.0,B,0.0,cc-radio
+C62,15pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,126.5,33.4,B,0.0,cc-radio
 C63,1pF 0.25pF C0G 50V,Capacitor_SMD:C_0402_1005Metric,127.8,37.6,B,90,cc-radio
 C64,1.5pF 0.25pF C0G 50V,Capacitor_SMD:C_0402_1005Metric,130,35.6,B,0,cc-radio
 C65,3.3pF 0.25pF C0G 50V,Capacitor_SMD:C_0402_1005Metric,132,37,B,90,cc-radio
-C66,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,125.6,34,B,0,cc-radio
-C67,12pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,126,42.8,B,0,cc-radio
-C68,1.5pF 0.25pF C0G 50V,Capacitor_SMD:C_0402_1005Metric,127.8,39.3,B,0,cc-radio
-L5,12nH 5%,Inductor_SMD:L_0402_1005Metric,125.6,37,B,0,cc-radio
-L6,12nH 5%,Inductor_SMD:L_0402_1005Metric,125.6,38.3,B,0,cc-radio
+C66,100pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,128.0,32.1,B,0.0,cc-radio
+C67,12pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,126.0,43.6,B,0.0,cc-radio
+C68,1.5pF 0.25pF C0G 50V,Capacitor_SMD:C_0402_1005Metric,127.6,40.4,B,90.0,cc-radio
+L5,12nH 5%,Inductor_SMD:L_0402_1005Metric,126.0,38.3,B,0.0,cc-radio
+L6,12nH 5%,Inductor_SMD:L_0402_1005Metric,126.0,39.7,B,0.0,cc-radio
 L7,18nH 5%,Inductor_SMD:L_0402_1005Metric,127.8,35.4,B,0,cc-radio
 L8,18nH 5%,Inductor_SMD:L_0402_1005Metric,130,38.2,B,0,cc-radio
 L9,12nH 5%,Inductor_SMD:L_0402_1005Metric,130,39.5,B,0,cc-radio
 L10,12nH 5%,Inductor_SMD:L_0402_1005Metric,130,36.9,B,0,cc-radio
-C69,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,121.5,35.7,B,0,cc-radio
-C70,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,123.6,34.5,B,0,cc-radio
-C71,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,125.6,39.7,B,0,cc-radio
-C72,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,125.6,41,B,0,cc-radio
-C73,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,121.5,42.5,B,0,cc-radio
+C69,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,122.1,35.1,B,90.0,cc-radio
+C70,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,125.0,37.0,B,0.0,cc-radio
+C71,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,125.1,40.8,B,0.0,cc-radio
+C72,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,124.5,42.4,B,0.0,cc-radio
+C73,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,121.0,42.5,B,180.0,cc-radio
 C74,1uF 10% X5R 10V,Capacitor_SMD:C_0402_1005Metric,121.2,46,B,90,cc-radio
-L11,1kohm @100MHz,Inductor_SMD:L_0402_1005Metric,116.8,41.3,B,90,cc-radio
+L11,1kohm @100MHz,Inductor_SMD:L_0402_1005Metric,120.0,45.0,F,0.0,cc-radio
 TP1,CC_GDO2_TEST,TestPoint:TestPoint_Pad_D1.0mm,118.2,30,B,0,cc-radio
 L12,15uH 20%,Inductor_SMD:L_TDK_MLZ2012_h1.25mm,111,31.5,B,180.0,radios
 C75,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,108.6,37.3,B,180.0,radios

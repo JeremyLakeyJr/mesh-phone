@@ -90,3 +90,44 @@ mechanical/antenna integration and independent release review also remain.
 - [Murata inductor model/part list](https://www.murata.com/-/media/webrenewal/tool/library/common-pdf/static-model/component-list-ind-s-2602.ashx?cvid=20260515010000000000&la=en-gb): LQW15AN wire-wound series.
 - [Murata 1 pF C0G capacitor](https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C1H1R0CA01-01.pdf).
 - [Murata 1.5 pF C0G capacitor](https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C1H1R5CA01-01A.pdf).
+
+## Support copper checkpoint — 2026-10-11
+
+Crystal, DCOUPL, bias and filtered supply routing is installed. Six rear-layer
+bypass branches each connect one supply pin to its own capacitor and feed via;
+front-layer distribution joins them through L11. Every support capacitor has a
+local ground return. The oscillator routes stay on B.Cu without signal vias:
+X1 totals 8.6407 mm and X2 6.8364 mm including load-capacitor branches. All 528
+sampled points across their adjacent In2.Cu return corridors have filled ground.
+These are geometric checks; oscillator startup and frequency are unqualified.
+
+U5 uses the local `Handset:CC1101_RGP20_MaskedThermalVias` footprint. Numbered
+copper lands retain the original geometry. Its 2.7 mm square exposed pad now
+has four 1 mm square mask openings and four 1 mm square paste openings
+(54.9% coverage). Five 0.5/0.3 mm thermal vias occupy the masked cross between
+those windows, with 0.15 mm nominal drill-to-opening margin. Both faces are
+tented. Native Gerber export confirms the 1 mm mask apertures; KiCad does not
+apply local copper-pad mask expansion to these non-copper aperture pads.
+This explicitly masks the holes instead of relying on via tenting
+inside an otherwise open exposed-pad mask aperture. Fabricator registration
+and tenting capability, assembler paste/reflow approval and thermal-joint
+inspection remain release requirements.
+
+The arrangement follows the separate supply/ground return and thermal-via
+guidance in [TI SWRS061I, section 7.8](https://www.ti.com/lit/ds/symlink/cc1101.pdf).
+It is a custom four-layer adaptation, not a qualified reproduction of the TI
+reference board. The selected [Abracon ABM8](https://abracon.com/Resonators/abm8.pdf)
+and 15 pF load capacitors are unchanged; actual parasitic loading and crystal
+drive still require measurement.
+
+The guarded installation preserved all 9,587 previous copper items and 594
+previously connected pad groups, adding 93 copper items. Eighteen unrouted
+support/RF footprints were repositioned; R12 and the matching network still
+need routing. The source archive and hashes are recorded in
+[cc1101-support-routing.json](generated/cc1101-support-routing.json).
+The support checker passes 47 checks and 22 regression cases, including broken
+connections, merged bypass branches, wrong oscillator layer, absent ground
+reference and exposed thermal holes. Native DRC and schematic parity are clear;
+180 open connections and 20 ERC findings remain across the board. Manufacturing
+release stays blocked. Next: refine and route the CC1101 balanced RF network
+and antenna connection, followed by its digital interface and remaining loads.

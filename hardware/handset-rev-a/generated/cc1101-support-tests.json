@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "tests": 22,
+  "cases": [
+    {
+      "test": "installed layout",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.8",
+      "passed": true
+    },
+    {
+      "test": "disconnect Y2.3",
+      "passed": true
+    },
+    {
+      "test": "disconnect C61.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C11.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect R11.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L11.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect L11.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect C74.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C12.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C69.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C70.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C71.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C72.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C73.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect C62.2",
+      "passed": true
+    },
+    {
+      "test": "exposed thermal holes",
+      "passed": true
+    },
+    {
+      "test": "thermal tenting removed",
+      "passed": true
+    },
+    {
+      "test": "thermal drill in mask window",
+      "passed": true
+    },
+    {
+      "test": "oscillator wrong layer",
+      "passed": true
+    },
+    {
+      "test": "oscillator ground removed",
+      "passed": true
+    },
+    {
+      "test": "adjacent supplies bypass capacitors",
+      "passed": true
+    }
+  ],
+  "fabrication_released": false
+}

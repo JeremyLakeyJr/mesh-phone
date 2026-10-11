@@ -1,0 +1,11 @@
+(version 1)
+# Retain the previous general limits while allowing only the RF GND exception.
+(rule "General drilled holes"
+  (constraint hole_size (min 0.3mm)))
+(rule "General vias"
+  (condition "A.Type == 'Via'")
+  (constraint via_diameter (min 0.5mm)))
+(rule "SX1262 RF ground vias"
+  (condition "A.Type == 'Via' && A.NetName == 'GND' && A.enclosedByArea('SX1262 RF grounding')")
+  (constraint hole_size (min 0.2mm) (max 0.2mm))
+  (constraint via_diameter (min 0.45mm) (max 0.45mm)))

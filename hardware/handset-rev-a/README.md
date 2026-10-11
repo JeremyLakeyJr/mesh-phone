@@ -31,7 +31,8 @@ unfinished circuits remain fabrication blockers.
   U7, L1, C20–C22 and R30–R33. External power distribution remains incomplete;
   see [3v3-layout-review.md](3v3-layout-review.md).
 - CC1101 clock, filtered supply and 868/915 MHz balun/matching/filter circuit
-  are captured with specified parts and checked PCB placement. RF routing and
+  are captured with specified parts. Crystal, bias, filtered supply, six separate
+  bypass branches and masked thermal vias are routed and checked. RF routing and
   tuning remain; see [cc1101-review.md](cc1101-review.md).
 - SX1262 TCXO clock and local routing are captured; its RF frontend and
   electrical qualification remain open. HTRC110 clock/analog/coil circuits are incomplete.

@@ -821,7 +821,7 @@
     "side": "B",
     "angle": 0,
     "sheet": "cc-radio",
-    "footprint": "Package_DFN_QFN:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
+    "footprint": "Handset:CC1101_RGP20_MaskedThermalVias"
   },
   {
     "ref": "R11",
@@ -831,10 +831,10 @@
       "1": "CC_RBIAS",
       "2": "GND"
     },
-    "x": 123.8,
-    "y": 42.85,
+    "x": 122.7,
+    "y": 42.9,
     "side": "B",
-    "angle": 90,
+    "angle": -90.0,
     "sheet": "cc-radio",
     "footprint": "Resistor_SMD:R_0402_1005Metric"
   },
@@ -846,10 +846,10 @@
       "1": "+3V3",
       "2": "CC_CS"
     },
-    "x": 121.2,
-    "y": 44.2,
-    "side": "B",
-    "angle": 0,
+    "x": 124.0,
+    "y": 45.2,
+    "side": "F",
+    "angle": 0.0,
     "sheet": "cc-radio",
     "footprint": "Resistor_SMD:R_0402_1005Metric"
   },
@@ -861,10 +861,10 @@
       "1": "CC_DCOUPL",
       "2": "GND"
     },
-    "x": 118,
-    "y": 38.8,
+    "x": 117.8,
+    "y": 38.0,
     "side": "B",
-    "angle": 90,
+    "angle": 180.0,
     "sheet": "cc-radio",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "mpn": "GRM155R71C104KA88D"
@@ -877,10 +877,10 @@
       "1": "CC_VDD",
       "2": "GND"
     },
-    "x": 118,
-    "y": 40.8,
+    "x": 117.8,
+    "y": 39.4,
     "side": "B",
-    "angle": 90,
+    "angle": 180.0,
     "sheet": "cc-radio",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "mpn": "GRM155R71C104KA88D",
@@ -3224,10 +3224,10 @@
       "3": "CC_X2",
       "4": "GND"
     },
-    "x": 123.5,
-    "y": 31,
+    "x": 123.4,
+    "y": 32.4,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "ABM8-26.000MHZ-10-D-1-G-T",
     "role": "26MHz; +/-10ppm initial, +/-15ppm temperature; ESR <=50ohm; -40..85C"
@@ -3241,10 +3241,10 @@
       "1": "CC_X1",
       "2": "GND"
     },
-    "x": 120.9,
-    "y": 30.4,
+    "x": 121.5,
+    "y": 30.0,
     "side": "B",
-    "angle": 90,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H150JA01D",
     "role": "Crystal load: CL=15/2+2.5=10pF; tune on assembled PCB"
@@ -3259,9 +3259,9 @@
       "2": "GND"
     },
     "x": 126.5,
-    "y": 30.4,
+    "y": 33.4,
     "side": "B",
-    "angle": 90,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H150JA01D",
     "role": "Crystal load: CL=15/2+2.5=10pF; tune on assembled PCB"
@@ -3326,10 +3326,10 @@
       "1": "CC_SHUNT",
       "2": "GND"
     },
-    "x": 125.6,
-    "y": 34,
+    "x": 128.0,
+    "y": 32.1,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H101JA01D",
     "role": "TI C124"
@@ -3343,10 +3343,10 @@
       "1": "CC_DC_BLOCK",
       "2": "CC_RF_50R"
     },
-    "x": 126,
-    "y": 42.8,
+    "x": 126.0,
+    "y": 43.6,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H120JA01D",
     "role": "TI C125 / DC block"
@@ -3360,10 +3360,10 @@
       "1": "CC_BAL_N",
       "2": "GND"
     },
-    "x": 127.8,
-    "y": 39.3,
+    "x": 127.6,
+    "y": 40.4,
     "side": "B",
-    "angle": 0,
+    "angle": 90.0,
     "sheet": "cc-radio",
     "mpn": "GRM1555C1H1R5CA01D",
     "role": "TI C131"
@@ -3377,10 +3377,10 @@
       "1": "CC_RF_P",
       "2": "CC_BAL_P"
     },
-    "x": 125.6,
-    "y": 37,
+    "x": 126.0,
+    "y": 38.3,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "LQW15AN12NJ00D",
     "role": "TI L121"
@@ -3394,10 +3394,10 @@
       "1": "CC_RF_N",
       "2": "CC_BAL_N"
     },
-    "x": 125.6,
-    "y": 38.3,
+    "x": 126.0,
+    "y": 39.7,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "LQW15AN12NJ00D",
     "role": "TI L131"
@@ -3479,10 +3479,10 @@
       "1": "CC_VDD",
       "2": "GND"
     },
-    "x": 121.5,
-    "y": 35.7,
+    "x": 122.1,
+    "y": 35.1,
     "side": "B",
-    "angle": 0,
+    "angle": 90.0,
     "sheet": "cc-radio",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local bypass for U5.9"
@@ -3496,10 +3496,10 @@
       "1": "CC_VDD",
       "2": "GND"
     },
-    "x": 123.6,
-    "y": 34.5,
+    "x": 125.0,
+    "y": 37.0,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local bypass for U5.11"
@@ -3513,10 +3513,10 @@
       "1": "CC_VDD",
       "2": "GND"
     },
-    "x": 125.6,
-    "y": 39.7,
+    "x": 125.1,
+    "y": 40.8,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local bypass for U5.14"
@@ -3530,10 +3530,10 @@
       "1": "CC_VDD",
       "2": "GND"
     },
-    "x": 125.6,
-    "y": 41,
+    "x": 124.5,
+    "y": 42.4,
     "side": "B",
-    "angle": 0,
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local bypass for U5.15"
@@ -3547,10 +3547,10 @@
       "1": "CC_VDD",
       "2": "GND"
     },
-    "x": 121.5,
+    "x": 121.0,
     "y": 42.5,
     "side": "B",
-    "angle": 0,
+    "angle": 180.0,
     "sheet": "cc-radio",
     "mpn": "GRM155R71C104KA88D",
     "role": "Local bypass for U5.18"
@@ -3581,10 +3581,10 @@
       "1": "+3V3",
       "2": "CC_VDD"
     },
-    "x": 116.8,
-    "y": 41.3,
-    "side": "B",
-    "angle": 90,
+    "x": 120.0,
+    "y": 45.0,
+    "side": "F",
+    "angle": 0.0,
     "sheet": "cc-radio",
     "mpn": "BLM15HG102SN1D",
     "role": "TI L1 supply bead"

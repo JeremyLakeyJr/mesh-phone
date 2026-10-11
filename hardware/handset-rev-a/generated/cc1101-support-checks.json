@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "CC_X1 full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_X2 full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_DCOUPL full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_RBIAS full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_VDD full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "+3V3 full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "GND full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CC_X1 rear copper without vias",
+      "passed": true
+    },
+    {
+      "check": "CC_X1 bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_X2 rear copper without vias",
+      "passed": true
+    },
+    {
+      "check": "CC_X2 bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_DCOUPL rear copper without vias",
+      "passed": true
+    },
+    {
+      "check": "CC_DCOUPL bounded length",
+      "passed": true
+    },
+    {
+      "check": "CC_RBIAS rear copper without vias",
+      "passed": true
+    },
+    {
+      "check": "CC_RBIAS bounded length",
+      "passed": true
+    },
+    {
+      "check": "filled adjacent ground under oscillator corridors",
+      "passed": true
+    },
+    {
+      "check": "C12 independent rear bypass branch",
+      "passed": true
+    },
+    {
+      "check": "C69 independent rear bypass branch",
+      "passed": true
+    },
+    {
+      "check": "C70 independent rear bypass branch",
+      "passed": true
+    },
+    {
+      "check": "C71 independent rear bypass branch",
+      "passed": true
+    },
+    {
+      "check": "C72 independent rear bypass branch",
+      "passed": true
+    },
+    {
+      "check": "C73 independent rear bypass branch",
+      "passed": true
+    },
+    {
+      "check": "C74 independent rear bypass branch",
+      "passed": true
+    },
+    {
+      "check": "C11 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C12 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C61 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C62 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C69 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C70 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C71 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C72 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C73 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "C74 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "R11 local connected ground via",
+      "passed": true
+    },
+    {
+      "check": "five connected thermal vias",
+      "passed": true
+    },
+    {
+      "check": "EP copper retained and mask closed",
+      "passed": true
+    },
+    {
+      "check": "four reviewed mask and paste windows",
+      "passed": true
+    },
+    {
+      "check": "thermal via geometry and two-face tenting",
+      "passed": true
+    },
+    {
+      "check": "thermal drill covered with nominal mask margin",
+      "passed": true
+    },
+    {
+      "check": "thermal via geometry and two-face tenting",
+      "passed": true
+    },
+    {
+      "check": "thermal drill covered with nominal mask margin",
+      "passed": true
+    },
+    {
+      "check": "thermal via geometry and two-face tenting",
+      "passed": true
+    },
+    {
+      "check": "thermal drill covered with nominal mask margin",
+      "passed": true
+    },
+    {
+      "check": "thermal via geometry and two-face tenting",
+      "passed": true
+    },
+    {
+      "check": "thermal drill covered with nominal mask margin",
+      "passed": true
+    },
+    {
+      "check": "thermal via geometry and two-face tenting",
+      "passed": true
+    },
+    {
+      "check": "thermal drill covered with nominal mask margin",
+      "passed": true
+    }
+  ],
+  "route_lengths_mm": {
+    "CC_X1": 8.6407,
+    "CC_X2": 6.8364,
+    "CC_DCOUPL": 1.2575,
+    "CC_RBIAS": 1.7174
+  },
+  "reference_samples": 528,
+  "reference_gaps": [],
+  "qualification_open": [
+    "Qualify CC1101 oscillator startup, frequency, crystal drive and load capacitance on assembled boards across voltage and temperature.",
+    "Obtain assembler approval for four 1mm paste windows (54.9% EP coverage), 1mm mask windows and five 0.3mm component-side tented drills; nominal mask-to-drill margin is 0.15mm.",
+    "Validate filtered supply transient/noise performance, thermal joints and RF coexistence. CC1101 matching, antenna and digital interface routing remain incomplete."
+  ],
+  "fabrication_released": false
+}

@@ -65,6 +65,14 @@ if (out/'audio-routing.json').exists():
     from check_handset_audio import check_board as check_audio
     audio=check_audio(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
     issues['audio_routing_failures']=[g['net'] for g in audio['groups'] if not g['passed']]
+if (out/'cc1101-support-routing.json').exists():
+    import pcbnew as pcb
+    from check_handset_cc1101_support import check_board as check_cc_support
+    from check_handset_cc1101 import inspect as check_cc_circuit
+    cc=check_cc_support(pcb.LoadBoard(str(out/'handset.kicad_pcb')))
+    issues['cc1101_support_failures']=[c['check'] for c in cc['checks'] if not c['passed']]
+    issues['cc1101_circuit_failures']=check_cc_circuit(out)['failures']
+    issues['cc1101_support_qualification']=cc['qualification_open']
 if (out/'sx1262-switch-routing.json').exists():
     import pcbnew as pcb
     from check_handset_sx1262_switch import check_board as check_sx_switch

@@ -1356,7 +1356,7 @@
       (effects
         (font
           (size 1.1 1.1))))
-    (property "Footprint" "Package_DFN_QFN:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
+    (property "Footprint" "Handset:CC1101_RGP20_MaskedThermalVias"
       (at 86.36 93.98 0)
       (effects
         (font
