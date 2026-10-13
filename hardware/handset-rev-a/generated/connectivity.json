@@ -782,10 +782,10 @@
       "1": "+3V3",
       "2": "SX_CS"
     },
-    "x": 116.8,
-    "y": 37.0,
-    "side": "B",
-    "angle": 0.0,
+    "x": 121.5,
+    "y": 49,
+    "side": "F",
+    "angle": 0,
     "sheet": "radios",
     "footprint": "Resistor_SMD:R_0402_1005Metric"
   },
@@ -4706,10 +4706,10 @@
       "1": "SX_RF_SW",
       "2": "SX_SWITCH_CTRL"
     },
-    "x": 115.2,
-    "y": 35.0,
+    "x": 113,
+    "y": 33.5,
     "side": "F",
-    "angle": 90.0,
+    "angle": 90,
     "sheet": "radios",
     "mpn": "RC0402FR-07100RL",
     "role": "DIO2 control series filter"

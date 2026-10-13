@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "SPI_SCK full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SPI_MOSI full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SPI_MISO full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_CS full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_RESET full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_BUSY full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "SX_DIO1 full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "+3V3 full pad continuity",
+      "passed": true
+    },
+    {
+      "check": "CS pull-up value",
+      "passed": true
+    },
+    {
+      "check": "all recorded new copper retained",
+      "passed": true
+    },
+    {
+      "check": "reviewed trace widths",
+      "passed": true
+    },
+    {
+      "check": "through vias geometry and tenting",
+      "passed": true
+    }
+  ],
+  "added_route_lengths_mm": {
+    "SX_DIO1": 42.6411,
+    "SX_RESET": 44.5489,
+    "SX_CS": 95.6261,
+    "SX_BUSY": 41.3795,
+    "KEY_IRQ": 32.6028,
+    "LCD_3V0": 26.2401,
+    "SX_SWITCH_CTRL": 16.7729,
+    "SPI_SCK": 29.1443,
+    "+3V3": 37.3707,
+    "SPI_MISO": 12.3147,
+    "SPI_MOSI": 24.8059,
+    "SX_RF_SW": 4.1246,
+    "LORA_RF_50R": 6.9164,
+    "GND": 0.3754
+  },
+  "new_vias": 40,
+  "qualification_open": [
+    "Qualify shared-SPI loading, edge rates, bus clock, MISO release, NSS timing, reset/BUSY/DIO1 behavior and power sequencing on assembled hardware. Other SPI-device branches remain unfinished.",
+    "Review final inner-layer power and digital return paths, revised antenna/switch-control geometry and the relocated pull-up/filter; verify firmware register access, TCXO/switch timing and conducted RF operation."
+  ],
+  "fabrication_released": false
+}

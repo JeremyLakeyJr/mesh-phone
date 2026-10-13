@@ -587,3 +587,61 @@ routing and ERC corrections, mechanical/BOM review and fabricator DFM before
 prototype release. The SX1262 still needs stackup/transition review, switch
 DC and timing checks, conducted power/harmonics, sensitivity, antenna matching,
 coexistence and clock/supply/thermal qualification on assembled hardware.
+
+
+## Digital interface checkpoint — 2026-10-13
+
+**Copper routing is complete for this interface; the board remains blocked
+from fabrication and power-up.** U4 SPI joins the existing host/CC1101 bus;
+chip select, reset, BUSY and DIO1 reach their assigned ESP32 pins. R10 retains
+its 10k value and now connects chip select to +3V3 on the front layer at
+(121.5, 49) mm. R91 moves to (113, 33.5) mm on the front to clear digital escapes.
+No schematic values, pin assignments or part selections change.
+
+Seven local digital escapes use tented 0.5 mm land / 0.3 mm drill through vias.
+The added signal traces are 0.15 mm. The main feed keeps 0.5 mm width and the
+antenna trunk keeps 0.34 mm. The five previously scoped 0.45/0.2 mm matching-device
+ground vias and the general board rules are unchanged. Routing also reworks
+the switch-control path, C8/C11 ground returns, antenna feed, a display-supply
+transition and a KEY_IRQ crossing. Redundant dead-end copper is removed after
+native DRC, with the original pad groups checked after each pruning pass.
+
+Twelve live checks cover all eight interface/supply net groups, the pull-up
+value, retained added copper, trace widths and via geometry/tenting. Seventeen
+regression cases cover baseline operation of the checker, thirteen disconnected
+endpoints, a wrong pull-up value, a wrong trace width and missing via tenting.
+The PCB gate and manufacturing-release check both run the live checks.
+
+The revised antenna path is 7.6364 mm with its existing single signal via.
+Across all switched RF paths, 783 ground-reference samples pass, with 103
+explicit same-net transition-antipad exemptions and no other gaps. The antenna
+transition has a connected ground via 1.0259 mm away. The connector corridor
+has a nominal 0.155 mm trace-to-ground-land gap against the retained 0.15 mm
+rule; fabrication tolerances and RF behavior still require review. All earlier
+SX1262 clock/supply/local-RF and CC1101 support/RF/digital checks remain passing.
+
+The added digital branches contain multiple layer changes; the chip-select
+network includes the pull-up branch. Continuity does not establish usable SPI
+clock speed, timing, edge quality or RF operation. Qualify shared-bus loading,
+MISO release, NSS/reset/BUSY/DIO1 behavior, power sequencing and firmware
+TCXO/switch control. Review the revised inner-layer supply/return geometry,
+connector clearance and antenna impedance before prototype ordering.
+
+Native DRC and schematic parity remain **zero**. Unconnected items fall from
+**151 to 142**; 20 ERC findings remain. All 2,644 integrity assertions pass,
+with 277 schematic components and 281 footprints. All 529 previously connected
+pad groups and 279 unmoved footprints are preserved. Of the 10,510 source
+copper items, 10,471 retain their geometry, 37 are replaced/pruned and two C11
+ground items move with their identifiers retained. Adding 1,275 copper items
+gives 11,748 total.
+
+The prior board, rules/project and verification/placement evidence are in
+`archive/handset-before-sx1262-digital/7555f72fbeff/`. The committed PCB is the
+layout source of truth. Current routing provenance and checks are in
+`generated/sx1262-digital-routing.json`, `sx1262-digital-checks.json` and
+`sx1262-digital-tests.json`.
+
+**Next fabrication work:** complete GNSS supply, host and antenna routing,
+then address remaining NFC/LF, audio, storage and other unfinished copper.
+Clear the remaining ERC findings, freeze component ordering/footprints and
+mechanical fit, and obtain fabricator/assembler DFM review before ordering.

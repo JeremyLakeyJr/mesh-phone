@@ -224,7 +224,7 @@
     "SX_RX_MATCH": 1.9524,
     "SX_RX_AC": 2.57,
     "SX_ANT_AC": 4.3875,
-    "LORA_RF_50R": 6.3381
+    "LORA_RF_50R": 7.6364
   },
   "signal_transitions": [
     {
@@ -251,11 +251,11 @@
         115.0,
         38.3
       ],
-      "nearest_ground_via_mm": 0.8062,
+      "nearest_ground_via_mm": 1.0259,
       "minimum_nominal_land_gap_mm": 0.29
     }
   ],
-  "reference_samples": 753,
+  "reference_samples": 783,
   "via_antipad_exempt_samples": 103,
   "reference_gaps": [],
   "physical_pads": 30,

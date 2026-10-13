@@ -5,7 +5,7 @@ This is a new board and hierarchical schematic, not the old Rev F layout.
 **It is incomplete, partially routed, and not ready to fabricate or power.**
 The original Rev F project is preserved in `../rev-f/`.
 
-Latest: [CC1101 digital interface routing](cc1101-review.md#digital-interface-checkpoint--2026-10-12). Fabrication
+Latest: [SX1262 digital interface routing](sx1262-power-review.md#digital-interface-checkpoint--2026-10-13). Fabrication
 readiness takes priority over additional firmware features. RF, NFC/LF and other
 unfinished circuits remain fabrication blockers.
 

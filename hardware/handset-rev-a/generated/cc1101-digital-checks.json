@@ -65,7 +65,7 @@
     "I2C_SCL": 8.4891,
     "PANEL_I2C_SCL": 5.4278,
     "CC_VDD": 2.9744,
-    "GND": 1.6886
+    "GND": 1.5457
   },
   "inner_escape_segments": [
     {

@@ -43,7 +43,7 @@ U4,SX1262IMLTRT,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,113,36,B,0,r
 C8,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,114.8,32,B,0,radios
 C9,470nF 10% X5R 10V,Capacitor_SMD:C_0402_1005Metric,108.3,31.5,B,0,radios
 C10,47nF 10% X7R 25V,Capacitor_SMD:C_0402_1005Metric,110.5,41.1,B,180.0,radios
-R10,10k,Resistor_SMD:R_0402_1005Metric,116.8,37.0,B,0.0,radios
+R10,10k,Resistor_SMD:R_0402_1005Metric,121.5,49,F,0,radios
 U5,CC1101RGPR,Handset:CC1101_RGP20_MaskedThermalVias,121.5,39,B,0,cc-radio
 R11,56k 1%,Resistor_SMD:R_0402_1005Metric,122.7,42.9,B,-90.0,cc-radio
 R12,10k,Resistor_SMD:R_0402_1005Metric,124.0,45.2,F,0.0,cc-radio
@@ -266,7 +266,7 @@ C94,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,102.2,39.5,B,180.0,radios
 C95,10pF 5% C0G 50V,Capacitor_SMD:C_0402_1005Metric,109.4,38.6,B,0,radios
 U36,0900FM15K0039001E,RF_Converter:Balun_Johanson_0900FM15K0039,113.9,41.15,B,-90.0,radios
 U37,BGS12WN6E6327,Package_LGA:Infineon_PG-TSNP-6-10_0.7x1.1mm_0.7x1.1mm_P0.4mm,114.15,44.2,F,90.0,radios
-R91,100R 1%,Resistor_SMD:R_0402_1005Metric,115.2,35.0,F,90.0,radios
+R91,100R 1%,Resistor_SMD:R_0402_1005Metric,113,33.5,F,90,radios
 R92,100R 1%,Resistor_SMD:R_0402_1005Metric,117.6,45.8,F,0.0,radios
 C96,1nF 10% X7R 50V,Capacitor_SMD:C_0402_1005Metric,109.9,42.8,F,180.0,radios
 C97,1nF 10% X7R 50V,Capacitor_SMD:C_0402_1005Metric,118.4,42.0,F,180.0,radios
