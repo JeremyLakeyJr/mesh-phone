@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "tests": 15,
+  "cases": [
+    {
+      "test": "installed digital copper",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.3",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.6",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.7",
+      "passed": true
+    },
+    {
+      "test": "disconnect U5.20",
+      "passed": true
+    },
+    {
+      "test": "disconnect U1.24",
+      "passed": true
+    },
+    {
+      "test": "disconnect U1.25",
+      "passed": true
+    },
+    {
+      "test": "disconnect R12.1",
+      "passed": true
+    },
+    {
+      "test": "disconnect R12.2",
+      "passed": true
+    },
+    {
+      "test": "disconnect TP1.1",
+      "passed": true
+    },
+    {
+      "test": "wrong pull-up value",
+      "passed": true
+    },
+    {
+      "test": "unreviewed trace width",
+      "passed": true
+    },
+    {
+      "test": "via tenting removed",
+      "passed": true
+    }
+  ],
+  "fabrication_released": false
+}

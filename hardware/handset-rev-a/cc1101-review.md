@@ -165,3 +165,40 @@ continue the remaining peripheral routing. Before RF release, validate the
 actual stackup and copper geometry, connector/case placement, antenna match,
 conducted power, receive sensitivity, harmonics/spurs and coexistence. Determine
 from measurements whether the optional 699 MHz spur filter is necessary.
+
+## Digital interface checkpoint — 2026-10-12
+
+CC1101 SCK, MOSI and MISO now connect to the established host SPI bus. CS
+connects to U1.24 and the 10 kOhm R12 pull-up; R12 also connects to +3V3.
+GDO0 connects to U1.25 and GDO2 reaches TP1. The added digital traces are
+0.15 mm wide. All 31 new through vias use 0.5 mm lands, 0.3 mm drills and
+tenting on both faces. The final GDO2 branch contains 14.3255 mm of added
+copper and avoids J20's connector keepout.
+
+C12 moves 0.5 mm left to make room for separate signal escapes. Its independent
+supply branch and local ground return are rebuilt, and C11's ground via moves
+to (116.5, 38.3) mm. Two existing I2C tracks are reworked at the host escape.
+All six independent rear bypass branches, DCOUPL, oscillator and thermal-via
+checks still pass. No circuit values, board rules or stackup settings change.
+The installer preserves all 537 previously connected pad groups and all
+9,721 unreplaced source copper items. Eight old copper items are replaced;
+789 new items are added. Source archive, hashes and changed placement are in
+[cc1101-digital-routing.json](generated/cc1101-digital-routing.json).
+
+The inner-layer digital fanout passes beside the radio and toward the host,
+including the still-unrouted GNSS region. RF and clock reference corridors are
+protected during routing and checked again after plane fill; the CC1101 and
+SX1262 RF/clock checks and the USB reference checks pass. This is continuity
+and geometry evidence, not a complete return-current or signal-integrity
+qualification. Review the final plane geometry after the remaining devices
+are routed. Qualify shared-bus loading, edge rates, clock frequency, MISO
+release, CS timing and power/reset behavior on assembled hardware. Firmware
+GDO configuration, register access and RF operation remain unverified.
+
+The digital checker passes 13 checks and 15 regression cases, including each
+radio interface endpoint, both pull-up pads, wrong pull-up value, trace width
+and via tenting. Native DRC and schematic parity have zero findings; opens
+fall from 159 to 151. The board still has 20 ERC findings and remains blocked
+from manufacturing release. Next: complete the SX1262 digital interface and
+continue the remaining peripheral routing, then finish the overall return
+planes, mechanical/BOM review and fabrication checks.

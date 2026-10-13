@@ -5,7 +5,7 @@ This is a new board and hierarchical schematic, not the old Rev F layout.
 **It is incomplete, partially routed, and not ready to fabricate or power.**
 The original Rev F project is preserved in `../rev-f/`.
 
-Latest: [SX1262 switched RF routing](sx1262-power-review.md#switched-rf-routing-checkpoint--2026-10-10). Fabrication
+Latest: [CC1101 digital interface routing](cc1101-review.md#digital-interface-checkpoint--2026-10-12). Fabrication
 readiness takes priority over additional firmware features. RF, NFC/LF and other
 unfinished circuits remain fabrication blockers.
 
@@ -63,7 +63,7 @@ circuits are complete or that the PCB can be ordered.
 | Cellular | Select exact unlocked modem/firmware and establish calls, SMS and data on target carriers. The detachable adapter needs its own SIM, antenna feeds, voltage translation, regulated peak-current supply and audio implementation. |
 | LCD / touch | ER-TFT024IPS-3 pinout and FH12A-50S-0.5SH(55) connector are captured with backlight switching. Confirm purchased CTP configuration, rail tolerances, FPC orientation/bending and firmware. |
 | NFC | ST25R3916B, crystal and bypass components are populated. Finish and tune the antenna matching/receive network and validate oscillator loading. |
-| Radio frontends | SX1262 input supply/ground and local core DC-DC loop are routed; finish thermal layout and qualify supply integrity; qualify the relocated TCXO, routed PA and local RF input geometry; qualify matching-device ground vias and complete switch/antenna routing. Route and qualify the implemented CC1101 clock/decoupling/balun/filter circuit and separate antenna feed. |
+| Radio frontends | SX1262 input supply/ground and local core DC-DC loop are routed; finish thermal layout and qualify supply integrity; qualify the relocated TCXO, routed PA and local RF input geometry; qualify matching-device ground vias and the routed switch/antenna path. Qualify the routed CC1101 clock, decoupling, balun/filter, separate antenna feed and digital interface. Finish the remaining radio/peripheral digital routing. |
 | LF RFID | SN74AHCT125 and SN74LVC1G17 translation is populated. Clock, analog reference, coil network and timing-capable host return path remain incomplete. |
 | GPIO budget | Confirm scanner GPIO behavior and LCD D/C throughput. IR_RX now uses ESP32 GPIO3; preserve default JTAG eFuse policy and verify boot behavior with active IR. |
 | USB / J16 | TPS2553 and signal ESD arrays are captured. Finish protected routing, VBUS protection and power-off accessory policy; test current limit and ESD response. |

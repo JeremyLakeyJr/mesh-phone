@@ -48,7 +48,7 @@ U5,CC1101RGPR,Handset:CC1101_RGP20_MaskedThermalVias,121.5,39,B,0,cc-radio
 R11,56k 1%,Resistor_SMD:R_0402_1005Metric,122.7,42.9,B,-90.0,cc-radio
 R12,10k,Resistor_SMD:R_0402_1005Metric,124.0,45.2,F,0.0,cc-radio
 C11,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,117.8,38.0,B,180.0,cc-radio
-C12,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,117.8,39.4,B,180.0,cc-radio
+C12,100nF 10% X7R 16V,Capacitor_SMD:C_0402_1005Metric,117.3,39.4,B,180,cc-radio
 U6,MAX98357AETE+,Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm,78,84,B,0,audio
 C13,100nF,Capacitor_SMD:C_0402_1005Metric,77.45,80.9,B,90,audio
 C14,10uF,Capacitor_SMD:C_0805_2012Metric,73,86,B,0,audio

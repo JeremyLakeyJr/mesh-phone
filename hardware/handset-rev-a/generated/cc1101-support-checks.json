@@ -201,7 +201,7 @@
   "qualification_open": [
     "Qualify CC1101 oscillator startup, frequency, crystal drive and load capacitance on assembled boards across voltage and temperature.",
     "Obtain assembler approval for four 1mm paste windows (54.9% EP coverage), 1mm mask windows and five 0.3mm component-side tented drills; nominal mask-to-drill margin is 0.15mm.",
-    "Validate filtered supply transient/noise performance, thermal joints and RF coexistence. Digital interface routing and RF qualification remain incomplete."
+    "Validate filtered supply transient/noise performance, thermal joints and RF coexistence. Digital-interface timing and RF performance remain unqualified."
   ],
   "fabrication_released": false
 }

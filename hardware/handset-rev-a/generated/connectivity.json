@@ -877,10 +877,10 @@
       "1": "CC_VDD",
       "2": "GND"
     },
-    "x": 117.8,
+    "x": 117.3,
     "y": 39.4,
     "side": "B",
-    "angle": 180.0,
+    "angle": 180,
     "sheet": "cc-radio",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "mpn": "GRM155R71C104KA88D",
